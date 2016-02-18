@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WhatsMate WA Gateway Technical Guide</title>
+    <description>Sending WhatsApp messages via WhatsMate REST API</description>
+    <link>http://whatsmate.github.io</link>
+    <atom:link href="http://whatsmate.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>How to send WhatsApp Messages from shell script</title>
+        <description>
+          Using the WhatsMate WA Gateway REST API - 
+          This article shows you how to send a WhatsApp message from a shell script. Before the recipient can receive your WhatsApp message, she will need to register with the WhatsMate WA Gateway. Instructions are available on the official site. Unregistered users will never receive messages from the Gateway. To send...
+        </description>
+        <pubDate>Tue, 16 Feb 2016 00:00:00 -0800</pubDate>
+        <link>http://whatsmate.github.io/2016-02-16-send-whatsapp-message-shell-script/</link>
+        <guid isPermaLink="true">http://whatsmate.github.io/2016-02-16-send-whatsapp-message-shell-script/</guid>
+      </item>
+    
+  </channel>
+</rss>
