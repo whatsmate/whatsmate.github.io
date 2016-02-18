@@ -1,4 +1,4 @@
-# Viewing this stie locally
+# Viewing this site locally
 
 Prerequisite: Jekyll has been installed.
 
