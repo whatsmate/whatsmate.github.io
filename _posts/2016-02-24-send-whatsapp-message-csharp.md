@@ -12,7 +12,7 @@ Before the recipient can receive your WhatsApp message, she will need to registe
 
 To send a WhatsApp message in C#, do this:
 
-1. Copy the following source code to to the main class in your Console Application in Visual Studio.  <script src="https://gist.github.com/whatsmate/50e30fb8c2873f5da63e.js"></script>
+1. Copy the following source code to the main class in your Console Application in Visual Studio.  <script src="https://gist.github.com/whatsmate/50e30fb8c2873f5da63e.js"></script>
 2. Specify your target recipient and message on line 18. Remember to include the country code in the recipient's number.
 3. Add the reference "System.Web.Extensions" by doing this:
    1. Right-click on your project node in the Solution Explorer panel.
