@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: WhatsMate WA Gateway Technical Guide
+title: WhatsMate API Technical Guide
 
 # Short description of your site
 description: Sending WhatsApp messages via WhatsMate REST API
