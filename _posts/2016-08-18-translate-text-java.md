@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to translate text in Java
-subtitle: Using the WhatsMate WA Gateway REST API
+subtitle: Using the WhatsMate Translation API
 published: true
 ---
 
