@@ -7,7 +7,7 @@ published: true
 
 This article shows you how to translate text in Python.
 
-To translate text (e.g. from English to Spanish) from a Python script, do this:
+To translate text (e.g. from English to Portuguese) from a Python script, do this:
 
 1. Copy the following source code to your Python script.  <script src="https://gist.github.com/whatsmate/c0faa349997272fc74b18f2cbb8ece66.js"></script>
 2. Specify the language code of the original text on line 10.

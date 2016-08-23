@@ -7,7 +7,7 @@ published: true
 
 This article shows you how to translate natural languages in PHP.
 
-To translate text (e.g. from English to Spanish) in PHP, do this:
+To translate text (e.g. from English to Italian) in PHP, do this:
 
 1. Copy the following source code to your PHP script.  <script src="https://gist.github.com/whatsmate/c91e4cc10093b7120b82e2341717e619.js"></script>
 2. Specify the language code of the original text on line 8.
