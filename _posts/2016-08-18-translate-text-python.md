@@ -13,8 +13,9 @@ To translate text (e.g. from English to Portuguese) from a Python script, do thi
 2. Specify the language code of the original text on line 10.
 3. Specify the language code of your target language on line 11.
 4. Specify the text that needs to be translated on line 12.
-5. Make your script executable: `chmod 755 translate-text.py`
-6. Run the script to see the result: `./translate-text.py`
+5. Install the `Requests` library because the sample script depends on it. `pip install requests`
+6. Make your script executable: `chmod 755 translate-text.py`
+7. Run the script to see the result: `./translate-text.py`
 
 
 Looking for your language code? See the <a target="_blank" href="http://api.whatsmate.net/v1/translation/supported-codes">complete listing</a>.
