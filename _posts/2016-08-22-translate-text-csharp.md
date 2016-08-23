@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to translate natural languages in C#
-subtitle: Using the WhatsMate WA Gateway REST API
+subtitle: Using the WhatsMate Translation REST API
 published: true
 ---
 
