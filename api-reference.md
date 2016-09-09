@@ -84,12 +84,12 @@ X-WM-CLIENT-SECRET: 53654f8ee3684a37201e3c90a071dbd7
 * Example request: `GET /v1/telegram/status/0`  <br><br>
 
 
-### 2. Send a Telegram message
-* Endpoint: `POST /v1/telegram/send/message/{instance_number}`
+### 2. Send a Telegram message to a single recipient
+* Endpoint: `POST /v1/telegram/single/message/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: Possible value: 0
 * Parameters required in JSON payload:
-  * `number`: String. The destination phone number including the country code. No "+" sign is needed.
+  * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
   * `message`: String. The text message that you want to send.
 * Response: Json containing these properties:
   * `success`: Possible values: `true` / `false`
