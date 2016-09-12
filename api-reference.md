@@ -96,6 +96,96 @@ X-WM-CLIENT-SECRET: 53654f8ee3684a37201e3c90a071dbd7
   * `status`: String. Text explaining what happened.
 
 
+### 3. (Premium Only) Send a Telegram message to multiple recipients
+* Endpoint: `POST /v1/telegram/batch/message/{instance_number}`
+* Parameter required in URL: 
+  * `instance_number`: Possible value: 0
+* Parameters required in JSON payload:
+  * `numbers`: Array of strings. The phone numbers of the recipients including the country code. No "+" sign is needed.
+  * `message`: String. The text message that you want to send.
+* Response: Json containing these properties:
+  * `success`: Possible values: `true` / `false`
+  * `status`: String. Text explaining what happened.
+
+
+### 4. Send a location to a single recipient
+* Endpoint: `POST /v1/telegram/single/location/{instance_number}`
+* Parameter required in URL: 
+  * `instance_number`: Possible value: 0
+* Parameters required in JSON payload:
+  * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
+  * `latitude`: Number. The latitude of the location that you want to send.
+  * `longitude`: Number. The longitude of the location that you want to send.
+* Response: Json containing these properties:
+  * `success`: Possible values: `true` / `false`
+  * `status`: String. Text explaining what happened.
+
+
+### 5. (Premium Only) Send a location to multiple recipients
+* Endpoint: `POST /v1/telegram/batch/location/{instance_number}`
+* Parameter required in URL: 
+  * `instance_number`: Possible value: 0
+* Parameters required in JSON payload:
+  * `numbers`: Array of strings. The phone numbers of the recipients including the country code. No "+" sign is needed.
+  * `latitude`: Number. The latitude of the location that you want to send.
+  * `longitude`: Number. The longitude of the location that you want to send.
+* Response: Json containing these properties:
+  * `success`: Possible values: `true` / `false`
+  * `status`: String. Text explaining what happened.
+
+
+### 6. (Premium Only) Send a photo/image to a single recipient
+* Endpoint: `POST /v1/telegram/single/photo/binary/{instance_number}`
+* Parameter required in URL: 
+  * `instance_number`: Possible value: 0
+* Parameters required in JSON payload:
+  * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
+  * `image`: String. Base64-encoded representation of the image that you want to send.
+  * `caption`: String. Optional. A short description of your image.
+* Response: Json containing these properties:
+  * `success`: Possible values: `true` / `false`
+  * `status`: String. Text explaining what happened.
+
+
+### 7. (Premium Only) Send a photo/image to multiple recipients
+* Endpoint: `POST /v1/telegram/batch/photo/binary/{instance_number}`
+* Parameter required in URL: 
+  * `instance_number`: Possible value: 0
+* Parameters required in JSON payload:
+  * `numbers`: Array of strings. The phone numbers of the recipients including the country code. No "+" sign is needed.
+  * `image`: String. Base64-encoded representation of the image that you want to send.
+  * `caption`: String. Optional. A short description of your image.
+* Response: Json containing these properties:
+  * `success`: Possible values: `true` / `false`
+  * `status`: String. Text explaining what happened.
+
+
+### 6. (Premium Only) Send an audio file to a single recipient
+* Endpoint: `POST /v1/telegram/single/audio/binary/{instance_number}`
+* Parameter required in URL: 
+  * `instance_number`: Possible value: 0
+* Parameters required in JSON payload:
+  * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
+  * `audio`: String. Base64-encoded representation of the audio content that you want to send.
+  * `filename`: String. The filename of your audio file.
+* Response: Json containing these properties:
+  * `success`: Possible values: `true` / `false`
+  * `status`: String. Text explaining what happened.
+
+
+### 7. (Premium Only) Send an audio file to multiple recipients
+* Endpoint: `POST /v1/telegram/batch/audio/binary/{instance_number}`
+* Parameter required in URL: 
+  * `instance_number`: Possible value: 0
+* Parameters required in JSON payload:
+  * `numbers`: Array of strings. The phone numbers of the recipients including the country code. No "+" sign is needed.
+  * `audio`: String. Base64-encoded representation of the audio content that you want to send.
+  * `filename`: String. The filename of your audio file.
+* Response: Json containing these properties:
+  * `success`: Possible values: `true` / `false`
+  * `status`: String. Text explaining what happened.
+
+
 <br/>
 <hr/>
 # Translation Endpoints
