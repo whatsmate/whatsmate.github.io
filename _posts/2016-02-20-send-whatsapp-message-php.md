@@ -18,6 +18,6 @@ To send a WhatsApp message from PHP, do this:
 4. Visit the PHP page your just created to send your message.
 
 
-The trial account allows you to send up to 100 messages per day. [Upgrade to the Premium Account](http://www.whatsmate.net/premium-account.html) to send unlimited number of messages.
+The trial account allows you to send up to 40 messages per day. [Upgrade to the Premium Account](http://www.whatsmate.net/premium-account.html) to send unlimited number of messages.
 
 

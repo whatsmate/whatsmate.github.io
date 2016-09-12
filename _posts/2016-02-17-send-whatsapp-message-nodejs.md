@@ -19,6 +19,6 @@ To send a WhatsApp message in `Node.js`, do this:
 5. Run the script to send your message: `./send-whatsapp.js`
 
 
-The trial account allows you to send up to 100 messages per day. [Upgrade to the Premium Account](http://www.whatsmate.net/premium-account.html) to send unlimited number of messages.
+The trial account allows you to send up to 40 messages per day. [Upgrade to the Premium Account](http://www.whatsmate.net/premium-account.html) to send unlimited number of messages.
 
 

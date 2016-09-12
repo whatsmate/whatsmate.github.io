@@ -18,5 +18,5 @@ To send a WhatsApp message from a Google Apps Script, do this:
 4. Run the function `main()` to send your message.
 
 
-The trial account allows you to send up to 100 messages per day. [Upgrade to the Premium Account](http://www.whatsmate.net/premium-account.html) to send unlimited number of messages.
+The trial account allows you to send up to 40 messages per day. [Upgrade to the Premium Account](http://www.whatsmate.net/premium-account.html) to send unlimited number of messages.
 
