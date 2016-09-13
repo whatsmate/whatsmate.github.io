@@ -74,6 +74,11 @@ X-WM-CLIENT-SECRET: 53654f8ee3684a37201e3c90a071dbd7
 <hr/>
 # Telegram Gateway Endpoints
 
+## Demo App
+
+Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repository to see how the APIs are called
+
+
 ### 1. Check the status of the Telegram gateway
 * Endpoint: `GET /v1/telegram/status/{instance_number}`
 * Parameter required in URL: 
