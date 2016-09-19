@@ -10,7 +10,7 @@ This article shows you how to send a Telegram message in Microsoft's .net langua
 Before the recipient can receive your Telegram message, she will need to register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](http://www.whatsmate.net/telegram-gateway-api.html). *Unregistered users will never receive messages from the Gateway.*
 
 
-To send a WhatsApp message in VB.NET, do this:
+To send a Telegram message in VB.NET, do this:
 
 1. Copy the following source code to the main module file in your Console Application in Visual Studio.  <script src="https://gist.github.com/whatsmate/6a1ed2f45241e0b36fc516c3fb6daf49.js"></script>
 2. Specify your target recipient and message on line 61. Remember to include the country code in the recipient's number.
