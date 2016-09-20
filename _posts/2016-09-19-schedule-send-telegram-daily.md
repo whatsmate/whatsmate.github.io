@@ -9,7 +9,8 @@ This article shows you how to write a simple Python script to send yourself the 
 
 Before the recipient can receive your Telegram message, she will need to register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](http://www.whatsmate.net/telegram-gateway-api.html). *Unregistered users will never receive messages from the Gateway.*
 
-Prerequisites:
+
+### Prerequisites:
 
 1. You have access to a Linux (such as Ubuntu) machine.
 2. Your machine has Python and the `requests` library installed.
@@ -17,7 +18,7 @@ Prerequisites:
 
 
 
-Steps:
+### Steps:
 
 1. Take a look at this script: [send-telegram-exchange-rate.py](https://github.com/whatsmate/telegram-demos/blob/master/python/send-telegram-exchange-rate.py). It retrieves the exchange rate of YEN and sends it to a target number you specify.
 2. Customize the script to your liking. At least, specify your target number on line 31.
