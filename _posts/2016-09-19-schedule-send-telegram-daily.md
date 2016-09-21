@@ -20,7 +20,7 @@ Before the recipient can receive your Telegram message, she will need to registe
 
 ### Steps:
 
-1. Take a look at this script: [send-telegram-exchange-rate.py](https://github.com/whatsmate/telegram-demos/blob/master/python/send-telegram-exchange-rate.py). It retrieves the exchange rate of YEN and sends it to a target number you specify.
+1. Take a look at this script: [exchange-rate-via-telegram.py](https://github.com/whatsmate/telegram-demos/blob/master/python/exchange-rate-via-telegram.py){:target="_blank"}. It retrieves the exchange rate of YEN and sends it to a target number you specify.
 2. Customize the script to your liking. At least, specify your target number on line 31.
 3. Take note of the location of your script. For example: `/home/pikachu/send-telegram-exchange-rate.py`
 4. Give the execute permission to the script: `chmod 755 /home/pikachu/send-telegram-exchange-rate.py`
@@ -32,4 +32,12 @@ Before the recipient can receive your Telegram message, she will need to registe
       `00 09 * * *    /home/pikachu/send-telegram-exchange-rate.py`
    4. Save the changes and exit the editor.
 7. You're done. You will receive the exchange rate every day.
+
+
+
+### Disclaimer:
+
+1. The method described above aims to illustrate the concepts to send exchange rate information via Telegram only. We do not take any responsibilities for any financial gain/loss incurred due to your usage of the method.
+2. The exchange rate information used in the script is provided by "fixer.io". We are NOT affiliated with "fixer.io" in any way. We are not responisble for the accuracy of the information either.
+3. We are not affiliated with Telegram in any way. We only provide a gateway for sending out Telegram messages. We cannot guaranttee the gateway is functional at all times.
 
