@@ -5,7 +5,14 @@ subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
 ---
 
+<img src="/img/sun_cloud_small.jpg"/>
+
 This article shows you how to write a simple Python script to retrieve the weather condition of a city from Yahoo APIs and send it to yourself.
+
+
+<p style="text-align:center;">
+  <img src="/img/weather-telegram.jpg"/>
+</p>
 
 
 Before you can receive the Telegram message, you will need to register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](http://www.whatsmate.net/telegram-gateway-api.html). *Unregistered users will never receive messages from the Gateway.*

@@ -5,7 +5,14 @@ subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
 ---
 
+<img src="/img/chart_small.jpg"/>
+
 This article shows you how to write a simple Python script to monitor your beloved stock and send an alert to yourself when it hits your target price. Read on to get rich from your capital gain :)
+
+
+<p style="text-align:center;">
+  <img src="/img/stock-telegram.jpg"/>
+</p>
 
 
 Before you can receive the Telegram message, you will need to register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](http://www.whatsmate.net/telegram-gateway-api.html). *Unregistered users will never receive messages from the Gateway.*
