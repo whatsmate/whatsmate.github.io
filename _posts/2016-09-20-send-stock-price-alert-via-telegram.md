@@ -39,7 +39,7 @@ Before you can receive the Telegram message, you will need to register with the 
 
 If you are new to Python and want to understand how the Python script works, we are here to help:
 
-1. In lines 6 through 15, the function `getStockQuote()` is defined. It obtains a price quote from Yahoo Finance and returns it.  Check out [this article](https://kx.cloudingenium.com/content-providers/how-to-obtain-stock-quotes-from-yahoo-finance-you-can-query-them-via-excel-too/) if you want to learn more about how Yahoo Finance works.
+1. In lines 6 through 15, the function `getStockQuote()` is defined. It obtains a price quote from Yahoo Finance and returns it.  Check out [this article](https://kx.cloudingenium.com/content-providers/how-to-obtain-stock-quotes-from-yahoo-finance-you-can-query-them-via-excel-too/){:target="_blank"} if you want to learn more about how Yahoo Finance works.
 2. In lines 18 through 41, the function `sendTelegramMessage()` is defined. It sends a Telegram message to a designated number via our Telegram Gateway.
 3. In lines 44 through 62, the function `main()` is defined. It calls `getStockQuote()` to get a price quote of the the Apple stock. Then it checks to see if it's higher than $120. If so, it calls `sendTelegramMessage()` to send out an alert message.
 
