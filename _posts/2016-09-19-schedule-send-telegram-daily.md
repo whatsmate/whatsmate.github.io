@@ -21,7 +21,7 @@ Before the recipient can receive your Telegram message, she will need to registe
 ### Steps:
 
 1. Take a look at this script: [exchange-rate-via-telegram.py](https://github.com/whatsmate/telegram-demos/blob/master/python/exchange-rate-via-telegram.py){:target="_blank"}. It retrieves the exchange rate of YEN and sends it to a target number you specify.
-2. Customize the script to your liking. At least, specify your target number on line 31.
+2. Customize the script to your liking. At least, specify your target number on line 50.
 3. Take note of the location of your script. For example: `/home/pikachu/send-telegram-exchange-rate.py`
 4. Give the execute permission to the script: `chmod 755 /home/pikachu/send-telegram-exchange-rate.py`
 5. Run the script once to confirm if it really works.
