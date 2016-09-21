@@ -15,8 +15,8 @@ Before you can receive the Telegram message, you will need to register with the 
 
 1. You have access to a Linux (such as Ubuntu) machine.
 2. Your machine has Python and the `requests` library installed.
-3. You know some basic Python. Actualy, it's alright even if you don't because our code looks like simple English.
-4. You know how to set up a cron job. Actualy, it's alright even if you don't because we will tell you how.
+3. You know some basic Python. Actually, it's alright even if you don't because our code looks like simple English.
+4. You know how to set up a cron job. Actually, it's alright even if you don't because we will tell you how.
 
 
 ### Steps:
@@ -26,11 +26,11 @@ Before you can receive the Telegram message, you will need to register with the 
 3. Take note of the location of your script. For example: `/home/pikachu/stock-price-alert-via-telegram.py`
 4. Give the execute permission to your script: `chmod 755 /home/pikachu/stock-price-alert-via-telegram.py`
 5. Run the script once to confirm if it really works.
-6. Schedule the script to run daily at - say - 2pm: 
+6. Schedule the script to run at - say - 2pm on Monday through Friday: 
    1. On the command prompt, type this: `crontab -e`
    2. It will then open an editor (e.g. vi) for you to edit the content of your crontab entries.
    3. Add a line like this one:  
-      `00 14 * * *    /home/pikachu/stock-price-alert-via-telegram.py`
+      `00 14 * * 1-5   /home/pikachu/stock-price-alert-via-telegram.py`
    4. Save the changes and exit the editor.
 7. You're done. Now you just need to wait for your stock to hit your target price :)
 

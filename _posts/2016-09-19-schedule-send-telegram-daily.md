@@ -14,7 +14,7 @@ Before the recipient can receive your Telegram message, she will need to registe
 
 1. You have access to a Linux (such as Ubuntu) machine.
 2. Your machine has Python and the `requests` library installed.
-3. You know some basic Python. Actualy, it's alright even if you don't.
+3. You know some basic Python. Actually, it's alright even if you don't.
 
 
 
