@@ -44,6 +44,18 @@ If you are new to Python and want to understand how the Python script works, we 
 3. In lines 44 through 62, the function `main()` is defined. It calls `getStockQuote()` to get a price quote of the the Apple stock. Then it checks to see if it's higher than $120. If so, it calls `sendTelegramMessage()` to send out an alert message.
 
 
+<br>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-7383487179928477"
+     data-ad-slot="6959057004"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+
 ### Disclaimer:
 
 1. The method described above aims to illustrate the concepts to send a stock price alert via Telegram only. We do not take any responsibilities for any financial gain/loss incurred due to your usage of the method.

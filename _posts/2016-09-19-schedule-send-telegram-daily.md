@@ -34,6 +34,17 @@ Before the recipient can receive your Telegram message, she will need to registe
 7. You're done. You will receive the exchange rate every day.
 
 
+<br>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-7383487179928477"
+     data-ad-slot="6959057004"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
 
 ### Disclaimer:
 
