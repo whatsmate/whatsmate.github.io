@@ -5,7 +5,7 @@ subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
 ---
 
-<img src="/img/chart_small.jpg"/>
+<img src="/img/chart-small-hd.png" height="100" width="100" />
 
 This article shows you how to write a simple Python script to monitor your beloved stock and send an alert to yourself when it hits your target price. Read on to get rich from your capital gain :)
 
