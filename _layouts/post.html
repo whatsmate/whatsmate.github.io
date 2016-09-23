@@ -6,7 +6,7 @@ layout: default
 function shareOn(socialMedia) {
   var pageUrl = window.location.href;
   var pageTitle = window.document.title;
-  var urlTrimmed = pageUrl.substring(0, pageUrl.length);
+  var urlTrimmed = pageUrl.substring(0, pageUrl.length - 1);
   var urlEncoded = encodeURIComponent(urlTrimmed);
   var titleEncoded = encodeURIComponent(pageTitle);
 
