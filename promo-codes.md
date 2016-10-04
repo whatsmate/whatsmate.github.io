@@ -3,6 +3,16 @@ layout: page
 title: Promo Codes
 ---
 
+<span class="post-meta">Share this with the world: 
+  &nbsp;
+  <a href="#" onclick="shareOn('facebook');"><img src="/img/facebook.png" width="32" height="32" alt="Share on Facebook"></a>
+  <a href="#" onclick="shareOn('linkedin');"><img src="/img/linkedin.png" width="32" height="32" alt="Share on LinkedIn"></a>
+  <a href="#" onclick="shareOn('twitter');"><img src="/img/twitter.png" width="32" height="32" alt="Share on Twitter"></a>
+  <a href="#" onclick="shareOn('googleplus');"><img src="/img/google.png" width="32" height="32" alt="Share on Google+"></a>
+</span>
+
+
+
 ## 1. Discount on &nbsp;<img src="/img/DO_Logo_Vertical_Blue-6321464d.png" height="130" width="130" alt="Digital Ocean" style="vertical-align: -60%" />
 
 

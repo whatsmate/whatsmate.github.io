@@ -2,36 +2,6 @@
 layout: default
 ---
 
-<script type="text/javascript">
-function shareOn(socialMedia) {
-  var pageUrl = window.location.href;
-  var pageTitle = window.document.title;
-  var urlTrimmed = pageUrl.substring(0, pageUrl.length - 1);
-  var urlEncoded = encodeURIComponent(urlTrimmed);
-  var titleEncoded = encodeURIComponent(pageTitle);
-
-  if (socialMedia == "twitter") {
-    var shareUrl = "https://twitter.com/intent/tweet?url=" + urlEncoded + "&text=" + titleEncoded;
-    window.location.assign(shareUrl);
-
-  } else if (socialMedia == "facebook") {
-    var shareUrl = "https://www.facebook.com/sharer/sharer.php?display=popup&src=share_button&u=" + urlTrimmed;
-    window.location.assign(shareUrl);
-
-  } else if (socialMedia == "googleplus") {
-    var shareUrl = "https://plus.google.com/share?url=" + urlTrimmed;
-    window.location.assign(shareUrl);
-
-  } else if (socialMedia == "linkedin") {
-    var shareUrl = "http://www.linkedin.com/shareArticle?mini=true&url=" + urlEncoded;
-    window.location.assign(shareUrl);
-
-  }
-
-  return false;
-}
-</script>
-
 
 <header class="header-post">
   <div class="row">
