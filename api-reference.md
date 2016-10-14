@@ -165,7 +165,7 @@ Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repo
   * `status`: String. Text explaining what happened.
 
 
-### 6. (Premium Only) Send an audio file to a single recipient
+### 8. (Premium Only) Send an audio file to a single recipient
 * Endpoint: `POST /v1/telegram/single/audio/binary/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: Possible value: 0
@@ -178,7 +178,7 @@ Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repo
   * `status`: String. Text explaining what happened.
 
 
-### 7. (Premium Only) Send an audio file to multiple recipients
+### 9. (Premium Only) Send an audio file to multiple recipients
 * Endpoint: `POST /v1/telegram/batch/audio/binary/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: Possible value: 0
