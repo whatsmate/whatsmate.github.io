@@ -43,6 +43,8 @@ If you are new to Python and want to understand how the script `enterprise-demo-
 
 If you are keen to implement an automated interactive application that talks to your users on Telegram, [get in touch](https://www.whatsmate.net/contact.html) with one of our technical representatives to sign up for an Enterprise account now.
 
+Want to look at other innovative ideas? Check out the [interesting use cases](https://www.whatsmate.net/telegram-gateway-use-cases.html) page.
+
 
 <br>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
