@@ -33,11 +33,11 @@ This article shows you how to build an interactive price quoting application ove
 If you are new to Node.js and want to understand how the Node.js script `enterprise-demo-app2.js` works, we are here to help:
 
 1. Lines 3-5 include the required dependent libraries.
-2. Lines 47-48 creates the `express` web framework instance.
-3. Lines 104-112 defines the behavior of the webhook. That is, it determines the webhook endpoint and what to do when it receives a Telegram message from a user. It delegates the handling to the function `handleMessageReceived()`.
+2. Lines 47-48 create the `express` web framework instance.
+3. Lines 104-112 define the behavior of the webhook. That is, it determines the webhook endpoint and what to do when it receives a Telegram message from a user. It delegates the handling to the function `handleMessageReceived()`.
 4. Lines 115-120 kick start the `express` web application server so that it listens on the specified port for incoming webhook events.
 5. Lines 51-75 are the gist of the application. You define how you want to respond to your user's messages here. The sample program implements a simplistic price quoting engine. Feel free to change it to fit your own needs.
-6. Lines 78-101 defines the utility function `sendTelegramMessage`. Its name already tells you what it does. You don't need to change it.
+6. Lines 78-101 define the utility function `sendTelegramMessage`. Its name already tells you what it does. You don't need to change it.
 
 
 ### What's Next:
