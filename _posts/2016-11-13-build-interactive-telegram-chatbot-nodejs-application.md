@@ -12,6 +12,11 @@ This article shows you how to build an interactive price quoting application ove
 </p>
 
 
+### Video Tutorial:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EiuAU24cHzw?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+
+
 ### Prerequisites:
 
 1. You need an Enterprise Telegram Gateway API account with [WhatsMate](https://www.whatsmate.net/telegram-gateway-comparison.html).

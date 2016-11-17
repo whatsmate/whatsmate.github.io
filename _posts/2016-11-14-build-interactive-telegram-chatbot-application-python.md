@@ -19,6 +19,11 @@ This article shows you how to build an interactive price quoting application ove
 3. Your machine has `Python` and `pip` installed.
 
 
+### Video Tutorial:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/12wKWvXYAz4?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+
+
 ### Steps:
 
 1. Download the [source code package](https://github.com/whatsmate/telegram-demos/archive/master.zip){:target="_blank"}. Alternatively, you can clone the [demo repository](https://github.com/whatsmate/telegram-demos){:target="_blank"} if you use git.
