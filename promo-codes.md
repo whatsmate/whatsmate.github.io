@@ -18,6 +18,10 @@ title: Promo Codes
 
 Need a hosting plan? Sign up with Digital Ocean using [this link](https://m.do.co/c/841d01dfa2fb) to save $10!
 
+<center>
+<img src="/img/tendollarbill.jpg">
+</center>
+
 You will help us save our costs too. Win-win situation!
 
 You may ask: Why Digital Ocean? Why not AWS? Well, I use both and I can tell you Digital Ocean is 
@@ -25,6 +29,4 @@ You may ask: Why Digital Ocean? Why not AWS? Well, I use both and I can tell you
 When I have a question/problem, their customer support staff usually gets back to me within an hour. 
 What more can I (and you) ask for?
 
-[Sign up with Digital Ocean now](https://m.do.co/c/841d01dfa2fb).
-
-
+You have nothing to lose.  [Sign up with Digital Ocean now](https://m.do.co/c/841d01dfa2fb).  <img src="/img/tendollaroff.gif">
