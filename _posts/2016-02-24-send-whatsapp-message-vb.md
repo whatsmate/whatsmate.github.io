@@ -10,6 +10,9 @@ This article shows you how to send a WhatsApp message in Microsoft's .net langua
 Before the recipient can receive your WhatsApp message, she will need to register with the WhatsMate WA Gateway. Instructions are available on the [official site](http://www.whatsmate.net/whatsapp-gateway.html). *Unregistered users will never receive messages from the Gateway.*
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JLZyWV_0NYQ?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+
+
 To send a WhatsApp message in VB.NET, do this:
 
 1. Copy the following source code to the main module file in your Console Application in Visual Studio.  <script src="https://gist.github.com/whatsmate/588f9e98a9e1508bd7ce.js"></script>
