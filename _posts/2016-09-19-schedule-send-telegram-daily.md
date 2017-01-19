@@ -15,7 +15,7 @@ This article shows you how to write a simple Python script to send yourself the 
 </p>
 
 
-Before the recipient can receive your Telegram message, she will need to register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](http://www.whatsmate.net/telegram-gateway-api.html). *Unregistered users will never receive messages from the Gateway.*
+Before the recipient can receive your Telegram message, she will need to register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). *Unregistered users will never receive messages from the Gateway.*
 
 
 ### Prerequisites:

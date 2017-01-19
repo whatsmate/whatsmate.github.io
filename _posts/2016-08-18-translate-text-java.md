@@ -20,10 +20,10 @@ To translate text (e.g. from English to Spanish) in `Java`, do this:
 Looking for your language code? See the <a target="_blank" href="http://api.whatsmate.net/v1/translation/supported-codes">complete listing</a>.
 
 
-The trial account only allows you to call the translation API up to 10 times for learning purpose. [Subscribe to a Premium plan](http://www.whatsmate.net/translation-subscribe.html) to use the translation API seriously.
+The trial account only allows you to call the translation API up to 10 times for learning purpose. [Subscribe to a Premium plan](https://www.whatsmate.net/translation-subscribe.html) to use the translation API seriously.
 
 
-Want to translate text in another programming language? Check out the [Translation API](http://www.whatsmate.net/translation-api.html) page.
+Want to translate text in another programming language? Check out the [Translation API](https://www.whatsmate.net/translation-api.html) page.
 
 
 <br>

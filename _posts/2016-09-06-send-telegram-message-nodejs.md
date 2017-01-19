@@ -7,7 +7,7 @@ published: true
 
 This article shows you how to send a Telegram message from a Node.js script.
 
-Before the recipient can receive your Telegram message, she will need to register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](http://www.whatsmate.net/telegram-gateway-api.html). *Unregistered users will NEVER receive messages from the Gateway.*
+Before the recipient can receive your Telegram message, she will need to register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). *Unregistered users will NEVER receive messages from the Gateway.*
 
 
 To send a Telegram message from a Node.js script, do this:
@@ -19,7 +19,7 @@ To send a Telegram message from a Node.js script, do this:
 5. Run the script to send your message: `./send-telegram.js`
 
 
-The trial account allows you to send up to 50 messages per day for the first 1000 messages. [Upgrade to the Premium Account](http://www.whatsmate.net/telegram-gateway-subscribe.html) to send unlimited number of messages.
+The trial account allows you to send up to 50 messages per day for the first 1000 messages. [Upgrade to the Premium Account](https://www.whatsmate.net/telegram-gateway-subscribe.html) to send unlimited number of messages.
 
 
 <br>
