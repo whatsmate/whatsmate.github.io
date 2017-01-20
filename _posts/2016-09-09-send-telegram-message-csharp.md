@@ -10,6 +10,9 @@ This article shows you how to send a Telegram message in Microsoft's .net langua
 Before the recipient can receive your Telegram message, she will need to register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). *Unregistered users will never receive messages from the Gateway.*
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H6HgQ-VJq2Y?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+
+
 To send a Telegram message in C#, do this:
 
 1. Copy the following source code to the main class in your Console Application in Visual Studio.  <script src="https://gist.github.com/whatsmate/d8bb832b15aa56755c61dc8775b0e742.js"></script>

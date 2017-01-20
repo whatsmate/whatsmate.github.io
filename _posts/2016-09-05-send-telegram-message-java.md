@@ -10,6 +10,9 @@ This article shows you how to send a Telegram message in `Java`.
 Before the recipient can receive your Telegram message, she will need to register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). *Unregistered users will NEVER receive messages from the Gateway.*
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W17M-26CPfc?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+
+
 To send a Telegram message in `Java`, do this:
 
 1. Copy the following source code to a Java file named `TelegramSender.java`.  <script src="https://gist.github.com/whatsmate/0a49b937c8190ce9a70f188bfb9212b3.js"></script>

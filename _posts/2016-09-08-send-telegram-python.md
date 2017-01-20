@@ -9,6 +9,10 @@ This article shows you how to send a Telegram message in Python.
 
 Before the recipient can receive your Telegram message, she will need to register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). *Unregistered users will never receive messages from the Gateway.*
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D855OS6mXOo?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+
+
 To send a Telegram message from a Python script, do this:
 
 1. Copy the following source code to your Python script.  <script src="https://gist.github.com/whatsmate/1a0e56084403c86adef2683d7a137577.js"></script>
