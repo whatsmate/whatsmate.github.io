@@ -7,6 +7,10 @@ published: true
 
 This article shows you how to translate text in Python.
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1okPnULKSJM?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+
+
 To translate text (e.g. from English to Portuguese) from a Python script, do this:
 
 1. Copy the following source code to your Python script.  <script src="https://gist.github.com/whatsmate/c0faa349997272fc74b18f2cbb8ece66.js"></script>

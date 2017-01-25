@@ -7,6 +7,10 @@ published: true
 
 This article shows you how to translate text in `Node.js`.
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ygd0arS5_NU?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+
+
 To translate text (e.g. from English to German) in `Node.js`, do this:
 
 1. Copy the following source code to your `Node.js` script.  <script src="https://gist.github.com/whatsmate/41edc6a2330eb3f78eb86360ea195e38.js"></script>

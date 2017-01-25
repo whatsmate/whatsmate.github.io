@@ -7,6 +7,10 @@ published: true
 
 This article shows you how to translate text from a shell script.
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5BSuUDKaGeE?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+
+
 To translate text (e.g. from English to Indonesian) from a shell script, do this:
 
 1. Copy the following source code to your script.  <script src="https://gist.github.com/whatsmate/0199d2796aadff6ff8631163c1b3efcd.js"></script>

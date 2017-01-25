@@ -7,6 +7,10 @@ published: true
 
 This article shows you how to translate textual natural languages in `Java`.
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4BFv9N6yDFM?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+
+
 To translate text (e.g. from English to Spanish) in `Java`, do this:
 
 1. Copy the following source code to a Java file named `Translator.java`.  <script src="https://gist.github.com/whatsmate/f1927a03d7981aaedfe81c61a0e96efa.js"></script>

@@ -7,6 +7,10 @@ published: true
 
 This article shows you how to translate natural languages from a PowerShell script.
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UbCyr_PBCNg?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+
+
 To translate text (e.g. from English to French) in a PowerShell script, do this:
 
 1. Copy the following source code to your PowerShell script. <script src="https://gist.github.com/whatsmate/6b1455f6bba7150eedbdf6c161c089e9.js"></script>
