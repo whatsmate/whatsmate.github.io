@@ -39,7 +39,14 @@ Before the recipient can receive your Telegram message, she will need to registe
    3. Add a line like this one:  
       `00 09 * * *    /home/pikachu/send-telegram-exchange-rate.py`
    4. Save the changes and exit the editor.
-7. You're done. You will receive the exchange rate every day.
+7. You are done. You will receive the exchange rate every day.
+
+
+### Disclaimer:
+
+1. The method described above aims to illustrate the concepts to send exchange rate information via Telegram only. We do not take any responsibilities for any financial gain/loss incurred due to your usage of the method.
+2. The exchange rate information used in the script is provided by "fixer.io". We are NOT affiliated with "fixer.io" in any way. We are not responisble for the accuracy of the information either.
+3. We are not affiliated with Telegram in any way. We only provide a gateway for sending out Telegram messages. We cannot guaranttee the gateway is functional at all times.
 
 
 <br>
@@ -52,11 +59,3 @@ Before the recipient can receive your Telegram message, she will need to registe
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <br>
-
-
-### Disclaimer:
-
-1. The method described above aims to illustrate the concepts to send exchange rate information via Telegram only. We do not take any responsibilities for any financial gain/loss incurred due to your usage of the method.
-2. The exchange rate information used in the script is provided by "fixer.io". We are NOT affiliated with "fixer.io" in any way. We are not responisble for the accuracy of the information either.
-3. We are not affiliated with Telegram in any way. We only provide a gateway for sending out Telegram messages. We cannot guaranttee the gateway is functional at all times.
-

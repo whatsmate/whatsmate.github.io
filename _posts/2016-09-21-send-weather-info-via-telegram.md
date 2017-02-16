@@ -51,6 +51,12 @@ If you are new to Python and want to understand how the Python script works, we 
 3. In lines 46 through 59, the function `main()` is defined. First, it calls `getWeatherCondition()` to get the weather informaton of Mountain View. Then, it calls `sendTelegramMessage()` to send out the info.
 
 
+### Disclaimer:
+
+1. The weather information is provided by Yahoo APIs. We are NOT affiliated with Yahoo APIs in any way. We are not responisble for the accuracy of the data either.
+2. We are not affiliated with Telegram in any way. We only provide a gateway for sending out Telegram messages. We cannot guaranttee the gateway is functional at all times.
+
+
 <br>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
@@ -61,10 +67,3 @@ If you are new to Python and want to understand how the Python script works, we 
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <br>
-
-
-### Disclaimer:
-
-1. The weather information is provided by Yahoo APIs. We are NOT affiliated with Yahoo APIs in any way. We are not responisble for the accuracy of the data either.
-2. We are not affiliated with Telegram in any way. We only provide a gateway for sending out Telegram messages. We cannot guaranttee the gateway is functional at all times.
-

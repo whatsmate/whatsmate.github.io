@@ -51,6 +51,11 @@ If you are keen to implement an automated interactive application that talks to 
 Want to look at other innovative ideas? Check out the [interesting use cases](https://www.whatsmate.net/telegram-gateway-use-cases.html) page.
 
 
+### Disclaimer:
+
+1. We are not affiliated with Telegram in any way. We only provide a gateway for sending out and receiving Telegram messages. We cannot guaranttee the gateway is functional at all times.
+
+
 <br>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
@@ -61,9 +66,4 @@ Want to look at other innovative ideas? Check out the [interesting use cases](ht
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <br>
-
-
-### Disclaimer:
-
-1. We are not affiliated with Telegram in any way. We only provide a gateway for sending out and receiving Telegram messages. We cannot guaranttee the gateway is functional at all times.
 
