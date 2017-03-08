@@ -16,8 +16,8 @@ Before the recipient can receive your Telegram message, she will need to registe
 To send a Telegram message from a shell script, do this:
 
 1. Copy the following source code to your script.  <script src="https://gist.github.com/whatsmate/c7831b94ff7a97e52f9fe4459e502d2f.js"></script>
-2. Specify your target recipient on line 9. Remember to include the country code.
-3. Specify your message on line 10.
+2. Specify your target recipient on line 10. Remember to include the country code.
+3. Specify your message on line 11.
 4. Make your script executable: `chmod 755 send-telegram.sh`
 5. Run the script to send your message: `./send-telegram.sh`
 
