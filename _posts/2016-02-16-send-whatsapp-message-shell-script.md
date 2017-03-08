@@ -16,8 +16,8 @@ Before the recipient can receive your WhatsApp message, she will need to registe
 To send a WhatsApp message from a shell script, do this:
 
 1. Copy the following source code to your script.  <script src="https://gist.github.com/whatsmate/10c75499502a2ededc23.js"></script>
-2. Specify your target recipient on line 8. Remember to include the country code.
-3. Specify your message on line 9.
+2. Specify your target recipient on line 9. Remember to include the country code.
+3. Specify your message on line 10.
 4. Make your script executable: `chmod 755 send-whatsapp.sh`
 5. Run the script to send your message: `./send-whatsapp.sh`
 
