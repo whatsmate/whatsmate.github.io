@@ -7,7 +7,7 @@ published: true
 
 This article shows you how to send a WhatsApp message in VBA / Visual Basic Script.
 
-Before the recipient can receive your WhatsApp message, she will need to register with the WhatsMate WA Gateway. Instructions are available on the [official site](https://www.whatsmate.net/whatsapp-gateway.html). *Unregistered users will never receive messages from the Gateway.*
+Before the recipient can receive your WhatsApp message, she will need to register with the WhatsMate WA Gateway. Instructions are available on the [official site](https://www.whatsmate.net/whatsapp-gateway-api.html). *Unregistered users will never receive messages from the Gateway.*
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CQ2YAD9-kEs?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
@@ -20,7 +20,7 @@ To send a WhatsApp message in VBA / VB Script, do this:
 3. Run it.
 
 
-The trial account allows you to send up to 40 messages per day. [Upgrade to the Premium Account](https://www.whatsmate.net/premium-account.html) to send unlimited number of messages.
+The trial account allows you to send up to 30 messages per day for the first 1000 messsages. [Upgrade to the Forever Green plan](https://www.whatsmate.net/whatsapp-gateway-subscribe.html) to keep your application running after the trial period.
 
 
 
