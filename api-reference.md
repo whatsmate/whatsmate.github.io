@@ -21,7 +21,7 @@ subtitle: WhatsApp Messaging, Telegram Messaging, Translation
 
 All REST API endpoints are hosted on `http://api.whatsmate.net/`.
 
-If you prefer `https`, you can use `https://whatsmate-api.appspot.com/`.
+If you prefer `https`, you can use `https://api.whatsmate.net/`.
 
 
 <br/>
