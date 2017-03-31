@@ -19,7 +19,7 @@ To send a WhatsApp message from a Google Apps Script, do this:
 4. Run the function `main()` to send your message.
 
 
-The trial account allows you to test the API for 2 weeks. Go [sign up](https://www.whatsmate.net/whatsapp-gateway-api.html) now.
+You will need a trial account to call the above API. Go [sign up](https://www.whatsmate.net/whatsapp-gateway-api.html) now.
 
 
 <br>

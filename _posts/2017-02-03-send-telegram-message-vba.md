@@ -21,7 +21,7 @@ To send a Telegram message in VB Script / VBA, do this:
 3. Run it.
 
 
-The trial account allows you to test the API for 2 weeks. Go [sign up](https://www.whatsmate.net/telegram-gateway-api.html) now.
+You will need a trial account to call the above API. Go [sign up](https://www.whatsmate.net/telegram-gateway-api.html) now.
 
 
 <br>

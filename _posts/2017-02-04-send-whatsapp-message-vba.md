@@ -21,7 +21,7 @@ To send a WhatsApp message in VBA / VB Script, do this:
 3. Run it.
 
 
-The trial account allows you to test the API for 2 weeks. Go [sign up](https://www.whatsmate.net/whatsapp-gateway-api.html) now.
+You will need a trial account to call the above API. Go [sign up](https://www.whatsmate.net/whatsapp-gateway-api.html) now.
 
 
 

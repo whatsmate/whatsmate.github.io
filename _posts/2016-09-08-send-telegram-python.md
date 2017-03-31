@@ -24,7 +24,7 @@ To send a Telegram message from a Python script, do this:
 7. Run the script to see the result: `./send-telegram.py`
 
 
-The trial account allows you to test the API for 2 weeks. Go [sign up](https://www.whatsmate.net/telegram-gateway-api.html) now.
+You will need a trial account to call the above API. Go [sign up](https://www.whatsmate.net/telegram-gateway-api.html) now.
 
 
 <br>
