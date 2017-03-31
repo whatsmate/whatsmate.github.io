@@ -205,6 +205,32 @@ Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repo
   * `status`: String. Text explaining what happened.
 
 
+### 10. (Premium Only) Send a document (e.g. PDF) to a single recipient
+* Endpoint: `POST /v1/telegram/single/document/binary/{instance_number}`
+* Parameter required in URL: 
+  * `instance_number`: Possible value: 0
+* Parameters required in JSON payload:
+  * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
+  * `document`: String. Base64-encoded representation of the document content that you want to send.
+  * `filename`: String. The filename of your document file.
+* Response: Json containing these properties:
+  * `success`: Possible values: `true` / `false`
+  * `status`: String. Text explaining what happened.
+
+
+### 11. (Premium Only) Send a document (e.g. PDF) to multiple recipients
+* Endpoint: `POST /v1/telegram/batch/document/binary/{instance_number}`
+* Parameter required in URL: 
+  * `instance_number`: Possible value: 0
+* Parameters required in JSON payload:
+  * `numbers`: Array of strings. The phone numbers of the recipients including the country code. No "+" sign is needed.
+  * `document`: String. Base64-encoded representation of the document content that you want to send.
+  * `filename`: String. The filename of your document file.
+* Response: Json containing these properties:
+  * `success`: Possible values: `true` / `false`
+  * `status`: String. Text explaining what happened.
+
+
 <br/>
 <hr/>
 # Translation Endpoints
