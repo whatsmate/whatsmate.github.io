@@ -3,6 +3,7 @@ layout: post
 title: How to send WhatsApp Messages from Google Apps Script
 subtitle: Using the WhatsMate WA Gateway REST API
 published: true
+last_modified_at: 2017-03-31T00:00:00+08:00
 ---
 
 This article shows you how to send a WhatsApp message from a Google Apps Script.
@@ -18,7 +19,7 @@ To send a WhatsApp message from a Google Apps Script, do this:
 4. Run the function `main()` to send your message.
 
 
-The trial account allows you to send up to 30 messages per day for the first 1000 messsages. [Upgrade to the Forever Green plan](https://www.whatsmate.net/whatsapp-gateway-subscribe.html) to keep your application running after the trial period.
+The trial account allows you to test the API for 2 weeks. Go [sign up](https://www.whatsmate.net/whatsapp-gateway-api.html) now.
 
 
 <br>

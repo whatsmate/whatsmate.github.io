@@ -3,11 +3,12 @@ layout: post
 title: How to send Telegram Messages from PowerShell script
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
+last_modified_at: 2017-03-31T00:00:00+08:00
 ---
 
 This article shows you how to send a Telegram message from a PowerShell script.
 
-Before the recipient can receive your Telegram message, she will need to register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). *Unregistered users will never receive messages from the Gateway.*
+Before the recipient can receive your Telegram message, she will need to register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). <span style="color:red">*Unregistered users will never receive messages from the Gateway.*</span>
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XVY4Jw5T0B8?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
@@ -21,7 +22,7 @@ To send a Telegram message from a PowerShell script, do this:
 5. Run the script in PowerShell to send your message: `./send-telegram.ps1`
 
 
-The trial account allows you to send up to 50 messages per day for the first 1000 messages. [Upgrade to the Premium Account](https://www.whatsmate.net/telegram-gateway-subscribe.html) to send unlimited number of messages.
+The trial account allows you to test the API for 2 weeks. Go [sign up](https://www.whatsmate.net/telegram-gateway-api.html) now.
 
 
 <br>

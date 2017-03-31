@@ -3,6 +3,7 @@ layout: post
 title: How to send Telegram Messages from Node.js script
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
+last_modified_at: 2017-03-31T00:00:00+08:00
 ---
 
 This article shows you how to send a Telegram message from a Node.js script.
@@ -22,7 +23,7 @@ To send a Telegram message from a Node.js script, do this:
 5. Run the script to send your message: `./send-telegram.js`
 
 
-The trial account allows you to send up to 50 messages per day for the first 1000 messages. [Upgrade to the Premium Account](https://www.whatsmate.net/telegram-gateway-subscribe.html) to send unlimited number of messages.
+The trial account allows you to test the API for 2 weeks. Go [sign up](https://www.whatsmate.net/telegram-gateway-api.html) now.
 
 
 <br>

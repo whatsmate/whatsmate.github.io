@@ -3,6 +3,7 @@ layout: post
 title: How to Send Yourself the Exchange Rate of a Currency Daily
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
+last_modified_at: 2017-03-31T00:00:00+08:00
 ---
 
 <img src="/img/yen_small.jpg"/> 
@@ -15,7 +16,7 @@ This article shows you how to write a simple Python script to send yourself the 
 </p>
 
 
-Before the recipient can receive your Telegram message, she will need to register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). *Unregistered users will never receive messages from the Gateway.*
+Before the recipient can receive your Telegram message, she will need to register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). <span style="color:red">*Unregistered users will never receive messages from the Gateway.*</span>
 
 
 ### Prerequisites:

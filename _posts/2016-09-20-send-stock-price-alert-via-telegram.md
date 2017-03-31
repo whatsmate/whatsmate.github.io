@@ -3,6 +3,7 @@ layout: post
 title: How to Send Yourself a Stock Price Alert via Telegram
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
+last_modified_at: 2017-03-31T00:00:00+08:00
 ---
 
 <img src="/img/chart-small-hd.png" height="100" width="100" />
@@ -15,7 +16,7 @@ This article shows you how to write a simple Python script to monitor your belov
 </p>
 
 
-Before you can receive the Telegram message, you will need to register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). *Unregistered users will never receive messages from the Gateway.*
+Before you can receive the Telegram message, you will need to register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). <span style="color:red">*Unregistered users will never receive messages from the Gateway.*</span>
 
 
 ### Prerequisites:

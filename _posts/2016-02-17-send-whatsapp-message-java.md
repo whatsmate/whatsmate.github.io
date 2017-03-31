@@ -3,11 +3,12 @@ layout: post
 title: How to send WhatsApp Messages in Java
 subtitle: Using the WhatsMate WA Gateway REST API
 published: true
+last_modified_at: 2017-03-31T00:00:00+08:00
 ---
 
 This article shows you how to send a WhatsApp message in `Java`.
 
-Before the recipient can receive your WhatsApp message, she will need to register with the WhatsMate WA Gateway. Instructions are available on the [official site](https://www.whatsmate.net/whatsapp-gateway-api.html). *Unregistered users will never receive messages from the Gateway.*
+Before the recipient can receive your WhatsApp message, she will need to register with the WhatsMate WA Gateway. Instructions are available on the [official site](https://www.whatsmate.net/whatsapp-gateway-api.html). <span style="color:red">*Unregistered users will never receive messages from the Gateway.*</span>
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1okPnULKSJM?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
@@ -22,7 +23,7 @@ To send a WhatsApp message in `Java`, do this:
 5. Execute the class to send your message: `java WhatsappSender`
 
 
-The trial account allows you to send up to 30 messages per day for the first 1000 messsages. [Upgrade to the Forever Green plan](https://www.whatsmate.net/whatsapp-gateway-subscribe.html) to keep your application running after the trial period.
+The trial account allows you to test the API for 2 weeks. Go [sign up](https://www.whatsmate.net/whatsapp-gateway-api.html) now.
 
 
 
