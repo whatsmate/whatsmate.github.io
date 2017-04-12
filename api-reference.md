@@ -72,7 +72,7 @@ X-WM-CLIENT-SECRET: 53654f8ee3684a37201e3c90a071dbd7
 ### 3. Send a WhatsApp message to a single recipient
 * Endpoint: `POST /v2/whatsapp/single/message/{instance_number}`
 * Parameter required in URL: 
-  * `instance_number`: Possible values: 0, 1
+  * `instance_number`: Possible value: 2
 * Parameters required in JSON payload:
   * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
   * `message`: String. The text message that you want to send.
