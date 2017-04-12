@@ -17,10 +17,11 @@ Before the recipient can receive your WhatsApp message, she will need to registe
 To send a WhatsApp message in `Java`, do this:
 
 1. Copy the following source code to a Java file named `WhatsappSender.java`.  <script src="https://gist.github.com/whatsmate/ada1343baa4f7364d3e1.js"></script>
-2. Specify your target recipient on line 17. Remember to include the country code.
-3. Specify your message on line 18.
-4. Compile the Java file:  `javac WhatsappSender.java`
-5. Execute the class to send your message: `java WhatsappSender`
+2. Specify your client ID and secret on lines 9 and 10.
+3. Specify your target recipient on line 17. Remember to include the country code.
+4. Specify your message on line 18.
+5. Compile the Java file:  `javac WhatsappSender.java`
+6. Execute the class to send your message: `java WhatsappSender`
 
 
 You will need a trial account to call the above API. Go [sign up](https://www.whatsmate.net/whatsapp-gateway-api.html) now.

@@ -17,8 +17,9 @@ Before the recipient can receive your WhatsApp message, she will need to registe
 To send a WhatsApp message in VBA / VB Script, do this:
 
 1. In your Excel / Access / VBA development environment, define the following subroutines:  <script src="https://gist.github.com/whatsmate/dd1a1b80342b87f778ef732bb5a12582.js"></script>
-2. Specify your target recipient and message on line 4. Remember to include the country code in the recipient's number.
-3. Run it.
+2. Specify your client ID and secret on lines 15 and 16.
+3. Specify your target recipient and message on line 4. Remember to include the country code in the recipient's number.
+4. Run it.
 
 
 You will need a trial account to call the above API. Go [sign up](https://www.whatsmate.net/whatsapp-gateway-api.html) now.

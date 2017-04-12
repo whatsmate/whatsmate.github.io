@@ -17,6 +17,7 @@ Before the recipient can receive your WhatsApp message, she will need to registe
 To send a WhatsApp message in `Node.js`, do this:
 
 1. Copy the following source code to your script.  <script src="https://gist.github.com/whatsmate/3cdd056532d2e675922c.js"></script>
+2. Specify your client ID and secret on lines 5 and 6.
 2. Specify your target recipient on line 9. Remember to include the country code.
 3. Specify your message on line 10.
 4. Make your `Node.js` script executable: `chmod 755 send-whatsapp.js`

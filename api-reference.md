@@ -37,7 +37,7 @@ You should include the following HTTP header in your call to any one of the endp
 <hr/>
 ## Authentication
 
-You authenticate yourself against the API server with your `Client ID` and `Client Secret`. You obtain them by subscribing to a premium plan.
+You authenticate yourself against the API server with your `Client ID` and `Client Secret`. You obtain them by making a subscription.
 
 They are carried in these HTTP headers: `X-WM-CLIENT-ID` and `X-WM-CLIENT-SECRET`.
 
@@ -70,7 +70,7 @@ X-WM-CLIENT-SECRET: 53654f8ee3684a37201e3c90a071dbd7
 
 
 ### 3. Send a WhatsApp message to a single recipient
-* Endpoint: `POST /v1/whatsapp/single/message/{instance_number}`
+* Endpoint: `POST /v2/whatsapp/single/message/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: Possible values: 0, 1
 * Parameters required in JSON payload:

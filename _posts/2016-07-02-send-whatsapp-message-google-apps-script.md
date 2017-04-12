@@ -14,9 +14,10 @@ Before the recipient can receive your WhatsApp message, she will need to registe
 To send a WhatsApp message from a Google Apps Script, do this:
 
 1. Copy the following source code to your Apps Script project.  <script src="https://gist.github.com/whatsmate/96637d1c46e1a199756f18413e739f7b.js"></script>
-2. Specify your target recipient on line 2. Remember to include the country code.
-3. Specify your message on line 3.
-4. Run the function `main()` to send your message.
+2. Specify your client ID and secret on lines 9 and 10.
+3. Specify your target recipient on line 2. Remember to include the country code.
+4. Specify your message on line 3.
+5. Run the function `main()` to send your message.
 
 
 You will need a trial account to call the above API. Go [sign up](https://www.whatsmate.net/whatsapp-gateway-api.html) now.
