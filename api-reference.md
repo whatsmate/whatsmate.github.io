@@ -60,21 +60,24 @@ X-WM-CLIENT-SECRET: 53654f8ee3684a37201e3c90a071dbd7
   * `status`: Either "up" or "down"  <br><br>
 
 
-### 2. Send a WhatsApp message (Deprecated)
-* Endpoint: `POST /v1/whatsapp/queue/message`
-* Parameters required in JSON payload:
-  * `number`: String. The destination phone number including the country code. No "+" sign is needed.
-  * `message`: String. The text message that you want to send.
-* Response:
-  * `{ 'status': 'queued'}`
-
-
-### 3. Send a WhatsApp message to a single recipient
+### 2. Send a WhatsApp message to a single recipient
 * Endpoint: `POST /v2/whatsapp/single/message/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: Possible value: 2
 * Parameters required in JSON payload:
   * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
+  * `message`: String. The text message that you want to send.
+* Response:
+  * `{ 'status': 'queued'}`
+
+
+### 3. Send a message to a WhatsApp Group that the gateway participates in
+* Endpoint: `POST /v2/whatsapp/group/message/{instance_number}`
+* Parameter required in URL: 
+  * `instance_number`: Possible value: 2
+* Parameters required in JSON payload:
+  * `group_name`: String. The name of the WhatsApp group.
+  * `group_admin`: String. The phone number (including the country code) of the group creator. No "+" sign is needed.
   * `message`: String. The text message that you want to send.
 * Response:
   * `{ 'status': 'queued'}`
