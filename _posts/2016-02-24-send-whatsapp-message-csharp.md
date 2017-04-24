@@ -3,7 +3,7 @@ layout: post
 title: How to send WhatsApp Messages in C#
 subtitle: Using the WhatsMate WA Gateway REST API
 published: true
-last_modified_at: 2017-03-31T00:00:00+08:00
+last_modified_at: 2017-04-24T00:00:00+08:00
 ---
 
 This article shows you how to send a WhatsApp message in Microsoft's .net language: C#.
@@ -17,8 +17,10 @@ Before the recipient can receive your WhatsApp message, she will need to registe
 To send a WhatsApp message in C#, do this:
 
 1. Copy the following source code to the main class in your Console Application in Visual Studio.  <script src="https://gist.github.com/whatsmate/50e30fb8c2873f5da63e.js"></script>
-2. Specify your client ID and secret on lines 10 and 11.
-3. Specify your target recipient and message on line 18. Remember to include the country code in the recipient's number.
+2. Customize the TODO lines:
+   * Specify your gateway instance ID on line 10.
+   * Specify your client ID and secret on lines 11 and 12.
+   * Specify your target recipient and message on line 19. Remember to include the country code in the recipient's number.
 4. Add the reference "System.Web.Extensions" by doing this:
    1. Right-click on your project node in the Solution Explorer panel.
    2. Choose "Add" -> "Reference..."

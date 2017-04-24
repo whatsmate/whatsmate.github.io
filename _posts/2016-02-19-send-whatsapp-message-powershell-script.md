@@ -3,7 +3,7 @@ layout: post
 title: How to send WhatsApp Messages from PowerShell script
 subtitle: Using the WhatsMate WA Gateway REST API
 published: true
-last_modified_at: 2017-03-31T00:00:00+08:00
+last_modified_at: 2017-04-24T00:00:00+08:00
 ---
 
 This article shows you how to send a WhatsApp message from a PowerShell script.
@@ -17,10 +17,12 @@ Before the recipient can receive your WhatsApp message, she will need to registe
 To send a WhatsApp message from a PowerShell script, do this:
 
 1. Copy the following source code to your PowerShell script.  <script src="https://gist.github.com/whatsmate/3ba4213c8aee9a6bfa71.js"></script>
-2. Specify your client ID and secret on lines 4 and 5.
-3. Specify your target recipient on line 1. Remember to include the country code.
-4. Specify your message on line 2.
-5. Run the script in PowerShell to send your message: `.\send-whatsapp.ps1`
+2. Customize the TODO lines:
+   * Specify your gateway instance ID on line 4.
+   * Specify your client ID and secret on lines 5 and 6.
+   * Specify your target recipient on line 1. Remember to include the country code.
+   * Specify your message on line 2.
+4. Run the script in PowerShell to send your message: `.\send-whatsapp.ps1`
 
 
 You will need a trial account to call the above API. Go [sign up](https://www.whatsmate.net/whatsapp-gateway-api.html) now.
