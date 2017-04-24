@@ -3,7 +3,7 @@ layout: post
 title: How to send messages to a WhatsApp group in VB.NET
 subtitle: Using the WhatsMate WA Gateway REST API
 published: true
-last_modified_at: 2017-04-15T00:00:00+08:00
+last_modified_at: 2017-04-24T00:00:00+08:00
 ---
 
 This article shows you how to send a message to a WhatsApp group in Microsoft’s .net language: Visual Basic.
@@ -20,10 +20,11 @@ To send a WhatsApp group message in VB, do this:
 3. Remember the name you gave to the group (e.g. "Happy Club")
 4. Copy the following source code to the main module file in your Console Application in Visual Studio.  <script src="https://gist.github.com/whatsmate/771af0c7ea8e4a40edac44f49a70e28c.js"></script>
 5. Customize the TODO lines in the VB program:
-   * Specify your Client ID and Client secret on lines 10 and 11.
-   * Specify the group admin number (i.e. your WhatsApp number including the country code) on line 65.
-   * Specify the group name (e.g. Happy Club) on line 66.
-   * Specify the content of the message on line 67.
+   * Specify your gateway instance ID on line 10.
+   * Specify your Client ID and Client secret on lines 11 and 12.
+   * Specify the group admin number (i.e. your WhatsApp number including the country code) on line 66.
+   * Specify the group name (e.g. Happy Club) on line 67.
+   * Specify the content of the message on line 68.
 6. Add the reference “System.Web.Extensions” by doing this:
    * Right-click on your project node in the Solution Explorer panel.
    * Choose “Add” -> “Reference…”

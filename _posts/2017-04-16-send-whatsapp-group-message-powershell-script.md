@@ -3,7 +3,7 @@ layout: post
 title: How to send messages to a WhatsApp group from PowerShell script
 subtitle: Using the WhatsMate WA Gateway REST API
 published: true
-last_modified_at: 2017-04-17T00:00:00+08:00
+last_modified_at: 2017-04-24T00:00:00+08:00
 ---
 
 This article shows you how to send a message to a WhatsApp group from a PowerShell script.
@@ -20,7 +20,8 @@ To send a WhatsApp group message from a PowerShell script, do this:
 3. Remember the name you gave to the group (e.g. "Happy Club")
 4. Copy the following source code to your PowerShell script. <script src="https://gist.github.com/whatsmate/09a72c834309494c891a0084cf81abe6.js"></script>
 5. Customize the TODO lines in the VB Script program:
-   * Specify your Client ID and Client secret on lines 5 and 6.
+   * Specify your gateway instance ID on line 5.
+   * Specify your Client ID and Client secret on lines 6 and 7.
    * Specify the group admin number (i.e. your WhatsApp number including the country code) on line 1.
    * Specify the group name (e.g. Happy Club) on line 2.
    * Specify the content of the message on line 3.

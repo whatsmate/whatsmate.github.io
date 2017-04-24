@@ -3,7 +3,7 @@ layout: post
 title: How to send messages to a WhatsApp group from PHP
 subtitle: Using the WhatsMate WA Gateway REST API
 published: true
-last_modified_at: 2017-04-12T00:00:00+08:00
+last_modified_at: 2017-04-24T00:00:00+08:00
 ---
 
 This article shows you how to send a message to a WhatsApp group from PHP
@@ -20,10 +20,11 @@ To send a WhatsApp group message from your PHP page, do this:
 3. Remember the name you gave to the group (e.g. "Happy Club")
 4. Copy the following source code to your script.  <script src="https://gist.github.com/whatsmate/c79042e8d69758f241e1323d095a5874.js"></script>
 5. Customize the TODO lines in the PHP page:
-   * Specify your Client ID and Client secret on lines 2 and 3.
-   * Specify the group admin number (i.e. your WhatsApp number including the country code) on line 6.
-   * Specify the group name (e.g. Happy Club) on line 7.
-   * Specify the content of the message on line 8.
+   * Specify your gateway instance ID on line 2.
+   * Specify your Client ID and Client secret on lines 3 and 4.
+   * Specify the group admin number (i.e. your WhatsApp number including the country code) on line 7.
+   * Specify the group name (e.g. Happy Club) on line 8.
+   * Specify the content of the message on line 9.
 5. Visit the PHP page you just created to send your group message.
 
 

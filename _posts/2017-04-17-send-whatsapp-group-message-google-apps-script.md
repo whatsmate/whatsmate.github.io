@@ -3,7 +3,7 @@ layout: post
 title: How to send messages to a WhatsApp group from Google Apps Script
 subtitle: Using the WhatsMate WA Gateway REST API
 published: true
-last_modified_at: 2017-04-18T00:00:00+08:00
+last_modified_at: 2017-04-24T00:00:00+08:00
 ---
 
 This article shows you how to send a message to a WhatsApp group from a Google Apps Script.
@@ -20,7 +20,8 @@ To send a WhatsApp group message from a Google Apps Script, do this:
 3. Remember the name you gave to the group (e.g. "Happy Club")
 4. Copy the following source code to your Apps Script project.  <script src="https://gist.github.com/whatsmate/59b3b6ee47a5f087288680e2ae009945.js"></script>
 5. Customize the TODO lines in the Google Apps script:
-   * Specify your Client ID and Client secret on lines 10 and 11.
+   * Specify your gateway instance ID on line 10.
+   * Specify your Client ID and Client secret on lines 11 and 12.
    * Specify the group admin number (i.e. your WhatsApp number including the country code) on line 2.
    * Specify the group name (e.g. Happy Club) on line 3.
    * Specify the content of the message on line 4.

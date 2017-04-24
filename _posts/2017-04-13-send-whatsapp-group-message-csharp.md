@@ -3,7 +3,7 @@ layout: post
 title: How to send messages to a WhatsApp group in C#
 subtitle: Using the WhatsMate WA Gateway REST API
 published: true
-last_modified_at: 2017-04-14T00:00:00+08:00
+last_modified_at: 2017-04-24T00:00:00+08:00
 ---
 
 This article shows you how to send a message to a WhatsApp group in Microsoft’s .net language: C#.
@@ -20,10 +20,11 @@ To send a WhatsApp group message in C#, do this:
 3. Remember the name you gave to the group (e.g. "Happy Club")
 4. Copy the following source code to the main class in your Console Application in Visual Studio.  <script src="https://gist.github.com/whatsmate/fd9033c3cfaed14993408b2ea4ee8e32.js"></script>
 5. Customize the TODO lines in the C# program:
+   * Specify your gateway instance ID on line 10.
    * Specify your Client ID and Client secret on lines 10 and 11.
-   * Specify the group admin number (i.e. your WhatsApp number including the country code) on line 18.
-   * Specify the group name (e.g. Happy Club) on line 19.
-   * Specify the content of the message on line 20.
+   * Specify the group admin number (i.e. your WhatsApp number including the country code) on line 19.
+   * Specify the group name (e.g. Happy Club) on line 20.
+   * Specify the content of the message on line 21.
 6. Add the reference “System.Web.Extensions” by doing this:
    * Right-click on your project node in the Solution Explorer panel.
    * Choose “Add” -> “Reference…”

@@ -3,7 +3,7 @@ layout: post
 title: How to send messages to a WhatsApp group from shell script
 subtitle: Using the WhatsMate WA Gateway REST API
 published: true
-last_modified_at: 2017-04-10T00:00:00+08:00
+last_modified_at: 2017-04-24T00:00:00+08:00
 ---
 
 This article shows you how to send a message to a WhatsApp group from a shell script.
@@ -20,10 +20,11 @@ To send a WhatsApp group message from a shell script, do this:
 3. Remember the name you gave to the group (e.g. "Happy Club")
 4. Copy the following source code to your script.  <script src="https://gist.github.com/whatsmate/cc781206fc77896813a9e32f7707ebad.js"></script>
 5. Customize the TODO lines in the script:
-   * Specify your Client ID and Client secret on lines 3 and 4.
-   * Specify the group admin number (i.e. your WhatsApp number including the country code) on line 9.
-   * Specify the group name (e.g. Happy Club) on line 10.
-   * Specify the content of the message on line 11.
+   * Specify your gateway instance ID on line 3.
+   * Specify your Client ID and Client secret on lines 4 and 5.
+   * Specify the group admin number (i.e. your WhatsApp number including the country code) on line 10.
+   * Specify the group name (e.g. Happy Club) on line 11.
+   * Specify the content of the message on line 12.
 5. Make your script executable: `chmod 755 send-whatsapp-group-message.sh`
 6. Run the script to send your message: `./send-whatsapp-group-message.sh`
 

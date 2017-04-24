@@ -3,7 +3,7 @@ layout: post
 title: How to send messages to a WhatsApp group in Java
 subtitle: Using the WhatsMate WA Gateway REST API
 published: true
-last_modified_at: 2017-04-11T00:00:00+08:00
+last_modified_at: 2017-04-24T00:00:00+08:00
 ---
 
 This article shows you how to send a message to a WhatsApp group in Java.
@@ -20,10 +20,11 @@ To send a WhatsApp group message from your Java application, do this:
 3. Remember the name you gave to the group (e.g. "Happy Club")
 4. Copy the following source code to a Java file named `WhatsappSender.java`.  <script src="https://gist.github.com/whatsmate/757084bdfebe4e05875ad71bbb92e558.js"></script>
 5. Customize the TODO lines in the Java program:
-   * Specify your Client ID and Client secret on lines 9 and 10.
-   * Specify the group admin number (i.e. your WhatsApp number including the country code) on line 17.
-   * Specify the group name (e.g. Happy Club) on line 18.
-   * Specify the content of the message on line 19.
+   * Specify your gateway instance ID on line 9.
+   * Specify your Client ID and Client secret on lines 10 and 11.
+   * Specify the group admin number (i.e. your WhatsApp number including the country code) on line 18.
+   * Specify the group name (e.g. Happy Club) on line 19.
+   * Specify the content of the message on line 20.
 5. Compile the Java file: `javac WhatsappSender.java`
 6. Execute the class to send your message: `java WhatsappSender`
 
