@@ -17,7 +17,10 @@ Before the recipient can receive your Telegram message, she will need to registe
 To send a Telegram message in VB Script / VBA, do this:
 
 1. In Excel / Access / your VBA environment, define the following subroutines.  <script src="https://gist.github.com/whatsmate/79eb60c857d994fa7b9ff3e6ff7a491f.js"></script>
-2. Specify your target recipient and message on line 4. Remember to include the country code in the recipient's number.
+2. Customize the TODO lines:
+   * Specify your gateway instance ID on line 15.
+   * Specify your client ID and secret on lines 16 and 17.
+   * Specify your target recipient and message on line 4. Remember to include the country code in the recipient's number.
 3. Run it.
 
 

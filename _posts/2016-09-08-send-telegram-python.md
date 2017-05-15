@@ -17,11 +17,14 @@ Before the recipient can receive your Telegram message, she will need to registe
 To send a Telegram message from a Python script, do this:
 
 1. Copy the following source code to your Python script.  <script src="https://gist.github.com/whatsmate/1a0e56084403c86adef2683d7a137577.js"></script>
-2. Specify your recipient's number on line 10.
-3. Specify your message on line 11.
-5. Install the `Requests` library because the sample script depends on it: `pip install requests`
-6. Make your script executable: `chmod 755 send-telegram.py`
-7. Run the script to see the result: `./send-telegram.py`
+2. Customize the TODO lines:
+   * Specify your gateway instance ID on line 6.
+   * Specify your client ID and secret on lines 7 and 8.
+   * Specify your target recipient on line 11. Remember to include the country code.
+   * Specify your message on line 12.
+3. Install the `Requests` library because the sample script depends on it: `pip install requests`
+4. Make your script executable: `chmod 755 send-telegram.py`
+5. Run the script to see the result: `./send-telegram.py`
 
 
 You will need a trial account to call the above API. Go [sign up](https://www.whatsmate.net/telegram-gateway-api.html) now.

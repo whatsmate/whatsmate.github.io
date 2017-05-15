@@ -17,10 +17,13 @@ Before the recipient can receive your Telegram message, she will need to registe
 To send a Telegram message from a Node.js script, do this:
 
 1. Copy the following source code to your script.  <script src="https://gist.github.com/whatsmate/ffaff16a5db1657825ab9f2de0b8323d.js"></script>
-2. Specify your target recipient on line 10. Remember to include the country code.
-3. Specify your message on line 11.
-4. Make your script executable: `chmod 755 send-telegram.js`
-5. Run the script to send your message: `./send-telegram.js`
+2. Customize the TODO lines:
+   * Specify your gateway instance ID on line 5.
+   * Specify your client ID and secret on lines 6 and 7.
+   * Specify your target recipient on line 10. Remember to include the country code.
+   * Specify your message on line 11.
+3. Make your script executable: `chmod 755 send-telegram.js`
+4. Run the script to send your message: `./send-telegram.js`
 
 
 You will need a trial account to call the above API. Go [sign up](https://www.whatsmate.net/telegram-gateway-api.html) now.

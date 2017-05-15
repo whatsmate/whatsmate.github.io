@@ -22,7 +22,7 @@ To send a WhatsApp message from a PowerShell script, do this:
    * Specify your client ID and secret on lines 5 and 6.
    * Specify your target recipient on line 1. Remember to include the country code.
    * Specify your message on line 2.
-4. Run the script in PowerShell to send your message: `.\send-whatsapp.ps1`
+3. Run the script in PowerShell to send your message: `.\send-whatsapp.ps1`
 
 
 You will need a trial account to call the above API. Go [sign up](https://www.whatsmate.net/whatsapp-gateway-api.html) now.

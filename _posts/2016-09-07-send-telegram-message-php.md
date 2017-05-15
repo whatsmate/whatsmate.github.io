@@ -17,9 +17,12 @@ Before the recipient can receive your Telegram message, she will need to registe
 To send a Telegram message from PHP, do this:
 
 1. Copy the following source code to your script.  <script src="https://gist.github.com/whatsmate/6b8fa830ebd7002fff48e37742f9a73d.js"></script>
-2. Specify your target recipient on line 7. Remember to include the country code.
-3. Specify your message on line 8.
-4. Visit the PHP page your just created to send your message.
+2. Customize the TODO lines:
+   * Specify your gateway instance ID on line 2.
+   * Specify your client ID and secret on lines 3 and 4.
+   * Specify your target recipient on line 7. Remember to include the country code.
+   * Specify your message on line 8.
+3. Visit the PHP page your just created to send your message.
 
 
 You will need a trial account to call the above API. Go [sign up](https://www.whatsmate.net/telegram-gateway-api.html) now.

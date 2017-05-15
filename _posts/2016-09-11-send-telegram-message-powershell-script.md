@@ -17,9 +17,12 @@ Before the recipient can receive your Telegram message, she will need to registe
 To send a Telegram message from a PowerShell script, do this:
 
 1. Copy the following source code to your PowerShell script.  <script src="https://gist.github.com/whatsmate/1ecab9ec94a49d3ef49681a7bbe9617d.js"></script>
-2. Specify your target recipient on line 1. Remember to include the country code.
-3. Specify your message on line 2.
-5. Run the script in PowerShell to send your message: `./send-telegram.ps1`
+2. Customize the TODO lines:
+   * Specify your gateway instance ID on line 4.
+   * Specify your client ID and secret on lines 5 and 6.
+   * Specify your target recipient on line 1. Remember to include the country code.
+   * Specify your message on line 2.
+3. Run the script in PowerShell to send your message: `./send-telegram.ps1`
 
 
 You will need a trial account to call the above API. Go [sign up](https://www.whatsmate.net/telegram-gateway-api.html) now.

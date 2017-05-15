@@ -17,7 +17,10 @@ Before the recipient can receive your Telegram message, she will need to registe
 To send a Telegram message in C#, do this:
 
 1. Copy the following source code to the main class in your Console Application in Visual Studio.  <script src="https://gist.github.com/whatsmate/d8bb832b15aa56755c61dc8775b0e742.js"></script>
-2. Specify your target recipient and message on line 18. Remember to include the country code in the recipient's number.
+2. Customize the TODO lines:
+   * Specify your gateway instance ID on line 10.
+   * Specify your client ID and secret on lines 11 and 12.
+   * Specify your target recipient and message on line 19. Remember to include the country code in the recipient's number.
 3. Add the reference "System.Web.Extensions" by doing this:
    1. Right-click on your project node in the Solution Explorer panel.
    2. Choose "Add" -> "Reference..."
