@@ -13,6 +13,7 @@ subtitle: WhatsApp Messaging, Telegram Messaging, Translation
 * [WhatsApp Gateway Endpoints](#whatsapp-gateway-endpoints)
 * [Telegram Gateway Endpoints](#telegram-gateway-endpoints)
 * [Translation Endpoints](#translation-endpoints)
+* [PDF-to-Text Endpoints](#pdf-to-text-endpoints)
 
 
 <br/>
@@ -37,7 +38,7 @@ You should include the following HTTP header in your call to any one of the endp
 <hr/>
 ## Authentication
 
-You authenticate yourself against the API server with your `Client ID` and `Client Secret`. You obtain them by making a subscription.
+You authenticate yourself against the API server with your `Client ID` and `Client Secret`. You obtain them by subscribing to a Premium plan of the service you intend to use.
 
 They are carried in these HTTP headers: `X-WM-CLIENT-ID` and `X-WM-CLIENT-SECRET`.
 
@@ -252,4 +253,42 @@ Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repo
 * Endpoint: `GET /v1/translation/supported-codes`
 * Parameters required: None
 * Response: JSON showing all the possible language codes.
+
+
+<br/>
+<hr/>
+# PDF-to-Text Endpoints
+
+### 1. Extract text from a PDF file synchronously
+* Endpoint: `GET /v1/pdf/extract`
+* Query String parameter required:
+  * `url`: String. The URL of the PDF file that you want to extract the text of.
+* Response: String. The extracted text  <br><br>
+
+
+### 2. Submit a job to extract text asynchronously
+* Endpoint: `GET /v1/pdf/job/submit`
+* Query String parameter required:
+  * `url`: String. The URL of the PDF file that you want to extract the text of.
+* Response: Json containing these properties:
+  * `id`: String. ID of the job that you have submitted
+  * `status`: String. Text describing the current state of the job
+<br><br>
+
+
+### 3. Check the status of a specific job
+* Endpoint: `GET /v1/pdf/job/check/<jobId>`
+* Parameter as part of the URI path:
+  * `jobId`: String. ID of the job that you want to check the status of.
+* Response: Json containing these properties:
+  * `id`: String. ID of the job being queried.
+  * `status`: String. Text describing the current state of the job
+<br><br>
+
+
+### 4. Retrieve the PDF text from a completed job
+* Endpoint: `GET /v1/pdf/job/retrieve_text/<jobId>`
+* Parameter as part of the URI path:
+  * `jobId`: String. ID of the job that you want to check the status of.
+* Response: String. The extracted text  <br><br>
 
