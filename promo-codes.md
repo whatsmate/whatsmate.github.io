@@ -24,9 +24,9 @@ Need a hosting plan? Sign up with Digital Ocean using [this link](https://m.do.c
 
 You will help us save our costs too. Win-win situation!
 
-You may ask: Why Digital Ocean? Why not AWS? Well, I use both and I can tell you Digital Ocean is 
-10 times easier to use. My Digital Ocean droplets have been running reliably for months without the need to reboot.
-When I have a question/problem, their customer support staff usually gets back to me within an hour. 
-What more can I (and you) ask for?
+You may ask: Why Digital Ocean? Why not AWS? Well, we use both and we can tell you Digital Ocean is 
+10 times easier to use. Our Digital Ocean droplets have been running reliably for months without the need to reboot.
+When we have a question/problem, their customer support staff usually gets back to us within an hour. 
+What more can we ask for?
 
 You have nothing to lose.  [Sign up with Digital Ocean now](https://m.do.co/c/841d01dfa2fb).  <img src="/img/tendollaroff.gif">
