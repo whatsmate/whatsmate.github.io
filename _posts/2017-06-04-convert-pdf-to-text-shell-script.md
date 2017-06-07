@@ -18,7 +18,7 @@ Here's how:
 6. Run the script to see the result: `./extract-pdf-text-sync.sh`
 
 
-If your PDF file is larger than 1 MB, you will need to call the asynchronous API instead. 
+If your PDF file is larger than 1 MB, you will need to call the asynchronous API instead. See an <a href="https://github.com/whatsmate/pdf-demos/tree/master/bash">example in Shell Script</a>. 
 
 
 The trial account only allows you to call the PDF-to-Text API up to 20 times for learning purpose. [Upgrade to a Premium plan](https://www.whatsmate.net/pdf-api-subscribe.html) to use the API seriously.

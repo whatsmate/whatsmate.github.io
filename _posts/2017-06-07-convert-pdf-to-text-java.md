@@ -1,24 +1,25 @@
 ---
 layout: post
-title: How to Convert a PDF file to text in Node.js
+title: How to Convert a PDF file to text in Java
 subtitle: Using the WhatsMate PDF-to-Text REST API
 published: true
 last_modified_at: 2017-06-08T00:00:00+08:00
 ---
 
-This article shows you how to extract text from an online PDF document in `Node.js`.
+This article shows you how to extract text from an online PDF document in `Java`.
 
 
 Here's how:
 
-1. Copy the following source code to your `Node.js` script.  <script src="https://gist.github.com/whatsmate/029ea4925c99b72eb881fb65596d7ece.js"></script>
-2. Specify the URL of your online PDF document on line 10.
-3. Replace the Client ID and Secret on lines 5 and 6 if you have your own credentials.
-6. Make your script executable: `chmod 755 extract-pdf-text-sync.js`
-7. Run the script to see the result: `./extract-pdf-text-sync.js`
+
+1. Copy the following source code to a Java file named `SyncPdfTextExtractor.java`.  <script src="https://gist.github.com/whatsmate/b9bb411ea6334fed255d034e1f6cd2cc.js"></script>
+2. Specify the URL of your online PDF document on line 20.
+3. Replace the Client ID and Secret on lines 10 and 11 if you have your own credentials.
+4. Compile the Java file: `javac SyncPdfTextExtractor.java`
+5. Execute the class to see the extracted text: `java SyncPdfTextExtractor`
 
 
-If your PDF file is larger than 1 MB, you will need to call the asynchronous API instead. See an <a href="https://github.com/whatsmate/pdf-demos/tree/master/nodejs">example in Node.js</a>.
+If your PDF file is larger than 1 MB, you will need to call the asynchronous API instead. See an <a href="https://github.com/whatsmate/pdf-demos/tree/master/java">example in Java</a>.
 
 
 
