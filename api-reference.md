@@ -1,7 +1,7 @@
 ---
 layout: page
 title: WhatsMate API Reference
-subtitle: WhatsApp Messaging, Telegram Messaging, Translation
+subtitle: WhatsApp Messaging, Telegram Messaging, Translation, PDF-to-Text
 ---
 
 <br/>
