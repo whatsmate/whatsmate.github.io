@@ -12,7 +12,7 @@ This article shows you how to translate text in Microsoft's .net language: C#.
 To translate textual natural languages (e.g. from English to Tamil) in C#, do this:
 
 1. Copy the following source code to the main class in your Console Application in Visual Studio.  <script src="https://gist.github.com/whatsmate/da3c4db9d38e29a1a72c805cf34679bc.js"></script>
-2. Specify your translation requirements on lines 19 through 21.
+2. Specify your translation requirements on lines 19 through 22.
 3. Add the reference "System.Web.Extensions" by doing this:
    1. Right-click on your project node in the Solution Explorer panel.
    2. Choose "Add" -> "Reference..."
