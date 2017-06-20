@@ -12,7 +12,7 @@ This article shows you how to translate textual natural languages in Microsoft's
 To translate text (e.g. from English to Japanese) in VB.NET, do this:
 
 1. Copy the following source code to the main module file in your Console Application in Visual Studio.  <script src="https://gist.github.com/whatsmate/87ab01d11a0e3184043bb558721046d8.js"></script>
-2. Specify your translation requirements on lines 63 through 65. 
+2. Specify your translation requirements on lines 64 through 67. 
 3. Add the reference "System.Web.Extensions" by doing this:
    1. Right-click on your project node in the Solution Explorer panel.
    2. Choose "Add" -> "Reference..."
