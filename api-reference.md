@@ -235,6 +235,18 @@ Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repo
   * `status`: String. Text explaining what happened.
 
 
+### 12. (Premium Only) Send a Telegram message to a group
+* Endpoint: `POST /v1/telegram/group/message/{instance_number}`
+* Parameter required in URL: 
+  * `instance_number`: Possible value: 0
+* Parameters required in JSON payload:
+  * `group`: String. The name of the group that the gateway is part of.
+  * `message`: String. The text message that you want to send.
+* Response: Json containing these properties:
+  * `success`: Possible values: `true` / `false`
+  * `status`: String. Text explaining what happened.
+
+
 <br/>
 <hr/>
 # Translation Endpoints
