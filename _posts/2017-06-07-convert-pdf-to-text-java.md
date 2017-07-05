@@ -8,6 +8,9 @@ last_modified_at: 2017-06-08T00:00:00+08:00
 
 This article shows you how to extract text from an online PDF document in `Java`.
 
+ 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9JKjFL6gt2U?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+
 
 Here's how:
 
