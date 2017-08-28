@@ -13,7 +13,7 @@ You MUST obtain the secret gateway number by signing up for a Forever Green acco
 
 To send a WhatsApp group message from your Java application, do this:
 
-1. Create a new group from your WhatsApp client.
+1. Create a new group with a *unique* name. If the name is not unique, the API won't work.
    * <img src="/img/newgroup.png" alt="Create a new WhatsApp group"> <br><br>
 2. Add the secret gateway to the group.
    * <img src="/img/add-gateway-to-group.png" alt="Name the WhatsApp group"> <br><br>
