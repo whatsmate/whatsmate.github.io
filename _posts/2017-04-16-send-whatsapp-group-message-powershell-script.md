@@ -17,7 +17,7 @@ To send a WhatsApp group message from a PowerShell script, do this:
    * <img src="/img/newgroup.png" alt="Create a new WhatsApp group"> <br><br>
 2. Add the secret gateway to the group.
    * <img src="/img/add-gateway-to-group.png" alt="Name the WhatsApp group"> <br><br>
-3. Say "Hi" to the group from your own WhatsApp client to let the gateway recognize the new group.
+3. Say "Hi" to the group to let the gateway recognize the new group.
 4. Copy the following source code to your PowerShell script. <script src="https://gist.github.com/whatsmate/09a72c834309494c891a0084cf81abe6.js"></script>
 5. Customize the TODO lines in the PowerShell script:
    * Specify your gateway instance ID on line 5.

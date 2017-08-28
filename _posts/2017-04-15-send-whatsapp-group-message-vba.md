@@ -17,7 +17,7 @@ To send a WhatsApp group message in VBA / VB Script, do this:
    * <img src="/img/newgroup.png" alt="Create a new WhatsApp group"> <br><br>
 2. Add the secret gateway to the group.
    * <img src="/img/add-gateway-to-group.png" alt="Name the WhatsApp group"> <br><br>
-3. Say "Hi" to the group from your own WhatsApp client to let the gateway recognize the new group.
+3. Say "Hi" to the group to let the gateway recognize the new group.
 4. In your Excel / Access / VBA development environment, define the following subroutines:  <script src="https://gist.github.com/whatsmate/8acfd6704262fc61dde131469d098f8f.js"></script>
 5. Customize the TODO lines in the VB Script program:
    * Specify your gateway instance ID on line 17.
