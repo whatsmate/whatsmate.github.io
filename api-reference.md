@@ -54,6 +54,15 @@ X-WM-CLIENT-SECRET: 53654f8ee3684a37201e3c90a071dbd7
 <hr/>
 # WhatsApp Gateway Endpoints
 
+&nbsp;
+
+## ![Download source code](/img/download-run.png) Demo App
+
+Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to see how the APIs are called.
+
+&nbsp;
+
+
 ### 1. Check the status of the WhatsApp gateway
 * Endpoint: `GET /v1/gateway/status`
 * Parameters required: None
