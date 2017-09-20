@@ -15,7 +15,7 @@ To send a WhatsApp message containing an image in Java, do this:
 
 1. First, learn how to send a simple text message on the [official site](https://www.whatsmate.net/whatsapp-gateway-api.html). 
 2. With the above knowledge, you can now download our [sample code](https://github.com/whatsmate/wa-demos/archive/master.zip).
-3. Locate the file `Java/WaImageSender.java`.  <script src="http://gist-it.appspot.com/github/whatsmate/wa-demos/blob/master/Java/WaImageSender.java?footer=minimal"></script>
+3. Locate the file `Java/WaImageSender.java`.  <script src="https://gist.github.com/whatsmate/499d731f8eab2caff6a9bd619f20b59f.js"></script>
 4. Study the Java source code and customize the TODO/FIXME lines.
    * Among other things, put down YOUR OWN number as the recipient. You can't send messages to strangers because we are against SPAMMERS.
 5. Change to the directory containing the script: `cd Java`

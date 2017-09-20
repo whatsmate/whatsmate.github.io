@@ -15,7 +15,7 @@ To send a WhatsApp message containing an image in C#, do this:
 
 1. First, learn how to send a simple text message on the [official site](https://www.whatsmate.net/whatsapp-gateway-api.html). 
 2. With the above knowledge, you can now download our [sample code](https://github.com/whatsmate/wa-demos/archive/master.zip).
-3. Locate the file `cs/send-image-individual.cs`.  <script src="http://gist-it.appspot.com/github/whatsmate/wa-demos/blob/master/cs/send-image-individual.cs?footer=minimal"></script>
+3. Locate the file `cs/send-image-individual.cs`.  <script src="https://gist.github.com/whatsmate/11c740b0893fb6ef4b5bde9e55e4a591.js"></script>
 4. Study the `C#` source code and customize the TODO/FIXME lines.
    * Among other things, put down YOUR OWN number as the recipient. You can't send messages to strangers because we are against SPAMMERS.
 5. Run the `C#` program in Visual Studio to send yourself the first image!
