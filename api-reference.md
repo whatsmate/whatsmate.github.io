@@ -70,7 +70,7 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
   * `status`: Either "up" or "down"  <br><br>
 
 
-### 2. Send a WhatsApp message to a single recipient
+### 2. Send a WhatsApp text message to a single recipient
 * Endpoint: `POST /v3/whatsapp/single/text/message/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: An integer indicating your gateway's instance ID
@@ -81,7 +81,7 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
   * `{ 'status': 'queued', 'id': '<Job ID>'}`
 
 
-### 3. Send a message to a WhatsApp Group that the gateway participates in
+### 3. Send a text message to a WhatsApp Group that the gateway participates in
 * Endpoint: `POST /v3/whatsapp/group/text/message/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: An integer indicating your gateway's instance ID
@@ -92,6 +92,27 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
 * Response:
   * `{ 'status': 'queued', 'id': '<Job ID>'}`
 
+
+### 4. Send a photo/image to a single recipient
+* Endpoint: `POST /v3/whatsapp/single/image/message/{instance_number}`
+* Parameter required in URL: 
+  * `instance_number`: An integer indicating your gateway's instance ID
+* Parameters required in JSON payload:
+  * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
+  * `image`: String. Base64-encoded representation of the image that you want to send.
+* Response: Json containing these properties:
+  * `{ 'status': 'queued', 'id': '<Job ID>'}`
+
+
+### 5. Send a photo/image to a WhatsApp group that the gateway participates in
+* Endpoint: `POST /v3/whatsapp/group/image/message/{instance_number}`
+* Parameter required in URL: 
+  * `instance_number`: An integer indicating your gateway's instance ID
+* Parameters required in JSON payload:
+  * `group_name`: String. The name of the WhatsApp group.
+  * `image`: String. Base64-encoded representation of the image that you want to send.
+* Response: Json containing these properties:
+  * `{ 'status': 'queued', 'id': '<Job ID>'}`
 
 <br/>
 <hr/>
