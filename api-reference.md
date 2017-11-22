@@ -63,11 +63,10 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
 &nbsp;
 
 
-### 1. Check the status of the WhatsApp gateway
+### 1. Check the status of the WhatsApp gateway (Deprecated)
 * Endpoint: `GET /v1/gateway/status`
-* Parameters required: None
-* Response: Json containing the following property:
-  * `status`: Either "up" or "down"  <br><br>
+* This API is deprecated.
+* Please DO NOT call this API.
 
 
 ### 2. Send a WhatsApp text message to a single recipient
