@@ -113,6 +113,31 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
 * Response: Json containing these properties:
   * `{ 'status': 'queued', 'id': '<Job ID>'}`
 
+
+### 6. Send a document (e.g. PDF, MP3, etc.) to a single recipient
+* Endpoint: `POST /v3/whatsapp/single/document/message/{instance_number}`
+* Parameter required in URL: 
+  * `instance_number`: An integer indicating your gateway's instance ID
+* Parameters required in JSON payload:
+  * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
+  * `document`: String. Base64-encoded representation of the document that you want to send.
+  * `filename`: String. Name of the file that will be presented to the receiver.
+* Response: Json containing these properties:
+  * `{ 'status': 'queued', 'id': '<Job ID>'}`
+
+
+### 7. Send a document (e.g. PDF, MP3, etc.) to a WhatsApp group that the gateway participates in
+* Endpoint: `POST /v3/whatsapp/group/document/message/{instance_number}`
+* Parameter required in URL: 
+  * `instance_number`: An integer indicating your gateway's instance ID
+* Parameters required in JSON payload:
+  * `group_name`: String. The name of the WhatsApp group.
+  * `document`: String. Base64-encoded representation of the document that you want to send.
+  * `filename`: String. Name of the file that will be presented to the receiver.
+* Response: Json containing these properties:
+  * `{ 'status': 'queued', 'id': '<Job ID>'}`
+
+
 <br/>
 <hr/>
 # Telegram Gateway Endpoints
