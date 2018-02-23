@@ -73,7 +73,7 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
 * Endpoint: `POST /v3/whatsapp/single/text/message/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: An integer indicating your gateway's instance ID
-* Parameters required in JSON payload:
+* Parameters required in `JSON` payload:
   * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
   * `message`: String. The text message that you want to send.
 * Response:
@@ -86,7 +86,7 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
 * Endpoint: `POST /v3/whatsapp/group/text/message/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: An integer indicating your gateway's instance ID
-* Parameters required in JSON payload:
+* Parameters required in `JSON` payload:
   * `group_name`: String. The name of the WhatsApp group.
   * `group_admin`: String. The phone number (including the country code) of the group creator. No "+" sign is needed.
   * `message`: String. The text message that you want to send.
@@ -100,7 +100,7 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
 * Endpoint: `POST /v3/whatsapp/single/image/message/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: An integer indicating your gateway's instance ID
-* Parameters required in JSON payload:
+* Parameters required in `JSON` payload:
   * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
   * `image`: String. Base64-encoded representation of the image that you want to send.
 * Response: Json containing these properties:
@@ -113,7 +113,7 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
 * Endpoint: `POST /v3/whatsapp/group/image/message/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: An integer indicating your gateway's instance ID
-* Parameters required in JSON payload:
+* Parameters required in `JSON` payload:
   * `group_name`: String. The name of the WhatsApp group.
   * `image`: String. Base64-encoded representation of the image that you want to send.
 * Response: Json containing these properties:
@@ -126,7 +126,7 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
 * Endpoint: `POST /v3/whatsapp/single/document/message/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: An integer indicating your gateway's instance ID
-* Parameters required in JSON payload:
+* Parameters required in `JSON` payload:
   * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
   * `document`: String. Base64-encoded representation of the document that you want to send.
   * `filename`: String. Name of the file that will be presented to the receiver.
@@ -140,7 +140,7 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
 * Endpoint: `POST /v3/whatsapp/group/document/message/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: An integer indicating your gateway's instance ID
-* Parameters required in JSON payload:
+* Parameters required in `JSON` payload:
   * `group_name`: String. The name of the WhatsApp group.
   * `document`: String. Base64-encoded representation of the document that you want to send.
   * `filename`: String. Name of the file that will be presented to the receiver.
@@ -177,7 +177,7 @@ Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repo
 * Endpoint: `POST /v1/telegram/single/message/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: Possible value: 0
-* Parameters required in JSON payload:
+* Parameters required in `JSON` payload:
   * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
   * `message`: String. The text message that you want to send.
 * Response: Json containing these properties:
@@ -185,11 +185,11 @@ Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repo
   * `status`: String. Text explaining what happened.
 
 
-### 3. (Premium Only) Send a Telegram message to multiple recipients
+### 3.  Send a Telegram message to multiple recipients
 * Endpoint: `POST /v1/telegram/batch/message/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: Possible value: 0
-* Parameters required in JSON payload:
+* Parameters required in `JSON` payload:
   * `numbers`: Array of strings. The phone numbers of the recipients including the country code. No "+" sign is needed.
   * `message`: String. The text message that you want to send.
 * Response: Json containing these properties:
@@ -201,7 +201,7 @@ Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repo
 * Endpoint: `POST /v1/telegram/single/location/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: Possible value: 0
-* Parameters required in JSON payload:
+* Parameters required in `JSON` payload:
   * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
   * `latitude`: Number. The latitude of the location that you want to send.
   * `longitude`: Number. The longitude of the location that you want to send.
@@ -210,11 +210,11 @@ Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repo
   * `status`: String. Text explaining what happened.
 
 
-### 5. (Premium Only) Send a location to multiple recipients
+### 5.  Send a location to multiple recipients
 * Endpoint: `POST /v1/telegram/batch/location/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: Possible value: 0
-* Parameters required in JSON payload:
+* Parameters required in `JSON` payload:
   * `numbers`: Array of strings. The phone numbers of the recipients including the country code. No "+" sign is needed.
   * `latitude`: Number. The latitude of the location that you want to send.
   * `longitude`: Number. The longitude of the location that you want to send.
@@ -223,11 +223,11 @@ Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repo
   * `status`: String. Text explaining what happened.
 
 
-### 6. (Premium Only) Send a photo/image to a single recipient
+### 6.  Send a photo/image to a single recipient
 * Endpoint: `POST /v1/telegram/single/photo/binary/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: Possible value: 0
-* Parameters required in JSON payload:
+* Parameters required in `JSON` payload:
   * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
   * `image`: String. Base64-encoded representation of the image that you want to send.
   * `caption`: String. Optional. A short description of your image.
@@ -236,11 +236,11 @@ Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repo
   * `status`: String. Text explaining what happened.
 
 
-### 7. (Premium Only) Send a photo/image to multiple recipients
+### 7.  Send a photo/image to multiple recipients
 * Endpoint: `POST /v1/telegram/batch/photo/binary/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: Possible value: 0
-* Parameters required in JSON payload:
+* Parameters required in `JSON` payload:
   * `numbers`: Array of strings. The phone numbers of the recipients including the country code. No "+" sign is needed.
   * `image`: String. Base64-encoded representation of the image that you want to send.
   * `caption`: String. Optional. A short description of your image.
@@ -249,11 +249,11 @@ Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repo
   * `status`: String. Text explaining what happened.
 
 
-### 8. (Premium Only) Send an audio file to a single recipient
+### 8.  Send an audio file to a single recipient
 * Endpoint: `POST /v1/telegram/single/audio/binary/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: Possible value: 0
-* Parameters required in JSON payload:
+* Parameters required in `JSON` payload:
   * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
   * `audio`: String. Base64-encoded representation of the audio content that you want to send.
   * `filename`: String. The filename of your audio file.
@@ -262,11 +262,11 @@ Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repo
   * `status`: String. Text explaining what happened.
 
 
-### 9. (Premium Only) Send an audio file to multiple recipients
+### 9.  Send an audio file to multiple recipients
 * Endpoint: `POST /v1/telegram/batch/audio/binary/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: Possible value: 0
-* Parameters required in JSON payload:
+* Parameters required in `JSON` payload:
   * `numbers`: Array of strings. The phone numbers of the recipients including the country code. No "+" sign is needed.
   * `audio`: String. Base64-encoded representation of the audio content that you want to send.
   * `filename`: String. The filename of your audio file.
@@ -275,11 +275,11 @@ Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repo
   * `status`: String. Text explaining what happened.
 
 
-### 10. (Premium Only) Send a document (e.g. PDF) to a single recipient
+### 10.  Send a document (e.g. PDF) to a single recipient
 * Endpoint: `POST /v1/telegram/single/document/binary/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: Possible value: 0
-* Parameters required in JSON payload:
+* Parameters required in `JSON` payload:
   * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
   * `document`: String. Base64-encoded representation of the document content that you want to send.
   * `filename`: String. The filename of your document file.
@@ -288,11 +288,11 @@ Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repo
   * `status`: String. Text explaining what happened.
 
 
-### 11. (Premium Only) Send a document (e.g. PDF) to multiple recipients
+### 11.  Send a document (e.g. PDF) to multiple recipients
 * Endpoint: `POST /v1/telegram/batch/document/binary/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: Possible value: 0
-* Parameters required in JSON payload:
+* Parameters required in `JSON` payload:
   * `numbers`: Array of strings. The phone numbers of the recipients including the country code. No "+" sign is needed.
   * `document`: String. Base64-encoded representation of the document content that you want to send.
   * `filename`: String. The filename of your document file.
@@ -301,11 +301,11 @@ Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repo
   * `status`: String. Text explaining what happened.
 
 
-### 12. (Premium Only) Send a Telegram message to a group
+### 12.  Send a Telegram message to a group
 * Endpoint: `POST /v1/telegram/group/message/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: Possible value: 0
-* Parameters required in JSON payload:
+* Parameters required in `JSON` payload:
   * `group`: String. The name of the group that the gateway is part of.
   * `message`: String. The text message that you want to send.
 * Response: Json containing these properties:
@@ -319,7 +319,7 @@ Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repo
 
 ### 1. Translate text
 * Endpoint: `POST /v1/translation/translate`
-* Parameters required in JSON payload:
+* Parameters required in `JSON` payload:
   * `fromLang`: String. The code representing the language of the supplied text.
   * `toLang`: String. The code representing the language you want the text to be translated to.
   * `text`: String. The piece of text you want to be translated.
@@ -330,7 +330,7 @@ Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repo
 ### 2. List all the possible language codes
 * Endpoint: `GET /v1/translation/supported-codes`
 * Parameters required: None
-* Response: JSON showing all the possible language codes.
+* Response: `JSON` showing all the possible language codes.
 
 
 <br/>
