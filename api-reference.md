@@ -78,6 +78,8 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
   * `message`: String. The text message that you want to send.
 * Response:
   * `{ 'status': 'queued', 'id': '<Job ID>'}`
+* Code Examples:
+  * [Follow this guide](https://www.whatsmate.net/whatsapp-gateway-api.html)
 
 
 ### 3. Send a text message to a WhatsApp Group that the gateway participates in
@@ -90,6 +92,8 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
   * `message`: String. The text message that you want to send.
 * Response:
   * `{ 'status': 'queued', 'id': '<Job ID>'}`
+* Code Examples:
+  * [Follow this guide](https://www.whatsmate.net/whatsapp-group-message-api.html)
 
 
 ### 4. Send a photo/image to a single recipient
@@ -101,6 +105,8 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
   * `image`: String. Base64-encoded representation of the image that you want to send.
 * Response: Json containing these properties:
   * `{ 'status': 'queued', 'id': '<Job ID>'}`
+* Code Examples:
+  * [Follow this guide](https://www.whatsmate.net/whatsapp-image-individual-api.html)
 
 
 ### 5. Send a photo/image to a WhatsApp group that the gateway participates in
@@ -112,6 +118,8 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
   * `image`: String. Base64-encoded representation of the image that you want to send.
 * Response: Json containing these properties:
   * `{ 'status': 'queued', 'id': '<Job ID>'}`
+* Code Examples:
+  * [Follow this guide](https://www.whatsmate.net/whatsapp-group-image-api.html)
 
 
 ### 6. Send a document (e.g. PDF, MP3, etc.) to a single recipient
@@ -124,6 +132,8 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
   * `filename`: String. Name of the file that will be presented to the receiver.
 * Response: Json containing these properties:
   * `{ 'status': 'queued', 'id': '<Job ID>'}`
+* Code Examples:
+  * [Follow this guide](https://www.whatsmate.net/whatsapp-document-individual-api.html)
 
 
 ### 7. Send a document (e.g. PDF, MP3, etc.) to a WhatsApp group that the gateway participates in
@@ -136,6 +146,8 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
   * `filename`: String. Name of the file that will be presented to the receiver.
 * Response: Json containing these properties:
   * `{ 'status': 'queued', 'id': '<Job ID>'}`
+* Code Examples:
+  * [Follow this guide](https://www.whatsmate.net/whatsapp-group-document-api.html)
 
 
 <br/>
