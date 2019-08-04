@@ -103,6 +103,7 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
 * Parameters required in `JSON` payload:
   * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
   * `image`: String. Base64-encoded representation of the image that you want to send.
+  * `caption`: String - optional field. A short description that goes with the image.
 * Response: Json containing these properties:
   * `{ 'status': 'queued', 'id': '<Job ID>'}`
 * Code Examples:
@@ -116,6 +117,7 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
 * Parameters required in `JSON` payload:
   * `group_name`: String. The name of the WhatsApp group.
   * `image`: String. Base64-encoded representation of the image that you want to send.
+  * `caption`: String - optional field. A short description that goes with the image.
 * Response: Json containing these properties:
   * `{ 'status': 'queued', 'id': '<Job ID>'}`
 * Code Examples:
