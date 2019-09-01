@@ -3,7 +3,7 @@ layout: post
 title: How to Send Yourself a Stock Price Alert via Telegram
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2017-03-31T00:00:00+08:00
+last_modified_at: 2019-08-30T00:00:00+08:00
 ---
 
 <img src="/img/chart-small-hd.png" height="100" width="100" />

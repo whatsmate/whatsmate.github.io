@@ -3,7 +3,7 @@ layout: post
 title: How to Convert a PDF file to text in C#
 subtitle: Using the WhatsMate PDF-to-Text REST API
 published: true
-last_modified_at: 2017-06-09T00:00:00+08:00
+last_modified_at: 2019-08-30T00:00:00+08:00
 ---
 
 This article shows you how to extract text from an online PDF document in Microsoft .NET language: `C#`.
