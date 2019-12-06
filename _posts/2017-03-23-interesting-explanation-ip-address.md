@@ -2,7 +2,7 @@
 layout: post
 title: An Interesting way to explain what an IP address is
 published: true
-last_modified_at: 2019-08-30T00:00:00+08:00
+last_modified_at: 2019-12-06T00:00:00+08:00
 ---
 
 I came across an interesting article that explains what an IP address is in such a way that even a 12-year-old would understand it.

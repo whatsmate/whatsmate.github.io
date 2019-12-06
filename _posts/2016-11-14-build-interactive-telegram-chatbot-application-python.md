@@ -3,7 +3,7 @@ layout: post
 title: How to Build an Interactive Price Quoting Application over Telegram in Python
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2019-08-30T00:00:00+08:00
+last_modified_at: 2019-12-06T00:00:00+08:00
 ---
 
 This article shows you how to build an interactive price quoting application over Telegram in Python. The application responds to user's requests for price quotes interactively. Don't know what I am talking about? The following screenshot should explain it more clearly:
