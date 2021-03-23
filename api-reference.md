@@ -29,7 +29,7 @@ If you prefer `https`, you can use `https://api.whatsmate.net/`.
 <hr/>
 ## Common HTTP header
 
-You should include the following HTTP header in your call to any one of the endpoints:
+You should always include the following HTTP header in your calls to our endpoints:
 
 - `Content-Type: application/json`
 
@@ -63,13 +63,7 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
 &nbsp;
 
 
-### 1. Check the status of the WhatsApp gateway (Deprecated)
-* Endpoint: `GET /v1/gateway/status`
-* This API is deprecated.
-* Please DO NOT call this API.
-
-
-### 2. Send a WhatsApp text message to a single recipient
+### 1. Send a WhatsApp text message to a single recipient
 * Endpoint: `POST /v3/whatsapp/single/text/message/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: An integer indicating your gateway's instance ID
@@ -79,10 +73,12 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
 * Response:
   * `{ 'status': 'queued', 'id': '<Job ID>'}`
 * Code Examples:
-  * [Follow this guide](https://www.whatsmate.net/whatsapp-gateway-api.html)
+  * [Follow this guide](https://www.whatsmate.net/whatsapp-gateway-api.html).
+
+&nbsp;
 
 
-### 3. Send a text message to a WhatsApp Group that the gateway participates in
+### 2. Send a text message to a WhatsApp Group that the gateway participates in
 * Endpoint: `POST /v3/whatsapp/group/text/message/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: An integer indicating your gateway's instance ID
@@ -93,10 +89,12 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
 * Response:
   * `{ 'status': 'queued', 'id': '<Job ID>'}`
 * Code Examples:
-  * [Follow this guide](https://www.whatsmate.net/whatsapp-group-message-api.html)
+  * [Follow this guide](https://www.whatsmate.net/whatsapp-group-message-api.html).
+
+&nbsp;
 
 
-### 4. Send a photo/image to a single recipient
+### 3. Send a photo/image to a single recipient
 * Endpoint: `POST /v3/whatsapp/single/image/message/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: An integer indicating your gateway's instance ID
@@ -107,10 +105,12 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
 * Response: Json containing these properties:
   * `{ 'status': 'queued', 'id': '<Job ID>'}`
 * Code Examples:
-  * [Follow this guide](https://www.whatsmate.net/whatsapp-image-individual-api.html)
+  * [Follow this guide](https://www.whatsmate.net/whatsapp-image-individual-api.html).
+
+&nbsp;
 
 
-### 5. Send a photo/image to a WhatsApp group that the gateway participates in
+### 4. Send a photo/image to a WhatsApp group that the gateway participates in
 * Endpoint: `POST /v3/whatsapp/group/image/message/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: An integer indicating your gateway's instance ID
@@ -121,10 +121,12 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
 * Response: Json containing these properties:
   * `{ 'status': 'queued', 'id': '<Job ID>'}`
 * Code Examples:
-  * [Follow this guide](https://www.whatsmate.net/whatsapp-group-image-api.html)
+  * [Follow this guide](https://www.whatsmate.net/whatsapp-group-image-api.html).
+
+&nbsp;
 
 
-### 6. Send a document (e.g. PDF, MP3, etc.) to a single recipient
+### 5. Send a document (e.g. PDF, MP3, etc.) to a single recipient
 * Endpoint: `POST /v3/whatsapp/single/document/message/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: An integer indicating your gateway's instance ID
@@ -135,10 +137,12 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
 * Response: Json containing these properties:
   * `{ 'status': 'queued', 'id': '<Job ID>'}`
 * Code Examples:
-  * [Follow this guide](https://www.whatsmate.net/whatsapp-document-individual-api.html)
+  * [Follow this guide](https://www.whatsmate.net/whatsapp-document-individual-api.html).
+
+&nbsp;
 
 
-### 7. Send a document (e.g. PDF, MP3, etc.) to a WhatsApp group that the gateway participates in
+### 6. Send a document (e.g. PDF, MP3, etc.) to a WhatsApp group that the gateway participates in
 * Endpoint: `POST /v3/whatsapp/group/document/message/{instance_number}`
 * Parameter required in URL: 
   * `instance_number`: An integer indicating your gateway's instance ID
@@ -149,9 +153,12 @@ Check out the [wa-demos](https://github.com/whatsmate/wa-demos) repository to se
 * Response: Json containing these properties:
   * `{ 'status': 'queued', 'id': '<Job ID>'}`
 * Code Examples:
-  * [Follow this guide](https://www.whatsmate.net/whatsapp-group-document-api.html)
+  * [Follow this guide](https://www.whatsmate.net/whatsapp-group-document-api.html).
+
+&nbsp;
 
 
+<br/>
 <br/>
 <hr/>
 # Telegram Gateway Endpoints
