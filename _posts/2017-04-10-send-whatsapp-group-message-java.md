@@ -3,7 +3,7 @@ layout: post
 title: How to send messages to a WhatsApp group in Java
 subtitle: Using the WhatsMate WA Gateway REST API
 published: true
-last_modified_at: 2019-12-06T00:00:00+08:00
+last_modified_at: 2022-01-04T00:00:00+08:00
 ---
 
 This article shows you how to send a message to a WhatsApp group in Java.

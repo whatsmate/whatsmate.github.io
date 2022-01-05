@@ -3,7 +3,7 @@ layout: post
 title: How to send an image to a WhatsApp group in Python 3
 subtitle: Using the WhatsMate WhatsApp Gateway REST API
 published: true
-last_modified_at: 2020-02-21T00:00:00+08:00
+last_modified_at: 2022-01-04T00:00:00+08:00
 ---
 
 This article shows you how to send an image to a WhatsApp group in Python 3.

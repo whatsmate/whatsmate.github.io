@@ -3,7 +3,7 @@ layout: post
 title: How to send a PDF file to a WhatsApp user in Visual Basic Script / VBA
 subtitle: Using the WhatsMate WhatsApp Gateway REST API
 published: true
-last_modified_at: 2019-12-06T00:00:00+08:00
+last_modified_at: 2022-01-04T00:00:00+08:00
 ---
 
 
