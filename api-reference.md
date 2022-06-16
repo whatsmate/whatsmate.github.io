@@ -172,154 +172,174 @@ Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repo
 &nbsp;
 
 
-### 1. Check the status of the Telegram gateway
-* Endpoint: `GET /v1/telegram/status/{instance_number}`
+### 1. Send a Telegram text message to a single recipient
+* Endpoint: `POST /v3/telegram/single/text/message/{instance_number}`
 * Parameter required in URL: 
-  * `instance_number`: Possible value: 0
-* Response: Json containing the following properties:
-  * `status`: Either "up" or "down"
-  * `instance`: The instance number of the gateway
-* Example request: `GET /v1/telegram/status/0`  <br><br>
-
-
-### 2. Send a Telegram message to a single recipient
-* Endpoint: `POST /v1/telegram/single/message/{instance_number}`
-* Parameter required in URL: 
-  * `instance_number`: Possible value: 0
+  * `instance_number`: An integer indicating your gateway's instance ID
 * Parameters required in `JSON` payload:
   * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
   * `message`: String. The text message that you want to send.
-* Response: Json containing these properties:
-  * `success`: Possible values: `true` / `false`
-  * `status`: String. Text explaining what happened.
+* Response:
+  * `{ 'status': 'queued', 'id': '<Job ID>'}`
+* Code Examples:
+  * [Follow this guide](https://www.whatsmate.net/telegram-gateway-api.html).
+
+&nbsp;
 
 
-### 3.  Send a Telegram message to multiple recipients
-* Endpoint: `POST /v1/telegram/batch/message/{instance_number}`
+### 2. Send a text message to a Telegram Group that the gateway participates in
+* Endpoint: `POST /v3/telegram/group/text/message/{instance_number}`
 * Parameter required in URL: 
-  * `instance_number`: Possible value: 0
+  * `instance_number`: An integer indicating your gateway's instance ID
 * Parameters required in `JSON` payload:
-  * `numbers`: Array of strings. The phone numbers of the recipients including the country code. No "+" sign is needed.
+  * `group_name`: String. The name of the Telegram group.
+  * `group_admin`: String. The phone number (including the country code) of the group creator. No "+" sign is needed.
   * `message`: String. The text message that you want to send.
-* Response: Json containing these properties:
-  * `success`: Possible values: `true` / `false`
-  * `status`: String. Text explaining what happened.
+* Response:
+  * `{ 'status': 'queued', 'id': '<Job ID>'}`
+* Code Examples:
+  * [Follow this guide](https://www.whatsmate.net/telegram-group-message-api.html).
+
+&nbsp;
 
 
-### 4. Send a location to a single recipient
-* Endpoint: `POST /v1/telegram/single/location/{instance_number}`
+### 3. Send a photo/image to a single recipient
+* Endpoint: `POST /v3/telegram/single/image/message/{instance_number}`
 * Parameter required in URL: 
-  * `instance_number`: Possible value: 0
-* Parameters required in `JSON` payload:
-  * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
-  * `latitude`: Number. The latitude of the location that you want to send.
-  * `longitude`: Number. The longitude of the location that you want to send.
-* Response: Json containing these properties:
-  * `success`: Possible values: `true` / `false`
-  * `status`: String. Text explaining what happened.
-
-
-### 5.  Send a location to multiple recipients
-* Endpoint: `POST /v1/telegram/batch/location/{instance_number}`
-* Parameter required in URL: 
-  * `instance_number`: Possible value: 0
-* Parameters required in `JSON` payload:
-  * `numbers`: Array of strings. The phone numbers of the recipients including the country code. No "+" sign is needed.
-  * `latitude`: Number. The latitude of the location that you want to send.
-  * `longitude`: Number. The longitude of the location that you want to send.
-* Response: Json containing these properties:
-  * `success`: Possible values: `true` / `false`
-  * `status`: String. Text explaining what happened.
-
-
-### 6.  Send a photo/image to a single recipient
-* Endpoint: `POST /v1/telegram/single/photo/binary/{instance_number}`
-* Parameter required in URL: 
-  * `instance_number`: Possible value: 0
+  * `instance_number`: An integer indicating your gateway's instance ID
 * Parameters required in `JSON` payload:
   * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
   * `image`: String. Base64-encoded representation of the image that you want to send.
-  * `caption`: String. Optional. A short description of your image.
+  * `caption`: String - optional field. A short description that goes with the image.
 * Response: Json containing these properties:
-  * `success`: Possible values: `true` / `false`
-  * `status`: String. Text explaining what happened.
+  * `{ 'status': 'queued', 'id': '<Job ID>'}`
+* Code Examples:
+  * [Follow this guide](https://www.whatsmate.net/telegram-image-individual-api.html).
+
+&nbsp;
 
 
-### 7.  Send a photo/image to multiple recipients
-* Endpoint: `POST /v1/telegram/batch/photo/binary/{instance_number}`
+### 4. Send a photo/image to a Telegram group that the gateway participates in
+* Endpoint: `POST /v3/telegram/group/image/message/{instance_number}`
 * Parameter required in URL: 
-  * `instance_number`: Possible value: 0
+  * `instance_number`: An integer indicating your gateway's instance ID
 * Parameters required in `JSON` payload:
-  * `numbers`: Array of strings. The phone numbers of the recipients including the country code. No "+" sign is needed.
+  * `group_name`: String. The name of the Telegram group.
+  * `group_admin`: String. The phone number (including the country code) of the group creator. No "+" sign is needed.
   * `image`: String. Base64-encoded representation of the image that you want to send.
-  * `caption`: String. Optional. A short description of your image.
+  * `caption`: String - optional field. A short description that goes with the image.
 * Response: Json containing these properties:
-  * `success`: Possible values: `true` / `false`
-  * `status`: String. Text explaining what happened.
+  * `{ 'status': 'queued', 'id': '<Job ID>'}`
+* Code Examples:
+  * [Follow this guide](https://www.whatsmate.net/telegram-group-image-api.html).
+
+&nbsp;
 
 
-### 8.  Send an audio file to a single recipient
-* Endpoint: `POST /v1/telegram/single/audio/binary/{instance_number}`
+### 5. Send a document (e.g. PDF, etc.) to a single recipient
+* Endpoint: `POST /v3/telegram/single/document/message/{instance_number}`
 * Parameter required in URL: 
-  * `instance_number`: Possible value: 0
+  * `instance_number`: An integer indicating your gateway's instance ID
 * Parameters required in `JSON` payload:
   * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
-  * `audio`: String. Base64-encoded representation of the audio content that you want to send.
-  * `filename`: String. The filename of your audio file.
+  * `document`: String. Base64-encoded representation of the document that you want to send.
+  * `filename`: String. Name of the file that will be presented to the receiver.
+  * `caption`: String - optional field. A short description that goes with the document.
 * Response: Json containing these properties:
-  * `success`: Possible values: `true` / `false`
-  * `status`: String. Text explaining what happened.
+  * `{ 'status': 'queued', 'id': '<Job ID>'}`
+* Code Examples:
+  * [Follow this guide](https://www.whatsmate.net/telegram-document-individual-api.html).
+
+&nbsp;
 
 
-### 9.  Send an audio file to multiple recipients
-* Endpoint: `POST /v1/telegram/batch/audio/binary/{instance_number}`
+### 6. Send a document (e.g. PDF, etc.) to a Telegram group that the gateway participates in
+* Endpoint: `POST /v3/telegram/group/document/message/{instance_number}`
 * Parameter required in URL: 
-  * `instance_number`: Possible value: 0
+  * `instance_number`: An integer indicating your gateway's instance ID
 * Parameters required in `JSON` payload:
-  * `numbers`: Array of strings. The phone numbers of the recipients including the country code. No "+" sign is needed.
-  * `audio`: String. Base64-encoded representation of the audio content that you want to send.
-  * `filename`: String. The filename of your audio file.
+  * `group_name`: String. The name of the Telegram group.
+  * `group_admin`: String. The phone number (including the country code) of the group creator. No "+" sign is needed.
+  * `document`: String. Base64-encoded representation of the document that you want to send.
+  * `filename`: String. Name of the file that will be presented to the receiver.
+  * `caption`: String - optional field. A short description that goes with the document.
 * Response: Json containing these properties:
-  * `success`: Possible values: `true` / `false`
-  * `status`: String. Text explaining what happened.
+  * `{ 'status': 'queued', 'id': '<Job ID>'}`
+* Code Examples:
+  * [Follow this guide](https://www.whatsmate.net/telegram-group-document-api.html).
+
+&nbsp;
 
 
-### 10.  Send a document (e.g. PDF) to a single recipient
-* Endpoint: `POST /v1/telegram/single/document/binary/{instance_number}`
+### 7. Send an audio file (e.g. MP3) to a single recipient
+* Endpoint: `POST /v3/telegram/single/audio/message/{instance_number}`
 * Parameter required in URL: 
-  * `instance_number`: Possible value: 0
+  * `instance_number`: An integer indicating your gateway's instance ID
 * Parameters required in `JSON` payload:
   * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
-  * `document`: String. Base64-encoded representation of the document content that you want to send.
-  * `filename`: String. The filename of your document file.
+  * `audio`: String. Base64-encoded representation of the audio file that you want to send.
+  * `filename`: String. Name of the file that will be presented to the receiver.
+  * `caption`: String - optional field. A short description that goes with the audio file.
 * Response: Json containing these properties:
-  * `success`: Possible values: `true` / `false`
-  * `status`: String. Text explaining what happened.
+  * `{ 'status': 'queued', 'id': '<Job ID>'}`
+* Code Examples:
+  * [Follow this guide](https://www.whatsmate.net/telegram-audio-individual-api.html).
+
+&nbsp;
 
 
-### 11.  Send a document (e.g. PDF) to multiple recipients
-* Endpoint: `POST /v1/telegram/batch/document/binary/{instance_number}`
+### 8. Send an audio file (e.g. MP3) to a Telegram group that the gateway participates in
+* Endpoint: `POST /v3/telegram/group/audio/message/{instance_number}`
 * Parameter required in URL: 
-  * `instance_number`: Possible value: 0
+  * `instance_number`: An integer indicating your gateway's instance ID
 * Parameters required in `JSON` payload:
-  * `numbers`: Array of strings. The phone numbers of the recipients including the country code. No "+" sign is needed.
-  * `document`: String. Base64-encoded representation of the document content that you want to send.
-  * `filename`: String. The filename of your document file.
+  * `group_name`: String. The name of the Telegram group.
+  * `group_admin`: String. The phone number (including the country code) of the group creator. No "+" sign is needed.
+  * `audio`: String. Base64-encoded representation of the audio file that you want to send.
+  * `filename`: String. Name of the file that will be presented to the receiver.
+  * `caption`: String - optional field. A short description that goes with the audio file.
 * Response: Json containing these properties:
-  * `success`: Possible values: `true` / `false`
-  * `status`: String. Text explaining what happened.
+  * `{ 'status': 'queued', 'id': '<Job ID>'}`
+* Code Examples:
+  * [Follow this guide](https://www.whatsmate.net/telegram-audio-document-api.html).
+
+&nbsp;
 
 
-### 12.  Send a Telegram message to a group
-* Endpoint: `POST /v1/telegram/group/message/{instance_number}`
+### 9. Send a voice note file (e.g. opus) to a single recipient
+* Endpoint: `POST /v3/telegram/single/voice_note/message/{instance_number}`
 * Parameter required in URL: 
-  * `instance_number`: Possible value: 0
+  * `instance_number`: An integer indicating your gateway's instance ID
 * Parameters required in `JSON` payload:
-  * `group`: String. The name of the group that the gateway is part of.
-  * `message`: String. The text message that you want to send.
+  * `number`: String. The phone number of the recipient including the country code. No "+" sign is needed.
+  * `voice_note`: String. Base64-encoded representation of the voice note file that you want to send.
+  * `filename`: String. Name of the file that will be presented to the receiver.
+  * `caption`: String - optional field. A short description that goes with the voice note file.
 * Response: Json containing these properties:
-  * `success`: Possible values: `true` / `false`
-  * `status`: String. Text explaining what happened.
+  * `{ 'status': 'queued', 'id': '<Job ID>'}`
+* Code Examples:
+  * [Follow this guide](https://www.whatsmate.net/telegram-voice-note-individual-api.html).
+
+&nbsp;
+
+
+### 10. Send a voice note file (e.g. opus) to a Telegram group that the gateway participates in
+* Endpoint: `POST /v3/telegram/group/voice_note/message/{instance_number}`
+* Parameter required in URL: 
+  * `instance_number`: An integer indicating your gateway's instance ID
+* Parameters required in `JSON` payload:
+  * `group_name`: String. The name of the Telegram group.
+  * `group_admin`: String. The phone number (including the country code) of the group creator. No "+" sign is needed.
+  * `voice_note`: String. Base64-encoded representation of the voice note file that you want to send.
+  * `filename`: String. Name of the file that will be presented to the receiver.
+  * `caption`: String - optional field. A short description that goes with the voice note file.
+* Response: Json containing these properties:
+  * `{ 'status': 'queued', 'id': '<Job ID>'}`
+* Code Examples:
+  * [Follow this guide](https://www.whatsmate.net/telegram-voice-note-document-api.html).
+
+&nbsp;
+
 
 
 <br/>
