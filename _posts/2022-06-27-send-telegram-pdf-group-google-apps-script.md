@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to send a PDf file to a Telegram group from Google Apps Script
+title: How to send a PDF file to a Telegram group from Google Apps Script
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
 last_modified_at: 2022-06-27T00:00:00+08:00
