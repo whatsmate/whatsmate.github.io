@@ -18,7 +18,7 @@ To send a Telegram message containing an image in PHP, do this:
 3. Locate the file `php/send-telegram-image.php`.  <script src="https://gist.github.com/whatsmate/5d51abfc0f2db3793986b40b58fdd444.js"></script>
 4. Study the PHP source code and customize the TODO/FIXME lines.
    * Among other things, put down YOUR OWN number as the recipient. You can't send messages to strangers because we are against SPAMMERS.
-5. Visit the PHP page your just created to send your image.
+5. Visit the PHP page you just created to send your image.
 
 
 Happy coding :) 

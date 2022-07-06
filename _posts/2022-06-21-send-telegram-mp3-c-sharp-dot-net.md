@@ -8,8 +8,6 @@ last_modified_at: 2022-06-21T00:00:00+08:00
 
 This article shows you how to send an audio file (e.g. an MP3 file) to a registered Telegram user in Microsoft's .NET language: C#.
 
-Before the recipient can receive your Telegram message, she MUST register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). <span style="color:red">*Unregistered users will never receive messages from the Gateway.*</span>
-
 
 To send a Telegram message containing an audio file in C#, do this:
 
@@ -18,7 +16,7 @@ To send a Telegram message containing an audio file in C#, do this:
 3. Locate the file `cs/send-telegram-mp3.cs`.  <script src="https://gist.github.com/whatsmate/c7ad4f16fc683d1bec2ed86c839b9fac.js"></script>
 4. Study the `C#` source code and customize the TODO/FIXME lines.
    * Among other things, put down YOUR OWN number as the recipient. You can't send messages to strangers because we are against SPAMMERS.
-5. Run the `C#` program in Visual Studio to send yourself the first PDF file!
+5. Run the `C#` program in Visual Studio to send yourself the first MP3 file!
 
 
 Happy coding :) 

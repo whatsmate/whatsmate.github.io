@@ -21,7 +21,7 @@ To send a Telegram message containing an audio file from a Google Apps Script, d
    * Specify your client ID and secret on lines 20 and 21.
    * Specify your target recipient on line 3. Remember to include the country code.
    * Specify your MP3 file on line 4.
-5. Run the function `demoSendTelegramMp3InDrive()` to send your message.
+5. Run the function `demoSendTelegramMp3InDrive()` to send your first MP3 file.
 
 
 You will need a trial account to call the above API. Go [sign up](https://www.whatsmate.net/telegram-gateway-api.html) now.

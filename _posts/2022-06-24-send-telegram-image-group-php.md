@@ -15,7 +15,7 @@ To send an image to a Telegram group in PHP, do this:
 2. With the above knowledge, you can now download our [sample code](https://github.com/whatsmate/telegram-demos/archive/master.zip).
 3. Locate the file `php/group-send-telegram-image.php`.  <script src="https://gist.github.com/whatsmate/a2aee01ea3ec68966bfca2bc64e71aac.js"></script>
 4. Study the PHP source code and customize the TODO/FIXME lines.
-5. Visit the PHP page your just created to send the image to your group.
+5. Visit the PHP page you just created to send the image to your group.
 
 
 Happy coding :) 

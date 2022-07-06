@@ -18,7 +18,7 @@ To send a Telegram message containing a voice note file in C#, do this:
 3. Locate the file `cs/send-telegram-opus.cs`.  <script src="https://gist.github.com/whatsmate/1d39492ddd7d5d996be047952c107220.js"></script>
 4. Study the `C#` source code and customize the TODO/FIXME lines.
    * Among other things, put down YOUR OWN number as the recipient. You can't send messages to strangers because we are against SPAMMERS.
-5. Run the `C#` program in Visual Studio to send yourself the first PDF file!
+5. Run the `C#` program in Visual Studio to send yourself the first voice note!
 
 
 Happy coding :) 

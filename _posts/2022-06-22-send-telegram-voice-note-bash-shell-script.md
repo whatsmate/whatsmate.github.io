@@ -19,7 +19,7 @@ To send a Telegram message containing a voice note file from a bash shell script
 4. Study the script and customize the TODO/FIXME lines.
    * Among other things, put down YOUR OWN number as the recipient. You can't send messages to strangers because we are against SPAMMERS.
 5. Change to the directory containing the script: `cd bash`
-6. Run the script to send yourself the first image: `./send-telegram-opus.sh`
+6. Run the script to send yourself the first voice note: `./send-telegram-opus.sh`
 
 
 Happy coding :) 

@@ -19,7 +19,7 @@ To send a Telegram message containing a PDF file in `Node.js`, do this:
 4. Study the `Node.js` source code and customize the TODO/FIXME lines.
    * Among other things, put down YOUR OWN number as the recipient. You can't send messages to strangers because we are against SPAMMERS.
 5. Change to the directory containing the script: `cd nodejs`
-6. Run the script to send yourself the first image: `./send-telegram-pdf.js`
+6. Run the script to send yourself the first PDF file: `./send-telegram-pdf.js`
 
 
 Happy coding :) 

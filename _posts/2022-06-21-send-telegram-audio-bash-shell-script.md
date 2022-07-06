@@ -8,8 +8,6 @@ last_modified_at: 2022-06-21T00:00:00+08:00
 
 This article shows you how to send an audio file (e.g. an MP3 file) to a registered Telegram user from a bash shell script.
 
-Before the recipient can receive your Telegram message, she MUST register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). <span style="color:red">*Unregistered users will never receive messages from the Gateway.*</span>
-
 
 To send a Telegram message containing an audio file from a bash shell script, do this:
 
@@ -19,7 +17,7 @@ To send a Telegram message containing an audio file from a bash shell script, do
 4. Study the script and customize the TODO/FIXME lines.
    * Among other things, put down YOUR OWN number as the recipient. You can't send messages to strangers because we are against SPAMMERS.
 5. Change to the directory containing the script: `cd bash`
-6. Run the script to send yourself the first image: `./send-telegram-mp3.sh`
+6. Run the script to send yourself the first MP3 file: `./send-telegram-mp3.sh`
 
 
 Happy coding :) 

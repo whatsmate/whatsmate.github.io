@@ -18,7 +18,7 @@ To send a Telegram message containing an audio file in PHP, do this:
 3. Locate the file `php/send-telegram-mp3.php`. <script src="https://gist.github.com/whatsmate/bdbca5b9e8a4d2b7b7f1bc484b46f80b.js"></script>
 4. Study the PHP source code and customize the TODO/FIXME lines.
    * Among other things, put down YOUR OWN number as the recipient. You can't send messages to strangers because we are against SPAMMERS.
-5. Visit the PHP page your just created to send your image.
+5. Visit the PHP page your just created to send your MP3 file.
 
 
 Happy coding :) 

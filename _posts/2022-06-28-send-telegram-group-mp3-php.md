@@ -1,21 +1,22 @@
 ---
 layout: post
-title: How to send a PDF file to a Telegram group in PHP
+title: How to send an audio file to a Telegram group in PHP
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2022-06-27T00:00:00+08:00
+last_modified_at: 2022-06-28T00:00:00+08:00
 ---
 
-This article shows you how to send a document (e.g. a PDF file etc.) to a Telegram group in PHP.
+This article shows you how to send an audio file (e.g. an MP3 file) to a registered Telegram group in PHP.
 
 
-To send a PDF document to a Telegram group in PHP, do this:
+
+To send a Telegram message containing an audio file in PHP, do this:
 
 1. First, learn how to send a simple text message to a group on the [official site](https://www.whatsmate.net/telegram-group-message-api.html). 
 2. With the above knowledge, you can now download our [sample code](https://github.com/whatsmate/telegram-demos/archive/master.zip).
-3. Locate the file `php/group-send-telegram-pdf.php`.  <script src="https://gist.github.com/whatsmate/d33a7190a32d39332ead44f2b0def96b.js"></script>
+3. Locate the file `php/group-send-telegram-mp3.php`. <script src="https://gist.github.com/whatsmate/412e942f5f7d91f076f44e127aeb73a0.js"></script>
 4. Study the PHP source code and customize the TODO/FIXME lines.
-5. Visit the PHP page you just created to send the PDF file to your group.
+5. Visit the PHP page you just created to send your MP3 file to your group.
 
 
 Happy coding :) 
