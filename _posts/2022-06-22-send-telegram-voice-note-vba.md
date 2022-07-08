@@ -19,7 +19,7 @@ To send a Telegram message containing a voice note file in VBA, do this:
 3. Locate the file `VBA/send-telegram-opus.vbs`.  <script src="https://gist.github.com/whatsmate/420606fb6fb273ee82af10f6167e5ad9.js"></script>
 4. Study the `VBA` source code and customize the TODO/FIXME lines.
    * Among other things, put down YOUR OWN number as the recipient. You can't send messages to strangers because we are against SPAMMERS.
-5. Copy the audio file `assets\martin-luther-king.opus` in the sample code package to `C:\Users\Public\martin-luther-king.opus`
+5. Copy the voice note file `assets\martin-luther-king.opus` in the sample code package to `C:\Users\Public\martin-luther-king.opus`
 6. Run `Main_Routine` in the VBA program.
 
 
