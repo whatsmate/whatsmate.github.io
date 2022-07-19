@@ -1,12 +1,14 @@
 ---
 layout: post
-title: How to send an image to a WhatsApp user in C# (.NET)
+title: How to send an image to a WhatsApp user in C# (.NET) using Visual Studio 2019
 subtitle: Using the WhatsMate WhatsApp Gateway REST API
 published: true
 last_modified_at: 2022-05-03T00:00:00+08:00
 ---
 
-This article shows you how to send an image to a registered WhatsApp user in Microsoft's .NET language: C#.
+This article shows you how to send an image to a registered WhatsApp user in Microsoft's .NET language: C# using Visual Studio 2019.
+
+If you are using Visual Studio 2022, please read [this tutorial](/2022-07-18-send-whatsapp-image-c-sharp-dot-net-vs2022/) instead.
 
 Before the recipient can receive your WhatsApp message, she MUST register with the WhatsMate WA Gateway. Instructions are available on the [official site](https://www.whatsmate.net/whatsapp-gateway-api.html). <span style="color:red">*Unregistered users will never receive messages from the Gateway.*</span>
 

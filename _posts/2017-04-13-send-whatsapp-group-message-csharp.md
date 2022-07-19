@@ -1,12 +1,14 @@
 ---
 layout: post
-title: How to send messages to a WhatsApp group in C#
+title: How to send messages to a WhatsApp group in C# using Visual Studio 2019
 subtitle: Using the WhatsMate WA Gateway REST API
 published: true
 last_modified_at: 2022-05-03T00:00:00+08:00
 ---
 
-This article shows you how to send a message to a WhatsApp group in Microsoft’s .net language: C#.
+This article shows you how to send a message to a WhatsApp group in Microsoft’s .net language: C# using Visual Studio 2019.
+
+If you are using Visual Studio 2022, please read [this tutorial](/2022-07-18-send-whatsapp-group-message-csharp-vs2022/) instead.
 
 You MUST obtain the secret gateway number by signing up for a Forever Green account before you can send a message to a WhatsApp group. Instructions are available on the [official site](https://www.whatsmate.net/whatsapp-group-message-api.html). 
 
