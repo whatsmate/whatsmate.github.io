@@ -1,17 +1,19 @@
 ---
 layout: post
-title: How to send a PDF file to a Telegram user in C# (.NET)
+title: How to send a PDF file to a Telegram user in C# using Visual Studio 2019
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2022-06-20T00:00:00+08:00
+last_modified_at: 2022-07-20T00:00:00+08:00
 ---
 
-This article shows you how to send a document (e.g. a PDF file) to a registered Telegram user in Microsoft's .NET language: C#.
+This article shows you how to send a document (e.g. a PDF file) to a registered Telegram user in Microsoft's .NET language: C# using Visual Studio 2019.
+
+If you are using Visual Studio 2022, please read [this tutorial](/2022-07-20-send-telegram-pdf-c-sharp-dot-net-vs2022/) instead.
 
 Before the recipient can receive your Telegram message, she MUST register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). <span style="color:red">*Unregistered users will never receive messages from the Gateway.*</span>
 
 
-To send a Telegram message containing a PDF document in C#, do this:
+To send a Telegram message containing a PDF document in C# using Visual Studio 2019, do this:
 
 1. First, learn how to send a simple text message on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). 
 2. With the above knowledge, you can now download our [sample code](https://github.com/whatsmate/telegram-demos/archive/master.zip).

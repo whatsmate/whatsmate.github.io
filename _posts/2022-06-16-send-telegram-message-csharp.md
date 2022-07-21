@@ -1,12 +1,14 @@
 ---
 layout: post
-title: How to send Telegram Messages in C#
+title: How to send Telegram Messages in C# using Visual Studio 2019
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2022-06-16T00:00:00+08:00
+last_modified_at: 2022-07-20T00:00:00+08:00
 ---
 
-This article shows you how to send a Telegram message in Microsoft's .net language: C#.
+This article shows you how to send a Telegram message in Microsoft's .net language: C# using Visual Studio 2019.
+
+If you are using Visual Studio 2022, please read [this tutorial](/2022-07-20-send-telegram-message-csharp-vs2022/) instead.
 
 Before the recipient can receive your Telegram message, she will need to register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). <span style="color:red">*Unregistered users will never receive messages from the Gateway.*</span>
 
@@ -14,7 +16,7 @@ Before the recipient can receive your Telegram message, she will need to registe
 <iframe width="560" height="315" src="https://www.youtube.com/embed/H6HgQ-VJq2Y?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-To send a Telegram message in C#, do this:
+To send a Telegram message in C# using Visual Studio 2019, do this:
 
 1. Copy the following source code to the main class in your Console Application in Visual Studio.  <script src="https://gist.github.com/whatsmate/ca80d22bbf4043f0d76f1507fe48aeec.js"></script>
 2. Customize the TODO lines:
