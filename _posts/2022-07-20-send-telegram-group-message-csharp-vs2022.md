@@ -13,7 +13,7 @@ If you are using Visual Studio 2019, please read [this tutorial](/2022-06-23-sen
 You MUST obtain the secret gateway number by signing up for a Premium account before you can send a message to a Telegram group. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-subscribe.html).
 
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/r2SnHH2BTbY?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe> -->
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/fnyGwfP1O64?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe> -->
 
 
 To send a Telegram group message from your C# application, do this:
