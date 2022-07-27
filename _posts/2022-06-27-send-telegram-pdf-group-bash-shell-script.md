@@ -8,6 +8,7 @@ last_modified_at: 2022-06-27T00:00:00+08:00
 
 This article shows you how to send a document (e.g. a PDF file etc.) to a registered Telegram group from a shell script.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5O3ZpZ1CfzI?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 To send a PDF document to a Telegram group from a shell script, do this:
 

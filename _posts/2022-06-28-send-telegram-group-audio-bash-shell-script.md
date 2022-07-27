@@ -8,7 +8,7 @@ last_modified_at: 2022-06-28T00:00:00+08:00
 
 This article shows you how to send an audio file (e.g. an MP3 file) to a registered Telegram group from a bash shell script.
 
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-Za4mzBkQTE?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 To send a Telegram message containing an audio file to a group from a bash shell script, do this:
 

@@ -8,6 +8,7 @@ last_modified_at: 2022-06-24T00:00:00+08:00
 
 This article shows you how to send an image to a Telegram group from a shell script.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DrbTjX0gRxg?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 To send an image to a Telegram group from a shell script, do this:
 
