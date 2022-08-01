@@ -8,6 +8,10 @@ last_modified_at: 2022-06-24T00:00:00+08:00
 
 This article shows you how to send an image to a Telegram group in Python 3.
 
+You MUST obtain the secret gateway number by signing up for a Premium account before you can send a message to a Telegram group. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-subscribe.html).
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mIhwi8Z8sgs?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 To send an image to a Telegram group in Python 3, do this:
 
