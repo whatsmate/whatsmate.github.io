@@ -9,6 +9,8 @@ last_modified_at: 2022-06-28T00:00:00+08:00
 This article shows you how to send an audio file (e.g. an MP3 file) to a registered Telegram group in Node.js (JavaScript).
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-U2bS70t8Cg?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+
 
 To send a Telegram message containing an audio file in `Node.js`, do this:
 

@@ -11,6 +11,9 @@ This article shows you how to send an image to a registered Telegram user in Nod
 Before the recipient can receive your Telegram message, she MUST register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). <span style="color:red">*Unregistered users will never receive messages from the Gateway.*</span>
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3HADfn6roJw?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+
+
 To send a Telegram message containing an image in `Node.js`, do this:
 
 1. First, learn how to send a simple text message on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). 
