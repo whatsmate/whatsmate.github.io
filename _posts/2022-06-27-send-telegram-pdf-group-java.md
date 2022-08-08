@@ -9,6 +9,9 @@ last_modified_at: 2022-06-27T00:00:00+08:00
 This article shows you how to send a document (e.g. a PDF file etc.) to a Telegram group in Java.
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0y87PysweGk?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+
+
 To send a PDF document to a Telegram group in Java, do this:
 
 1. First, learn how to send a simple text message to a group on the [official site](https://www.whatsmate.net/telegram-group-message-api.html). 

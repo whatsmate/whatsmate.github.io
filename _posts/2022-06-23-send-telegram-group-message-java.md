@@ -11,7 +11,7 @@ This article shows you how to send a message to a Telegram group in Java.
 You MUST obtain the secret gateway number by signing up for a Premium account before you can send a message to a Telegram group. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-subscribe.html).
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1JslbW_3AmQ?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QttdR3uQ4Ew?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
 
