@@ -11,6 +11,9 @@ This article shows you how to send a message to a Telegram group in PHP.
 You MUST obtain the secret gateway number by signing up for a Premium account before you can send a message to a Telegram group. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-subscribe.html).
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ooxTCpd8sfI?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+
+
 To send a Telegram group message from your PHP page, do this:
 
 1. Create a New Group from your Telegram client.
