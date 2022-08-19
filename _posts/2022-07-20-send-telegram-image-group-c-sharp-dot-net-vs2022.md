@@ -10,6 +10,10 @@ This article shows you how to send an image to a Telegram group in Microsoft's .
 
 If you are using Visual Studio 2019, please read [this tutorial](/2022-06-24-send-telegram-image-group-c-sharp-dot-net/) instead.
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YCGGGdoqPdc?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+
+
 To send an image to a Telegram group in C# using Visual Studio 2022, do this:
 
 1. First, learn how to send a simple text message to a group on the [official site](https://www.whatsmate.net/telegram-group-message-api.html). 

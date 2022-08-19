@@ -10,6 +10,10 @@ This article shows you how to send an audio file (e.g. an MP3 file) to a registe
 
 If you are using Visual Studio 2019, please read [this tutorial](/2022-06-21-send-telegram-mp3-c-sharp-dot-net/) instead.
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4KhER1_bUCc?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+
+
 To send a Telegram message containing an audio file in C# using Visual Studio 2022, do this:
 
 1. First, learn how to send a simple text message on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). 
