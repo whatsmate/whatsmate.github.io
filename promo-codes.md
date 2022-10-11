@@ -16,17 +16,23 @@ title: Promo Codes
 ## 1. Discount on &nbsp;<img src="/img/DO_Logo_Vertical_Blue-6321464d.png" height="130" width="130" alt="Digital Ocean" style="vertical-align: -60%" />
 
 
-Need a hosting plan? Sign up with Digital Ocean using [this link](https://m.do.co/c/841d01dfa2fb) to save $10!
+Need a hosting plan? Sign up with Digital Ocean using [this link](https://m.do.co/c/841d01dfa2fb) to get $200 now!
 
 <center>
-<img src="/img/tendollarbill.jpg">
+<img src="/img/200_dollars.jpg">
 </center>
 
+<p>
 You will help us save our costs too. Win-win situation!
+</p>
 
 You may ask: Why Digital Ocean? Why not AWS? Well, we use both and we can tell you Digital Ocean is 
 10 times easier to use. Our Digital Ocean droplets have been running reliably for months without the need to reboot.
-When we have a question/problem, their customer support staff usually gets back to us within an hour. 
+When we have a question/issue, their customer support staff usually gets back to us within an hour. 
 What more can we ask for?
 
-You have nothing to lose.  [Sign up with Digital Ocean now](https://m.do.co/c/841d01dfa2fb).  <img src="/img/tendollaroff.gif">
+You have nothing to lose.  [Sign up with Digital Ocean now](https://m.do.co/c/841d01dfa2fb).  
+
+<center>
+<img src="/img/200_off.jpg">
+</center>
