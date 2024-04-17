@@ -3,7 +3,7 @@ layout: post
 title: How to send a voice note file to a Telegram group from Google Apps Script (GAS)
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2022-06-29T00:00:00+08:00
+last_modified_at: 2024-04-17T00:00:00+08:00
 ---
 
 This article shows you how to send a voice note file (e.g. an OPUS file) to a registered Telegram group from a Google Apps Script.

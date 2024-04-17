@@ -3,7 +3,7 @@ layout: post
 title: How to send a PDF file to a Telegram group in PHP
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2022-06-27T00:00:00+08:00
+last_modified_at: 2024-04-17T00:00:00+08:00
 ---
 
 This article shows you how to send a document (e.g. a PDF file etc.) to a Telegram group in PHP.

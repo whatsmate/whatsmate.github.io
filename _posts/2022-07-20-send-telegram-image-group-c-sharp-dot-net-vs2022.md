@@ -3,7 +3,7 @@ layout: post
 title: How to send an image to a Telegram group in C# using Visual Studio 2022
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2022-07-20T00:00:00+08:00
+last_modified_at: 2024-04-17T00:00:00+08:00
 ---
 
 This article shows you how to send an image to a Telegram group in Microsoft's .NET language: C# using Visual Studio 2022.

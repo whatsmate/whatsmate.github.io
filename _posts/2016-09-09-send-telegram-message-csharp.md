@@ -3,7 +3,7 @@ layout: post
 title: How to send Telegram Messages in C#
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2022-05-03T00:00:00+08:00
+last_modified_at: 2024-04-17T00:00:00+08:00
 ---
 
 

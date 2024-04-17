@@ -3,7 +3,7 @@ layout: post
 title: How to translate text in Java
 subtitle: Using the WhatsMate Translation API
 published: true
-last_modified_at: 2022-05-03T00:00:00+08:00
+last_modified_at: 2024-04-17T00:00:00+08:00
 ---
 
 This article shows you how to translate textual natural languages in `Java`.

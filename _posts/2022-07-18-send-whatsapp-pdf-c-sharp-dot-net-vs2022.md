@@ -3,7 +3,7 @@ layout: post
 title: How to send a PDF file to a WhatsApp user in C# (.NET) using Visual Studio 2022
 subtitle: Using the WhatsMate WhatsApp Gateway REST API
 published: true
-last_modified_at: 2022-07-18T00:00:00+08:00
+last_modified_at: 2024-04-17T00:00:00+08:00
 ---
 
 This article shows you how to send a document (e.g. a PDF file, an MP4 file, a WAV file, etc.) to a registered WhatsApp user in Microsoft's .NET language: C#.

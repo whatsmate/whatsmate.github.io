@@ -3,7 +3,7 @@ layout: post
 title: How to send a voice note file to a Telegram user in Python 3
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2022-06-22T00:00:00+08:00
+last_modified_at: 2024-04-17T00:00:00+08:00
 ---
 
 This article shows you how to send a voice note file (e.g. an OPUS file) to a registered Telegram user in Python 3.
