@@ -336,7 +336,7 @@ Check out the [telegram-demos](https://github.com/whatsmate/telegram-demos) repo
 * Response: Json containing these properties:
   * `{ 'status': 'queued', 'id': '<Job ID>'}`
 * Code Examples:
-  * [Follow this guide](https://www.whatsmate.net/telegram-voice-note-document-api.html).
+  * [Follow this guide](https://www.whatsmate.net/telegram-group-voice-note-api.html).
 
 &nbsp;
 
