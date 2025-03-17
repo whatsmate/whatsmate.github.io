@@ -3,7 +3,7 @@ layout: post
 title: How to send an audio file to a Telegram group in Node.js
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2025-01-02T00:00:00+08:00
+last_modified_at: 2025-03-16T00:00:00+08:00
 ---
 
 This article shows you how to send an audio file (e.g. an MP3 file) to a registered Telegram group in Node.js (JavaScript).
@@ -25,14 +25,5 @@ To send a Telegram message containing an audio file in `Node.js`, do this:
 Happy coding :) 
 
 
-<br>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-7383487179928477"
-     data-ad-slot="6959057004"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 <br>
 

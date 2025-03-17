@@ -3,7 +3,7 @@ layout: post
 title: How to send a voice note file to a Telegram group in Visual Basic Script / VBA
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2025-01-02T00:00:00+08:00
+last_modified_at: 2025-03-16T00:00:00+08:00
 ---
 
 
@@ -24,14 +24,5 @@ To send a Telegram message containing a voice note file in VBA, do this:
 Happy coding :) 
 
 
-<br>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-7383487179928477"
-     data-ad-slot="6959057004"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 <br>
 

@@ -3,7 +3,7 @@ layout: post
 title: How to Build an Interactive Price Quoting Application over Telegram in Node.js
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2025-01-02T00:00:00+08:00
+last_modified_at: 2025-03-16T00:00:00+08:00
 ---
 
 This article shows you how to build an interactive price quoting application over Telegram in Node.js. The application responds to user's requests for price quotes interactively. Don't know what I am talking about? The following screenshot should explain it more clearly:
@@ -58,13 +58,4 @@ Want to look at other innovative ideas? Check out the [interesting use cases](ht
 1. We are not affiliated with Telegram in any way. We only provide a gateway for sending out and receiving Telegram messages. We cannot guaranttee the gateway is functional at all times.
 
 
-<br>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-7383487179928477"
-     data-ad-slot="6959057004"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 <br>

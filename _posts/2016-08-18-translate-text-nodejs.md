@@ -3,7 +3,7 @@ layout: post
 title: How to Translate Text in Node.js
 subtitle: Using the WhatsMate Translation REST API
 published: true
-last_modified_at: 2025-01-02T00:00:00+08:00
+last_modified_at: 2025-03-16T00:00:00+08:00
 ---
 
 This article shows you how to translate text in `Node.js`.
@@ -31,14 +31,5 @@ The trial account only allows you to call the translation API up to 10 times for
 Want to translate text in another programming language? Check out the [Translation API](https://www.whatsmate.net/translation-api.html) page.
 
 
-<br>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-7383487179928477"
-     data-ad-slot="6959057004"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 <br>
 

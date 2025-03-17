@@ -3,7 +3,7 @@ layout: post
 title: How to send messages to a Telegram group in VB.NET
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2025-01-02T00:00:00+08:00
+last_modified_at: 2025-03-16T00:00:00+08:00
 ---
 
 

@@ -3,7 +3,7 @@ layout: post
 title: How to Send Yourself the Exchange Rate of a Currency Daily
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2025-01-02T00:00:00+08:00
+last_modified_at: 2025-03-16T00:00:00+08:00
 ---
 
 <img src="/img/yen_small.jpg"/> 
@@ -50,13 +50,4 @@ Before the recipient can receive your Telegram message, she will need to registe
 3. We are not affiliated with Telegram in any way. We only provide a gateway for sending out Telegram messages. We cannot guaranttee the gateway is functional at all times.
 
 
-<br>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-7383487179928477"
-     data-ad-slot="6959057004"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 <br>

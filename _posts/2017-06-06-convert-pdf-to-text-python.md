@@ -3,7 +3,7 @@ layout: post
 title: How to Convert a PDF file to text in Python
 subtitle: Using the WhatsMate PDF-to-Text REST API
 published: true
-last_modified_at: 2025-01-02T00:00:00+08:00
+last_modified_at: 2025-03-16T00:00:00+08:00
 ---
 
 This article shows you how to extract text from an online PDF document in Python.
@@ -29,14 +29,5 @@ The trial account only allows you to call the PDF-to-Text API up to 20 times for
 Want to extract PDF text in another programming language? Check out the [PDF-to-Text API](https://www.whatsmate.net/pdf-to-text-api.html) page.
 
 
-<br>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-7383487179928477"
-     data-ad-slot="6959057004"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 <br>
 
