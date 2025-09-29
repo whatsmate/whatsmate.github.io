@@ -3,7 +3,7 @@ layout: post
 title: How to send Telegram Messages from shell script
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2025-03-16T00:00:00+08:00
+last_modified_at: 2025-09-29T00:00:00+08:00
 ---
 
 This article shows you how to send a Telegram message from a shell script.
@@ -11,7 +11,7 @@ This article shows you how to send a Telegram message from a shell script.
 Before the recipient can receive your Telegram message, she will need to register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). <span style="color:red">*Unregistered users will never receive messages from the Gateway.*</span>
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZYp7UMUsaiU?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tuW_WvU_NW8?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
 To send a Telegram message from a shell script, do this:
