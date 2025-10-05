@@ -11,7 +11,7 @@ This article shows you how to send a Telegram message in VBA / Visual Basic Scri
 Before the recipient can receive your Telegram message, she will need to register with the WhatsMate Telegram Gateway. Instructions are available on the [official site](https://www.whatsmate.net/telegram-gateway-api.html). <span style="color:red">*Unregistered users will never receive messages from the Gateway.*</span>
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7SEZkHn514c?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r-NbU9vUwrQ?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
 To send a Telegram message in VBA / VB Script, do this:
