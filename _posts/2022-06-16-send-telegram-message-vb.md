@@ -3,7 +3,7 @@ layout: post
 title: How to send Telegram Messages in VB.NET
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2025-03-16T00:00:00+08:00
+last_modified_at: 2025-10-21T00:00:00+08:00
 ---
 
 This article shows you how to send a Telegram message in Microsoft's .net language: VB.NET.
@@ -20,14 +20,8 @@ To send a Telegram message in VB.NET, do this:
 2. Customize the TODO lines:
    * Specify your gateway instance ID on line 10.
    * Specify your client ID and secret on lines 11 and 12.
-   * Specify your target recipient and message on line 64. Remember to include the country code in the recipient's number.
-3. Add the reference "System.Web.Extensions" by doing this:
-   1. Right-click on your project node in the Solution Explorer panel.
-   2. Choose "Add" -> "Reference..."
-   3. Choose "Framework" on the left pane.
-   4. Look for "System.Web.Extensions" in the middle pane. Check the checkbox in front of it.
-   5. Click OK.
-4. Build and run the application in Visual Studio.
+   * Specify your target recipient and message on line 60. Remember to include the country code in the recipient's number.
+3. Build and run the application in Visual Studio.
 
 
 You will need a trial account to call the above API. Go [sign up](https://www.whatsmate.net/telegram-gateway-api.html) now.
