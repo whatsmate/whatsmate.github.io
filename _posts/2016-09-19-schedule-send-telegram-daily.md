@@ -3,7 +3,7 @@ layout: post
 title: How to Send Yourself the Exchange Rate of a Currency Daily
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2025-03-16T00:00:00+08:00
+last_modified_at: 2026-01-28T20:11:00+08:00
 ---
 
 <img src="/img/yen_small.jpg"/> 

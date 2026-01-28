@@ -3,7 +3,7 @@ layout: post
 title: How to send a PDF file to a Telegram user in Java
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2025-03-16T00:00:00+08:00
+last_modified_at: 2026-01-28T20:11:00+08:00
 ---
 
 This article shows you how to send a document (e.g. a PDF file) to a registered Telegram user in Java.

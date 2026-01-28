@@ -3,7 +3,7 @@ layout: post
 title: How to send an audio file to a Telegram group in PHP
 subtitle: Using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2025-03-16T00:00:00+08:00
+last_modified_at: 2026-01-28T20:11:00+08:00
 ---
 
 This article shows you how to send an audio file (e.g. an MP3 file) to a registered Telegram group in PHP.
