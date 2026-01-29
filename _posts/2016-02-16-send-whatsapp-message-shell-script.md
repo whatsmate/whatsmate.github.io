@@ -38,7 +38,7 @@ Start by copying the following source code into your script file:
 <script src="https://gist.github.com/whatsmate/10c75499502a2ededc23.js"></script>
 
 
-#### 2. **Configure Your Credentials**
+#### 2. **Configure a few Parameters**
 Customize these key parameters in the script:
 
 - **Line 3**: Replace with your gateway instance ID

@@ -11,7 +11,7 @@ body {
 }
 p {
   line-height: 1.5;
-  margin: 30px 0;
+  margin: 10px 0;
 }
 p a {
   /* text-decoration: underline */
@@ -311,6 +311,52 @@ header.header-page .page-heading .page-subheading {
 
 header.header-post .post-heading .post-subheading {
   margin-bottom: 20px;
+}
+
+/* --- Improved spacing for post content --- */
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+article h1:first-child,
+article h2:first-child,
+article h3:first-child,
+article h4:first-child,
+article h5:first-child,
+article h6:first-child {
+  margin-top: 20px;
+}
+
+article p {
+  margin-bottom: 15px;
+}
+
+article ul,
+article ol {
+  margin-bottom: 15px;
+}
+
+article blockquote {
+  margin: 30px 0;
+  padding-left: 20px;
+  border-left: 4px solid #0085a1;
+}
+
+article iframe,
+article .gist {
+  margin: 30px 0;
+}
+
+article hr {
+  margin: 40px 0;
+  border: 0;
+  border-top: 2px solid #eee;
 }
 
 @media only screen and (min-width: 768px) {
