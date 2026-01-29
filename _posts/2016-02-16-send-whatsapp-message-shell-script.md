@@ -43,7 +43,7 @@ Customize these key parameters in the script:
 
 - **Line 3**: Replace with your gateway instance ID
 - **Lines 4-5**: Update with your Client ID and Secret
-- **Line 10**: Specify the target phone number (include country code, e.g., `+1234567890`)
+- **Line 10**: Specify the target phone number (including the country code, e.g., `+1234567890`)
 - **Line 11**: Provide your message content
 
 
