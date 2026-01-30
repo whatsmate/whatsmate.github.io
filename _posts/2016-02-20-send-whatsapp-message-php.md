@@ -45,7 +45,7 @@ Customize these key parameters in the PHP script:
 
 - **Line 2**: Replace with your gateway instance ID
 - **Lines 3-4**: Update with your Client ID and Secret
-- **Line 7**: Specify the target phone number (including the country code, e.g., `+1234567890`)
+- **Line 7**: Specify the target phone number (including the country code, e.g., `12025550108`)
 - **Line 8**: Provide your message content
 
 

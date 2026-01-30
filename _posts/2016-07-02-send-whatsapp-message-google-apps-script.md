@@ -40,7 +40,7 @@ Customize these key parameters in the Google Apps Script code:
 
 - **Line 9**: Replace with your gateway instance ID
 - **Lines 10-11**: Update with your Client ID and Secret
-- **Line 2**: Specify the target phone number (including the country code, e.g., `+1234567890`)
+- **Line 2**: Specify the target phone number (including the country code, e.g., `12025550108`)
 - **Line 3**: Provide your message content
 
 

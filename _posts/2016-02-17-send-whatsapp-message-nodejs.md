@@ -44,7 +44,7 @@ Customize these key parameters in the JavaScript code:
 
 - **Line 5**: Replace with your gateway instance ID
 - **Lines 6-7**: Update with your Client ID and Secret
-- **Line 10**: Specify the target phone number (including the country code, e.g., `+1234567890`)
+- **Line 10**: Specify the target phone number (including the country code, e.g., `12025550108`)
 - **Line 11**: Provide your message content
 
 

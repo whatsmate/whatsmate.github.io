@@ -44,7 +44,7 @@ Customize these key parameters in the PowerShell script:
 
 - **Line 4**: Replace with your gateway instance ID
 - **Lines 5-6**: Update with your Client ID and Secret
-- **Line 1**: Specify the target phone number (including the country code, e.g., `+1234567890`)
+- **Line 1**: Specify the target phone number (including the country code, e.g., `12025550108`)
 - **Line 2**: Provide your message content
 
 

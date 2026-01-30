@@ -44,7 +44,7 @@ Customize these key parameters in the Java code:
 
 - **Line 9**: Replace with your gateway instance ID
 - **Lines 10-11**: Update with your Client ID and Secret
-- **Line 18**: Specify the target phone number (including the country code, e.g., `+1234567890`)
+- **Line 18**: Specify the target phone number (including the country code, e.g., `12025550108`)
 - **Line 19**: Provide your message content
 
 
