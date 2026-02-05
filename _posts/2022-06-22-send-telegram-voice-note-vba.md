@@ -66,15 +66,10 @@ Customize these key parameters in the VBA code:
 
 This automation approach is ideal for:
 - **Excel automation** - Send voice note notifications or messages via Telegram based on spreadsheet data or calculations
-- **Access database workflows** - Automatically send voice notes when database records are updated or processed
-- **Outlook email integration** - Send voice notes via Telegram when specific emails are received or processed
-- **Word document automation** - Share voice notes via Telegram when documents are generated or finalized
-- **Scheduled voice message delivery** - Use Windows Task Scheduler with VBScript files for automated voice note sharing
 - **Business process automation** - Integrate Telegram voice note sharing with Office-based business workflows
-- **Educational tools** - Share voice lessons, language recordings, or spoken tutorials via Telegram from Office applications
-- **Customer service automation** - Deliver voice responses or information to clients through Telegram from CRM systems
 - **Reporting systems** - Send voice notifications when reports are generated or data is processed
-- **Workflow automation** - Trigger voice note sharing based on Office application events or user actions
+- **Customer service automation** - Deliver voice responses or information to clients through Telegram from CRM systems
+- **Scheduled voice message delivery** - Use Windows Task Scheduler with VBScript files for automated voice note sharing
 
 
 ### 🚀 Get Started Today

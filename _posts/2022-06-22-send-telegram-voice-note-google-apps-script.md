@@ -74,14 +74,9 @@ Customize these key parameters in the Google Apps Script code:
 This automation approach is ideal for:
 - **Google Sheets automation** - Send voice note notifications or messages via Telegram based on spreadsheet data or triggers
 - **Google Forms responses** - Automatically send voice notes when form submissions are received
-- **Google Drive workflows** - Share voice note files from Drive folders via Telegram automatically
-- **Scheduled voice message delivery** - Use time-driven triggers to send daily/weekly voice content
 - **Business automation** - Integrate Telegram voice note sharing with Google Workspace business processes
-- **Educational tools** - Share voice lessons, language recordings, or spoken tutorials via Telegram from Google Classroom workflows
-- **Accessibility features** - Provide audio content for users who prefer or require voice-based communication
+- **Scheduled voice message delivery** - Use time-driven triggers to send daily/weekly voice content
 - **Customer service automation** - Send voice responses or information to clients via Telegram
-- **Meeting recordings** - Distribute recorded meeting highlights or summaries as voice messages
-- **Language learning** - Share pronunciation examples or language practice recordings
 
 
 ### 🚀 Get Started Today

@@ -74,12 +74,9 @@ Customize these key parameters in the Google Apps Script code:
 This automation approach is ideal for:
 - **Google Sheets automation** - Send audio notifications or voice messages via Telegram based on spreadsheet data or triggers
 - **Google Forms responses** - Automatically send audio files when form submissions are received
-- **Google Drive workflows** - Share audio files from Drive folders via Telegram automatically
 - **Scheduled audio delivery** - Use time-driven triggers to send daily/weekly audio content
 - **Business automation** - Integrate Telegram audio sharing with Google Workspace business processes
-- **Educational tools** - Share audio lessons, language recordings, or lectures via Telegram from Google Classroom workflows
-- **Podcast distribution** - Automatically deliver podcast episodes to subscribers via Telegram
-- **Audio content management** - Share music, sound effects, or audio recordings with team members
+- **Google Drive workflows** - Share audio files from Drive folders via Telegram automatically
 
 
 ### 🚀 Get Started Today
