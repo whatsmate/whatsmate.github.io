@@ -3,7 +3,7 @@ layout: post
 title: Send Images to Telegram Groups from Shell Script - Complete Guide
 subtitle: Automate Telegram group image sharing using the WhatsMate Telegram Gateway REST API
 published: true
-last_modified_at: 2026-01-30T22:54:01+08:00
+last_modified_at: 2026-02-06T20:30:00+08:00
 ---
 
 ## 🚀 Automate Telegram Group Image Sharing with Shell Scripts
@@ -16,11 +16,11 @@ Need to send images to Telegram groups for team updates, visual reports, or auto
 Before you begin, ensure you have:
 
 1. **A WhatsMate Telegram Gateway account** - Required for API access
-2. **Group admin privileges** - You must be an administrator of the target Telegram group
+2. **Group membership** - The gateway must be a member of the target Telegram group
 3. **Basic shell scripting knowledge** - Familiarity with terminal commands
 4. **Image file ready** - Have the image you want to send available locally
 
-> ⚠️ **Important**: You must be an administrator of the Telegram group you want to send images to. The Gateway uses your admin privileges to post messages on behalf of the group.
+> ⚠️ **Important**: The gateway must be a member of the Telegram group you want to send messages to. The group admin phone number is used to uniquely identify the group.
 
 
 ### 🎥 Video Walkthrough
