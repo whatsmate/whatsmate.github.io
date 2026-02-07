@@ -72,20 +72,21 @@ Add the required libraries to your project:
 </dependency>
 ```
 
-**For manual compilation**, download the JAR files and compile with:
-```bash
-javac -cp "jars/gson-2.8.0.jar:jars/commons-codec-1.10.jar" TelegramGroupPdfSender.java
-```
-
-
 #### 4. **Compile and Run**
 Compile and execute your Java program:
 
+**If using Maven** (after adding dependencies to `pom.xml`):
 ```bash
-# Compile
+mvn compile
+mvn exec:java -Dexec.mainClass="TelegramGroupPdfSender"
+```
+
+**If not using Maven**:
+```bash
+# Compile with required JAR files
 javac -cp "jars/gson-2.8.0.jar:jars/commons-codec-1.10.jar" TelegramGroupPdfSender.java
 
-# Run
+# Run the compiled program
 java -cp ".:jars/gson-2.8.0.jar:jars/commons-codec-1.10.jar" TelegramGroupPdfSender
 ```
 

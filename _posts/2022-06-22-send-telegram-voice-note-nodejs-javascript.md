@@ -20,7 +20,6 @@ Before you begin, ensure you have:
 3. **Node.js installed** - Version 12+ recommended for modern JavaScript features
 4. **Basic JavaScript knowledge** - Familiarity with Node.js and JavaScript programming
 5. **Voice note file ready** - Have the OPUS file you want to send available locally
-6. **Built-in Node.js modules** - This example uses native `http` and `fs` modules (no external dependencies)
 
 > ⚠️ **Important**: Recipients must register with the WhatsMate Telegram Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/telegram-gateway-api.html).
 
