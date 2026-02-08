@@ -63,11 +63,11 @@ Build and run your C# application in Visual Studio to deliver your voice note to
 ### 🔧 Common Use Cases
 
 This automation approach is ideal for:
+- **AI/TTS integration** - Generate voice messages using text-to-speech (TTS) APIs and deliver them to Telegram for automated announcements, notifications, or interactive voice responses
 - **System monitoring alerts** - Send voice alerts for server status or monitoring events from Windows applications
 - **Customer service automation** - Send voice responses or information to clients via Telegram
 - **Audio notifications** - Deliver spoken alerts or voice notifications from .NET systems
 - **Voice message automation** - Send pre-recorded voice messages or announcements via Telegram from C# applications
-- **Meeting recordings** - Distribute recorded meeting highlights or summaries as voice messages
 
 
 ### 🚀 Get Started Today

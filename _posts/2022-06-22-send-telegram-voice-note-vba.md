@@ -65,11 +65,11 @@ Customize these key parameters in the VBA code:
 ### 🔧 Common Use Cases
 
 This automation approach is ideal for:
+- **AI/TTS integration** - Generate voice messages using text-to-speech (TTS) APIs and deliver them to Telegram for automated announcements, notifications, or interactive voice responses
 - **Excel automation** - Send voice note notifications or messages via Telegram based on spreadsheet data or calculations
 - **Business process automation** - Integrate Telegram voice note sharing with Office-based business workflows
 - **Reporting systems** - Send voice notifications when reports are generated or data is processed
 - **Customer service automation** - Deliver voice responses or information to clients through Telegram from CRM systems
-- **Scheduled voice message delivery** - Use Windows Task Scheduler with VBScript files for automated voice note sharing
 
 
 ### 🚀 Get Started Today

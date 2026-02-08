@@ -63,11 +63,11 @@ Run the script to deliver your voice note to Telegram:
 ### 🔧 Common Use Cases
 
 This automation approach is ideal for:
+- **AI/TTS integration** - Generate voice messages using text-to-speech (TTS) APIs and deliver them to Telegram for automated announcements, notifications, or interactive voice responses
 - **System monitoring alerts** - Send voice alerts for server status or monitoring events
 - **Audio notifications** - Deliver spoken alerts or voice notifications directly from terminal commands
 - **Voice message automation** - Send pre-recorded voice messages or announcements via Telegram from system scripts
 - **Voice memo distribution** - Share recorded voice memos or notes with team members through Telegram
-- **Meeting recordings** - Distribute recorded meeting highlights or summaries as voice messages
 
 
 ### 🚀 Get Started Today

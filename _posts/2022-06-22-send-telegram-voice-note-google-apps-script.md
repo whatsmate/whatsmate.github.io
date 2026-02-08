@@ -72,9 +72,9 @@ Customize these key parameters in the Google Apps Script code:
 ### 🔧 Common Use Cases
 
 This automation approach is ideal for:
+- **AI/TTS integration** - Generate voice messages using text-to-speech (TTS) APIs and deliver them to Telegram for automated announcements, notifications, or interactive voice responses
 - **Google Sheets automation** - Send voice note notifications or messages via Telegram based on spreadsheet data or triggers
 - **Google Forms responses** - Automatically send voice notes when form submissions are received
-- **Business automation** - Integrate Telegram voice note sharing with Google Workspace business processes
 - **Scheduled voice message delivery** - Use time-driven triggers to send daily/weekly voice content
 - **Customer service automation** - Send voice responses or information to clients via Telegram
 
