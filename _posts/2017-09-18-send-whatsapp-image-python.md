@@ -1,29 +1,93 @@
 ---
 layout: post
-title: How to send an image to a WhatsApp user in Python
-subtitle: Using the WhatsMate WhatsApp Gateway REST API
+title: Send Images over WhatsApp in Python 2 - Legacy Guide
+subtitle: Automate WhatsApp image sharing using the WhatsMate WhatsApp Gateway REST API (Python 2)
 published: true
-last_modified_at: 2026-01-28T20:11:00+08:00
+last_modified_at: 2026-02-11T15:54:00+08:00
 ---
 
-This article shows you how to send an image to a registered WhatsApp user in Python.
+## ⚠️ Python 2 is Deprecated - Use Python 3 Instead
 
-Before the recipient can receive your WhatsApp message, she MUST register with the WhatsMate WA Gateway. Instructions are available on the [official site](https://www.whatsmate.net/whatsapp-gateway-api.html). <span style="color:red">*Unregistered users will never receive messages from the Gateway.*</span>
+**Important Note**: Python 2 reached end-of-life on January 1, 2020, and is no longer maintained. This guide is provided for legacy systems only. For new projects, we strongly recommend using our **[Python 3 version](/2020-02-20-send-whatsapp-image-python3/)** which includes modern Python practices and ongoing support.
 
+## 🚀 Automate WhatsApp Image Sharing with Python 2 (Legacy)
 
-To send a WhatsApp message containing an image in Python, do this:
-
-1. First, learn how to send a simple text message on the [official site](https://www.whatsmate.net/whatsapp-gateway-api.html). 
-2. With the above knowledge, you can now download our [sample code](https://github.com/whatsmate/wa-demos/archive/master.zip).
-3. Locate the file `python/send-image-individual.py`.  <script src="https://gist.github.com/whatsmate/aa79cbc9bded30557f64daefd30f7b2f.js"></script>
-4. Study the Python source code and customize the TODO/FIXME lines.
-   * Among other things, put down YOUR OWN number as the recipient. You can't send messages to strangers because we are against SPAMMERS.
-5. Change to the directory containing the script: `cd python`
-6. Run the Python script to send yourself the first image: `./send-image-individual.py`
+This legacy guide walks you through sending images to WhatsApp users using Python 2 and the WhatsMate WhatsApp Gateway REST API. Only use this guide if you're maintaining legacy Python 2 systems. For all new development, use Python 3.
 
 
-Happy coding :) 
+### 📋 Prerequisites
+
+Before you begin, ensure you have:
+
+1. **A WhatsMate WhatsApp Gateway account** - Required for API access
+2. **Recipient registration** - Each recipient must register with the Gateway first
+3. **Python 2.7 installed** - Legacy Python version (end-of-life)
+4. **Image file ready** - Have the image you want to send available locally
+5. **Required Python packages** - Install `requests` library: `pip install requests`
+
+> ⚠️ **Important**: Recipients must register with the WhatsMate WhatsApp Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
 
 
-<br>
+### 📝 Step-by-Step Implementation
 
+Follow these steps to send your first image to a WhatsApp user from a Python 2 application:
+
+
+#### 1. **Install Required Package**
+Ensure you have the `requests` library installed:
+```bash
+pip install requests
+```
+
+
+#### 2. **Copy the Python 2 Code Template**
+Start by copying the following legacy Python 2 source code into your Python file:
+
+<script src="https://gist.github.com/whatsmate/aa79cbc9bded30557f64daefd30f7b2f.js"></script>
+
+
+#### 3. **Configure a few Parameters**
+Customize these key parameters in the Python 2 code:
+
+- **Line 8**: Replace `YOUR_GATEWAY_INSTANCE_ID_HERE` with your WhatsApp gateway instance ID
+- **Lines 9-10**: Update `YOUR_OWN_ID_HERE` and `YOUR_OWN_SECRET_HERE` with your Client ID and Secret
+- **Line 12**: Replace `12025550108` with the target phone number (including the country code)
+- **Line 13**: Replace `../assets/cute-girl.jpg` with the path to your image file
+- **Line 14**: Replace `Lovely Gal` with an optional caption for your image
+
+
+#### 4. **Run Your Python 2 Script**
+Execute your Python 2 script to deliver your image to WhatsApp:
+```bash
+# Navigate to the script directory
+cd python
+
+# Make the script executable (Linux/macOS)
+chmod +x send-image-individual.py
+
+# Run the script
+./send-image-individual.py
+
+# Or run with Python directly
+python send-image-individual.py
+```
+
+
+> ⚠️ **Security Warning**: Python 2 no longer receives security updates. Using it in production exposes your system to unpatched vulnerabilities.
+
+
+### 🚀 Upgrade to Python 3 Today
+
+Ready to modernize your WhatsApp image sharing? Upgrade to our **[Python 3 version](/2020-02-20-send-whatsapp-image-python3/)** which offers:
+
+- **Modern Python 3.6+ support** - Current, maintained Python version
+- **Better security** - Regular security updates and patches
+- **Improved performance** - Python 3 optimizations and features
+- **Future compatibility** - Compatibility with modern libraries and tools
+- **Active community support** - Access to current Python ecosystem
+
+[Sign up for a 2-week trial](https://www.whatsmate.net/whatsapp-gateway-api.html) and start sending images with modern Python 3!
+
+---
+
+**Next Steps**: Once you've migrated to Python 3, explore advanced features like sending [documents](https://www.whatsmate.net/whatsapp-document-individual-api.html) or [group messages](https://www.whatsmate.net/whatsapp-group-message-api.html) through the WhatsMate WhatsApp Gateway API documentation.

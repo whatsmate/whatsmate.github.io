@@ -1,30 +1,83 @@
 ---
 layout: post
-title: How to send an image to a WhatsApp user in C# (.NET) using Visual Studio 2019
-subtitle: Using the WhatsMate WhatsApp Gateway REST API
+title: Send Images over WhatsApp in C#/.NET (Visual Studio 2019) - Legacy Guide
+subtitle: Automate WhatsApp image sharing using the WhatsMate WhatsApp Gateway REST API
 published: true
-last_modified_at: 2026-01-28T20:11:00+08:00
+last_modified_at: 2026-02-11T15:54:00+08:00
 ---
 
-This article shows you how to send an image to a registered WhatsApp user in Microsoft's .NET language: C# using Visual Studio 2019.
+## 🚀 Automate WhatsApp Image Sharing with C#/.NET and Visual Studio 2019
 
-If you are using Visual Studio 2022, please read [this tutorial](/2022-07-18-send-whatsapp-image-c-sharp-dot-net-vs2022/) instead.
+Looking to automate WhatsApp image sharing, visual notifications, or media delivery from your C#/.NET applications using Visual Studio 2019? This legacy guide walks you through sending images to WhatsApp users using C# with Visual Studio 2019 and the WhatsMate WhatsApp Gateway REST API. Perfect for .NET developers maintaining legacy applications or using older Visual Studio versions.
 
-Before the recipient can receive your WhatsApp message, she MUST register with the WhatsMate WA Gateway. Instructions are available on the [official site](https://www.whatsmate.net/whatsapp-gateway-api.html). <span style="color:red">*Unregistered users will never receive messages from the Gateway.*</span>
-
-
-To send a WhatsApp message containing an image in C#, do this:
-
-1. First, learn how to send a simple text message on the [official site](https://www.whatsmate.net/whatsapp-gateway-api.html). 
-2. With the above knowledge, you can now download our [sample code](https://github.com/whatsmate/wa-demos/archive/master.zip).
-3. Locate the file `cs/send-image-individual.cs`.  <script src="https://gist.github.com/whatsmate/11c740b0893fb6ef4b5bde9e55e4a591.js"></script>
-4. Study the `C#` source code and customize the TODO/FIXME lines.
-   * Among other things, put down YOUR OWN number as the recipient. You can't send messages to strangers because we are against SPAMMERS.
-5. Run the `C#` program in Visual Studio to send yourself the first image!
+> **⚠️ Legacy Notice**: This guide uses Visual Studio 2019 and legacy .NET libraries. For modern development with Visual Studio 2022, updated .NET features, and better performance, please use our **[updated Visual Studio 2022 tutorial](/2022-07-18-send-whatsapp-image-c-sharp-dot-net-vs2022/)** instead.
 
 
-Happy coding :) 
+### 📋 Prerequisites
+
+Before you begin, ensure you have:
+
+1. **A WhatsMate WhatsApp Gateway account** - Required for API access
+2. **Recipient registration** - Each recipient must register with the Gateway first
+3. **Visual Studio 2019** - .NET development environment (or compatible IDE)
+4. **Image file ready** - Have the image you want to send available locally
+5. **System.Web.Extensions reference** - Required for JSON serialization in legacy .NET
+
+> ⚠️ **Important**: Recipients must register with the WhatsMate WhatsApp Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
 
 
-<br>
+### 📝 Step-by-Step Implementation
 
+Follow these steps to send your first image to a WhatsApp user from a C# application using Visual Studio 2019:
+
+
+#### 1. **Copy the C# Code Template**
+Start by copying the following source code into your C# file:
+
+<script src="https://gist.github.com/whatsmate/11c740b0893fb6ef4b5bde9e55e4a591.js"></script>
+
+
+#### 2. **Configure a few Parameters**
+Customize these key parameters in the C# code:
+
+- **Line 10**: Replace `YOUR_INSTANCE_ID` with your WhatsApp gateway instance ID
+- **Lines 11-12**: Update `YOUR_CLIENT_ID_HERE` and `YOUR_CLIENT_SECRET_HERE` with your Client ID and Secret
+- **Line 20**: Replace `12025550105` with the target phone number (including the country code)
+- **Line 22**: Replace `C:\\TEMP\\cute-girl.jpg` with the path to your image file
+- **Line 23**: Replace `Lovely Gal` with an optional caption for your image
+
+
+#### 3. **Add Required Reference**
+In Visual Studio 2019, add a reference to `System.Web.Extensions` for JSON serialization support:
+1. Right-click on References in your project
+2. Select "Add Reference"
+3. Find and check "System.Web.Extensions"
+4. Click OK
+
+
+#### 4. **Send Your Image**
+Build and run your C# application in Visual Studio 2019 to deliver your image to WhatsApp:
+1. Press **F5** to build and run in debug mode
+2. Or use **Ctrl+F5** to run without debugging
+3. Check the console output for success confirmation
+
+
+### 🔧 Common Use Cases
+
+This legacy automation approach is ideal for:
+- **Legacy Windows applications** - Send images to WhatsApp from older Windows Forms or WPF apps
+- **Maintenance projects** - Update existing .NET applications with WhatsApp image sharing
+- **Backend services** - Integrate WhatsApp image sharing into legacy ASP.NET web applications
+- **Scheduled tasks** - Use Windows Task Scheduler with .NET console apps for regular image delivery
+- **Business applications** - Add WhatsApp notifications with images to enterprise .NET solutions
+
+
+### 🚀 Get Started Today
+
+Ready to automate your image sharing over WhatsApp with C#/.NET and Visual Studio 2019? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/whatsapp-gateway-api.html) and start sending images within minutes!
+
+---
+
+**Next Steps**: Once you've mastered basic image sending, explore advanced features like sending [documents](https://www.whatsmate.net/whatsapp-document-individual-api.html) or [group messages](https://www.whatsmate.net/whatsapp-group-message-api.html) through the WhatsMate WhatsApp Gateway API documentation.
+
+> **💡 Upgrade Recommendation**: For new projects or modern development, we strongly recommend using our **[Visual Studio 2022 tutorial](/2022-07-18-send-whatsapp-image-c-sharp-dot-net-vs2022/)** which uses modern .NET libraries, better performance, and updated development practices.
