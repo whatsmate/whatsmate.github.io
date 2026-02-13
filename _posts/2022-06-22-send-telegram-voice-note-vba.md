@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Send Voice Notes over Telegram from VBA/Visual Basic - Complete Guide
-subtitle: Automate Telegram voice note sharing using VBA and the WhatsMate Telegram Gateway REST API
+subtitle: Automate Telegram voice note sharing using the WhatsMate Telegram Gateway REST API
 published: true
 last_modified_at: 2026-02-04T18:54:01+08:00
 ---

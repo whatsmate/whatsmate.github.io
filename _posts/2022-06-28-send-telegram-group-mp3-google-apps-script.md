@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Send Audio Files to Telegram Groups from Google Apps Script - Complete Guide
-subtitle: Automate Telegram group audio sharing using Google Apps Script and the WhatsMate Telegram Gateway REST API
+subtitle: Automate Telegram group audio sharing using the WhatsMate Telegram Gateway REST API
 published: true
 last_modified_at: 2026-02-07T10:35:00+08:00
 ---

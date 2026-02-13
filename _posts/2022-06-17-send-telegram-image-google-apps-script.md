@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Send Images over Telegram from Google Apps Script - Complete Guide
-subtitle: Automate Telegram image sharing using Google Apps Script and the WhatsMate Telegram Gateway REST API
+subtitle: Automate Telegram image sharing using the WhatsMate Telegram Gateway REST API
 published: true
 last_modified_at: 2026-01-30T22:54:01+08:00
 ---

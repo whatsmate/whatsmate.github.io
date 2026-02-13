@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Send Telegram Group Messages in Node.js - Complete Guide
-subtitle: Automate Telegram group messaging using Node.js and the WhatsMate Telegram Gateway REST API
+subtitle: Automate Telegram group messaging using the WhatsMate Telegram Gateway REST API
 published: true
 last_modified_at: 2026-01-28T20:11:00+08:00
 ---

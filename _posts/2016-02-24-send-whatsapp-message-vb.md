@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Send WhatsApp Messages in VB.NET - Complete Guide
-subtitle: Automate WhatsApp messaging using VB.NET and the WhatsMate WA Gateway REST API
+subtitle: Automate WhatsApp messaging using the WhatsMate WA Gateway REST API
 published: true
 last_modified_at: 2026-01-28T20:11:00+08:00
 ---

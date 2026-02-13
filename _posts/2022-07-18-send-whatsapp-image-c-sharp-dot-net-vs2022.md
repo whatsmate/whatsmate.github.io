@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Send Images over WhatsApp in C#/.NET (Visual Studio 2022) - Complete Guide
-subtitle: Automate WhatsApp image sharing using the WhatsMate WhatsApp Gateway REST API
+subtitle: Automate WhatsApp image sharing using the WhatsMate WA Gateway REST API
 published: true
 last_modified_at: 2026-02-11T15:54:00+08:00
 ---
 
 ## 🚀 Automate WhatsApp Image Sharing with C#/.NET and Visual Studio 2022
 
-Looking to automate WhatsApp image sharing, visual notifications, or media delivery from your modern C#/.NET applications? This guide walks you through sending images to WhatsApp users using C# with Visual Studio 2022 and the WhatsMate WhatsApp Gateway REST API. Perfect for .NET developers using the latest Visual Studio IDE who want to integrate visual content delivery into their C#-based workflows.
+Looking to automate WhatsApp image sharing, visual notifications, or media delivery from your modern C#/.NET applications? This guide walks you through sending images to WhatsApp users using C# with Visual Studio 2022 and the WhatsMate WA Gateway REST API. Perfect for .NET developers using the latest Visual Studio IDE who want to integrate visual content delivery into their C#-based workflows.
 
 > **Note for Visual Studio 2019 users**: If you're using Visual Studio 2019, please read [this Visual Studio 2019 tutorial](/2017-09-14-send-whatsapp-image-c-sharp-dot-net/) instead.
 
@@ -17,13 +17,13 @@ Looking to automate WhatsApp image sharing, visual notifications, or media deliv
 
 Before you begin, ensure you have:
 
-1. **A WhatsMate WhatsApp Gateway account** - Required for API access
+1. **A WhatsMate WA Gateway account** - Required for API access
 2. **Recipient registration** - Each recipient must register with the Gateway first
 3. **Visual Studio 2022** - Latest .NET development environment with modern C# features
 4. **Image file ready** - Have the image you want to send available locally
 5. **Modern .NET libraries** - This version uses `System.Text.Json` for serialization (included in .NET 6+)
 
-> ⚠️ **Important**: Recipients must register with the WhatsMate WhatsApp Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
+> ⚠️ **Important**: Recipients must register with the WhatsMate WA Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
 
 
 ### 📝 Step-by-Step Implementation
@@ -70,4 +70,4 @@ Ready to automate your image sharing over WhatsApp with modern C#/.NET and Visua
 
 ---
 
-**Next Steps**: Once you've mastered basic image sending, explore advanced features like sending [documents](https://www.whatsmate.net/whatsapp-document-individual-api.html) or [group messages](https://www.whatsmate.net/whatsapp-group-message-api.html) through the WhatsMate WhatsApp Gateway API documentation.
+**Next Steps**: Once you've mastered basic image sending, explore advanced features like sending [documents](https://www.whatsmate.net/whatsapp-document-individual-api.html) or [group messages](https://www.whatsmate.net/whatsapp-group-message-api.html) through the WhatsMate WA Gateway API documentation.

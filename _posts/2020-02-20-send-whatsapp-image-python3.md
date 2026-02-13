@@ -1,27 +1,27 @@
 ---
 layout: post
 title: Send Images over WhatsApp in Python 3 - Complete Guide
-subtitle: Automate WhatsApp image sharing using the WhatsMate WhatsApp Gateway REST API
+subtitle: Automate WhatsApp image sharing using the WhatsMate WA Gateway REST API
 published: true
 last_modified_at: 2026-02-11T15:54:00+08:00
 ---
 
 ## 🚀 Automate WhatsApp Image Sharing with Python 3
 
-Looking to automate WhatsApp image sharing, visual notifications, or media delivery from your Python applications? This guide walks you through sending images to WhatsApp users using Python 3 and the WhatsMate WhatsApp Gateway REST API. Perfect for Python developers, data scientists, and automation enthusiasts who want to integrate visual content delivery into their Python-based workflows.
+Looking to automate WhatsApp image sharing, visual notifications, or media delivery from your Python applications? This guide walks you through sending images to WhatsApp users using Python 3 and the WhatsMate WA Gateway REST API. Perfect for Python developers, data scientists, and automation enthusiasts who want to integrate visual content delivery into their Python-based workflows.
 
 
 ### 📋 Prerequisites
 
 Before you begin, ensure you have:
 
-1. **A WhatsMate WhatsApp Gateway account** - Required for API access
+1. **A WhatsMate WA Gateway account** - Required for API access
 2. **Recipient registration** - Each recipient must register with the Gateway first
 3. **Python 3.6+ installed** - Modern Python version with required libraries
 4. **Image file ready** - Have the image you want to send available locally
 5. **Required Python packages** - Install `requests` library: `pip install requests`
 
-> ⚠️ **Important**: Recipients must register with the WhatsMate WhatsApp Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
+> ⚠️ **Important**: Recipients must register with the WhatsMate WA Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
 
 
 ### 📝 Step-by-Step Implementation
@@ -85,4 +85,4 @@ Ready to automate your image sharing over WhatsApp with Python 3? You'll need a 
 
 ---
 
-**Next Steps**: Once you've mastered basic image sending, explore advanced features like sending [documents](https://www.whatsmate.net/whatsapp-document-individual-api.html) or [group messages](https://www.whatsmate.net/whatsapp-group-message-api.html) through the WhatsMate WhatsApp Gateway API documentation.
+**Next Steps**: Once you've mastered basic image sending, explore advanced features like sending [documents](https://www.whatsmate.net/whatsapp-document-individual-api.html) or [group messages](https://www.whatsmate.net/whatsapp-group-message-api.html) through the WhatsMate WA Gateway API documentation.

@@ -1,27 +1,27 @@
 ---
 layout: post
 title: Send Images over WhatsApp from Shell Script - Complete Guide
-subtitle: Automate WhatsApp image sharing using the WhatsMate WhatsApp Gateway REST API
+subtitle: Automate WhatsApp image sharing using the WhatsMate WA Gateway REST API
 published: true
 last_modified_at: 2026-02-11T15:54:00+08:00
 ---
 
 ## 🚀 Automate WhatsApp Image Sharing with Shell Scripts
 
-Looking to automate WhatsApp image sharing, visual notifications, or media delivery directly from your terminal? This guide walks you through sending images to WhatsApp users using a simple shell script and the WhatsMate WhatsApp Gateway REST API. Perfect for system administrators, developers, and automation enthusiasts who want to integrate visual content delivery into their messaging workflows.
+Looking to automate WhatsApp image sharing, visual notifications, or media delivery directly from your terminal? This guide walks you through sending images to WhatsApp users using a simple shell script and the WhatsMate WA Gateway REST API. Perfect for system administrators, developers, and automation enthusiasts who want to integrate visual content delivery into their messaging workflows.
 
 
 ### 📋 Prerequisites
 
 Before you begin, ensure you have:
 
-1. **A WhatsMate WhatsApp Gateway account** - Required for API access
+1. **A WhatsMate WA Gateway account** - Required for API access
 2. **Recipient registration** - Each recipient must register with the Gateway first
 3. **Basic shell scripting knowledge** - Familiarity with terminal commands
 4. **Image file ready** - Have the image you want to send available locally
 5. **Base64 utility** - The `base64` command must be available on your system
 
-> ⚠️ **Important**: Recipients must register with the WhatsMate WhatsApp Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
+> ⚠️ **Important**: Recipients must register with the WhatsMate WA Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
 
 
 ### 📝 Step-by-Step Implementation
@@ -75,4 +75,4 @@ Ready to automate your image sharing over WhatsApp? You'll need a trial account 
 
 ---
 
-**Next Steps**: Once you've mastered basic image sending, explore advanced features like sending [documents](https://www.whatsmate.net/whatsapp-document-individual-api.html) or [group messages](https://www.whatsmate.net/whatsapp-group-message-api.html) through the WhatsMate WhatsApp Gateway API documentation.
+**Next Steps**: Once you've mastered basic image sending, explore advanced features like sending [documents](https://www.whatsmate.net/whatsapp-document-individual-api.html) or [group messages](https://www.whatsmate.net/whatsapp-group-message-api.html) through the WhatsMate WA Gateway API documentation.

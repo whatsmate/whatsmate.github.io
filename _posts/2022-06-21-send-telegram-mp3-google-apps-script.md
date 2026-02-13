@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Send Audio Files over Telegram from Google Apps Script - Complete Guide
-subtitle: Automate Telegram audio sharing using Google Apps Script and the WhatsMate Telegram Gateway REST API
+subtitle: Automate Telegram audio sharing using the WhatsMate Telegram Gateway REST API
 published: true
 last_modified_at: 2026-02-04T18:54:01+08:00
 ---

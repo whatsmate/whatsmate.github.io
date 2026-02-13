@@ -1,27 +1,27 @@
 ---
 layout: post
 title: Send PDF Files over WhatsApp in Python 3 - Complete Guide
-subtitle: Automate WhatsApp document sharing using the WhatsMate WhatsApp Gateway REST API
+subtitle: Automate WhatsApp document sharing using the WhatsMate WA Gateway REST API
 published: true
 last_modified_at: 2026-02-12T13:15:00+08:00
 ---
 
 ## 🚀 Automate WhatsApp Document Sharing with Python 3
 
-Looking to automate PDF delivery, document notifications, or file sharing from your Python applications? This guide walks you through sending PDF files to WhatsApp users using Python 3 and the WhatsMate WhatsApp Gateway REST API. Perfect for Python developers, data scientists, and automation enthusiasts who want to integrate document delivery into their Python-based WhatsApp messaging workflows.
+Looking to automate PDF delivery, document notifications, or file sharing from your Python applications? This guide walks you through sending PDF files to WhatsApp users using Python 3 and the WhatsMate WA Gateway REST API. Perfect for Python developers, data scientists, and automation enthusiasts who want to integrate document delivery into their Python-based WhatsApp messaging workflows.
 
 
 ### 📋 Prerequisites
 
 Before you begin, ensure you have:
 
-1. **A WhatsMate WhatsApp Gateway account** - Required for API access
+1. **A WhatsMate WA Gateway account** - Required for API access
 2. **Recipient registration** - Each recipient must register with the Gateway first
 3. **Python 3 installed** - Version 3.6+ recommended for modern Python features
 4. **PDF file ready** - Have the document you want to send available locally
 5. **Requests library** - Install via `pip install requests` if not already available
 
-> ⚠️ **Important**: Recipients must register with the WhatsMate WhatsApp Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
+> ⚠️ **Important**: Recipients must register with the WhatsMate WA Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
 
 
 ### 📝 Step-by-Step Implementation
@@ -75,4 +75,4 @@ Ready to automate your document sharing over WhatsApp with Python? You'll need a
 
 ---
 
-**Next Steps**: Once you've mastered basic PDF sending, explore advanced features like sending [images](https://www.whatsmate.net/whatsapp-image-individual-api.html) or [group messages](https://www.whatsmate.net/whatsapp-group-message-api.html) through the WhatsMate WhatsApp Gateway API documentation.
+**Next Steps**: Once you've mastered basic PDF sending, explore advanced features like sending [images](https://www.whatsmate.net/whatsapp-image-individual-api.html) or [group messages](https://www.whatsmate.net/whatsapp-group-message-api.html) through the WhatsMate WA Gateway API documentation.

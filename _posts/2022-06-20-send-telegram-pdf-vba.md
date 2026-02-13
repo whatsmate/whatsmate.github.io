@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Send PDF Files over Telegram from VBA/Visual Basic - Complete Guide
-subtitle: Automate Telegram PDF document sharing using VBA and the WhatsMate Telegram Gateway REST API
+subtitle: Automate Telegram PDF document sharing using the WhatsMate Telegram Gateway REST API
 published: true
 last_modified_at: 2026-02-04T17:21:16+0800
 ---

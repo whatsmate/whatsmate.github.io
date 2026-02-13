@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to send an image to a WhatsApp group in C# (.NET) using Visual Studio 2019
-subtitle: Using the WhatsMate WhatsApp Gateway REST API
+subtitle: Using the WhatsMate WA Gateway REST API
 published: true
 last_modified_at: 2026-01-28T20:11:00+08:00
 ---
