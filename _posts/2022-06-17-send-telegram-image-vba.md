@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-01-30T22:54:01+08:00
 ---
 
-## 🚀 Automate Telegram Image Sharing with VBA/Visual Basic
+## Automate Telegram Image Sharing with VBA/Visual Basic
 
 Looking to automate Telegram image sharing directly from Microsoft Office applications or Windows scripts? This guide walks you through sending images to Telegram users using VBA (Visual Basic for Applications) and the WhatsMate Telegram Gateway REST API. Perfect for Office automation specialists, Excel power users, and Windows administrators who want to integrate Telegram image delivery with Microsoft Office, Excel, Access, or standalone VBScript files.
 

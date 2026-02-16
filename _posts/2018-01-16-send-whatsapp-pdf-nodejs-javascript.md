@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-02-12T13:45:00+08:00
 ---
 
-## 🚀 Automate WhatsApp Document Sharing with Node.js/JavaScript
+## Automate WhatsApp Document Sharing with Node.js/JavaScript
 
 Looking to automate PDF delivery, document notifications, or file sharing from your JavaScript applications? This guide walks you through sending PDF files to WhatsApp users using Node.js and the WhatsMate WA Gateway REST API. Perfect for JavaScript developers, full-stack engineers, and Node.js enthusiasts who want to integrate document delivery into their JavaScript-based WhatsApp messaging workflows.
 

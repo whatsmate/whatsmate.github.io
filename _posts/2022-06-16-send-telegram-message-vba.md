@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-01-28T20:11:00+08:00
 ---
 
-## 🚀 Automate Telegram Messaging with VBA
+## Automate Telegram Messaging with VBA
 
 Looking to integrate Telegram messaging into your Microsoft Office applications? This guide walks you through sending Telegram messages using VBA (Visual Basic for Applications) and the WhatsMate Telegram Gateway REST API. Perfect for Excel, Access, and Office users who want to automate notifications and messaging directly from their Office workflows.
 

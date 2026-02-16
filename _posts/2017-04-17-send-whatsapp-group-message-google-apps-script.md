@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-02-13T16:15:00+08:00
 ---
 
-## 🚀 Automate WhatsApp Group Messaging with Google Apps Script
+## Automate WhatsApp Group Messaging with Google Apps Script
 
 Looking to send messages to WhatsApp groups directly from your Google Workspace? This guide walks you through sending WhatsApp group messages using Google Apps Script and the WhatsMate WA Gateway REST API. Perfect for Google Sheets, Docs, Forms, or any Google Workspace integration that needs WhatsApp group notifications.
 

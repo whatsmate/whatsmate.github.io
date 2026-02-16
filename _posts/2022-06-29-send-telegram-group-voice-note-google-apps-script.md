@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-02-07T20:30:00+08:00
 ---
 
-## 🚀 Automate Telegram Group Voice Note Sharing with Google Apps Script
+## Automate Telegram Group Voice Note Sharing with Google Apps Script
 
 Looking to deliver voice notes, audio recordings, or spoken messages to Telegram groups directly from Google Workspace? This comprehensive guide walks you through sending voice note files (OPUS format) to Telegram groups using Google Apps Script and the WhatsMate Telegram Gateway REST API. Perfect for Google Workspace users, spreadsheet automation enthusiasts, and anyone who wants to integrate Telegram group voice messaging with Google Drive, Sheets, or other Google services.
 

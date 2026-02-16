@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-02-06T20:30:00+08:00
 ---
 
-## 🚀 Automate Telegram Group Document Sharing with Shell Scripts
+## Automate Telegram Group Document Sharing with Shell Scripts
 
 Need to send PDF documents to Telegram groups for team collaboration, report distribution, or automated documentation delivery? This guide shows you how to deliver PDF files to Telegram groups using a simple shell script and the WhatsMate Telegram Gateway REST API. Perfect for team leaders, system administrators, and developers who want to automate document delivery to group chats directly from the terminal.
 

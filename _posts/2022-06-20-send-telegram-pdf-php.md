@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-02-04T17:54:01+08:00
 ---
 
-## 🚀 Automate Telegram Document Sharing with PHP
+## Automate Telegram Document Sharing with PHP
 
 Looking to automate PDF delivery, document notifications, or file sharing from your PHP applications? This guide walks you through sending PDF files to Telegram users using PHP and the WhatsMate Telegram Gateway REST API. Perfect for PHP developers, web administrators, and automation enthusiasts who want to integrate document delivery into their PHP-based workflows.
 

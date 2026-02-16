@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-02-12T13:30:00+08:00
 ---
 
-## 🚀 Automate WhatsApp Document Sharing with Python 2 (Legacy)
+## Automate WhatsApp Document Sharing with Python 2 (Legacy)
 
 > ⚠️ **Python 2 Notice**: Python 2 reached end-of-life in January 2020 and is no longer maintained. This guide is provided for legacy systems that still require Python 2 support. For new projects, we strongly recommend using **[Python 3 instead](2020-02-22-send-whatsapp-pdf-python3.md)**.
 

@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-02-06T20:30:00+08:00
 ---
 
-## 🚀 Automate Telegram Group Document Sharing from Google Workspace
+## Automate Telegram Group Document Sharing from Google Workspace
 
 Need to integrate Telegram group PDF sharing into your Google Sheets, Forms, or Docs automation workflows? This guide shows you how to deliver PDF files to Telegram groups using Google Apps Script and the WhatsMate Telegram Gateway REST API. Perfect for Google Workspace users building automation scripts, form processors, or document workflows that need PDF delivery to group chats.
 

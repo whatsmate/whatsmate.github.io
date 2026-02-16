@@ -10,7 +10,7 @@ last_modified_at: 2026-02-13T15:30:00+08:00
 
 **Important Note**: Python 2 reached end-of-life on January 1, 2020, and is no longer maintained. This guide is provided for legacy systems only. For new projects, we strongly recommend using our **[Python 3 version](/2020-02-21-send-whatsapp-image-group-python3/)** which includes modern Python practices and ongoing support.
 
-## 🚀 Automate WhatsApp Group Image Sharing with Python 2 (Legacy)
+## Automate WhatsApp Group Image Sharing with Python 2 (Legacy)
 
 Need to integrate WhatsApp group image sharing into legacy Python 2 applications for team collaboration or automated reporting? This legacy guide shows you how to deliver images to WhatsApp groups using Python 2 and the WhatsMate WA Gateway REST API. Only use this guide if you're maintaining legacy Python 2 systems. For all new development, use Python 3.
 

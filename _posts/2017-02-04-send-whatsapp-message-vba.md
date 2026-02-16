@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-01-28T20:11:00+08:00
 ---
 
-## 🚀 Automate WhatsApp Messaging with VBA
+## Automate WhatsApp Messaging with VBA
 
 Looking to integrate WhatsApp messaging into your Microsoft Office automation? This guide walks you through sending WhatsApp messages using VBA (Visual Basic for Applications) and the WhatsMate WA Gateway REST API. Perfect for Excel, Access, and other Office users who want to automate notifications and messaging directly from their Microsoft Office applications.
 

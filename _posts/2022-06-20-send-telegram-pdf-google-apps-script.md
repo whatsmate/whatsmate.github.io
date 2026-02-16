@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-02-04T17:21:16+0800
 ---
 
-## 🚀 Automate Telegram PDF Sharing with Google Apps Script
+## Automate Telegram PDF Sharing with Google Apps Script
 
 Looking to automate Telegram PDF document sharing directly from Google Workspace? This guide walks you through sending PDF files to Telegram users using Google Apps Script and the WhatsMate Telegram Gateway REST API. Perfect for Google Workspace users, spreadsheet automation enthusiasts, and anyone who wants to integrate Telegram document delivery with Google Drive, Sheets, or other Google services.
 

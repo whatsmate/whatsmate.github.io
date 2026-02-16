@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-01-28T20:11:00+08:00
 ---
 
-## 🚀 Automate Telegram Group Messaging with VBA
+## Automate Telegram Group Messaging with VBA
 
 Looking to integrate Telegram group messaging into your Microsoft Office applications? This guide walks you through sending Telegram group messages using Visual Basic for Applications (VBA) and the WhatsMate Telegram Gateway REST API. Perfect for Excel, Access, Word, or any Microsoft Office automation that needs Telegram group notifications.
 

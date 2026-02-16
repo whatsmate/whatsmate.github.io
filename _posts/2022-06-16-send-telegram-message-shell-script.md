@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-01-28T20:11:00+08:00
 ---
 
-## 🚀 Automate Telegram Messaging with Shell Scripts
+## Automate Telegram Messaging with Shell Scripts
 
 Looking to automate Telegram notifications, alerts, or messages directly from your terminal? This guide walks you through sending Telegram messages using a simple shell script and the WhatsMate Telegram Gateway REST API. Perfect for system administrators, developers, and automation enthusiasts who want to integrate Telegram into their workflows.
 

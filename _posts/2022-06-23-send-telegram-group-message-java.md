@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-01-28T20:11:00+08:00
 ---
 
-## 🚀 Automate Telegram Group Messaging with Java
+## Automate Telegram Group Messaging with Java
 
 Looking to integrate Telegram group messaging into your Java applications? This guide walks you through sending Telegram group messages using Java and the WhatsMate Telegram Gateway REST API. Perfect for Java developers building enterprise applications, backend services, or any Java-based system that needs Telegram group notifications.
 

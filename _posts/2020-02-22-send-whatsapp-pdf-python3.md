@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-02-12T13:15:00+08:00
 ---
 
-## 🚀 Automate WhatsApp Document Sharing with Python 3
+## Automate WhatsApp Document Sharing with Python 3
 
 Looking to automate PDF delivery, document notifications, or file sharing from your Python applications? This guide walks you through sending PDF files to WhatsApp users using Python 3 and the WhatsMate WA Gateway REST API. Perfect for Python developers, data scientists, and automation enthusiasts who want to integrate document delivery into their Python-based WhatsApp messaging workflows.
 

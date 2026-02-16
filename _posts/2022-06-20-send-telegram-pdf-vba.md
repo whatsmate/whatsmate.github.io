@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-02-04T17:21:16+0800
 ---
 
-## 🚀 Automate Telegram PDF Sharing with VBA/Visual Basic
+## Automate Telegram PDF Sharing with VBA/Visual Basic
 
 Looking to automate Telegram PDF document sharing directly from Microsoft Office applications or Windows scripts? This guide walks you through sending PDF files to Telegram users using VBA (Visual Basic for Applications) and the WhatsMate Telegram Gateway REST API. Perfect for Office automation specialists, Excel power users, and Windows administrators who want to integrate Telegram document delivery with Microsoft Office, Excel, Access, or standalone VBScript files.
 

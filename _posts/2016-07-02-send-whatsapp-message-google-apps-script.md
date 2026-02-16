@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-01-28T20:11:00+08:00
 ---
 
-## 🚀 Automate WhatsApp Messaging with Google Apps Script
+## Automate WhatsApp Messaging with Google Apps Script
 
 Looking to integrate WhatsApp messaging into your Google Workspace automation? This guide walks you through sending WhatsApp messages using Google Apps Script and the WhatsMate WA Gateway REST API. Perfect for Google Sheets, Docs, and Forms users who want to automate notifications and messaging directly from their Google Workspace environment.
 

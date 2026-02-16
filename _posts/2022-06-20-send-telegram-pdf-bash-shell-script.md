@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-02-04T16:54:01+08:00
 ---
 
-## 🚀 Automate Telegram Document Sharing with Shell Scripts
+## Automate Telegram Document Sharing with Shell Scripts
 
 Looking to automate PDF delivery, document notifications, or file sharing directly from your terminal? This guide walks you through sending PDF files to Telegram users using a simple shell script and the WhatsMate Telegram Gateway REST API. Perfect for system administrators, developers, and automation enthusiasts who want to integrate document delivery into their workflows.
 

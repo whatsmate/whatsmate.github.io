@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-01-28T20:11:00+08:00
 ---
 
-## 🚀 Automate Telegram Group Messaging with PowerShell
+## Automate Telegram Group Messaging with PowerShell
 
 Looking to integrate Telegram group messaging into your Windows automation scripts? This guide walks you through sending Telegram group messages using PowerShell and the WhatsMate Telegram Gateway REST API. Perfect for Windows system administrators, DevOps engineers, or anyone using PowerShell for automation that needs Telegram group notifications.
 

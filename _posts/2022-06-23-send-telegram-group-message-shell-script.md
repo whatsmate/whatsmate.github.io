@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-01-28T20:11:00+08:00
 ---
 
-## 🚀 Automate Telegram Group Messaging with Shell Script
+## Automate Telegram Group Messaging with Shell Script
 
 Looking to integrate Telegram group messaging into your Unix/Linux automation scripts? This guide walks you through sending Telegram group messages using shell script and the WhatsMate Telegram Gateway REST API. Perfect for system administrators, DevOps engineers, or anyone using bash scripting for automation that needs Telegram group notifications.
 

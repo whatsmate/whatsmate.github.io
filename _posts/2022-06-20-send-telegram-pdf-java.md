@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-02-04T17:54:01+08:00
 ---
 
-## 🚀 Automate Telegram Document Sharing with Java
+## Automate Telegram Document Sharing with Java
 
 Looking to automate PDF delivery, document notifications, or file sharing from your Java applications? This guide walks you through sending PDF files to Telegram users using Java and the WhatsMate Telegram Gateway REST API. Perfect for Java developers, system administrators, and automation enthusiasts who want to integrate document delivery into their Java-based workflows.
 

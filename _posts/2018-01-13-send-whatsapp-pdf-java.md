@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-02-12T12:45:00+08:00
 ---
 
-## 🚀 Automate WhatsApp Document Sharing with Java
+## Automate WhatsApp Document Sharing with Java
 
 Looking to automate PDF delivery, document notifications, or file sharing from your Java applications? This guide walks you through sending PDF files to WhatsApp users using Java and the WhatsMate WA Gateway REST API. Perfect for Java developers, system administrators, and automation enthusiasts who want to integrate document delivery into their Java-based WhatsApp messaging workflows.
 

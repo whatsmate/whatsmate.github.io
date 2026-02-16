@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-02-06T20:30:00+08:00
 ---
 
-## 🚀 Automate Telegram Group Image Sharing with Shell Scripts
+## Automate Telegram Group Image Sharing with Shell Scripts
 
 Need to send images to Telegram groups for team updates, visual reports, or automated notifications? This guide shows you how to deliver images to Telegram groups using a simple shell script and the WhatsMate Telegram Gateway REST API. Ideal for team leaders, system administrators, and developers who want to automate visual content delivery to group chats.
 

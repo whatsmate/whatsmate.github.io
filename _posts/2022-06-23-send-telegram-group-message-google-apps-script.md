@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-01-28T20:11:00+08:00
 ---
 
-## 🚀 Automate Telegram Group Messaging with Google Apps Script
+## Automate Telegram Group Messaging with Google Apps Script
 
 Looking to send messages to Telegram groups directly from your Google Workspace? This guide walks you through sending Telegram group messages using Google Apps Script and the WhatsMate Telegram Gateway REST API. Perfect for Google Sheets, Docs, Forms, or any Google Workspace integration that needs Telegram group notifications.
 

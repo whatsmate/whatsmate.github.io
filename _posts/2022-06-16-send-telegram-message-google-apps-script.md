@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-01-28T20:11:00+08:00
 ---
 
-## 🚀 Automate Telegram Messaging with Google Apps Script
+## Automate Telegram Messaging with Google Apps Script
 
 Looking to integrate Telegram messaging into your Google Workspace automation? This guide walks you through sending Telegram messages using Google Apps Script and the WhatsMate Telegram Gateway REST API. Perfect for Google Sheets, Docs, and Forms users who want to automate notifications and messaging directly from their Google Workspace environment.
 

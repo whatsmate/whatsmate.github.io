@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-02-06T20:30:00+08:00
 ---
 
-## 🚀 Automate Telegram Group Document Sharing with Node.js
+## Automate Telegram Group Document Sharing with Node.js
 
 Need to integrate Telegram group PDF sharing into your Node.js applications for real-time notifications, automated reporting, or web services? This guide shows you how to deliver PDF files to Telegram groups using Node.js and the WhatsMate Telegram Gateway REST API. Perfect for Node.js developers building web applications, backend services, or automation tools that need document delivery to group chats.
 

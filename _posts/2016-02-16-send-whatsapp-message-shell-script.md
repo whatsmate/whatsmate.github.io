@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-01-28T20:11:00+08:00
 ---
 
-## 🚀 Automate WhatsApp Messaging with Shell Scripts
+## Automate WhatsApp Messaging with Shell Scripts
 
 Looking to automate WhatsApp notifications, alerts, or messages directly from your terminal? This guide walks you through sending WhatsApp messages using a simple shell script and the WhatsMate WA Gateway REST API. Perfect for system administrators, developers, and automation enthusiasts who want to integrate WhatsApp into their workflows.
 

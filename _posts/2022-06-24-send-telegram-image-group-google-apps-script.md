@@ -6,7 +6,7 @@ published: true
 last_modified_at: 2026-02-06T20:30:00+08:00
 ---
 
-## 🚀 Automate Telegram Group Image Sharing with Google Apps Script
+## Automate Telegram Group Image Sharing with Google Apps Script
 
 Need to integrate Telegram group image sharing into your Google Workspace automation, Sheets workflows, or Drive-based processes? This guide shows you how to deliver images to Telegram groups using Google Apps Script and the WhatsMate Telegram Gateway REST API. Perfect for Google Workspace users automating business processes, data workflows, or team collaboration that needs visual content delivery to group chats.
 
