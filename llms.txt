@@ -2,7 +2,8 @@
 
 ## Site Overview
 
-**Website:** https://www.whatsmate.net/  
+**This Website (Tutorial / Documentation):** https://whatsmate.github.io/
+**Official Website:** https://www.whatsmate.net/
 **API Host:** https://api.whatsmate.net/ (also supports http)  
 **Purpose:** Comprehensive API documentation and code examples for WhatsApp messaging, Telegram messaging, natural language translation, and PDF text extraction services.
 
