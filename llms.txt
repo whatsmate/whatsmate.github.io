@@ -1,0 +1,253 @@
+# WhatsMate API Documentation - LLM Summary
+
+## Site Overview
+
+**Website:** https://www.whatsmate.net/  
+**API Host:** https://api.whatsmate.net/ (also supports http)  
+**Purpose:** Comprehensive API documentation and code examples for WhatsApp messaging, Telegram messaging, natural language translation, and PDF text extraction services.
+
+**Last Updated:** March 2026  
+**Total Documentation Files:** 191+ tutorial posts covering multiple programming languages and use cases
+
+---
+
+## Quick Start
+
+**Get Started in Minutes:**
+1. Browse 191+ code examples on this documentation site
+2. Copy working code in your preferred programming language
+3. Subscribe to a Premium plan for API access
+4. Start sending messages immediately
+
+**Premium Subscription Required:** API access requires a paid subscription. Choose the service that fits your needs:
+
+| Service | Learn More | Subscribe |
+|---------|-----------|-----------|
+| WhatsApp Gateway | [API Info](https://www.whatsmate.net/whatsapp-gateway-api.html) | [Subscribe](https://www.whatsmate.net/whatsapp-gateway-subscribe.html) |
+| Telegram Gateway | [API Info](https://www.whatsmate.net/telegram-gateway-api.html) | [Subscribe](https://www.whatsmate.net/telegram-gateway-subscribe.html) |
+| Translation API | [API Info](https://www.whatsmate.net/translation-api.html) | [Subscribe](https://www.whatsmate.net/translation-subscribe.html) |
+| PDF-to-Text API | [API Info](https://www.whatsmate.net/pdf-to-text-api.html) | [Subscribe](https://www.whatsmate.net/pdf-api-subscribe.html) |
+
+---
+
+## Why Choose WhatsMate
+
+- **191+ Working Code Examples** - Copy-paste ready implementations in 12+ programming languages
+- **Production-Tested** - Documentation refined over 10+ years (2016-2026)
+- **Multi-Platform** - WhatsApp, Telegram, Translation, PDF processing in one place
+- **Developer-Friendly** - REST API, clear authentication, consistent patterns across all languages
+- **Enterprise-Ready** - Reliable gateway infrastructure, scalable messaging solutions
+- **Time-Saving** - Get started in minutes, not days. No complex setup required.
+
+---
+
+## Core Services
+
+### 1. WhatsApp Gateway API
+- **Individual messaging** - Send text messages, images, PDFs/documents to individual WhatsApp users
+- **Group messaging** - Send text messages, images, PDFs/documents to WhatsApp groups
+- **Requirements:** Forever Green account for group messaging; recipients must register with gateway for individual messages
+- **API Version:** v3
+- **[Subscribe Now](https://www.whatsmate.net/whatsapp-gateway-subscribe.html)**
+
+### 2. Telegram Gateway API
+- **Individual messaging** - Send text messages, images, PDFs/documents, audio/MP3, voice notes
+- **Group messaging** - Send text messages, images, PDFs/documents, audio/MP3, voice notes to Telegram groups
+- **Bot-based:** Uses Telegram bot API architecture
+- **[Subscribe Now](https://www.whatsmate.net/telegram-gateway-subscribe.html)**
+
+### 3. Translation API
+- **Natural language translation** - Multi-language text translation service
+- **Supported languages:** Multiple language pairs
+- **[Subscribe Now](https://www.whatsmate.net/translation-subscribe.html)**
+
+### 4. PDF-to-Text API
+- **Document conversion** - Extract text content from PDF files
+- **Batch processing:** Support for multiple files
+- **[Subscribe Now](https://www.whatsmate.net/pdf-api-subscribe.html)**
+
+---
+
+## Programming Language Coverage
+
+Documentation includes complete code examples in:
+
+### Modern Languages
+- **Python 3** - Contemporary Python implementations
+- **Node.js/JavaScript** - Modern JavaScript/Node.js applications
+- **C# .NET** - Both legacy (.NET Framework) and modern (.NET 6.0+) with Visual Studio 2019/2022
+
+### Traditional/Enterprise Languages
+- **Java** - Enterprise Java applications
+- **PHP** - Web server scripting
+- **C#** - .NET Framework implementations
+- **VB.NET** - Visual Basic .NET applications
+
+### Scripting & Automation
+- **Shell/Bash** - Linux/Unix terminal automation
+- **PowerShell** - Windows automation and scripting
+- **Google Apps Script** - Google Workspace automation
+- **VBA** - Microsoft Office automation (Excel, Word, etc.)
+
+---
+
+## Documentation Structure
+
+### Tutorial Categories
+
+#### WhatsApp Tutorials (~80+ files)
+- **Individual Messages:** Text, images, PDFs (all languages)
+- **Group Messages:** Text, images, PDFs (all languages)
+- **Versions:** Legacy (2016-2021) and Modern VS2022 (2022+)
+
+#### Telegram Tutorials (~90+ files)
+- **Individual Messages:** Text, images, PDFs, audio/MP3, voice notes (all languages)
+- **Group Messages:** Text, images, PDFs, audio/MP3, voice notes (all languages)
+- **Special Features:** Scheduled sending, stock alerts, weather info, chatbots
+- **Versions:** Legacy and Modern VS2022 (2022+)
+
+#### Translation Tutorials (~9 files)
+- Multi-language text translation implementations across all major languages
+
+#### PDF-to-Text Tutorials (~8 files)
+- PDF text extraction implementations across major languages
+
+---
+
+## Key API Endpoints
+
+### WhatsApp Endpoints
+```
+POST /v3/whatsapp/single/text/message/{instance_number}
+POST /v3/whatsapp/group/text/message/{instance_number}
+POST /v3/whatsapp/single/image/message/{instance_number}
+POST /v3/whatsapp/group/image/message/{instance_number}
+POST /v3/whatsapp/single/document/message/{instance_number}
+POST /v3/whatsapp/group/document/message/{instance_number}
+```
+
+### Telegram Endpoints
+```
+POST /v3/telegram/single/text/message/{instance_number}
+POST /v3/telegram/group/text/message/{instance_number}
+POST /v3/telegram/single/image/message/{instance_number}
+POST /v3/telegram/group/image/message/{instance_number}
+POST /v3/telegram/single/document/message/{instance_number}
+POST /v3/telegram/group/document/message/{instance_number}
+POST /v3/telegram/single/audio/message/{instance_number}
+POST /v3/telegram/group/audio/message/{instance_number}
+POST /v3/telegram/single/voice/message/{instance_number}
+POST /v3/telegram/group/voice/message/{instance_number}
+```
+
+### Translation Endpoints
+```
+POST /v3/translation/translate
+```
+
+### PDF-to-Text Endpoints
+```
+POST /v3/pdf-to-text/convert
+```
+
+---
+
+## Authentication
+
+All API calls require:
+- **HTTP Header:** `Content-Type: application/json`
+- **Authentication Headers:**
+  - `X-WM-CLIENT-ID`: Your client ID (email address)
+  - `X-WM-CLIENT-SECRET`: Your client secret key
+- **Instance Number:** Gateway instance ID in URL path
+
+**Get Your Credentials:** Subscribe to any Premium plan at [https://www.whatsmate.net/](https://www.whatsmate.net/) to receive your Client ID and Secret.
+
+---
+
+## Important Notes for AI/LLMs
+
+### Code Example Patterns
+- All tutorials follow consistent structure: Prerequisites → Step-by-Step Implementation → Common Use Cases
+- Line numbers in code examples reference GitHub Gists (embedded via `<script>` tags)
+- Configuration parameters clearly marked with TODO/FIXME comments
+- Base64 encoding commonly used for file attachments (images, PDFs, audio)
+
+### Account Requirements
+- **WhatsApp Individual:** Recipients must register with gateway
+- **WhatsApp Group:** Requires Forever Green account; gateway must be added to group
+- **Telegram:** Bot-based, no recipient registration required
+- **Translation/PDF:** Standard premium account
+
+### Common Parameters
+- **Phone numbers:** Include country code, no "+" sign (e.g., `12025550108`)
+- **Group names:** Must be unique for WhatsApp groups
+- **File paths:** Platform-specific (Windows: `C:\\TEMP\\file.pdf`, Unix: `/tmp/file.pdf`)
+- **Instance ID:** Unique gateway identifier provided after subscription
+
+---
+
+## File Organization
+
+```
+├── api-reference.md      # Complete API endpoint documentation
+├── index.html            # Main documentation index
+├── promo-codes.md        # Promotional offers
+└── llms.txt             # This file - AI/LLM summary
+```
+
+---
+
+## Recent Updates (2026)
+
+Tutorials are being systematically rewritten with:
+- Enhanced structure and clarity
+- Verified code line numbers
+- Updated prerequisites (minimal, essential-only)
+- Modern best practices
+- Clear migration paths from legacy to modern versions
+
+---
+
+## Sample Repository
+
+**GitHub:** https://github.com/whatsmate/wa-demos  
+Contains working demo applications for all major programming languages showing API integration examples.
+
+---
+
+## Support & Documentation Links
+
+### Main Site (Services & Subscription)
+- **Homepage:** https://www.whatsmate.net/
+- **API Reference:** https://www.whatsmate.net/api-reference.html
+
+### WhatsApp Services
+- **Gateway API Info:** https://www.whatsmate.net/whatsapp-gateway-api.html
+- **Gateway Subscribe:** https://www.whatsmate.net/whatsapp-gateway-subscribe.html
+- **Group Messaging API:** https://www.whatsmate.net/whatsapp-group-message-api.html
+
+### Telegram Services
+- **Gateway API Info:** https://www.whatsmate.net/telegram-gateway-api.html
+- **Gateway Subscribe:** https://www.whatsmate.net/telegram-gateway-subscribe.html
+- **Group Messaging API:** https://www.whatsmate.net/telegram-group-message-api.html
+
+### Translation Services
+- **API Info:** https://www.whatsmate.net/translation-api.html
+- **Subscribe:** https://www.whatsmate.net/translation-subscribe.html
+
+### PDF-to-Text Services
+- **API Info:** https://www.whatsmate.net/pdf-to-text-api.html
+- **Subscribe:** https://www.whatsmate.net/pdf-api-subscribe.html
+
+### Documentation (This Site)
+- **Browse All Tutorials:** https://whatsmate.github.io/
+
+---
+
+## Content Quality Indicators
+
+- **Published:** All posts marked `published: true`
+- **Last Modified:** Tracked via `last_modified_at` front matter
+- **Video Walkthroughs:** Embedded YouTube tutorials where available
+- **Code Gists:** All code examples hosted on GitHub Gists for version control
