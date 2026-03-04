@@ -1,34 +1,77 @@
 ---
 layout: post
-title: How to Translate Text in PHP
-subtitle: Using the WhatsMate Translation REST API
+title: Translate Text in PHP - Complete Guide
+subtitle: Automate translations using the WhatsMate Translation REST API
 published: true
-last_modified_at: 2026-01-28T20:11:00+08:00
+last_modified_at: 2026-03-04T12:00:00+08:00
 ---
 
-This article shows you how to translate natural languages in PHP.
+## Automate Text Translation with PHP
 
+Need to translate text programmatically in your PHP applications? This guide walks you through translating text using PHP and the WhatsMate Translation REST API. Perfect for web developers, backend engineers, and anyone who wants to integrate automatic translations into their PHP projects.
+
+
+### 📋 Prerequisites
+
+Before you begin, ensure you have:
+
+1. **PHP environment** - A web server with PHP installed
+2. **Language codes** - Know the ISO language codes for source and target languages
+
+
+> ℹ️ **Note**: The trial account allows up to 10 translation API calls for learning purposes. [Subscribe to a Premium plan](https://www.whatsmate.net/translation-subscribe.html) for production use.
+
+
+### 🎥 Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/t5qDtO1FNxU?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-To translate text (e.g. from English to Italian) in PHP, do this:
+### 📝 Step-by-Step Implementation
 
-1. Copy the following source code to your PHP script.  <script src="https://gist.github.com/whatsmate/c91e4cc10093b7120b82e2341717e619.js"></script>
-2. Specify the language code of the original text on line 8.
-3. Specify the language code of your target language on line 9.
-4. Specify the text that needs to be translated on line 10.
-5. Visit the PHP page your just created to see the translated text.
+Follow these steps to perform your first text translation in PHP:
 
 
-Looking for your language code? See the <a target="_blank" href="http://api.whatsmate.net/v1/translation/supported-codes">complete listing</a>.
+#### 1. **Copy the Script Template**
+Start by copying the following source code into your PHP file:
+
+<script src="https://gist.github.com/whatsmate/c91e4cc10093b7120b82e2341717e619.js"></script>
 
 
-The trial account only allows you to call the translation API up to 10 times for learning purpose. [Subscribe to a Premium plan](https://www.whatsmate.net/translation-subscribe.html) to use the translation API seriously.
+#### 2. **Configure the Parameters**
+Customize these key parameters in the script:
+
+- **Line 8**: Replace with the source language code (e.g., `en` for English)
+- **Line 9**: Replace with the target language code (e.g., `it` for Italian)
+- **Line 10**: Provide the text you want to translate
 
 
-Want to translate text in another programming language? Check out the [Translation API](https://www.whatsmate.net/translation-api.html) page.
+> 🔍 **Looking for language codes?** See the [complete listing of supported language codes](http://api.whatsmate.net/v1/translation/supported-codes).
 
 
-<br>
+#### 3. **Deploy to Your Server**
+Upload the PHP file to your web server in an accessible location.
+
+
+#### 4. **Run the Translation**
+Visit the PHP page in your browser to see the translated result.
+
+
+### 🔧 Common Use Cases
+
+This automation approach is ideal for:
+- **Multi-language websites** - Translate content for international visitors
+- **E-commerce platforms** - Translate product descriptions and reviews
+- **Customer support systems** - Translate support tickets and responses
+- **Content management systems** - Automate translation of user-generated content
+- **Data processing workflows** - Translate text data in batch operations
+
+
+### 🚀 Get Started Today
+
+Ready to automate your text translations? You'll need an account to access the API. [Sign up for a Premium plan](https://www.whatsmate.net/translation-subscribe.html) and start translating within minutes!
+
+---
+
+**Next Steps**: Once you've mastered basic text translation, explore translating text in other programming languages through the [Translation API Getting Started Guide](https://www.whatsmate.net/translation-api.html).
 
