@@ -1,34 +1,76 @@
 ---
 layout: post
-title: How to Translate Text in PowerShell script
-subtitle: Using the WhatsMate Translation REST API
+title: Translate Text in PowerShell - Complete Guide
+subtitle: Automate translations using the WhatsMate Translation REST API
 published: true
-last_modified_at: 2026-01-28T20:11:00+08:00
+last_modified_at: 2026-03-04T16:30:00+08:00
 ---
 
-This article shows you how to translate natural languages from a PowerShell script.
+## Automate Text Translation with PowerShell
 
+Need to translate text programmatically in your PowerShell scripts? This guide walks you through translating text using PowerShell and the WhatsMate Translation REST API. Perfect for system administrators, DevOps engineers, and IT professionals who want to integrate automatic translations into their automation workflows.
+
+
+### 📋 Prerequisites
+
+Before you begin, ensure you have:
+
+1. **PowerShell** - Version 5.1 or higher (PowerShell 7+ recommended)
+2. **Language codes** - Know the ISO language codes for source and target languages
+
+
+> ℹ️ **Note**: The trial account allows up to 10 translation API calls for learning purposes. [Subscribe to a Premium plan](https://www.whatsmate.net/translation-subscribe.html) for production use.
+
+
+### 🎥 Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fn3vROajsOE?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-To translate text (e.g. from English to French) in a PowerShell script, do this:
+### 📝 Step-by-Step Implementation
 
-1. Copy the following source code to your PowerShell script. <script src="https://gist.github.com/whatsmate/6b1455f6bba7150eedbdf6c161c089e9.js"></script>
-2. Specify the language code of the original text on line 6.
-3. Specify the language code of your target language on line 7.
-4. Specify the text that needs to be translated on line 8.
-5. Run the script in PowerShell to see the translated text.
+Follow these steps to perform your first text translation in PowerShell:
 
 
-Looking for your language code? See the <a target="_blank" href="http://api.whatsmate.net/v1/translation/supported-codes">complete listing</a>.
+#### 1. **Copy the Script Template**
+Start by copying the following source code into your PowerShell script file:
+
+<script src="https://gist.github.com/whatsmate/6b1455f6bba7150eedbdf6c161c089e9.js"></script>
 
 
-The trial account only allows you to call the translation API up to 10 times for learning purpose. [Subscribe to a Premium plan](https://www.whatsmate.net/translation-subscribe.html) to use the translation API seriously.
+#### 2. **Configure the Parameters**
+Customize these key parameters in the script:
+
+- **Line 6**: Replace with the source language code (e.g., `en` for English)
+- **Line 7**: Replace with the target language code (e.g., `fr` for French)
+- **Line 8**: Provide the text you want to translate
 
 
-Want to translate text in another programming language? Check out the [Translation API](https://www.whatsmate.net/translation-api.html) page.
+> 🔍 **Looking for language codes?** See the [complete listing of supported language codes](http://api.whatsmate.net/v1/translation/supported-codes).
 
 
-<br>
+#### 3. **Run the Translation**
+Execute the script in PowerShell to see the translated result:
+```powershell
+.\translate-text.ps1
+```
+
+
+### 🔧 Common Use Cases
+
+This automation approach is ideal for:
+- **System administration** - Translate system alerts and notifications
+- **DevOps pipelines** - Translate build/deployment messages for international teams
+- **IT automation** - Add translation to PowerShell scripts and runbooks
+- **Log processing** - Translate log entries or error messages
+- **Scheduled tasks** - Integrate translation into automated workflows
+
+
+### 🚀 Get Started Today
+
+Ready to automate your text translations? You'll need an account to access the API. [Sign up for a Premium plan](https://www.whatsmate.net/translation-subscribe.html) and start translating within minutes!
+
+---
+
+**Next Steps**: Once you've mastered basic text translation, explore translating text in other programming languages through the [Translation API Getting Started Guide](https://www.whatsmate.net/translation-api.html).
 
