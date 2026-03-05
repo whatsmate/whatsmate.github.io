@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Convert PDF to Text from Python - Complete Guide
+title: Convert PDF to Text in Python - Complete Guide
 subtitle: Extract text from PDFs using the WhatsMate PDF-to-Text REST API
 published: true
 last_modified_at: 2026-03-05T16:11:00+08:00

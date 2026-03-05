@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Convert PDF to Text from PHP - Complete Guide
+title: Convert PDF to Text in PHP - Complete Guide
 subtitle: Extract text from PDFs using the WhatsMate PDF-to-Text REST API
 published: true
 last_modified_at: 2026-03-05T16:22:00+08:00
