@@ -4,6 +4,7 @@ title: Send Images over Telegram in Python 3 - Complete Guide
 subtitle: Automate Telegram image sharing using the WhatsMate Telegram Gateway REST API
 redirect_from:
   - /2022-06-17--send-telegram-image-python3/
+  - /2022-06-17-send-telegram-image-python3/
 published: true
 last_modified_at: 2026-03-12T11:05:09+08:00
 ---
