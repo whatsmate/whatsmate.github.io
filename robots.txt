@@ -1,2 +1,15 @@
+# === BLOCK ALL META/FACEBOOK CRAWLERS FIRST ===
+# (specific rules must appear before the wildcard)
+User-agent: facebookexternalhit
+User-agent: meta-webindexer
+User-agent: meta-externalads
+User-agent: meta-externalagent
+User-agent: meta-externalfetcher
+User-agent: Facebot
+User-agent: FacebookBot
+Disallow: /
+
+# === ALLOW EVERYTHING ELSE (Google, Bing, etc.) ===
 User-agent: *
 Allow: /
+
