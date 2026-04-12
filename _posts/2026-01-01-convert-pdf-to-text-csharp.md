@@ -41,6 +41,8 @@ Follow these steps to extract text from a PDF using C#:
 #### 1. **Copy the C# Code Template**
 Start by copying the following source code into your C# Console Application:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/5af944ae52d075b1c3b22832e64acd9c.js"></script>
 
 
