@@ -40,6 +40,8 @@ Follow these steps to send your first image to a Telegram user from VBA:
 #### 1. **Copy the VBA Code Template**
 Start by copying the following source code into your VBA module or VBScript file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/459c428056d3f131a6bcc8715cb0b13d.js"></script>
 
 

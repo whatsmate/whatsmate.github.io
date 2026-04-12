@@ -40,6 +40,8 @@ Follow these steps to send your first image to a Telegram user from a PHP script
 #### 1. **Copy the PHP Code Template**
 Start by copying the following source code into your PHP file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/5d51abfc0f2db3793986b40b58fdd444.js"></script>
 
 

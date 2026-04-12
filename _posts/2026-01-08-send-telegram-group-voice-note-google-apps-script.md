@@ -40,6 +40,8 @@ Follow these steps to send your first voice note file to a Telegram group from G
 #### 2. **Copy the Google Apps Script Code Template**
 Copy the following source code into your Apps Script project:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/1001b29a9c5a668a89f4f9e80b574307.js"></script>
 
 

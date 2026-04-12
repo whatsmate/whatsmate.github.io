@@ -38,6 +38,8 @@ Follow these steps to send your first WhatsApp message from a Java application:
 #### 1. **Copy the Java Template**
 Start by copying the following source code into a Java file named `WhatsappSender.java`:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/ada1343baa4f7364d3e1.js"></script>
 
 

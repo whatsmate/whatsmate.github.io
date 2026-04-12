@@ -33,6 +33,8 @@ Follow these steps to send your first PDF document to a WhatsApp user from a Nod
 #### 1. **Copy the Node.js Code Template**
 Start by copying the following source code into your JavaScript file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/063d9bfcfcd13cfab9b981500c9dcd5d.js"></script>
 
 

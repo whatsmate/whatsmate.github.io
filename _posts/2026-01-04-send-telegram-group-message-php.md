@@ -43,6 +43,8 @@ Before coding, set up your Telegram group:
 #### 2. **Copy the PHP Template**
 Copy the following source code to your PHP script:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/a4b6e74f0df5e37d2a1364c8203c022a.js"></script>
 
 #### 3. **Configure Key Parameters**

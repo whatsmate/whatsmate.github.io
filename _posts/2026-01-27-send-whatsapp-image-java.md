@@ -34,6 +34,8 @@ Follow these steps to send your first image to a WhatsApp user from a Java appli
 #### 1. **Copy the Java Code Template**
 Start by copying the following source code into your Java file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/499d731f8eab2caff6a9bd619f20b59f.js"></script>
 
 

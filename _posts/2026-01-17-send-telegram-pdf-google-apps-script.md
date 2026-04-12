@@ -41,6 +41,8 @@ Follow these steps to send your first PDF file to a Telegram user from Google Ap
 #### 2. **Copy the Google Apps Script Code Template**
 Copy the following source code into your Apps Script project:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/6d0c2d985a3a4ba9760b8bbc9a9f8e3f.js"></script>
 
 

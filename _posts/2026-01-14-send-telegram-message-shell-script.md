@@ -38,6 +38,8 @@ Follow these steps to send your first Telegram message from a shell script:
 #### 1. **Copy the Script Template**
 Start by copying the following source code into your script file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/a29b2ba722ff34f657b002dbd0611643.js"></script>
 
 

@@ -2,7 +2,7 @@
 <style>
 
   /* Add white space before the first line of code */
-  .gist .gist-file {
+  .gist .gist-data {
       padding-top: 13px !important;
   }
 
@@ -24,16 +24,12 @@
     font-size: 12px !important;
   }
   
-  /* Make the filename (the first link) stand out */
-  .gist .gist-meta a:first-of-type {
+  /* Target the filename link specifically */
+  /* Matches the specific class but ignores the 'view raw' link on the right */
+  .gist .gist-meta a.Link--inTextBlock:not([style*="float:right"]) {
     font-weight: bold !important;
     text-decoration: underline !important;
     color: #58a6ff !important; /* A bright blue to pop against the dark filter */
-  }
-  
-  /* Optional: Subtle style for the "hosted with" part */
-  .gist .gist-meta {
-    color: #8b949e !important;
   }
 
 </style>

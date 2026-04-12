@@ -52,6 +52,8 @@ Add the System.Web.Extensions reference to your project:
 #### 3. **Copy the C# Source Code**
 Replace the contents of `Program.cs` with the following source code:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/a8f8f182e85ea30bd30a9ba7d82a91d1.js"></script>
 
 

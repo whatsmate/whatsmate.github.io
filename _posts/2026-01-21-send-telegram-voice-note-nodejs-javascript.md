@@ -34,6 +34,8 @@ Follow these steps to send your first voice note to a Telegram user from a Node.
 #### 1. **Copy the Node.js Code Template**
 Start by copying the following source code into your JavaScript file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/c07ebd85573fde8544f25a820ae324f0.js"></script>
 
 

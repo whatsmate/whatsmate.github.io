@@ -42,6 +42,8 @@ Follow these steps to send your first PDF file to a Telegram user from a C# appl
 #### 1. **Copy the C# Code Template**
 Start by copying the following source code into your C# file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/24ec7c9123d11465593e77d9aad97f0d.js"></script>
 
 

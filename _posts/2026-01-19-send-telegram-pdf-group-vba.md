@@ -49,6 +49,8 @@ Follow these steps to send your first PDF document to a Telegram group from a VB
 #### 2. **Copy the VBA Source Code**
 Paste the following source code into your module:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/6426a55dde3f479743c45a73c5c6e19a.js"></script>
 
 

@@ -32,6 +32,8 @@ Follow these steps to extract text from a PDF using PHP:
 #### 1. **Copy the Script Template**
 Start by copying the following source code into your PHP script file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/eb7730ab28c0f29011ebb241d42d0d49.js"></script>
 
 

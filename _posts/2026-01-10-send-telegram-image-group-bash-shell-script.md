@@ -38,6 +38,8 @@ Follow these steps to send your first image to a Telegram group from a shell scr
 #### 1. **Copy the Script Template**
 Start by copying the following source code into your script file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/3fc460e91df90ea1296b5e51d09a066e.js"></script>
 
 

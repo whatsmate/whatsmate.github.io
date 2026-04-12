@@ -41,6 +41,8 @@ Follow these steps to send your first Telegram message from a C# application usi
 #### 1. **Copy the C# Template**
 Copy the following source code to the main class in your Console Application in Visual Studio:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/a2cd1249d0b54d756699ca925051c886.js"></script>
 
 

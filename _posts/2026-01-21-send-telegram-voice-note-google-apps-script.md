@@ -41,6 +41,8 @@ Follow these steps to send your first voice note to a Telegram user from Google 
 #### 2. **Copy the Google Apps Script Code Template**
 Copy the following source code into your Apps Script project:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/f2a2e2ba1830376caff6b3d7ae6557ae.js"></script>
 
 

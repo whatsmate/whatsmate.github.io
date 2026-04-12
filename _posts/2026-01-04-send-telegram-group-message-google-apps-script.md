@@ -38,6 +38,8 @@ Before coding, set up your Telegram group:
 #### 2. **Copy the Apps Script Template**
 Copy the following source code to your Google Apps Script project:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/7555d8435a0d769fd01b3acefdf6ce47.js"></script>
 
 #### 3. **Configure Key Parameters**

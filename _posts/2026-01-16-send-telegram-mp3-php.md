@@ -40,6 +40,8 @@ Follow these steps to send your first audio file to a Telegram user from a PHP a
 #### 1. **Copy the PHP Code Template**
 Start by copying the following source code into your PHP file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/bdbca5b9e8a4d2b7b7f1bc484b46f80b.js"></script>
 
 

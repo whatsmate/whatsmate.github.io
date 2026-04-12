@@ -34,6 +34,8 @@ Follow these steps to send your first image to a WhatsApp user from a shell scri
 #### 1. **Copy the Script Template**
 Start by copying the following source code into your script file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/6b0191e083681e91ef56b4694728fdee.js"></script>
 
 

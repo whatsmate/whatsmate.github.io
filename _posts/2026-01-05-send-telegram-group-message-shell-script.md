@@ -43,6 +43,8 @@ Before coding, set up your Telegram group:
 #### 2. **Copy the Shell Script Template**
 Copy the following source code to your shell script:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/0b3e74f1d04f3832894962bb6ea84cb0.js"></script>
 
 #### 3. **Configure Key Parameters**

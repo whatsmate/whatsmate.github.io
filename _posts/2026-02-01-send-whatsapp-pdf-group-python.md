@@ -50,6 +50,8 @@ pip install requests
 #### 3. **Copy the Python 2 Source Code**
 Start by copying the following legacy Python 2 source code into your script:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/c402e9b7494f90e6a490bbf4643393a6.js"></script>
 
 #### 4. **Configure Key Parameters**

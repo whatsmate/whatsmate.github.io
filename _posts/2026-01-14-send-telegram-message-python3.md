@@ -39,6 +39,8 @@ Follow these steps to send your first Telegram message from a Python script:
 #### 1. **Copy the Python Template**
 Start by copying the following source code into your Python script:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/d8b7cc36621a54990292c7655849138a.js"></script>
 
 

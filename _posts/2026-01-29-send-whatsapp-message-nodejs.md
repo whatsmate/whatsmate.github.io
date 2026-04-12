@@ -38,6 +38,8 @@ Follow these steps to send your first WhatsApp message from a Node.js applicatio
 #### 1. **Copy the Node.js Template**
 Start by copying the following source code into a JavaScript file named `send-whatsapp.js`:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/3cdd056532d2e675922c.js"></script>
 
 

@@ -39,6 +39,8 @@ Follow these steps to send your first image to a Telegram user from a Node.js ap
 #### 1. **Copy the Node.js Code Template**
 Start by copying the following source code into your JavaScript file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/31a263a342f161415aa8c1d735c1630d.js"></script>
 
 

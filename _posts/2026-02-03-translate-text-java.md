@@ -37,6 +37,8 @@ Follow these steps to perform your first text translation in Java:
 #### 1. **Copy the Script Template**
 Start by copying the following source code into a file named `Translator.java`:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/f1927a03d7981aaedfe81c61a0e96efa.js"></script>
 
 

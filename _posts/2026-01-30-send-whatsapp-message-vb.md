@@ -39,6 +39,8 @@ Follow these steps to send your first WhatsApp message from a VB.NET application
 #### 1. **Copy the VB.NET Template**
 Start by copying the following source code to the main module file in your Console Application in Visual Studio:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/588f9e98a9e1508bd7ce.js"></script>
 
 

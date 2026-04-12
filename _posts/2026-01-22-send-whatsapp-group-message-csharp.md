@@ -40,6 +40,8 @@ Before coding, set up your WhatsApp group:
 #### 2. **Copy the C# Template**
 Copy the following source code to the main class in your Console Application in Visual Studio:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/fd9033c3cfaed14993408b2ea4ee8e32.js"></script>
 
 #### 3. **Configure Key Parameters**

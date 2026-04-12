@@ -34,6 +34,8 @@ Follow these steps to send your first image to a WhatsApp user from VBA:
 #### 1. **Copy the VBA Code Template**
 Start by copying the following source code into your VBA module or VBScript file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/2093afa46da4e03efb7daa6658e5e580.js"></script>
 
 

@@ -37,6 +37,8 @@ Follow these steps to extract text from a PDF using Java:
 #### 1. **Copy the Script Template**
 Start by copying the following source code into a Java file named `SyncPdfTextExtractor.java`:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/b9bb411ea6334fed255d034e1f6cd2cc.js"></script>
 
 

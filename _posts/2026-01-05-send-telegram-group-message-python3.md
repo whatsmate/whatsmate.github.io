@@ -42,6 +42,8 @@ Before coding, set up your Telegram group:
 #### 2. **Copy the Python Template**
 Copy the following source code to your Python script:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/e46807a91c9c0858e7f173327c581335.js"></script>
 
 #### 3. **Configure Key Parameters**

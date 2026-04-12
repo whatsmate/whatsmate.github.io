@@ -32,6 +32,8 @@ Follow these steps to extract text from a PDF using a shell script:
 #### 1. **Copy the Script Template**
 Start by copying the following source code into your script file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/6c46d5630b8e154db9600b4457b90837.js"></script>
 
 

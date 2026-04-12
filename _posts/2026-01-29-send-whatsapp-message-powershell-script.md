@@ -38,6 +38,8 @@ Follow these steps to send your first WhatsApp message from a PowerShell script:
 #### 1. **Copy the PowerShell Template**
 Start by copying the following source code into a PowerShell script file named `send-whatsapp.ps1`:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/3ba4213c8aee9a6bfa71.js"></script>
 
 

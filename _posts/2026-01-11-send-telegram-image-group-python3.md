@@ -39,6 +39,8 @@ Follow these steps to send your first image to a Telegram group from a Python sc
 #### 1. **Copy the Python Source Code**
 Start by copying the following source code into your Python file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/59160699915be56094eb62164ed21db2.js"></script>
 
 

@@ -49,6 +49,8 @@ Prepare your Office application for VBA development:
 #### 2. **Copy the VBA Source Code**
 Copy the following source code into your VBA module:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/2b3038459a52a10e85e5702673952684.js"></script>
 
 

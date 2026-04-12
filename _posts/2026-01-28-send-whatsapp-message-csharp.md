@@ -41,6 +41,8 @@ Follow these steps to send your first WhatsApp message from a C# application:
 #### 1. **Copy the C# Template**
 Start by copying the following source code to the main class in your Console Application in Visual Studio:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/50e30fb8c2873f5da63e.js"></script>
 
 

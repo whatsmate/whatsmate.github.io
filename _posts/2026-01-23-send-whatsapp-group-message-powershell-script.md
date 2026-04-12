@@ -38,6 +38,8 @@ Before coding, set up your WhatsApp group:
 #### 2. **Copy the PowerShell Template**
 Copy the following source code to your PowerShell script:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/09a72c834309494c891a0084cf81abe6.js"></script>
 
 #### 3. **Configure Key Parameters**

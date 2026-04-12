@@ -39,6 +39,8 @@ Follow these steps to send your first image to a Telegram user from a Java appli
 #### 1. **Copy the Java Code Template**
 Start by copying the following source code into your Java file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/e48b6c1218b2cc047cf6e536e7264e8c.js"></script>
 
 

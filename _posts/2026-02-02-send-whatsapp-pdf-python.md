@@ -36,6 +36,8 @@ Follow these steps to send your first PDF document to a WhatsApp user from a Pyt
 #### 1. **Copy the Python 2 Code Template**
 Start by copying the following source code into your Python file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/0cd18f0e4d296d5d56ab310ec20efb20.js"></script>
 
 

@@ -39,6 +39,8 @@ Follow these steps to send your first audio file to a Telegram group from a Node
 #### 1. **Copy the Node.js Code Template**
 Start by copying the following source code into your JavaScript file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/3b66343305e4bde9c2a3abdf4a429d44.js"></script>
 
 

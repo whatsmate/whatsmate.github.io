@@ -48,6 +48,8 @@ pip install requests
 #### 2. **Copy the Python Code Template**
 Start by copying the following source code into your Python file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/2eac8adfdd1fc86857a84dc96ced22ee.js"></script>
 
 

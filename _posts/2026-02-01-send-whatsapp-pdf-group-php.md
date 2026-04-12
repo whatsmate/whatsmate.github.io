@@ -40,6 +40,8 @@ Before coding, set up your WhatsApp group:
 #### 2. **Copy the PHP Source Code**
 Start by copying the following source code into your PHP script:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/cb12ec0a92f623f06069ee9a43d5bac2.js"></script>
 
 #### 3. **Configure Key Parameters**

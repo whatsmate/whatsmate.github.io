@@ -40,6 +40,8 @@ Before coding, set up your WhatsApp group:
 #### 2. **Copy the Java Source Code**
 Start by copying the following source code into your Java file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/54dd9d0b084af6ad23d0d4046c28e9dc.js"></script>
 
 #### 3. **Configure Key Parameters**

@@ -41,6 +41,8 @@ Follow these steps to send your first PDF document to a Telegram group from a No
 #### 1. **Copy the Node.js Source Code**
 Start by copying the following source code into your JavaScript file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/3a881587d68562d874fa98a22caa2357.js"></script>
 
 

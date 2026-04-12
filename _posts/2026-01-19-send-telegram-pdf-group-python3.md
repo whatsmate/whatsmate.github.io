@@ -41,6 +41,8 @@ Follow these steps to send your first PDF document to a Telegram group from a Py
 #### 1. **Copy the Python Source Code**
 Start by copying the following source code into your Python file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/3ff7c10e7621b210c8eadd6e5e0bc02e.js"></script>
 
 

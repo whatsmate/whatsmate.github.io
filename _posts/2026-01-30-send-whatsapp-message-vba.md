@@ -39,6 +39,8 @@ Follow these steps to send your first WhatsApp message from a VBA macro:
 #### 1. **Copy the VBA Template**
 In your Excel, Access, or VBA development environment, define the following subroutines:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/dd1a1b80342b87f778ef732bb5a12582.js"></script>
 
 

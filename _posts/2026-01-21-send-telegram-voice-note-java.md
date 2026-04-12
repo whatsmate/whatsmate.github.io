@@ -35,6 +35,8 @@ Follow these steps to send your first voice note to a Telegram user from a Java 
 #### 1. **Copy the Java Code Template**
 Start by copying the following source code into your Java file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/3cb2d66d5364cda5ae5d3b9febcbdf37.js"></script>
 
 

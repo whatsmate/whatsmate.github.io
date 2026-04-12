@@ -34,6 +34,8 @@ Follow these steps to send your first voice note file to a Telegram group from V
 #### 1. **Copy the VBA Code Template**
 Start by copying the following source code into your VBA module:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/d1555502bc90d09b0f228b7a08a73bce.js"></script>
 
 

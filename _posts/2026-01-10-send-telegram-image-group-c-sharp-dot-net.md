@@ -48,6 +48,8 @@ Create a new C# Console Application in Visual Studio 2019 and add the required r
 #### 2. **Copy the C# Source Code**
 Copy the following source code into your C# file, replacing the default Program.cs content:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/fb882ce3f24d8412dd18d42467f94a0b.js"></script>
 
 

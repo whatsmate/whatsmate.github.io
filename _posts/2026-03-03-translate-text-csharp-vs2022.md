@@ -34,6 +34,8 @@ Follow these steps to perform your first text translation in C# with Visual Stud
 #### 1. **Copy the C# Template**
 Start by copying the following source code to the main class in your Console Application in Visual Studio:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/6346ea47a163b4cc502bc306e09721cf.js"></script>
 
 

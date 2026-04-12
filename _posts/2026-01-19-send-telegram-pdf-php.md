@@ -40,6 +40,8 @@ Follow these steps to send your first PDF document to a Telegram user from a PHP
 #### 1. **Copy the PHP Code Template**
 Start by copying the following source code into your PHP file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/503839ac728b146ed0b88304ba356a48.js"></script>
 
 

@@ -39,6 +39,8 @@ Follow these steps to send your first image to a Telegram group from a PHP scrip
 #### 1. **Copy the PHP Source Code**
 Start by copying the following source code into your PHP file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/a2aee01ea3ec68966bfca2bc64e71aac.js"></script>
 
 

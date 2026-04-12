@@ -36,6 +36,8 @@ Follow these steps to send your first voice note file to a Telegram group from a
 #### 1. **Copy the PHP Code Template**
 Start by copying the following source code into your PHP file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/8f92150c47b370d3140c78fd75cdba87.js"></script>
 
 

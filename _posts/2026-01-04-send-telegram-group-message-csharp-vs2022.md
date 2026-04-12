@@ -23,6 +23,8 @@ To send a Telegram group message from your C# application, do this:
 1. Create a New Group from your Telegram client.
 2. Add the secret gateway to the group. (Of course, you can add other people as well!)
 3. Say something in the group from your personal Telegram client. This gives the gateway a chance to learn about the new group.
+{% include gist-styles.html %}
+
 4. Copy the following source code to the main class in your Console Application in Visual Studio.  <script src="https://gist.github.com/whatsmate/3e5f3d895112aa842efa2cc11e5f6017.js"></script>
 5. Customize the TODO lines in the C# program:
    * Specify your gateway instance ID on line 10.

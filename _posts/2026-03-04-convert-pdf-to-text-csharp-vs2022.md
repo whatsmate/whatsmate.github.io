@@ -34,6 +34,8 @@ Follow these steps to extract text from a PDF using C# with Visual Studio 2022:
 #### 1. **Copy the C# Code Template**
 Start by copying the following source code into your C# Console Application:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/456d4f1748629ef52e97ec80b7bcb0a9.js"></script>
 
 

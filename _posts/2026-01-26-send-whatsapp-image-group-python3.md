@@ -44,6 +44,8 @@ pip install requests
 #### 3. **Copy the Python Source Code**
 Start by copying the following source code into your Python script:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/37afb33639bcf676cf9b144b65b9331b.js"></script>
 
 #### 4. **Configure Key Parameters**

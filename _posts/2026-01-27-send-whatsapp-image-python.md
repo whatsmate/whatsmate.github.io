@@ -45,6 +45,8 @@ pip install requests
 #### 2. **Copy the Python 2 Code Template**
 Start by copying the following legacy Python 2 source code into your Python file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/aa79cbc9bded30557f64daefd30f7b2f.js"></script>
 
 

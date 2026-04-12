@@ -39,6 +39,8 @@ Follow these steps to send your first Telegram message from a Node.js applicatio
 #### 1. **Copy the Node.js Template**
 Start by copying the following source code into your Node.js script:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/c03ab97e1e11f74aa88228ce13bd62f1.js"></script>
 
 

@@ -39,6 +39,8 @@ Follow these steps to send your first image to a Telegram group from a Java appl
 #### 1. **Copy the Java Source Code**
 Start by copying the following source code into your Java file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/c3432c34f3d5f66d3ef3669b47d5f3be.js"></script>
 
 

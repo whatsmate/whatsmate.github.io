@@ -50,6 +50,8 @@ Create a new C# Console Application in Visual Studio 2022:
 #### 2. **Copy the C# Source Code**
 Replace the contents of `Program.cs` with the following source code:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/54a0fd4094383cc6b90c99e6ec7c0e2b.js"></script>
 
 

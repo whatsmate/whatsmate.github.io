@@ -37,6 +37,8 @@ Follow these steps to perform your first text translation in Node.js:
 #### 1. **Copy the Script Template**
 Start by copying the following source code into your JavaScript file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/41edc6a2330eb3f78eb86360ea195e38.js"></script>
 
 

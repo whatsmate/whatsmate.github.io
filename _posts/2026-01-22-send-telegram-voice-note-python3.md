@@ -35,6 +35,8 @@ Follow these steps to send your first voice note to a Telegram user from a Pytho
 #### 1. **Copy the Python Code Template**
 Start by copying the following source code into your Python file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/c38a2c1227450d13d8524d92b9c5c921.js"></script>
 
 

@@ -43,6 +43,8 @@ Before coding, set up your Telegram group:
 #### 2. **Copy the Java Template**
 Copy the following source code to a Java file named `TelegramGroupTextSender.java`:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/f769d88dd5ad6a6777865456543a11e7.js"></script>
 
 #### 3. **Configure Key Parameters**

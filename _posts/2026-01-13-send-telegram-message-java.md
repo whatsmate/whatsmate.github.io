@@ -39,6 +39,8 @@ Follow these steps to send your first Telegram message from a Java application:
 #### 1. **Copy the Java Template**
 Start by copying the following source code into a Java file named `TelegramSender.java`:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/f3660c4b835c5dcdc2ccbb5b871b8e08.js"></script>
 
 

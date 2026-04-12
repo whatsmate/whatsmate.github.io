@@ -37,6 +37,8 @@ Before coding, set up your WhatsApp group:
 #### 2. **Copy the Script Template**
 Start by copying the following source code into your script file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/3392b82db3187565d19097bd5c22bfd2.js"></script>
 
 #### 3. **Configure Key Parameters**

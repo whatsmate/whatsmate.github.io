@@ -40,6 +40,8 @@ Follow these steps to send your first Telegram message from a PHP application:
 #### 1. **Copy the PHP Template**
 Start by copying the following source code into your PHP script:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/d7bb1a9711703874c9d02de104bf8838.js"></script>
 
 

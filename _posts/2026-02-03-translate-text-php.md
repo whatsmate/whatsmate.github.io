@@ -37,6 +37,8 @@ Follow these steps to perform your first text translation in PHP:
 #### 1. **Copy the Script Template**
 Start by copying the following source code into your PHP file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/c91e4cc10093b7120b82e2341717e619.js"></script>
 
 

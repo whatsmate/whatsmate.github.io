@@ -43,6 +43,8 @@ Follow these steps to send your first PDF document to a Telegram group from Goog
 #### 2. **Copy the Google Apps Script Source Code**
 Paste the following source code into your script editor:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/602ad48db2a20653bdadd81f5c9d8a08.js"></script>
 
 

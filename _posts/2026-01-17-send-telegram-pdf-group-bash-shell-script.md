@@ -41,6 +41,8 @@ Follow these steps to send your first PDF document to a Telegram group from a sh
 #### 1. **Copy the Script Template**
 Start by copying the following source code into your script file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/3d863e5beca363d71ecf205401dd5322.js"></script>
 
 

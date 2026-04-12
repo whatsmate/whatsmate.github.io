@@ -32,6 +32,8 @@ Follow these steps to extract text from a PDF using Node.js:
 #### 1. **Copy the Script Template**
 Start by copying the following source code into your Node.js script file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/029ea4925c99b72eb881fb65596d7ece.js"></script>
 
 

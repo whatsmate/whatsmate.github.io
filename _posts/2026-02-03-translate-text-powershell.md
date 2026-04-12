@@ -37,6 +37,8 @@ Follow these steps to perform your first text translation in PowerShell:
 #### 1. **Copy the Script Template**
 Start by copying the following source code into your PowerShell script file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/6b1455f6bba7150eedbdf6c161c089e9.js"></script>
 
 

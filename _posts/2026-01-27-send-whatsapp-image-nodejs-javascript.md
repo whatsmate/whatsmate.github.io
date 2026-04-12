@@ -33,6 +33,8 @@ Follow these steps to send your first image to a WhatsApp user from a Node.js ap
 #### 1. **Copy the Node.js Code Template**
 Start by copying the following source code into your JavaScript file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/a4a98f7d863640922ca2c32f91bcf364.js"></script>
 
 

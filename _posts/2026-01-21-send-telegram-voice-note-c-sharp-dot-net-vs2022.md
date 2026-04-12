@@ -43,6 +43,8 @@ Follow these steps to send your first voice note to a Telegram user from a C# ap
 #### 2. **Copy the C# Code Template**
 Replace the default Program.cs content with the following source code:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/d472c3e5df3b4757b0064e352ea942de.js"></script>
 
 

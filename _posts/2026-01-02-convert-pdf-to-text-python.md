@@ -33,6 +33,8 @@ Follow these steps to extract text from a PDF using Python:
 #### 1. **Copy the Script Template**
 Start by copying the following source code into your Python script file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/40fceaea9ca177852b1488eaaeefc870.js"></script>
 
 

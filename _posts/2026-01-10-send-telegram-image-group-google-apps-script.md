@@ -43,6 +43,8 @@ Create a new Google Apps Script project:
 #### 2. **Copy the Google Apps Script Source Code**
 Copy the following source code into your Google Apps Script file, replacing the default code:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/e20ad3099671749fe14df789fa4702e0.js"></script>
 
 3. **Save the project**: Click the save icon or press `Ctrl+S`

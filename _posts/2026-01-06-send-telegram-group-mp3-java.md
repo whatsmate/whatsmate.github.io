@@ -40,6 +40,8 @@ Follow these steps to send your first audio file to a Telegram group from a Java
 #### 1. **Copy the Java Code Template**
 Start by copying the following source code into your Java file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/222e5d283059e467406b1945d92bde1a.js"></script>
 
 

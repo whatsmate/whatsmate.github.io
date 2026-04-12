@@ -38,6 +38,8 @@ Before coding, set up your WhatsApp group:
 #### 2. **Copy the VBA Source Code**
 In your Excel, Access, or VBA development environment, copy the following complete VBA module:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/e39d3a82a2b075338cab949498c33635.js"></script>
 
 #### 3. **Configure Key Parameters**

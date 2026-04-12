@@ -49,6 +49,8 @@ Follow these steps to send your first audio file to a Telegram group from a C# a
 #### 2. **Copy the C# Code Template**
 Replace the default Program.cs content with the following source code:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/7f512602da619233755c7ceb991ee3e0.js"></script>
 
 

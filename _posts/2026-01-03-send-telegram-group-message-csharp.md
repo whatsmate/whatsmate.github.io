@@ -50,6 +50,8 @@ Before coding, set up your Telegram group:
 #### 2. **Copy the C# Template**
 Copy the following source code to the main class in your Console Application in Visual Studio:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/fceaf6e6c260e731cc02ed839404fe01.js"></script>
 
 

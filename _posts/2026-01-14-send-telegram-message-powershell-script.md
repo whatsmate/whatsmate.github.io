@@ -39,6 +39,8 @@ Follow these steps to send your first Telegram message from a PowerShell script:
 #### 1. **Copy the PowerShell Template**
 Start by copying the following source code into your PowerShell script:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/64742ec769f9a7bf80048df2dc2e4734.js"></script>
 
 

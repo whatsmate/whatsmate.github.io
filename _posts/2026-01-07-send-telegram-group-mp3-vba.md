@@ -40,6 +40,8 @@ Follow these steps to send your first audio file to a Telegram group from VBA:
 #### 1. **Copy the VBA Code Template**
 Start by copying the following source code into your VBA module:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/8bd5b4e60368ae5fea67dcc2e487632e.js"></script>
 
 

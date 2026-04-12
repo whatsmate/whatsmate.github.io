@@ -37,6 +37,8 @@ Follow these steps to send your first image to a Telegram user from a C# applica
 #### 1. **Copy the C# Code Template**
 Start by copying the following source code into your C# file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/ace3b9000bf160ef000fbf0c6b92c9eb.js"></script>
 
 

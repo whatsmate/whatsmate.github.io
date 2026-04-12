@@ -35,6 +35,8 @@ Follow these steps to send your first voice note to a Telegram user from VBA:
 #### 1. **Copy the VBA Code Template**
 Start by copying the following source code into your VBA module:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/420606fb6fb273ee82af10f6167e5ad9.js"></script>
 
 

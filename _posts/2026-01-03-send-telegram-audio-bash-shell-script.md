@@ -39,6 +39,8 @@ Follow these steps to send your first audio file to a Telegram user from a shell
 #### 1. **Copy the Script Template**
 Start by copying the following source code into your script file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/1467e4787bfd6153f75c84f3c1d9ae21.js"></script>
 
 

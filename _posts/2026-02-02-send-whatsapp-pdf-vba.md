@@ -34,6 +34,8 @@ Follow these steps to send your first PDF file to a WhatsApp user from VBA:
 #### 1. **Copy the VBA Code Template**
 Start by copying the following source code into your VBA module or VBScript file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/01ba745741b89a7394db9fa9ab845ae0.js"></script>
 
 

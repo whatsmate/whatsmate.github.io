@@ -39,6 +39,8 @@ Follow these steps to send your first audio file to a Telegram group from a shel
 #### 1. **Copy the Script Template**
 Start by copying the following source code into your script file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/e204b7e3597418d80ae376c8bbfd6a82.js"></script>
 
 

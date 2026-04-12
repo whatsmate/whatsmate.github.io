@@ -41,6 +41,8 @@ Follow these steps to extract text from a PDF using VB.NET:
 #### 1. **Copy the VB.NET Code Template**
 Start by copying the following source code into your VB.NET Console Application:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/bc13f03617eddbfe5ce73380ce4c1bc0.js"></script>
 
 

@@ -36,6 +36,8 @@ Follow these steps to send your first image to a WhatsApp user from a C# applica
 #### 1. **Copy the C# Code Template**
 Start by copying the following source code into your C# file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/11c740b0893fb6ef4b5bde9e55e4a591.js"></script>
 
 

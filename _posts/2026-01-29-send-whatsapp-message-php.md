@@ -39,6 +39,8 @@ Follow these steps to send your first WhatsApp message from a PHP application:
 #### 1. **Copy the PHP Template**
 Start by copying the following source code into a PHP file (e.g., `send-whatsapp.php`):
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/39d45c6a0b8a1ce946a4.js"></script>
 
 

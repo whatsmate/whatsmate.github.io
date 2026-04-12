@@ -43,6 +43,8 @@ Before coding, set up your Telegram group:
 #### 2. **Copy the VBA Template**
 In your Excel, Access, or VBA development environment, define the following subroutines:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/34dc47ecb8ad5d2689d24ea212382cde.js"></script>
 
 #### 3. **Configure Key Parameters**

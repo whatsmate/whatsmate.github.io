@@ -40,6 +40,8 @@ Follow these steps to send your first audio file to a Telegram user from a Pytho
 #### 1. **Copy the Python Code Template**
 Start by copying the following source code into your Python file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/b7065742ac38a53e6477d46d3aa5d867.js"></script>
 
 

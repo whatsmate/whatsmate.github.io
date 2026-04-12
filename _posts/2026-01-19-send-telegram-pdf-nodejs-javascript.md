@@ -39,6 +39,8 @@ Follow these steps to send your first PDF document to a Telegram user from a Nod
 #### 1. **Copy the Node.js Code Template**
 Start by copying the following source code into your JavaScript file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/a2e1a24fd3080e1fb0329168e582f28d.js"></script>
 
 

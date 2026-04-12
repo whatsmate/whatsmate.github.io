@@ -41,6 +41,8 @@ Follow these steps to send your first image to a Telegram user from Google Apps 
 #### 2. **Copy the Google Apps Script Code Template**
 Copy the following source code into your Apps Script project:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/c8530ef424533a0a11545d07d86e62cf.js"></script>
 
 

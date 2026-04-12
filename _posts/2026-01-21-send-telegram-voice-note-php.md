@@ -35,6 +35,8 @@ Follow these steps to send your first voice note to a Telegram user from a PHP a
 #### 1. **Copy the PHP Code Template**
 Start by copying the following source code into your PHP file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/5135ea17654da0dadca41432ac5961d4.js"></script>
 
 

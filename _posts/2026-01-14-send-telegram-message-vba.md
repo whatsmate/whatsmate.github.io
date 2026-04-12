@@ -40,6 +40,8 @@ Follow these steps to send your first Telegram message from a VBA script:
 #### 1. **Copy the VBA Template**
 In your Excel, Access, or VBA development environment, define the following subroutines:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/1b4374efdc1d865f2218200a125f45d1.js"></script>
 
 

@@ -34,6 +34,8 @@ Follow these steps to send your first PDF document to a WhatsApp user from a Jav
 #### 1. **Copy the Java Code Template**
 Start by copying the following source code into your Java file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/8e034dc5e92ca402436818a5c7701894.js"></script>
 
 

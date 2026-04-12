@@ -37,6 +37,8 @@ Follow these steps to send your first WhatsApp message from a shell script:
 #### 1. **Copy the Script Template**
 Start by copying the following source code into your script file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/10c75499502a2ededc23.js"></script>
 
 

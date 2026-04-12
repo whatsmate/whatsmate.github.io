@@ -35,6 +35,8 @@ Follow these steps to perform your first text translation in VB.NET with Visual 
 #### 1. **Copy the VB.NET Template**
 Start by copying the following source code to the main module in your Console Application in Visual Studio:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/a6e04ab66180d7283cc2c24e006b7b08.js"></script>
 
 

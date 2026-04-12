@@ -39,6 +39,8 @@ Follow these steps to send your first WhatsApp message from a Python script:
 #### 1. **Copy the Python Template**
 Start by copying the following source code into a Python file named `send-whatsapp-text-individual.py`:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/d08c4272906ab8611e207d746c22fa01.js"></script>
 
 

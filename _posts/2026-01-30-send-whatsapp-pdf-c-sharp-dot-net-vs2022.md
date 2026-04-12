@@ -36,6 +36,8 @@ Follow these steps to send your first PDF file to a WhatsApp user from a C# appl
 #### 1. **Copy the C# Code Template**
 Start by copying the following source code into your C# file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/fe850ff09061952eaef0cb2d74f9c297.js"></script>
 
 

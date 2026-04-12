@@ -39,6 +39,8 @@ Before coding, set up your Telegram group:
 #### 2. **Copy the PowerShell Template**
 Copy the following source code to your PowerShell script:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/2c621494fc38524c6c23fd2639b2dae0.js"></script>
 
 #### 3. **Configure Key Parameters**

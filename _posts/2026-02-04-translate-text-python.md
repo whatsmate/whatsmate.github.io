@@ -38,6 +38,8 @@ Follow these steps to perform your first text translation in Python:
 #### 1. **Copy the Script Template**
 Start by copying the following source code into your Python script:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/c0faa349997272fc74b18f2cbb8ece66.js"></script>
 
 

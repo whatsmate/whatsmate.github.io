@@ -39,6 +39,8 @@ Before coding, set up your Telegram group:
 #### 2. **Copy the VB.NET Template**
 Copy the following source code to the main module file in your Console Application in Visual Studio:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/02c86454e2c4f606d70dca765ee2fa6c.js"></script>
 
 #### 3. **Configure Key Parameters**

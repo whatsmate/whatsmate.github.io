@@ -41,6 +41,8 @@ Follow these steps to send your first audio file to a Telegram group from Google
 #### 2. **Copy the Google Apps Script Code Template**
 Copy the following source code into your Apps Script project:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/27291c86a9e30c5a98d33c59b6b5781a.js"></script>
 
 

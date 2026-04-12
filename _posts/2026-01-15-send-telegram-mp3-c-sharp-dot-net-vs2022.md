@@ -48,6 +48,8 @@ Follow these steps to send your first audio file to a Telegram user from a C# ap
 #### 2. **Copy the C# Code Template**
 Replace the default Program.cs content with the following source code:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/79a556e9fa2b331723664c71c70bcbd4.js"></script>
 
 

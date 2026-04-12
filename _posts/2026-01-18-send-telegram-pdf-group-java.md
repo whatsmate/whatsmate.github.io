@@ -41,6 +41,8 @@ Follow these steps to send your first PDF document to a Telegram group from a Ja
 #### 1. **Copy the Java Source Code**
 Start by copying the following source code into your Java file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/5019eb70a6f9994f9517ba17e6d4990b.js"></script>
 
 

@@ -40,6 +40,8 @@ Before coding, set up your WhatsApp group:
 #### 2. **Copy the Node.js Source Code**
 Start by copying the following source code into your Node.js script:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/cbf97a5b5b9da750222f8061a2a19141.js"></script>
 
 #### 3. **Configure Key Parameters**

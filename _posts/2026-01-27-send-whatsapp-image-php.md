@@ -34,6 +34,8 @@ Follow these steps to send your first image to a WhatsApp user from a PHP script
 #### 1. **Copy the PHP Code Template**
 Start by copying the following source code into your PHP file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/a58cdf5b691a6e6f846b342d61873728.js"></script>
 
 

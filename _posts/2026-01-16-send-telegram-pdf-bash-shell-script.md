@@ -39,6 +39,8 @@ Follow these steps to send your first PDF document to a Telegram user from a she
 #### 1. **Copy the Script Template**
 Start by copying the following source code into your script file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/29929061744dc8da5940407810bedae9.js"></script>
 
 

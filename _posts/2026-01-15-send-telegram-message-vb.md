@@ -40,6 +40,8 @@ Follow these steps to send your first Telegram message from a VB.NET application
 #### 1. **Copy the VB.NET Template**
 Copy the following source code to the main module file in your Console Application in Visual Studio:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/72d4e510e19e7d384e52bbab08a1678e.js"></script>
 
 

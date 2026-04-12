@@ -39,6 +39,8 @@ Follow these steps to send your first Telegram message from a Google Apps Script
 #### 1. **Copy the Google Apps Script Template**
 Start by copying the following source code into your Google Apps Script project:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/358914cd35958847111b4bbfa380a1de.js"></script>
 
 

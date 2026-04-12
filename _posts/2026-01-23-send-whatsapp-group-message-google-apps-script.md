@@ -37,6 +37,8 @@ Before coding, set up your WhatsApp group:
 #### 2. **Copy the Apps Script Template**
 Copy the following source code to your Google Apps Script project:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/59b3b6ee47a5f087288680e2ae009945.js"></script>
 
 #### 3. **Configure Key Parameters**

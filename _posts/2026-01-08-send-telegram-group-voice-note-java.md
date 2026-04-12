@@ -35,6 +35,8 @@ Follow these steps to send your first voice note file to a Telegram group from a
 #### 1. **Copy the Java Code Template**
 Start by copying the following source code into your Java file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/891d9c4bb2754ca8fadbb10531643015.js"></script>
 
 

@@ -39,6 +39,8 @@ Follow these steps to send your first image to a Telegram group from a Node.js a
 #### 1. **Copy the Node.js Source Code**
 Start by copying the following source code into your JavaScript file:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/bd4c36452db2f2e0f4f2cfdfbbdf2204.js"></script>
 
 

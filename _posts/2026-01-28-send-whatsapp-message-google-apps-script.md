@@ -34,6 +34,8 @@ Follow these steps to send your first WhatsApp message from a Google Apps Script
 #### 1. **Copy the Google Apps Script Template**
 Start by copying the following source code to your Apps Script project:
 
+{% include gist-styles.html %}
+
 <script src="https://gist.github.com/whatsmate/96637d1c46e1a199756f18413e739f7b.js"></script>
 
 
