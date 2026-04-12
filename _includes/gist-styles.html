@@ -1,5 +1,11 @@
 
 <style>
+
+  /* Add white space before the first line of code */
+  .gist .gist-file {
+      padding-top: 13px !important;
+  }
+
   /* Force monospace font for the code and line numbers */
   .gist .blob-code, 
   .gist .blob-num {
@@ -10,5 +16,25 @@
   .gist .gist-file {
       filter: invert(0.9) hue-rotate(180deg); /* Quick and dirty dark mode */
   }
+  
+  
+  /* Style the entire footer line */
+  .gist .gist-meta {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace !important;
+    font-size: 12px !important;
+  }
+  
+  /* Make the filename (the first link) stand out */
+  .gist .gist-meta a:first-of-type {
+    font-weight: bold !important;
+    text-decoration: underline !important;
+    color: #58a6ff !important; /* A bright blue to pop against the dark filter */
+  }
+  
+  /* Optional: Subtle style for the "hosted with" part */
+  .gist .gist-meta {
+    color: #8b949e !important;
+  }
+
 </style>
 
