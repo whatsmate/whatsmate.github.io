@@ -1,0 +1,2134 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "contact": {
+      "name": "WhatsMate Support"
+    },
+    "description": "WhatsApp and Telegram messaging gateway API, plus translation and PDF-to-text services.\n\n\n## Authentication\nMost endpoints require authentication using two custom HTTP headers:\n- `X-WM-CLIENT-ID`: Your Client ID (email address)\n- `X-WM-CLIENT-SECRET`: Your Client Secret key\n\nYou receive these credentials after subscribing to a Premium plan.\n",
+    "title": "WhatsMate API",
+    "version": "3.0.0"
+  },
+  "host": "api.whatsmate.net",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/v1/pdf/extract": {
+      "get": {
+        "produces": [
+          "text/plain; charset=utf-8",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "URL of the PDF file to process",
+            "format": "uri",
+            "in": "query",
+            "name": "url",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Extracted text",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Invalid PDF or processing error",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "PDF-to-Text"
+        ],
+        "description": "Extract text from a PDF file synchronously.",
+        "operationId": "extractPdfText",
+        "summary": "Extract text from PDF (synchronous)"
+      }
+    },
+    "/v1/pdf/job/check/{jobId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "The job ID returned from job submission",
+            "format": "uuid",
+            "in": "path",
+            "name": "jobId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Job status",
+            "schema": {
+              "$ref": "#/definitions/JobStatusResponse"
+            }
+          },
+          "400": {
+            "description": "Job ID not specified or job not found",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "PDF-to-Text"
+        ],
+        "description": "Check the status of a PDF extraction job.",
+        "operationId": "checkPdfJobStatus",
+        "summary": "Check PDF job status"
+      }
+    },
+    "/v1/pdf/job/retrieve_text/{jobId}": {
+      "get": {
+        "produces": [
+          "text/plain; charset=utf-8",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "The job ID returned from job submission",
+            "format": "uuid",
+            "in": "path",
+            "name": "jobId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK - Returns extracted text if job completed (text/plain) or job status if still processing (application/json)",
+            "schema": {
+              "$ref": "#/definitions/JobStatusResponse"
+            }
+          },
+          "400": {
+            "description": "Job ID not specified or job not found",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Text no longer exists",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "PDF-to-Text"
+        ],
+        "description": "Retrieve the extracted text from a completed PDF job.",
+        "operationId": "retrievePdfText",
+        "summary": "Retrieve extracted PDF text"
+      }
+    },
+    "/v1/pdf/job/submit": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "URL of the PDF file to process",
+            "format": "uri",
+            "in": "query",
+            "name": "url",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Job submitted",
+            "schema": {
+              "$ref": "#/definitions/JobResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "PDF-to-Text"
+        ],
+        "description": "Submit a job to extract text from a PDF asynchronously.",
+        "operationId": "submitPdfJob",
+        "summary": "Submit PDF extraction job (asynchronous)"
+      }
+    },
+    "/v1/translation/translate": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "text/plain; charset=utf-8",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/TranslationRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Translated text",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "444": {
+            "description": "Trial quota exceeded",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "469": {
+            "description": "Paid quota exceeded",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "Translation"
+        ],
+        "description": "Translate text from one language to another.",
+        "operationId": "translateText",
+        "summary": "Translate text"
+      }
+    },
+    "/v3/telegram/group/audio/message/{instance_number}": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Your gateway's instance ID (positive integer)",
+            "in": "path",
+            "minimum": 1,
+            "name": "instance_number",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/TelegramGroupAudioRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Message queued for delivery",
+            "schema": {
+              "$ref": "#/definitions/JobResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "Telegram - Group"
+        ],
+        "description": "Send a Telegram audio file to a group.",
+        "operationId": "sendTelegramAudioGroup",
+        "summary": "Send audio to Telegram group"
+      }
+    },
+    "/v3/telegram/group/document/message/{instance_number}": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Your gateway's instance ID (positive integer)",
+            "in": "path",
+            "minimum": 1,
+            "name": "instance_number",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/TelegramGroupDocumentRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Message queued for delivery",
+            "schema": {
+              "$ref": "#/definitions/JobResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "Telegram - Group"
+        ],
+        "description": "Send a Telegram document to a group.",
+        "operationId": "sendTelegramDocumentGroup",
+        "summary": "Send document to Telegram group"
+      }
+    },
+    "/v3/telegram/group/image/message/{instance_number}": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Your gateway's instance ID (positive integer)",
+            "in": "path",
+            "minimum": 1,
+            "name": "instance_number",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/TelegramGroupMediaRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Message queued for delivery",
+            "schema": {
+              "$ref": "#/definitions/JobResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "Telegram - Group"
+        ],
+        "description": "Send a Telegram image message to a group.",
+        "operationId": "sendTelegramImageGroup",
+        "summary": "Send image to Telegram group"
+      }
+    },
+    "/v3/telegram/group/text/message/{instance_number}": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Your gateway's instance ID (positive integer)",
+            "in": "path",
+            "minimum": 1,
+            "name": "instance_number",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/TelegramGroupTextRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Message queued for delivery",
+            "schema": {
+              "$ref": "#/definitions/JobResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "Telegram - Group"
+        ],
+        "description": "Send a Telegram text message to a group.",
+        "operationId": "sendTelegramTextGroup",
+        "summary": "Send text message to Telegram group"
+      }
+    },
+    "/v3/telegram/group/voice_note/message/{instance_number}": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Your gateway's instance ID (positive integer)",
+            "in": "path",
+            "minimum": 1,
+            "name": "instance_number",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/TelegramGroupVoiceNoteRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Message queued for delivery",
+            "schema": {
+              "$ref": "#/definitions/JobResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "Telegram - Group"
+        ],
+        "description": "Send a Telegram voice note to a group.",
+        "operationId": "sendTelegramVoiceNoteGroup",
+        "summary": "Send voice note to Telegram group"
+      }
+    },
+    "/v3/telegram/single/audio/message/{instance_number}": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Your gateway's instance ID (positive integer)",
+            "in": "path",
+            "minimum": 1,
+            "name": "instance_number",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/TelegramAudioRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Message queued for delivery",
+            "schema": {
+              "$ref": "#/definitions/JobResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "Telegram - Single Recipient"
+        ],
+        "description": "Send a Telegram audio file (e.g., MP3) to a single recipient.",
+        "operationId": "sendTelegramAudioSingle",
+        "summary": "Send audio to single Telegram recipient"
+      }
+    },
+    "/v3/telegram/single/document/message/{instance_number}": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Your gateway's instance ID (positive integer)",
+            "in": "path",
+            "minimum": 1,
+            "name": "instance_number",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/TelegramDocumentRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Message queued for delivery",
+            "schema": {
+              "$ref": "#/definitions/JobResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "Telegram - Single Recipient"
+        ],
+        "description": "Send a Telegram document to a single recipient.",
+        "operationId": "sendTelegramDocumentSingle",
+        "summary": "Send document to single Telegram recipient"
+      }
+    },
+    "/v3/telegram/single/image/message/{instance_number}": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Your gateway's instance ID (positive integer)",
+            "in": "path",
+            "minimum": 1,
+            "name": "instance_number",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/TelegramMediaRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Message queued for delivery",
+            "schema": {
+              "$ref": "#/definitions/JobResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "Telegram - Single Recipient"
+        ],
+        "description": "Send a Telegram image message to a single recipient.",
+        "operationId": "sendTelegramImageSingle",
+        "summary": "Send image to single Telegram recipient"
+      }
+    },
+    "/v3/telegram/single/text/message/{instance_number}": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Your gateway's instance ID (positive integer)",
+            "in": "path",
+            "minimum": 1,
+            "name": "instance_number",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/TelegramTextRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Message queued for delivery",
+            "schema": {
+              "$ref": "#/definitions/JobResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "Telegram - Single Recipient"
+        ],
+        "description": "Send a Telegram text message to a single recipient.",
+        "operationId": "sendTelegramTextSingle",
+        "summary": "Send text message to single Telegram recipient"
+      }
+    },
+    "/v3/telegram/single/voice_note/message/{instance_number}": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Your gateway's instance ID (positive integer)",
+            "in": "path",
+            "minimum": 1,
+            "name": "instance_number",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/TelegramVoiceNoteRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Message queued for delivery",
+            "schema": {
+              "$ref": "#/definitions/JobResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "Telegram - Single Recipient"
+        ],
+        "description": "Send a Telegram voice note (e.g., opus) to a single recipient.",
+        "operationId": "sendTelegramVoiceNoteSingle",
+        "summary": "Send voice note to single Telegram recipient"
+      }
+    },
+    "/v3/whatsapp/group/document/message/{instance_number}": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Your gateway's instance ID (positive integer)",
+            "in": "path",
+            "minimum": 1,
+            "name": "instance_number",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/WhatsappGroupDocumentRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Message queued for delivery",
+            "schema": {
+              "$ref": "#/definitions/JobResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "Whatsapp - Group"
+        ],
+        "description": "Send a WhatsApp document to a group.",
+        "operationId": "sendWhatsappDocumentGroup",
+        "summary": "Send document to WhatsApp group"
+      }
+    },
+    "/v3/whatsapp/group/image/message/{instance_number}": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Your gateway's instance ID (positive integer)",
+            "in": "path",
+            "minimum": 1,
+            "name": "instance_number",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/WhatsappGroupMediaRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Message queued for delivery",
+            "schema": {
+              "$ref": "#/definitions/JobResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "Whatsapp - Group"
+        ],
+        "description": "Send a WhatsApp image message to a group.",
+        "operationId": "sendWhatsappImageGroup",
+        "summary": "Send image to WhatsApp group"
+      }
+    },
+    "/v3/whatsapp/group/text/message/{instance_number}": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Your gateway's instance ID (positive integer)",
+            "in": "path",
+            "minimum": 1,
+            "name": "instance_number",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/WhatsappGroupTextRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Message queued for delivery",
+            "schema": {
+              "$ref": "#/definitions/JobResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "Whatsapp - Group"
+        ],
+        "description": "Send a WhatsApp text message to a group.",
+        "operationId": "sendWhatsappTextGroup",
+        "summary": "Send text message to WhatsApp group"
+      }
+    },
+    "/v3/whatsapp/group/url/message/{instance_number}": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Your gateway's instance ID (positive integer)",
+            "in": "path",
+            "minimum": 1,
+            "name": "instance_number",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "group_admin": {
+                  "description": "Phone number of the group creator (no \"+\" sign)",
+                  "example": "14155552671",
+                  "maxLength": 30,
+                  "minLength": 5,
+                  "pattern": "^\\d+$",
+                  "type": "string"
+                },
+                "group_name": {
+                  "description": "Name of the WhatsApp group",
+                  "maxLength": 150,
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "url": {
+                  "description": "URL to send",
+                  "maxLength": 900,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "group_name",
+                "group_admin",
+                "url"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Message queued for delivery",
+            "schema": {
+              "$ref": "#/definitions/JobResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "469": {
+            "description": "API quota exceeded",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "Whatsapp - Group"
+        ],
+        "description": "Send a URL message to a WhatsApp group.",
+        "operationId": "sendWhatsappUrlGroup",
+        "summary": "Send URL to WhatsApp group"
+      }
+    },
+    "/v3/whatsapp/single/document/message/{instance_number}": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Your gateway's instance ID (positive integer)",
+            "in": "path",
+            "minimum": 1,
+            "name": "instance_number",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/WhatsappDocumentRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Message queued for delivery",
+            "schema": {
+              "$ref": "#/definitions/JobResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "Whatsapp - Single Recipient"
+        ],
+        "description": "Send a WhatsApp document (PDF, MP3, etc.) to a single recipient.",
+        "operationId": "sendWhatsappDocumentSingle",
+        "summary": "Send document to single WhatsApp recipient"
+      }
+    },
+    "/v3/whatsapp/single/image/message/{instance_number}": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Your gateway's instance ID (positive integer)",
+            "in": "path",
+            "minimum": 1,
+            "name": "instance_number",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/WhatsappMediaRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Message queued for delivery",
+            "schema": {
+              "$ref": "#/definitions/JobResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "Whatsapp - Single Recipient"
+        ],
+        "description": "Send a WhatsApp image message to a single recipient.",
+        "operationId": "sendWhatsappImageSingle",
+        "summary": "Send image to single WhatsApp recipient"
+      }
+    },
+    "/v3/whatsapp/single/text/message/{instance_number}": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Your gateway's instance ID (positive integer)",
+            "in": "path",
+            "minimum": 1,
+            "name": "instance_number",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/WhatsappTextRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Message queued for delivery",
+            "schema": {
+              "$ref": "#/definitions/JobResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "469": {
+            "description": "API quota exceeded",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "Whatsapp - Single Recipient"
+        ],
+        "description": "Send a WhatsApp text message to a single recipient.\n\n**Documentation:** [WhatsApp Gateway API Guide](https://www.whatsmate.net/whatsapp-gateway-api.html)\n",
+        "operationId": "sendWhatsappTextSingle",
+        "summary": "Send text message to single WhatsApp recipient"
+      }
+    },
+    "/v3/whatsapp/single/url/message/{instance_number}": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Your gateway's instance ID (positive integer)",
+            "in": "path",
+            "minimum": 1,
+            "name": "instance_number",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "number": {
+                  "description": "Recipient's phone number with country code (no \"+\" sign)",
+                  "example": "14155552671",
+                  "maxLength": 15,
+                  "minLength": 5,
+                  "pattern": "^\\d+$",
+                  "type": "string"
+                },
+                "url": {
+                  "description": "URL to send",
+                  "maxLength": 900,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "number",
+                "url"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Message queued for delivery",
+            "schema": {
+              "$ref": "#/definitions/JobResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Invalid or missing authentication credentials",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "469": {
+            "description": "API quota exceeded",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "tags": [
+          "Whatsapp - Single Recipient"
+        ],
+        "description": "Send a URL message to a single WhatsApp recipient.",
+        "operationId": "sendWhatsappUrlSingle",
+        "summary": "Send URL to single WhatsApp recipient"
+      }
+    }
+  },
+  "definitions": {
+    "ErrorResponse": {
+      "properties": {
+        "error_message": {
+          "description": "Human-readable error description",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "HealthStatusResponse": {
+      "additionalProperties": true,
+      "description": "Health status of the gateway instance (structure depends on backend)",
+      "type": "object"
+    },
+    "JobResponse": {
+      "properties": {
+        "id": {
+          "description": "Unique job identifier",
+          "format": "uuid",
+          "type": "string"
+        },
+        "status": {
+          "description": "Current job status (queued, submitted, Processing, Completed)",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "JobStatusResponse": {
+      "properties": {
+        "id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "submitted",
+            "Processing",
+            "Completed"
+          ],
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "LanguageCodesResponse": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "Map of language codes to language names",
+      "example": {
+        "en": "English",
+        "es": "Spanish",
+        "zh": "Chinese"
+      },
+      "type": "object"
+    },
+    "RegistrationStatusResponse": {
+      "additionalProperties": true,
+      "description": "Registration status of a phone number (structure depends on backend)",
+      "type": "object"
+    },
+    "TelegramAudioRequest": {
+      "properties": {
+        "audio": {
+          "description": "Base64-encoded audio file (e.g., MP3, max 3 MB after encoding)",
+          "format": "base64",
+          "pattern": "^[A-Za-z0-9+/]+={0,2}$",
+          "type": "string"
+        },
+        "caption": {
+          "description": "Optional caption for the audio",
+          "maxLength": 250,
+          "type": "string"
+        },
+        "filename": {
+          "description": "File name presented to receiver (special characters will be removed)",
+          "example": "audio.mp3",
+          "maxLength": 80,
+          "minLength": 1,
+          "pattern": "^[\\w\\s\\-\\.]+$",
+          "type": "string"
+        },
+        "number": {
+          "description": "Recipient's phone number with country code (no \"+\" sign)",
+          "example": "14155552671",
+          "maxLength": 15,
+          "minLength": 5,
+          "pattern": "^\\d+$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "number",
+        "audio",
+        "filename"
+      ],
+      "type": "object"
+    },
+    "TelegramDocumentRequest": {
+      "properties": {
+        "caption": {
+          "description": "Optional caption for the document",
+          "maxLength": 250,
+          "type": "string"
+        },
+        "document": {
+          "description": "Base64-encoded document (max 9 MB after encoding)",
+          "format": "base64",
+          "pattern": "^[A-Za-z0-9+/]+={0,2}$",
+          "type": "string"
+        },
+        "filename": {
+          "description": "File name presented to receiver (special characters will be removed)",
+          "example": "document.pdf",
+          "maxLength": 80,
+          "minLength": 1,
+          "pattern": "^[\\w\\s\\-\\.]+$",
+          "type": "string"
+        },
+        "number": {
+          "description": "Recipient's phone number with country code (no \"+\" sign)",
+          "example": "14155552671",
+          "maxLength": 15,
+          "minLength": 5,
+          "pattern": "^\\d+$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "number",
+        "document",
+        "filename"
+      ],
+      "type": "object"
+    },
+    "TelegramGroupAudioRequest": {
+      "properties": {
+        "audio": {
+          "description": "Base64-encoded audio file (e.g., MP3, max 3 MB after encoding)",
+          "format": "base64",
+          "pattern": "^[A-Za-z0-9+/]+={0,2}$",
+          "type": "string"
+        },
+        "caption": {
+          "description": "Optional caption for the audio",
+          "maxLength": 250,
+          "type": "string"
+        },
+        "filename": {
+          "description": "File name presented to receiver (special characters will be removed)",
+          "example": "audio.mp3",
+          "maxLength": 80,
+          "minLength": 1,
+          "pattern": "^[\\w\\s\\-\\.]+$",
+          "type": "string"
+        },
+        "group_admin": {
+          "description": "Phone number of the group creator (no \"+\" sign)",
+          "example": "14155552671",
+          "maxLength": 30,
+          "minLength": 5,
+          "pattern": "^\\d+$",
+          "type": "string"
+        },
+        "group_name": {
+          "description": "Name of the Telegram group",
+          "maxLength": 150,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "group_name",
+        "group_admin",
+        "audio",
+        "filename"
+      ],
+      "type": "object"
+    },
+    "TelegramGroupDocumentRequest": {
+      "properties": {
+        "caption": {
+          "description": "Optional caption for the document",
+          "maxLength": 250,
+          "type": "string"
+        },
+        "document": {
+          "description": "Base64-encoded document (max 9 MB after encoding)",
+          "format": "base64",
+          "pattern": "^[A-Za-z0-9+/]+={0,2}$",
+          "type": "string"
+        },
+        "filename": {
+          "description": "File name presented to receiver (special characters will be removed)",
+          "example": "document.pdf",
+          "maxLength": 80,
+          "minLength": 1,
+          "pattern": "^[\\w\\s\\-\\.]+$",
+          "type": "string"
+        },
+        "group_admin": {
+          "description": "Phone number of the group creator (no \"+\" sign)",
+          "example": "14155552671",
+          "maxLength": 30,
+          "minLength": 5,
+          "pattern": "^\\d+$",
+          "type": "string"
+        },
+        "group_name": {
+          "description": "Name of the Telegram group",
+          "maxLength": 150,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "group_name",
+        "group_admin",
+        "document",
+        "filename"
+      ],
+      "type": "object"
+    },
+    "TelegramGroupMediaRequest": {
+      "properties": {
+        "caption": {
+          "description": "Optional caption for the image",
+          "maxLength": 250,
+          "type": "string"
+        },
+        "group_admin": {
+          "description": "Phone number of the group creator (no \"+\" sign)",
+          "example": "14155552671",
+          "maxLength": 30,
+          "minLength": 5,
+          "pattern": "^\\d+$",
+          "type": "string"
+        },
+        "group_name": {
+          "description": "Name of the Telegram group",
+          "maxLength": 150,
+          "minLength": 1,
+          "type": "string"
+        },
+        "image": {
+          "description": "Base64-encoded image (max 6 MB after encoding)",
+          "format": "base64",
+          "pattern": "^[A-Za-z0-9+/]+={0,2}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "group_name",
+        "group_admin",
+        "image"
+      ],
+      "type": "object"
+    },
+    "TelegramGroupTextRequest": {
+      "properties": {
+        "group_admin": {
+          "description": "Phone number of the group creator (no \"+\" sign)",
+          "example": "14155552671",
+          "maxLength": 30,
+          "minLength": 5,
+          "pattern": "^\\d+$",
+          "type": "string"
+        },
+        "group_name": {
+          "description": "Name of the Telegram group",
+          "maxLength": 150,
+          "minLength": 1,
+          "type": "string"
+        },
+        "message": {
+          "description": "Text message to send",
+          "maxLength": 900,
+          "type": "string"
+        }
+      },
+      "required": [
+        "group_name",
+        "group_admin",
+        "message"
+      ],
+      "type": "object"
+    },
+    "TelegramGroupVoiceNoteRequest": {
+      "properties": {
+        "caption": {
+          "description": "Optional caption for the voice note",
+          "maxLength": 250,
+          "type": "string"
+        },
+        "filename": {
+          "description": "File name presented to receiver (special characters will be removed)",
+          "example": "voice.opus",
+          "maxLength": 80,
+          "minLength": 1,
+          "pattern": "^[\\w\\s\\-\\.]+$",
+          "type": "string"
+        },
+        "group_admin": {
+          "description": "Phone number of the group creator (no \"+\" sign)",
+          "example": "14155552671",
+          "maxLength": 30,
+          "minLength": 5,
+          "pattern": "^\\d+$",
+          "type": "string"
+        },
+        "group_name": {
+          "description": "Name of the Telegram group",
+          "maxLength": 150,
+          "minLength": 1,
+          "type": "string"
+        },
+        "voice_note": {
+          "description": "Base64-encoded voice note file (opus, max 3 MB after encoding)",
+          "format": "base64",
+          "pattern": "^[A-Za-z0-9+/]+={0,2}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "group_name",
+        "group_admin",
+        "voice_note",
+        "filename"
+      ],
+      "type": "object"
+    },
+    "TelegramMediaRequest": {
+      "properties": {
+        "caption": {
+          "description": "Optional caption for the image",
+          "maxLength": 250,
+          "type": "string"
+        },
+        "image": {
+          "description": "Base64-encoded image (max 6 MB after encoding)",
+          "format": "base64",
+          "pattern": "^[A-Za-z0-9+/]+={0,2}$",
+          "type": "string"
+        },
+        "number": {
+          "description": "Recipient's phone number with country code (no \"+\" sign)",
+          "example": "14155552671",
+          "maxLength": 15,
+          "minLength": 5,
+          "pattern": "^\\d+$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "number",
+        "image"
+      ],
+      "type": "object"
+    },
+    "TelegramTextRequest": {
+      "properties": {
+        "message": {
+          "description": "Text message to send",
+          "maxLength": 900,
+          "type": "string"
+        },
+        "number": {
+          "description": "Recipient's phone number with country code (no \"+\" sign)",
+          "example": "14155552671",
+          "maxLength": 15,
+          "minLength": 5,
+          "pattern": "^\\d+$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "number",
+        "message"
+      ],
+      "type": "object"
+    },
+    "TelegramVoiceNoteRequest": {
+      "properties": {
+        "caption": {
+          "description": "Optional caption for the voice note",
+          "maxLength": 250,
+          "type": "string"
+        },
+        "filename": {
+          "description": "File name presented to receiver (special characters will be removed)",
+          "example": "voice.opus",
+          "maxLength": 80,
+          "minLength": 1,
+          "pattern": "^[\\w\\s\\-\\.]+$",
+          "type": "string"
+        },
+        "number": {
+          "description": "Recipient's phone number with country code (no \"+\" sign)",
+          "example": "14155552671",
+          "maxLength": 15,
+          "minLength": 5,
+          "pattern": "^\\d+$",
+          "type": "string"
+        },
+        "voice_note": {
+          "description": "Base64-encoded voice note file (opus, max 3 MB after encoding)",
+          "format": "base64",
+          "pattern": "^[A-Za-z0-9+/]+={0,2}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "number",
+        "voice_note",
+        "filename"
+      ],
+      "type": "object"
+    },
+    "TranslationRequest": {
+      "properties": {
+        "fromLang": {
+          "description": "Source language code (e.g., \"en\" for English)",
+          "example": "en",
+          "maxLength": 3,
+          "minLength": 2,
+          "pattern": "^[a-zA-Z]{2,3}$",
+          "type": "string"
+        },
+        "text": {
+          "description": "Text to translate (max 3500 characters)",
+          "example": "Hello, world!",
+          "maxLength": 3500,
+          "type": "string"
+        },
+        "toLang": {
+          "description": "Target language code (e.g., \"es\" for Spanish)",
+          "example": "es",
+          "maxLength": 3,
+          "minLength": 2,
+          "pattern": "^[a-zA-Z]{2,3}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "fromLang",
+        "toLang",
+        "text"
+      ],
+      "type": "object"
+    },
+    "WhatsappDocumentRequest": {
+      "properties": {
+        "document": {
+          "description": "Base64-encoded document (PDF, MP3, etc., max 9 MB after encoding)",
+          "format": "base64",
+          "pattern": "^[A-Za-z0-9+/]+={0,2}$",
+          "type": "string"
+        },
+        "filename": {
+          "description": "File name presented to receiver (special characters will be removed)",
+          "example": "document.pdf",
+          "maxLength": 80,
+          "minLength": 1,
+          "pattern": "^[\\w\\s\\-\\.]+$",
+          "type": "string"
+        },
+        "number": {
+          "description": "Recipient's phone number with country code (no \"+\" sign)",
+          "example": "14155552671",
+          "maxLength": 15,
+          "minLength": 5,
+          "pattern": "^\\d+$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "number",
+        "document",
+        "filename"
+      ],
+      "type": "object"
+    },
+    "WhatsappGroupDocumentRequest": {
+      "properties": {
+        "document": {
+          "description": "Base64-encoded document (max 9 MB after encoding)",
+          "format": "base64",
+          "pattern": "^[A-Za-z0-9+/]+={0,2}$",
+          "type": "string"
+        },
+        "filename": {
+          "description": "File name presented to receiver (special characters will be removed)",
+          "example": "document.pdf",
+          "maxLength": 80,
+          "minLength": 1,
+          "pattern": "^[\\w\\s\\-\\.]+$",
+          "type": "string"
+        },
+        "group_name": {
+          "description": "Name of the WhatsApp group",
+          "maxLength": 150,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "group_name",
+        "document",
+        "filename"
+      ],
+      "type": "object"
+    },
+    "WhatsappGroupMediaRequest": {
+      "properties": {
+        "caption": {
+          "description": "Optional caption for the image",
+          "maxLength": 250,
+          "type": "string"
+        },
+        "group_name": {
+          "description": "Name of the WhatsApp group",
+          "maxLength": 150,
+          "minLength": 1,
+          "type": "string"
+        },
+        "image": {
+          "description": "Base64-encoded image (max 6 MB after encoding)",
+          "format": "base64",
+          "pattern": "^[A-Za-z0-9+/]+={0,2}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "group_name",
+        "image"
+      ],
+      "type": "object"
+    },
+    "WhatsappGroupTextRequest": {
+      "properties": {
+        "group_admin": {
+          "description": "Phone number of the group creator (with country code)",
+          "example": "14155552671",
+          "maxLength": 30,
+          "minLength": 5,
+          "pattern": "^\\d+$",
+          "type": "string"
+        },
+        "group_name": {
+          "description": "Name of the WhatsApp group",
+          "example": "My WhatsApp Group",
+          "maxLength": 150,
+          "minLength": 1,
+          "type": "string"
+        },
+        "message": {
+          "description": "Text message to send",
+          "maxLength": 900,
+          "type": "string"
+        }
+      },
+      "required": [
+        "group_name",
+        "group_admin",
+        "message"
+      ],
+      "type": "object"
+    },
+    "WhatsappMediaRequest": {
+      "properties": {
+        "caption": {
+          "description": "Optional caption for the image",
+          "maxLength": 250,
+          "type": "string"
+        },
+        "image": {
+          "description": "Base64-encoded image (max 6 MB after encoding)",
+          "format": "base64",
+          "pattern": "^[A-Za-z0-9+/]+={0,2}$",
+          "type": "string"
+        },
+        "number": {
+          "description": "Recipient's phone number with country code (no \"+\" sign)",
+          "example": "14155552671",
+          "maxLength": 15,
+          "minLength": 5,
+          "pattern": "^\\d+$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "number",
+        "image"
+      ],
+      "type": "object"
+    },
+    "WhatsappTextRequest": {
+      "properties": {
+        "message": {
+          "description": "Text message to send",
+          "example": "Hello from WhatsMate!",
+          "maxLength": 900,
+          "type": "string"
+        },
+        "number": {
+          "description": "Recipient's phone number with country code (no \"+\" sign)",
+          "example": "14155552671",
+          "maxLength": 15,
+          "minLength": 5,
+          "pattern": "^\\d+$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "number",
+        "message"
+      ],
+      "type": "object"
+    }
+  },
+  "securityDefinitions": {
+    "WhatsmateAuth": {
+      "description": "Your client ID (email address)",
+      "in": "header",
+      "name": "X-WM-CLIENT-ID",
+      "type": "apiKey"
+    },
+    "WhatsmateSecret": {
+      "description": "Your client secret key",
+      "in": "header",
+      "name": "X-WM-CLIENT-SECRET",
+      "type": "apiKey"
+    }
+  },
+  "security": [
+    {
+      "WhatsmateAuth": [],
+      "WhatsmateSecret": []
+    }
+  ],
+  "tags": [
+    {
+      "description": "Send messages to registered Whatsapp users",
+      "name": "Whatsapp - Single Recipient"
+    },
+    {
+      "description": "Send messages to Whatsapp groups",
+      "name": "Whatsapp - Group"
+    },
+    {
+      "description": "Send messages to registered Telegram users",
+      "name": "Telegram - Single Recipient"
+    },
+    {
+      "description": "Send messages to Telegram groups",
+      "name": "Telegram - Group"
+    },
+    {
+      "description": "Text translation services",
+      "name": "Translation"
+    },
+    {
+      "description": "Extract text from PDF documents",
+      "name": "PDF-to-Text"
+    }
+  ],
+  "x-components": {
+    "parameters": {
+      "InstanceNumber": {
+        "description": "Your gateway's instance ID (positive integer)",
+        "in": "path",
+        "minimum": 1,
+        "name": "instance_number",
+        "required": true,
+        "type": "integer"
+      },
+      "JobId": {
+        "description": "The job ID returned from job submission",
+        "format": "uuid",
+        "in": "path",
+        "name": "jobId",
+        "required": true,
+        "type": "string"
+      },
+      "PdfUrl": {
+        "description": "URL of the PDF file to process",
+        "format": "uri",
+        "in": "query",
+        "name": "url",
+        "required": true,
+        "type": "string"
+      }
+    },
+    "responses": {
+      "BadRequest": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "description": "Bad request"
+      },
+      "ForbiddenContent": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "description": "Message contains forbidden words (e.g., auto-generated)"
+      },
+      "InvalidClientCredentials": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "description": "Invalid client ID/secret"
+      },
+      "InvalidGatewayIndex": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "description": "Invalid gateway instance number"
+      },
+      "InvalidMobileNumber": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "description": "Invalid mobile number"
+      },
+      "InvalidParameter": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "description": "Invalid or missing parameter"
+      },
+      "MissingClientId": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "description": "Missing X-WM-CLIENT-ID header"
+      },
+      "MissingParameters": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "description": "Missing required parameters"
+      },
+      "MissingSecret": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "description": "Missing X-WM-CLIENT-SECRET header or empty parameter"
+      },
+      "NoJsonData": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "description": "No JSON data received"
+      },
+      "QueuedResponse": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/definitions/JobResponse"
+            }
+          }
+        },
+        "description": "Message queued for delivery"
+      },
+      "QuotaExceeded": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "description": "API quota exceeded"
+      },
+      "TrialQuotaExceeded": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "description": "Trial quota exceeded"
+      },
+      "Unauthorized": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "description": "Invalid or missing authentication credentials"
+      },
+      "ValidationError": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "description": "Validation error (message too long, invalid filename, etc.)"
+      }
+    }
+  }
+}

@@ -1,0 +1,1205 @@
+openapi: 3.0.3
+info:
+  title: WhatsMate API
+  description: |
+    WhatsApp and Telegram messaging gateway API, plus translation and PDF-to-text services.
+
+
+    ## Authentication
+    Most endpoints require authentication using two custom HTTP headers:
+    - `X-WM-CLIENT-ID`: Your Client ID (email address)
+    - `X-WM-CLIENT-SECRET`: Your Client Secret key
+
+    You receive these credentials after subscribing to a Premium plan.
+
+  version: 3.0.0
+  contact:
+    name: WhatsMate Support
+
+servers:
+  - url: https://api.whatsmate.net
+    description: Production server (HTTPS)
+
+tags:
+  - name: Whatsapp - Single Recipient
+    description: Send messages to registered Whatsapp users
+  - name: Whatsapp - Group
+    description: Send messages to Whatsapp groups
+  - name: Telegram - Single Recipient
+    description: Send messages to registered Telegram users
+  - name: Telegram - Group
+    description: Send messages to Telegram groups
+  - name: Translation
+    description: Text translation services
+  - name: PDF-to-Text
+    description: Extract text from PDF documents
+
+components:
+  securitySchemes:
+    WhatsmateAuth:
+      type: apiKey
+      in: header
+      name: X-WM-CLIENT-ID
+      description: Your client ID (email address)
+    WhatsmateSecret:
+      type: apiKey
+      in: header
+      name: X-WM-CLIENT-SECRET
+      description: Your client secret key
+
+  parameters:
+    InstanceNumber:
+      name: instance_number
+      in: path
+      required: true
+      schema:
+        type: integer
+        minimum: 1
+        example: 1
+      description: Your gateway's instance ID (positive integer)
+    JobId:
+      name: jobId
+      in: path
+      required: true
+      schema:
+        type: string
+        format: uuid
+        example: "123e4567-e89b-12d3-a456-426614174000"
+      description: The job ID returned from job submission
+    PdfUrl:
+      name: url
+      in: query
+      required: true
+      schema:
+        type: string
+        format: uri
+        example: "https://example.com/document.pdf"
+      description: URL of the PDF file to process
+
+  schemas:
+    JobResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          description: Current job status (queued, submitted, Processing, Completed)
+        id:
+          type: string
+          format: uuid
+          description: Unique job identifier
+    JobStatusResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        status:
+          type: string
+          enum: [submitted, Processing, Completed]
+    ErrorResponse:
+      type: object
+      properties:
+        error_message:
+          type: string
+          description: Human-readable error description
+
+    # Whatsapp schemas
+    WhatsappTextRequest:
+      type: object
+      required: [number, message]
+      properties:
+        number:
+          type: string
+          description: Recipient's phone number with country code (no "+" sign)
+          minLength: 5
+          maxLength: 15
+          pattern: ^\d+$
+          example: "14155552671"
+        message:
+          type: string
+          description: Text message to send
+          maxLength: 900
+          example: "Hello from WhatsMate!"
+    WhatsappGroupTextRequest:
+      type: object
+      required: [group_name, group_admin, message]
+      properties:
+        group_name:
+          type: string
+          description: Name of the WhatsApp group
+          minLength: 1
+          maxLength: 150
+          example: "My WhatsApp Group"
+        group_admin:
+          type: string
+          description: Phone number of the group creator (with country code)
+          minLength: 5
+          maxLength: 30
+          pattern: ^\d+$
+          example: "14155552671"
+        message:
+          type: string
+          description: Text message to send
+          maxLength: 900
+    WhatsappMediaRequest:
+      type: object
+      required: [number, image]
+      properties:
+        number:
+          type: string
+          description: Recipient's phone number with country code (no "+" sign)
+          minLength: 5
+          maxLength: 15
+          pattern: ^\d+$
+          example: "14155552671"
+        image:
+          type: string
+          format: base64
+          description: Base64-encoded image (max 6 MB after encoding)
+          pattern: ^[A-Za-z0-9+/]+={0,2}$
+        caption:
+          type: string
+          description: Optional caption for the image
+          maxLength: 250
+    WhatsappDocumentRequest:
+      type: object
+      required: [number, document, filename]
+      properties:
+        number:
+          type: string
+          description: Recipient's phone number with country code (no "+" sign)
+          minLength: 5
+          maxLength: 15
+          pattern: ^\d+$
+          example: "14155552671"
+        document:
+          type: string
+          format: base64
+          description: Base64-encoded document (PDF, MP3, etc., max 9 MB after encoding)
+          pattern: ^[A-Za-z0-9+/]+={0,2}$
+        filename:
+          type: string
+          description: File name presented to receiver (special characters will be removed)
+          minLength: 1
+          maxLength: 80
+          pattern: ^[\w\s\-\.]+$
+          example: "document.pdf"
+    WhatsappGroupMediaRequest:
+      type: object
+      required: [group_name, image]
+      properties:
+        group_name:
+          type: string
+          description: Name of the WhatsApp group
+          minLength: 1
+          maxLength: 150
+        image:
+          type: string
+          format: base64
+          description: Base64-encoded image (max 6 MB after encoding)
+          pattern: ^[A-Za-z0-9+/]+={0,2}$
+        caption:
+          type: string
+          description: Optional caption for the image
+          maxLength: 250
+    WhatsappGroupDocumentRequest:
+      type: object
+      required: [group_name, document, filename]
+      properties:
+        group_name:
+          type: string
+          description: Name of the WhatsApp group
+          minLength: 1
+          maxLength: 150
+        document:
+          type: string
+          format: base64
+          description: Base64-encoded document (max 9 MB after encoding)
+          pattern: ^[A-Za-z0-9+/]+={0,2}$
+        filename:
+          type: string
+          description: File name presented to receiver (special characters will be removed)
+          minLength: 1
+          maxLength: 80
+          pattern: ^[\w\s\-\.]+$
+          example: "document.pdf"
+
+    # Telegram schemas
+    TelegramTextRequest:
+      type: object
+      required: [number, message]
+      properties:
+        number:
+          type: string
+          description: Recipient's phone number with country code (no "+" sign)
+          minLength: 5
+          maxLength: 15
+          pattern: ^\d+$
+          example: "14155552671"
+        message:
+          type: string
+          description: Text message to send
+          maxLength: 900
+    TelegramGroupTextRequest:
+      type: object
+      required: [group_name, group_admin, message]
+      properties:
+        group_name:
+          type: string
+          description: Name of the Telegram group
+          minLength: 1
+          maxLength: 150
+        group_admin:
+          type: string
+          description: Phone number of the group creator (no "+" sign)
+          minLength: 5
+          maxLength: 30
+          pattern: ^\d+$
+          example: "14155552671"
+        message:
+          type: string
+          description: Text message to send
+          maxLength: 900
+    TelegramMediaRequest:
+      type: object
+      required: [number, image]
+      properties:
+        number:
+          type: string
+          description: Recipient's phone number with country code (no "+" sign)
+          minLength: 5
+          maxLength: 15
+          pattern: ^\d+$
+          example: "14155552671"
+        image:
+          type: string
+          format: base64
+          description: Base64-encoded image (max 6 MB after encoding)
+          pattern: ^[A-Za-z0-9+/]+={0,2}$
+        caption:
+          type: string
+          description: Optional caption for the image
+          maxLength: 250
+    TelegramDocumentRequest:
+      type: object
+      required: [number, document, filename]
+      properties:
+        number:
+          type: string
+          description: Recipient's phone number with country code (no "+" sign)
+          minLength: 5
+          maxLength: 15
+          pattern: ^\d+$
+          example: "14155552671"
+        document:
+          type: string
+          format: base64
+          description: Base64-encoded document (max 9 MB after encoding)
+          pattern: ^[A-Za-z0-9+/]+={0,2}$
+        filename:
+          type: string
+          description: File name presented to receiver (special characters will be removed)
+          minLength: 1
+          maxLength: 80
+          pattern: ^[\w\s\-\.]+$
+          example: "document.pdf"
+        caption:
+          type: string
+          description: Optional caption for the document
+          maxLength: 250
+    TelegramGroupMediaRequest:
+      type: object
+      required: [group_name, group_admin, image]
+      properties:
+        group_name:
+          type: string
+          description: Name of the Telegram group
+          minLength: 1
+          maxLength: 150
+        group_admin:
+          type: string
+          description: Phone number of the group creator (no "+" sign)
+          minLength: 5
+          maxLength: 30
+          pattern: ^\d+$
+          example: "14155552671"
+        image:
+          type: string
+          format: base64
+          description: Base64-encoded image (max 6 MB after encoding)
+          pattern: ^[A-Za-z0-9+/]+={0,2}$
+        caption:
+          type: string
+          description: Optional caption for the image
+          maxLength: 250
+    TelegramGroupDocumentRequest:
+      type: object
+      required: [group_name, group_admin, document, filename]
+      properties:
+        group_name:
+          type: string
+          description: Name of the Telegram group
+          minLength: 1
+          maxLength: 150
+        group_admin:
+          type: string
+          description: Phone number of the group creator (no "+" sign)
+          minLength: 5
+          maxLength: 30
+          pattern: ^\d+$
+          example: "14155552671"
+        document:
+          type: string
+          format: base64
+          description: Base64-encoded document (max 9 MB after encoding)
+          pattern: ^[A-Za-z0-9+/]+={0,2}$
+        filename:
+          type: string
+          description: File name presented to receiver (special characters will be removed)
+          minLength: 1
+          maxLength: 80
+          pattern: ^[\w\s\-\.]+$
+          example: "document.pdf"
+        caption:
+          type: string
+          description: Optional caption for the document
+          maxLength: 250
+    TelegramVoiceNoteRequest:
+      type: object
+      required: [number, voice_note, filename]
+      properties:
+        number:
+          type: string
+          description: Recipient's phone number with country code (no "+" sign)
+          minLength: 5
+          maxLength: 15
+          pattern: ^\d+$
+          example: "14155552671"
+        voice_note:
+          type: string
+          format: base64
+          description: Base64-encoded voice note file (opus, max 3 MB after encoding)
+          pattern: ^[A-Za-z0-9+/]+={0,2}$
+        filename:
+          type: string
+          description: File name presented to receiver (special characters will be removed)
+          minLength: 1
+          maxLength: 80
+          pattern: ^[\w\s\-\.]+$
+          example: "voice.opus"
+        caption:
+          type: string
+          description: Optional caption for the voice note
+          maxLength: 250
+    TelegramGroupVoiceNoteRequest:
+      type: object
+      required: [group_name, group_admin, voice_note, filename]
+      properties:
+        group_name:
+          type: string
+          description: Name of the Telegram group
+          minLength: 1
+          maxLength: 150
+        group_admin:
+          type: string
+          description: Phone number of the group creator (no "+" sign)
+          minLength: 5
+          maxLength: 30
+          pattern: ^\d+$
+          example: "14155552671"
+        voice_note:
+          type: string
+          format: base64
+          description: Base64-encoded voice note file (opus, max 3 MB after encoding)
+          pattern: ^[A-Za-z0-9+/]+={0,2}$
+        filename:
+          type: string
+          description: File name presented to receiver (special characters will be removed)
+          minLength: 1
+          maxLength: 80
+          pattern: ^[\w\s\-\.]+$
+          example: "voice.opus"
+        caption:
+          type: string
+          description: Optional caption for the voice note
+          maxLength: 250
+
+    TelegramAudioRequest:
+      type: object
+      required: [number, audio, filename]
+      properties:
+        number:
+          type: string
+          description: Recipient's phone number with country code (no "+" sign)
+          minLength: 5
+          maxLength: 15
+          pattern: ^\d+$
+          example: "14155552671"
+        audio:
+          type: string
+          format: base64
+          description: Base64-encoded audio file (e.g., MP3, max 3 MB after encoding)
+          pattern: ^[A-Za-z0-9+/]+={0,2}$
+        filename:
+          type: string
+          description: File name presented to receiver (special characters will be removed)
+          minLength: 1
+          maxLength: 80
+          pattern: ^[\w\s\-\.]+$
+          example: "audio.mp3"
+        caption:
+          type: string
+          description: Optional caption for the audio
+          maxLength: 250
+
+    TelegramGroupAudioRequest:
+      type: object
+      required: [group_name, group_admin, audio, filename]
+      properties:
+        group_name:
+          type: string
+          description: Name of the Telegram group
+          minLength: 1
+          maxLength: 150
+        group_admin:
+          type: string
+          description: Phone number of the group creator (no "+" sign)
+          minLength: 5
+          maxLength: 30
+          pattern: ^\d+$
+          example: "14155552671"
+        audio:
+          type: string
+          format: base64
+          description: Base64-encoded audio file (e.g., MP3, max 3 MB after encoding)
+          pattern: ^[A-Za-z0-9+/]+={0,2}$
+        filename:
+          type: string
+          description: File name presented to receiver (special characters will be removed)
+          minLength: 1
+          maxLength: 80
+          pattern: ^[\w\s\-\.]+$
+          example: "audio.mp3"
+        caption:
+          type: string
+          description: Optional caption for the audio
+          maxLength: 250
+
+    # Health and registration status schemas
+    HealthStatusResponse:
+      type: object
+      additionalProperties: true
+      description: Health status of the gateway instance (structure depends on backend)
+    RegistrationStatusResponse:
+      type: object
+      additionalProperties: true
+      description: Registration status of a phone number (structure depends on backend)
+
+    # Translation schemas
+    TranslationRequest:
+      type: object
+      required: [fromLang, toLang, text]
+      properties:
+        fromLang:
+          type: string
+          description: Source language code (e.g., "en" for English)
+          minLength: 2
+          maxLength: 3
+          pattern: ^[a-zA-Z]{2,3}$
+          example: "en"
+        toLang:
+          type: string
+          description: Target language code (e.g., "es" for Spanish)
+          minLength: 2
+          maxLength: 3
+          pattern: ^[a-zA-Z]{2,3}$
+          example: "es"
+        text:
+          type: string
+          maxLength: 3500
+          description: Text to translate (max 3500 characters)
+          example: "Hello, world!"
+    LanguageCodesResponse:
+      type: object
+      additionalProperties:
+        type: string
+      description: Map of language codes to language names
+      example:
+        en: English
+        es: Spanish
+        zh: Chinese
+
+  responses:
+    QueuedResponse:
+      description: Message queued for delivery
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/JobResponse'
+    BadRequest:
+      description: Bad request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    Unauthorized:
+      description: Invalid or missing authentication credentials
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    QuotaExceeded:
+      description: API quota exceeded
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    TrialQuotaExceeded:
+      description: Trial quota exceeded
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    InvalidParameter:
+      description: Invalid or missing parameter
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    MissingClientId:
+      description: Missing X-WM-CLIENT-ID header
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    ValidationError:
+      description: Validation error (message too long, invalid filename, etc.)
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    InvalidMobileNumber:
+      description: Invalid mobile number
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    InvalidGatewayIndex:
+      description: Invalid gateway instance number
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    InvalidClientCredentials:
+      description: Invalid client ID/secret
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    MissingParameters:
+      description: Missing required parameters
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    MissingSecret:
+      description: Missing X-WM-CLIENT-SECRET header or empty parameter
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    ForbiddenContent:
+      description: Message contains forbidden words (e.g., auto-generated)
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    NoJsonData:
+      description: No JSON data received
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+
+security:
+  - WhatsmateAuth: []
+    WhatsmateSecret: []
+
+paths:
+  # Whatsapp - Single Recipient
+  /v3/whatsapp/single/text/message/{instance_number}:
+    post:
+      tags: [Whatsapp - Single Recipient]
+      summary: Send text message to single WhatsApp recipient
+      description: |
+        Send a WhatsApp text message to a single recipient.
+
+        **Documentation:** [WhatsApp Gateway API Guide](https://www.whatsmate.net/whatsapp-gateway-api.html)
+      operationId: sendWhatsappTextSingle
+      parameters:
+        - $ref: '#/components/parameters/InstanceNumber'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/WhatsappTextRequest'
+      responses:
+        '200':
+          $ref: '#/components/responses/QueuedResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '469':
+          $ref: '#/components/responses/QuotaExceeded'
+
+  /v3/whatsapp/single/image/message/{instance_number}:
+    post:
+      tags: [Whatsapp - Single Recipient]
+      summary: Send image to single WhatsApp recipient
+      description: Send a WhatsApp image message to a single recipient.
+      operationId: sendWhatsappImageSingle
+      parameters:
+        - $ref: '#/components/parameters/InstanceNumber'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/WhatsappMediaRequest'
+      responses:
+        '200':
+          $ref: '#/components/responses/QueuedResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /v3/whatsapp/single/document/message/{instance_number}:
+    post:
+      tags: [Whatsapp - Single Recipient]
+      summary: Send document to single WhatsApp recipient
+      description: Send a WhatsApp document (PDF, MP3, etc.) to a single recipient.
+      operationId: sendWhatsappDocumentSingle
+      parameters:
+        - $ref: '#/components/parameters/InstanceNumber'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/WhatsappDocumentRequest'
+      responses:
+        '200':
+          $ref: '#/components/responses/QueuedResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /v3/whatsapp/single/url/message/{instance_number}:
+    post:
+      tags: [Whatsapp - Single Recipient]
+      summary: Send URL to single WhatsApp recipient
+      description: Send a URL message to a single WhatsApp recipient.
+      operationId: sendWhatsappUrlSingle
+      parameters:
+        - $ref: '#/components/parameters/InstanceNumber'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [number, url]
+              properties:
+                number:
+                  type: string
+                  description: Recipient's phone number with country code (no "+" sign)
+                  minLength: 5
+                  maxLength: 15
+                  pattern: ^\d+$
+                  example: "14155552671"
+                url:
+                  type: string
+                  description: URL to send
+                  maxLength: 900
+      responses:
+        '200':
+          $ref: '#/components/responses/QueuedResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '469':
+          $ref: '#/components/responses/QuotaExceeded'
+
+  # Whatsapp - Group
+  /v3/whatsapp/group/text/message/{instance_number}:
+    post:
+      tags: [Whatsapp - Group]
+      summary: Send text message to WhatsApp group
+      description: Send a WhatsApp text message to a group.
+      operationId: sendWhatsappTextGroup
+      parameters:
+        - $ref: '#/components/parameters/InstanceNumber'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/WhatsappGroupTextRequest'
+      responses:
+        '200':
+          $ref: '#/components/responses/QueuedResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /v3/whatsapp/group/image/message/{instance_number}:
+    post:
+      tags: [Whatsapp - Group]
+      summary: Send image to WhatsApp group
+      description: Send a WhatsApp image message to a group.
+      operationId: sendWhatsappImageGroup
+      parameters:
+        - $ref: '#/components/parameters/InstanceNumber'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/WhatsappGroupMediaRequest'
+      responses:
+        '200':
+          $ref: '#/components/responses/QueuedResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /v3/whatsapp/group/document/message/{instance_number}:
+    post:
+      tags: [Whatsapp - Group]
+      summary: Send document to WhatsApp group
+      description: Send a WhatsApp document to a group.
+      operationId: sendWhatsappDocumentGroup
+      parameters:
+        - $ref: '#/components/parameters/InstanceNumber'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/WhatsappGroupDocumentRequest'
+      responses:
+        '200':
+          $ref: '#/components/responses/QueuedResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /v3/whatsapp/group/url/message/{instance_number}:
+    post:
+      tags: [Whatsapp - Group]
+      summary: Send URL to WhatsApp group
+      description: Send a URL message to a WhatsApp group.
+      operationId: sendWhatsappUrlGroup
+      parameters:
+        - $ref: '#/components/parameters/InstanceNumber'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [group_name, group_admin, url]
+              properties:
+                group_name:
+                  type: string
+                  description: Name of the WhatsApp group
+                  minLength: 1
+                  maxLength: 150
+                group_admin:
+                  type: string
+                  description: Phone number of the group creator (no "+" sign)
+                  minLength: 5
+                  maxLength: 30
+                  pattern: ^\d+$
+                  example: "14155552671"
+                url:
+                  type: string
+                  description: URL to send
+                  maxLength: 900
+      responses:
+        '200':
+          $ref: '#/components/responses/QueuedResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '469':
+          $ref: '#/components/responses/QuotaExceeded'
+
+  # Telegram - Single Recipient
+  /v3/telegram/single/text/message/{instance_number}:
+    post:
+      tags: [Telegram - Single Recipient]
+      summary: Send text message to single Telegram recipient
+      description: Send a Telegram text message to a single recipient.
+      operationId: sendTelegramTextSingle
+      parameters:
+        - $ref: '#/components/parameters/InstanceNumber'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TelegramTextRequest'
+      responses:
+        '200':
+          $ref: '#/components/responses/QueuedResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /v3/telegram/single/image/message/{instance_number}:
+    post:
+      tags: [Telegram - Single Recipient]
+      summary: Send image to single Telegram recipient
+      description: Send a Telegram image message to a single recipient.
+      operationId: sendTelegramImageSingle
+      parameters:
+        - $ref: '#/components/parameters/InstanceNumber'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TelegramMediaRequest'
+      responses:
+        '200':
+          $ref: '#/components/responses/QueuedResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /v3/telegram/single/document/message/{instance_number}:
+    post:
+      tags: [Telegram - Single Recipient]
+      summary: Send document to single Telegram recipient
+      description: Send a Telegram document to a single recipient.
+      operationId: sendTelegramDocumentSingle
+      parameters:
+        - $ref: '#/components/parameters/InstanceNumber'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TelegramDocumentRequest'
+      responses:
+        '200':
+          $ref: '#/components/responses/QueuedResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /v3/telegram/single/audio/message/{instance_number}:
+    post:
+      tags: [Telegram - Single Recipient]
+      summary: Send audio to single Telegram recipient
+      description: Send a Telegram audio file (e.g., MP3) to a single recipient.
+      operationId: sendTelegramAudioSingle
+      parameters:
+        - $ref: '#/components/parameters/InstanceNumber'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TelegramAudioRequest'
+      responses:
+        '200':
+          $ref: '#/components/responses/QueuedResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /v3/telegram/single/voice_note/message/{instance_number}:
+    post:
+      tags: [Telegram - Single Recipient]
+      summary: Send voice note to single Telegram recipient
+      description: Send a Telegram voice note (e.g., opus) to a single recipient.
+      operationId: sendTelegramVoiceNoteSingle
+      parameters:
+        - $ref: '#/components/parameters/InstanceNumber'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TelegramVoiceNoteRequest'
+      responses:
+        '200':
+          $ref: '#/components/responses/QueuedResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  # Telegram - Group
+  /v3/telegram/group/text/message/{instance_number}:
+    post:
+      tags: [Telegram - Group]
+      summary: Send text message to Telegram group
+      description: Send a Telegram text message to a group.
+      operationId: sendTelegramTextGroup
+      parameters:
+        - $ref: '#/components/parameters/InstanceNumber'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TelegramGroupTextRequest'
+      responses:
+        '200':
+          $ref: '#/components/responses/QueuedResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /v3/telegram/group/image/message/{instance_number}:
+    post:
+      tags: [Telegram - Group]
+      summary: Send image to Telegram group
+      description: Send a Telegram image message to a group.
+      operationId: sendTelegramImageGroup
+      parameters:
+        - $ref: '#/components/parameters/InstanceNumber'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TelegramGroupMediaRequest'
+      responses:
+        '200':
+          $ref: '#/components/responses/QueuedResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /v3/telegram/group/document/message/{instance_number}:
+    post:
+      tags: [Telegram - Group]
+      summary: Send document to Telegram group
+      description: Send a Telegram document to a group.
+      operationId: sendTelegramDocumentGroup
+      parameters:
+        - $ref: '#/components/parameters/InstanceNumber'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TelegramGroupDocumentRequest'
+      responses:
+        '200':
+          $ref: '#/components/responses/QueuedResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /v3/telegram/group/audio/message/{instance_number}:
+    post:
+      tags: [Telegram - Group]
+      summary: Send audio to Telegram group
+      description: Send a Telegram audio file to a group.
+      operationId: sendTelegramAudioGroup
+      parameters:
+        - $ref: '#/components/parameters/InstanceNumber'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TelegramGroupAudioRequest'
+      responses:
+        '200':
+          $ref: '#/components/responses/QueuedResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /v3/telegram/group/voice_note/message/{instance_number}:
+    post:
+      tags: [Telegram - Group]
+      summary: Send voice note to Telegram group
+      description: Send a Telegram voice note to a group.
+      operationId: sendTelegramVoiceNoteGroup
+      parameters:
+        - $ref: '#/components/parameters/InstanceNumber'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TelegramGroupVoiceNoteRequest'
+      responses:
+        '200':
+          $ref: '#/components/responses/QueuedResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  # Translation
+  /v1/translation/translate:
+    post:
+      tags: [Translation]
+      summary: Translate text
+      description: Translate text from one language to another.
+      operationId: translateText
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TranslationRequest'
+      responses:
+        '200':
+          description: Translated text
+          content:
+            text/plain; charset=utf-8:
+              schema:
+                type: string
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '444':
+          description: Trial quota exceeded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '469':
+          description: Paid quota exceeded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  # PDF-to-Text
+  /v1/pdf/extract:
+    get:
+      tags: [PDF-to-Text]
+      summary: Extract text from PDF (synchronous)
+      description: Extract text from a PDF file synchronously.
+      operationId: extractPdfText
+      parameters:
+        - $ref: '#/components/parameters/PdfUrl'
+      responses:
+        '200':
+          description: Extracted text
+          content:
+            text/plain; charset=utf-8:
+              schema:
+                type: string
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '500':
+          description: Invalid PDF or processing error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /v1/pdf/job/submit:
+    get:
+      tags: [PDF-to-Text]
+      summary: Submit PDF extraction job (asynchronous)
+      description: Submit a job to extract text from a PDF asynchronously.
+      operationId: submitPdfJob
+      parameters:
+        - $ref: '#/components/parameters/PdfUrl'
+      responses:
+        '200':
+          description: Job submitted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/JobResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /v1/pdf/job/check/{jobId}:
+    get:
+      tags: [PDF-to-Text]
+      summary: Check PDF job status
+      description: Check the status of a PDF extraction job.
+      operationId: checkPdfJobStatus
+      parameters:
+        - $ref: '#/components/parameters/JobId'
+      responses:
+        '200':
+          description: Job status
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/JobStatusResponse'
+        '400':
+          description: Job ID not specified or job not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /v1/pdf/job/retrieve_text/{jobId}:
+    get:
+      tags: [PDF-to-Text]
+      summary: Retrieve extracted PDF text
+      description: Retrieve the extracted text from a completed PDF job.
+      operationId: retrievePdfText
+      parameters:
+        - $ref: '#/components/parameters/JobId'
+      responses:
+        '200':
+          description: OK - Returns extracted text if job completed (text/plain) or job status if still processing (application/json)
+          content:
+            text/plain; charset=utf-8:
+              schema:
+                type: string
+            application/json:
+              schema:
+                $ref: '#/components/schemas/JobStatusResponse'
+        '400':
+          description: Job ID not specified or job not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Text no longer exists
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
