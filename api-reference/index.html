@@ -1492,7 +1492,7 @@ var n=this.pipeline.run(e.tokenizer(t)),r=new e.Vector,i=[],o=this._fields.reduc
 <!-- backwards compatibility -->
   </head>
 
-  <body data-languages="[&quot;python&quot;,&quot;javascript&quot;,&quot;java&quot;,&quot;php&quot;,&quot;shell&quot;,&quot;go&quot;,&quot;ruby&quot;,&quot;kotlin&quot;,&quot;dart&quot;]">
+  <body data-languages="[&quot;python&quot;,&quot;php&quot;,&quot;javascript&quot;,&quot;java&quot;,&quot;shell&quot;,&quot;go&quot;,&quot;ruby&quot;,&quot;kotlin&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -1509,15 +1509,15 @@ var n=this.pipeline.run(e.tokenizer(t)),r=new e.Vector,i=[],o=this._fields.reduc
             
           
             
+              <a href="#" data-language-name="php">PHP</a>
+            
+          
+            
               <a href="#" data-language-name="javascript">JavaScript</a>
             
           
             
               <a href="#" data-language-name="java">Java</a>
-            
-          
-            
-              <a href="#" data-language-name="php">PHP</a>
             
           
             
@@ -1534,10 +1534,6 @@ var n=this.pipeline.run(e.tokenizer(t)),r=new e.Vector,i=[],o=this._fields.reduc
           
             
               <a href="#" data-language-name="kotlin">Kotlin</a>
-            
-          
-            
-              <a href="#" data-language-name="dart">Dart</a>
             
           
         </div>
@@ -1987,6 +1983,33 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/whatsapp/single/text/message/1&quot;</span>,
+  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
+  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
+  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
+  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
+  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
+  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;message\&quot;:\&quot;Hello from WhatsMate!\&quot;}&quot;</span>,
+  CURLOPT_HTTPHEADER =&gt; [
+    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
+    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
+  ],
+]);
+
+<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
+<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
+
+curl_close(<span class="hljs-variable">$curl</span>);
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
+}
+</code></pre>
 <pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.stringify({
   <span class="hljs-string">&quot;number&quot;</span>: <span class="hljs-string">&quot;14155552671&quot;</span>,
   <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;Hello from WhatsMate!&quot;</span>
@@ -2016,33 +2039,6 @@ xhr.send(data);
   .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
   .body(<span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;message\&quot;:\&quot;Hello from WhatsMate!\&quot;}&quot;</span>)
   .asString();
-</code></pre>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/whatsapp/single/text/message/1&quot;</span>,
-  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
-  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
-  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
-  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
-  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
-  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;message\&quot;:\&quot;Hello from WhatsMate!\&quot;}&quot;</span>,
-  CURLOPT_HTTPHEADER =&gt; [
-    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
-    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
-  ],
-]);
-
-<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
-<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
-
-curl_close(<span class="hljs-variable">$curl</span>);
-
-<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
-  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
-}
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request POST \
   --url https://api.whatsmate.net/v3/whatsapp/single/text/message/1 \
@@ -2235,6 +2231,33 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/whatsapp/single/image/message/1&quot;</span>,
+  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
+  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
+  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
+  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
+  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
+  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;image\&quot;:\&quot;string\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>,
+  CURLOPT_HTTPHEADER =&gt; [
+    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
+    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
+  ],
+]);
+
+<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
+<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
+
+curl_close(<span class="hljs-variable">$curl</span>);
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
+}
+</code></pre>
 <pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.stringify({
   <span class="hljs-string">&quot;number&quot;</span>: <span class="hljs-string">&quot;14155552671&quot;</span>,
   <span class="hljs-string">&quot;image&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -2265,33 +2288,6 @@ xhr.send(data);
   .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
   .body(<span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;image\&quot;:\&quot;string\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>)
   .asString();
-</code></pre>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/whatsapp/single/image/message/1&quot;</span>,
-  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
-  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
-  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
-  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
-  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
-  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;image\&quot;:\&quot;string\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>,
-  CURLOPT_HTTPHEADER =&gt; [
-    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
-    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
-  ],
-]);
-
-<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
-<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
-
-curl_close(<span class="hljs-variable">$curl</span>);
-
-<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
-  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
-}
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request POST \
   --url https://api.whatsmate.net/v3/whatsapp/single/image/message/1 \
@@ -2478,6 +2474,33 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/whatsapp/single/document/message/1&quot;</span>,
+  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
+  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
+  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
+  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
+  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
+  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;document\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;document.pdf\&quot;}&quot;</span>,
+  CURLOPT_HTTPHEADER =&gt; [
+    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
+    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
+  ],
+]);
+
+<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
+<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
+
+curl_close(<span class="hljs-variable">$curl</span>);
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
+}
+</code></pre>
 <pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.stringify({
   <span class="hljs-string">&quot;number&quot;</span>: <span class="hljs-string">&quot;14155552671&quot;</span>,
   <span class="hljs-string">&quot;document&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -2508,33 +2531,6 @@ xhr.send(data);
   .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
   .body(<span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;document\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;document.pdf\&quot;}&quot;</span>)
   .asString();
-</code></pre>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/whatsapp/single/document/message/1&quot;</span>,
-  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
-  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
-  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
-  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
-  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
-  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;document\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;document.pdf\&quot;}&quot;</span>,
-  CURLOPT_HTTPHEADER =&gt; [
-    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
-    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
-  ],
-]);
-
-<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
-<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
-
-curl_close(<span class="hljs-variable">$curl</span>);
-
-<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
-  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
-}
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request POST \
   --url https://api.whatsmate.net/v3/whatsapp/single/document/message/1 \
@@ -2721,6 +2717,33 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/whatsapp/single/url/message/1&quot;</span>,
+  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
+  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
+  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
+  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
+  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
+  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;url\&quot;:\&quot;string\&quot;}&quot;</span>,
+  CURLOPT_HTTPHEADER =&gt; [
+    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
+    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
+  ],
+]);
+
+<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
+<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
+
+curl_close(<span class="hljs-variable">$curl</span>);
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
+}
+</code></pre>
 <pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.stringify({
   <span class="hljs-string">&quot;number&quot;</span>: <span class="hljs-string">&quot;14155552671&quot;</span>,
   <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
@@ -2750,33 +2773,6 @@ xhr.send(data);
   .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
   .body(<span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;url\&quot;:\&quot;string\&quot;}&quot;</span>)
   .asString();
-</code></pre>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/whatsapp/single/url/message/1&quot;</span>,
-  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
-  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
-  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
-  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
-  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
-  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;url\&quot;:\&quot;string\&quot;}&quot;</span>,
-  CURLOPT_HTTPHEADER =&gt; [
-    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
-    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
-  ],
-]);
-
-<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
-<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
-
-curl_close(<span class="hljs-variable">$curl</span>);
-
-<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
-  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
-}
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request POST \
   --url https://api.whatsmate.net/v3/whatsapp/single/url/message/1 \
@@ -2984,6 +2980,33 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/whatsapp/group/text/message/1&quot;</span>,
+  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
+  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
+  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
+  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
+  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
+  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;My WhatsApp Group\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;message\&quot;:\&quot;string\&quot;}&quot;</span>,
+  CURLOPT_HTTPHEADER =&gt; [
+    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
+    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
+  ],
+]);
+
+<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
+<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
+
+curl_close(<span class="hljs-variable">$curl</span>);
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
+}
+</code></pre>
 <pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.stringify({
   <span class="hljs-string">&quot;group_name&quot;</span>: <span class="hljs-string">&quot;My WhatsApp Group&quot;</span>,
   <span class="hljs-string">&quot;group_admin&quot;</span>: <span class="hljs-string">&quot;14155552671&quot;</span>,
@@ -3014,33 +3037,6 @@ xhr.send(data);
   .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
   .body(<span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;My WhatsApp Group\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;message\&quot;:\&quot;string\&quot;}&quot;</span>)
   .asString();
-</code></pre>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/whatsapp/group/text/message/1&quot;</span>,
-  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
-  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
-  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
-  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
-  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
-  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;My WhatsApp Group\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;message\&quot;:\&quot;string\&quot;}&quot;</span>,
-  CURLOPT_HTTPHEADER =&gt; [
-    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
-    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
-  ],
-]);
-
-<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
-<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
-
-curl_close(<span class="hljs-variable">$curl</span>);
-
-<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
-  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
-}
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request POST \
   --url https://api.whatsmate.net/v3/whatsapp/group/text/message/1 \
@@ -3227,6 +3223,33 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/whatsapp/group/image/message/1&quot;</span>,
+  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
+  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
+  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
+  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
+  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
+  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;image\&quot;:\&quot;string\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>,
+  CURLOPT_HTTPHEADER =&gt; [
+    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
+    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
+  ],
+]);
+
+<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
+<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
+
+curl_close(<span class="hljs-variable">$curl</span>);
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
+}
+</code></pre>
 <pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.stringify({
   <span class="hljs-string">&quot;group_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
   <span class="hljs-string">&quot;image&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -3257,33 +3280,6 @@ xhr.send(data);
   .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
   .body(<span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;image\&quot;:\&quot;string\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>)
   .asString();
-</code></pre>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/whatsapp/group/image/message/1&quot;</span>,
-  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
-  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
-  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
-  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
-  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
-  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;image\&quot;:\&quot;string\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>,
-  CURLOPT_HTTPHEADER =&gt; [
-    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
-    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
-  ],
-]);
-
-<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
-<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
-
-curl_close(<span class="hljs-variable">$curl</span>);
-
-<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
-  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
-}
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request POST \
   --url https://api.whatsmate.net/v3/whatsapp/group/image/message/1 \
@@ -3470,6 +3466,33 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/whatsapp/group/document/message/1&quot;</span>,
+  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
+  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
+  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
+  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
+  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
+  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;document\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;document.pdf\&quot;}&quot;</span>,
+  CURLOPT_HTTPHEADER =&gt; [
+    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
+    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
+  ],
+]);
+
+<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
+<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
+
+curl_close(<span class="hljs-variable">$curl</span>);
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
+}
+</code></pre>
 <pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.stringify({
   <span class="hljs-string">&quot;group_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
   <span class="hljs-string">&quot;document&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -3500,33 +3523,6 @@ xhr.send(data);
   .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
   .body(<span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;document\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;document.pdf\&quot;}&quot;</span>)
   .asString();
-</code></pre>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/whatsapp/group/document/message/1&quot;</span>,
-  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
-  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
-  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
-  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
-  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
-  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;document\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;document.pdf\&quot;}&quot;</span>,
-  CURLOPT_HTTPHEADER =&gt; [
-    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
-    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
-  ],
-]);
-
-<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
-<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
-
-curl_close(<span class="hljs-variable">$curl</span>);
-
-<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
-  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
-}
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request POST \
   --url https://api.whatsmate.net/v3/whatsapp/group/document/message/1 \
@@ -3713,6 +3709,33 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/whatsapp/group/url/message/1&quot;</span>,
+  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
+  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
+  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
+  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
+  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
+  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;url\&quot;:\&quot;string\&quot;}&quot;</span>,
+  CURLOPT_HTTPHEADER =&gt; [
+    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
+    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
+  ],
+]);
+
+<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
+<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
+
+curl_close(<span class="hljs-variable">$curl</span>);
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
+}
+</code></pre>
 <pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.stringify({
   <span class="hljs-string">&quot;group_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
   <span class="hljs-string">&quot;group_admin&quot;</span>: <span class="hljs-string">&quot;14155552671&quot;</span>,
@@ -3743,33 +3766,6 @@ xhr.send(data);
   .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
   .body(<span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;url\&quot;:\&quot;string\&quot;}&quot;</span>)
   .asString();
-</code></pre>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/whatsapp/group/url/message/1&quot;</span>,
-  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
-  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
-  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
-  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
-  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
-  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;url\&quot;:\&quot;string\&quot;}&quot;</span>,
-  CURLOPT_HTTPHEADER =&gt; [
-    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
-    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
-  ],
-]);
-
-<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
-<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
-
-curl_close(<span class="hljs-variable">$curl</span>);
-
-<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
-  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
-}
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request POST \
   --url https://api.whatsmate.net/v3/whatsapp/group/url/message/1 \
@@ -3985,6 +3981,33 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/telegram/single/text/message/1&quot;</span>,
+  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
+  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
+  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
+  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
+  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
+  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;message\&quot;:\&quot;string\&quot;}&quot;</span>,
+  CURLOPT_HTTPHEADER =&gt; [
+    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
+    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
+  ],
+]);
+
+<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
+<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
+
+curl_close(<span class="hljs-variable">$curl</span>);
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
+}
+</code></pre>
 <pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.stringify({
   <span class="hljs-string">&quot;number&quot;</span>: <span class="hljs-string">&quot;14155552671&quot;</span>,
   <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
@@ -4014,33 +4037,6 @@ xhr.send(data);
   .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
   .body(<span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;message\&quot;:\&quot;string\&quot;}&quot;</span>)
   .asString();
-</code></pre>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/telegram/single/text/message/1&quot;</span>,
-  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
-  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
-  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
-  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
-  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
-  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;message\&quot;:\&quot;string\&quot;}&quot;</span>,
-  CURLOPT_HTTPHEADER =&gt; [
-    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
-    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
-  ],
-]);
-
-<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
-<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
-
-curl_close(<span class="hljs-variable">$curl</span>);
-
-<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
-  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
-}
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request POST \
   --url https://api.whatsmate.net/v3/telegram/single/text/message/1 \
@@ -4226,6 +4222,33 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/telegram/single/image/message/1&quot;</span>,
+  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
+  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
+  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
+  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
+  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
+  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;image\&quot;:\&quot;string\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>,
+  CURLOPT_HTTPHEADER =&gt; [
+    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
+    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
+  ],
+]);
+
+<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
+<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
+
+curl_close(<span class="hljs-variable">$curl</span>);
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
+}
+</code></pre>
 <pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.stringify({
   <span class="hljs-string">&quot;number&quot;</span>: <span class="hljs-string">&quot;14155552671&quot;</span>,
   <span class="hljs-string">&quot;image&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -4256,33 +4279,6 @@ xhr.send(data);
   .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
   .body(<span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;image\&quot;:\&quot;string\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>)
   .asString();
-</code></pre>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/telegram/single/image/message/1&quot;</span>,
-  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
-  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
-  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
-  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
-  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
-  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;image\&quot;:\&quot;string\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>,
-  CURLOPT_HTTPHEADER =&gt; [
-    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
-    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
-  ],
-]);
-
-<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
-<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
-
-curl_close(<span class="hljs-variable">$curl</span>);
-
-<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
-  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
-}
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request POST \
   --url https://api.whatsmate.net/v3/telegram/single/image/message/1 \
@@ -4469,6 +4465,33 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/telegram/single/document/message/1&quot;</span>,
+  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
+  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
+  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
+  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
+  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
+  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;document\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;document.pdf\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>,
+  CURLOPT_HTTPHEADER =&gt; [
+    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
+    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
+  ],
+]);
+
+<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
+<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
+
+curl_close(<span class="hljs-variable">$curl</span>);
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
+}
+</code></pre>
 <pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.stringify({
   <span class="hljs-string">&quot;number&quot;</span>: <span class="hljs-string">&quot;14155552671&quot;</span>,
   <span class="hljs-string">&quot;document&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -4500,33 +4523,6 @@ xhr.send(data);
   .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
   .body(<span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;document\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;document.pdf\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>)
   .asString();
-</code></pre>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/telegram/single/document/message/1&quot;</span>,
-  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
-  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
-  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
-  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
-  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
-  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;document\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;document.pdf\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>,
-  CURLOPT_HTTPHEADER =&gt; [
-    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
-    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
-  ],
-]);
-
-<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
-<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
-
-curl_close(<span class="hljs-variable">$curl</span>);
-
-<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
-  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
-}
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request POST \
   --url https://api.whatsmate.net/v3/telegram/single/document/message/1 \
@@ -4714,6 +4710,33 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/telegram/single/audio/message/1&quot;</span>,
+  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
+  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
+  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
+  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
+  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
+  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;audio\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;audio.mp3\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>,
+  CURLOPT_HTTPHEADER =&gt; [
+    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
+    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
+  ],
+]);
+
+<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
+<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
+
+curl_close(<span class="hljs-variable">$curl</span>);
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
+}
+</code></pre>
 <pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.stringify({
   <span class="hljs-string">&quot;number&quot;</span>: <span class="hljs-string">&quot;14155552671&quot;</span>,
   <span class="hljs-string">&quot;audio&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -4745,33 +4768,6 @@ xhr.send(data);
   .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
   .body(<span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;audio\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;audio.mp3\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>)
   .asString();
-</code></pre>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/telegram/single/audio/message/1&quot;</span>,
-  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
-  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
-  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
-  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
-  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
-  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;audio\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;audio.mp3\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>,
-  CURLOPT_HTTPHEADER =&gt; [
-    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
-    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
-  ],
-]);
-
-<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
-<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
-
-curl_close(<span class="hljs-variable">$curl</span>);
-
-<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
-  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
-}
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request POST \
   --url https://api.whatsmate.net/v3/telegram/single/audio/message/1 \
@@ -4959,6 +4955,33 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/telegram/single/voice_note/message/1&quot;</span>,
+  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
+  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
+  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
+  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
+  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
+  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;voice_note\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;voice.opus\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>,
+  CURLOPT_HTTPHEADER =&gt; [
+    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
+    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
+  ],
+]);
+
+<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
+<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
+
+curl_close(<span class="hljs-variable">$curl</span>);
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
+}
+</code></pre>
 <pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.stringify({
   <span class="hljs-string">&quot;number&quot;</span>: <span class="hljs-string">&quot;14155552671&quot;</span>,
   <span class="hljs-string">&quot;voice_note&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -4990,33 +5013,6 @@ xhr.send(data);
   .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
   .body(<span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;voice_note\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;voice.opus\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>)
   .asString();
-</code></pre>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/telegram/single/voice_note/message/1&quot;</span>,
-  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
-  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
-  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
-  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
-  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
-  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;number\&quot;:\&quot;14155552671\&quot;,\&quot;voice_note\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;voice.opus\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>,
-  CURLOPT_HTTPHEADER =&gt; [
-    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
-    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
-  ],
-]);
-
-<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
-<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
-
-curl_close(<span class="hljs-variable">$curl</span>);
-
-<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
-  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
-}
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request POST \
   --url https://api.whatsmate.net/v3/telegram/single/voice_note/message/1 \
@@ -5206,6 +5202,33 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/telegram/group/text/message/1&quot;</span>,
+  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
+  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
+  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
+  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
+  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
+  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;message\&quot;:\&quot;string\&quot;}&quot;</span>,
+  CURLOPT_HTTPHEADER =&gt; [
+    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
+    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
+  ],
+]);
+
+<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
+<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
+
+curl_close(<span class="hljs-variable">$curl</span>);
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
+}
+</code></pre>
 <pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.stringify({
   <span class="hljs-string">&quot;group_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
   <span class="hljs-string">&quot;group_admin&quot;</span>: <span class="hljs-string">&quot;14155552671&quot;</span>,
@@ -5236,33 +5259,6 @@ xhr.send(data);
   .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
   .body(<span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;message\&quot;:\&quot;string\&quot;}&quot;</span>)
   .asString();
-</code></pre>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/telegram/group/text/message/1&quot;</span>,
-  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
-  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
-  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
-  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
-  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
-  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;message\&quot;:\&quot;string\&quot;}&quot;</span>,
-  CURLOPT_HTTPHEADER =&gt; [
-    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
-    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
-  ],
-]);
-
-<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
-<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
-
-curl_close(<span class="hljs-variable">$curl</span>);
-
-<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
-  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
-}
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request POST \
   --url https://api.whatsmate.net/v3/telegram/group/text/message/1 \
@@ -5449,6 +5445,33 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/telegram/group/image/message/1&quot;</span>,
+  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
+  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
+  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
+  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
+  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
+  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;image\&quot;:\&quot;string\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>,
+  CURLOPT_HTTPHEADER =&gt; [
+    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
+    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
+  ],
+]);
+
+<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
+<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
+
+curl_close(<span class="hljs-variable">$curl</span>);
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
+}
+</code></pre>
 <pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.stringify({
   <span class="hljs-string">&quot;group_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
   <span class="hljs-string">&quot;group_admin&quot;</span>: <span class="hljs-string">&quot;14155552671&quot;</span>,
@@ -5480,33 +5503,6 @@ xhr.send(data);
   .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
   .body(<span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;image\&quot;:\&quot;string\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>)
   .asString();
-</code></pre>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/telegram/group/image/message/1&quot;</span>,
-  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
-  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
-  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
-  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
-  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
-  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;image\&quot;:\&quot;string\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>,
-  CURLOPT_HTTPHEADER =&gt; [
-    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
-    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
-  ],
-]);
-
-<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
-<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
-
-curl_close(<span class="hljs-variable">$curl</span>);
-
-<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
-  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
-}
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request POST \
   --url https://api.whatsmate.net/v3/telegram/group/image/message/1 \
@@ -5694,6 +5690,33 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/telegram/group/document/message/1&quot;</span>,
+  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
+  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
+  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
+  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
+  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
+  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;document\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;document.pdf\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>,
+  CURLOPT_HTTPHEADER =&gt; [
+    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
+    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
+  ],
+]);
+
+<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
+<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
+
+curl_close(<span class="hljs-variable">$curl</span>);
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
+}
+</code></pre>
 <pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.stringify({
   <span class="hljs-string">&quot;group_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
   <span class="hljs-string">&quot;group_admin&quot;</span>: <span class="hljs-string">&quot;14155552671&quot;</span>,
@@ -5726,33 +5749,6 @@ xhr.send(data);
   .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
   .body(<span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;document\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;document.pdf\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>)
   .asString();
-</code></pre>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/telegram/group/document/message/1&quot;</span>,
-  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
-  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
-  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
-  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
-  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
-  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;document\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;document.pdf\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>,
-  CURLOPT_HTTPHEADER =&gt; [
-    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
-    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
-  ],
-]);
-
-<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
-<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
-
-curl_close(<span class="hljs-variable">$curl</span>);
-
-<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
-  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
-}
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request POST \
   --url https://api.whatsmate.net/v3/telegram/group/document/message/1 \
@@ -5941,6 +5937,33 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/telegram/group/audio/message/1&quot;</span>,
+  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
+  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
+  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
+  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
+  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
+  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;audio\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;audio.mp3\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>,
+  CURLOPT_HTTPHEADER =&gt; [
+    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
+    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
+  ],
+]);
+
+<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
+<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
+
+curl_close(<span class="hljs-variable">$curl</span>);
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
+}
+</code></pre>
 <pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.stringify({
   <span class="hljs-string">&quot;group_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
   <span class="hljs-string">&quot;group_admin&quot;</span>: <span class="hljs-string">&quot;14155552671&quot;</span>,
@@ -5973,33 +5996,6 @@ xhr.send(data);
   .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
   .body(<span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;audio\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;audio.mp3\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>)
   .asString();
-</code></pre>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/telegram/group/audio/message/1&quot;</span>,
-  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
-  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
-  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
-  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
-  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
-  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;audio\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;audio.mp3\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>,
-  CURLOPT_HTTPHEADER =&gt; [
-    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
-    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
-  ],
-]);
-
-<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
-<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
-
-curl_close(<span class="hljs-variable">$curl</span>);
-
-<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
-  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
-}
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request POST \
   --url https://api.whatsmate.net/v3/telegram/group/audio/message/1 \
@@ -6188,6 +6184,33 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/telegram/group/voice_note/message/1&quot;</span>,
+  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
+  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
+  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
+  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
+  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
+  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;voice_note\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;voice.opus\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>,
+  CURLOPT_HTTPHEADER =&gt; [
+    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
+    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
+  ],
+]);
+
+<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
+<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
+
+curl_close(<span class="hljs-variable">$curl</span>);
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
+}
+</code></pre>
 <pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.stringify({
   <span class="hljs-string">&quot;group_name&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
   <span class="hljs-string">&quot;group_admin&quot;</span>: <span class="hljs-string">&quot;14155552671&quot;</span>,
@@ -6220,33 +6243,6 @@ xhr.send(data);
   .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
   .body(<span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;voice_note\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;voice.opus\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>)
   .asString();
-</code></pre>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v3/telegram/group/voice_note/message/1&quot;</span>,
-  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
-  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
-  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
-  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
-  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
-  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;group_name\&quot;:\&quot;string\&quot;,\&quot;group_admin\&quot;:\&quot;14155552671\&quot;,\&quot;voice_note\&quot;:\&quot;string\&quot;,\&quot;filename\&quot;:\&quot;voice.opus\&quot;,\&quot;caption\&quot;:\&quot;string\&quot;}&quot;</span>,
-  CURLOPT_HTTPHEADER =&gt; [
-    <span class="hljs-string">&quot;Accept: application/json&quot;</span>,
-    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
-  ],
-]);
-
-<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
-<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
-
-curl_close(<span class="hljs-variable">$curl</span>);
-
-<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
-  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
-}
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request POST \
   --url https://api.whatsmate.net/v3/telegram/group/voice_note/message/1 \
@@ -6437,6 +6433,33 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
+<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v1/translation/translate&quot;</span>,
+  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
+  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
+  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
+  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
+  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
+  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;fromLang\&quot;:\&quot;en\&quot;,\&quot;toLang\&quot;:\&quot;es\&quot;,\&quot;text\&quot;:\&quot;Hello, world!\&quot;}&quot;</span>,
+  CURLOPT_HTTPHEADER =&gt; [
+    <span class="hljs-string">&quot;Accept: text/plain; charset=utf-8&quot;</span>,
+    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
+    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
+  ],
+]);
+
+<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
+<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
+
+curl_close(<span class="hljs-variable">$curl</span>);
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
+}
+</code></pre>
 <pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.stringify({
   <span class="hljs-string">&quot;fromLang&quot;</span>: <span class="hljs-string">&quot;en&quot;</span>,
   <span class="hljs-string">&quot;toLang&quot;</span>: <span class="hljs-string">&quot;es&quot;</span>,
@@ -6467,33 +6490,6 @@ xhr.send(data);
   .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
   .body(<span class="hljs-string">&quot;{\&quot;fromLang\&quot;:\&quot;en\&quot;,\&quot;toLang\&quot;:\&quot;es\&quot;,\&quot;text\&quot;:\&quot;Hello, world!\&quot;}&quot;</span>)
   .asString();
-</code></pre>
-<pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v1/translation/translate&quot;</span>,
-  CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
-  CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
-  CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
-  CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
-  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">&quot;POST&quot;</span>,
-  CURLOPT_POSTFIELDS =&gt; <span class="hljs-string">&quot;{\&quot;fromLang\&quot;:\&quot;en\&quot;,\&quot;toLang\&quot;:\&quot;es\&quot;,\&quot;text\&quot;:\&quot;Hello, world!\&quot;}&quot;</span>,
-  CURLOPT_HTTPHEADER =&gt; [
-    <span class="hljs-string">&quot;Accept: text/plain; charset=utf-8&quot;</span>,
-    <span class="hljs-string">&quot;Content-Type: application/json&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-ID: API_KEY&quot;</span>,
-    <span class="hljs-string">&quot;X-WM-CLIENT-SECRET: API_KEY&quot;</span>
-  ],
-]);
-
-<span class="hljs-variable">$response</span> = curl_exec(<span class="hljs-variable">$curl</span>);
-<span class="hljs-variable">$err</span> = curl_error(<span class="hljs-variable">$curl</span>);
-
-curl_close(<span class="hljs-variable">$curl</span>);
-
-<span class="hljs-keyword">if</span> (<span class="hljs-variable">$err</span>) {
-  <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;cURL Error #:&quot;</span> . <span class="hljs-variable">$err</span>;
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
-}
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request POST \
   --url https://api.whatsmate.net/v1/translation/translate \
@@ -6688,30 +6684,6 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
-<pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-literal">null</span>;
-
-<span class="hljs-keyword">const</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
-xhr.withCredentials = <span class="hljs-literal">true</span>;
-
-xhr.addEventListener(<span class="hljs-string">&quot;readystatechange&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-  <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.readyState === <span class="hljs-built_in">this</span>.DONE) {
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">this</span>.responseText);
-  }
-});
-
-xhr.open(<span class="hljs-string">&quot;GET&quot;</span>, <span class="hljs-string">&quot;https://api.whatsmate.net/v1/pdf/extract?url=https%3A%2F%2Fexample.com%2Fdocument.pdf&quot;</span>);
-xhr.setRequestHeader(<span class="hljs-string">&quot;Accept&quot;</span>, <span class="hljs-string">&quot;text/plain; charset=utf-8&quot;</span>);
-xhr.setRequestHeader(<span class="hljs-string">&quot;X-WM-CLIENT-ID&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>);
-xhr.setRequestHeader(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>);
-
-xhr.send(data);
-</code></pre>
-<pre class="highlight tab tab-java"><code>HttpResponse response = Unirest.get(<span class="hljs-string">&quot;https://api.whatsmate.net/v1/pdf/extract?url=https%3A%2F%2Fexample.com%2Fdocument.pdf&quot;</span>)
-  .header(<span class="hljs-string">&quot;Accept&quot;</span>, <span class="hljs-string">&quot;text/plain; charset=utf-8&quot;</span>)
-  .header(<span class="hljs-string">&quot;X-WM-CLIENT-ID&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
-  .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
-  .asString();
-</code></pre>
 <pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v1/pdf/extract?url=https%3A%2F%2Fexample.com%2Fdocument.pdf&quot;</span>,
   CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
   CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
@@ -6736,6 +6708,30 @@ curl_close(<span class="hljs-variable">$curl</span>);
 } <span class="hljs-keyword">else</span> {
   <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
 }
+</code></pre>
+<pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-literal">null</span>;
+
+<span class="hljs-keyword">const</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
+xhr.withCredentials = <span class="hljs-literal">true</span>;
+
+xhr.addEventListener(<span class="hljs-string">&quot;readystatechange&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.readyState === <span class="hljs-built_in">this</span>.DONE) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">this</span>.responseText);
+  }
+});
+
+xhr.open(<span class="hljs-string">&quot;GET&quot;</span>, <span class="hljs-string">&quot;https://api.whatsmate.net/v1/pdf/extract?url=https%3A%2F%2Fexample.com%2Fdocument.pdf&quot;</span>);
+xhr.setRequestHeader(<span class="hljs-string">&quot;Accept&quot;</span>, <span class="hljs-string">&quot;text/plain; charset=utf-8&quot;</span>);
+xhr.setRequestHeader(<span class="hljs-string">&quot;X-WM-CLIENT-ID&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>);
+xhr.setRequestHeader(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>);
+
+xhr.send(data);
+</code></pre>
+<pre class="highlight tab tab-java"><code>HttpResponse response = Unirest.get(<span class="hljs-string">&quot;https://api.whatsmate.net/v1/pdf/extract?url=https%3A%2F%2Fexample.com%2Fdocument.pdf&quot;</span>)
+  .header(<span class="hljs-string">&quot;Accept&quot;</span>, <span class="hljs-string">&quot;text/plain; charset=utf-8&quot;</span>)
+  .header(<span class="hljs-string">&quot;X-WM-CLIENT-ID&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
+  .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
+  .asString();
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request GET \
   --url <span class="hljs-string">&#x27;https://api.whatsmate.net/v1/pdf/extract?url=https%3A%2F%2Fexample.com%2Fdocument.pdf&#x27;</span> \
@@ -6902,30 +6898,6 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
-<pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-literal">null</span>;
-
-<span class="hljs-keyword">const</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
-xhr.withCredentials = <span class="hljs-literal">true</span>;
-
-xhr.addEventListener(<span class="hljs-string">&quot;readystatechange&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-  <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.readyState === <span class="hljs-built_in">this</span>.DONE) {
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">this</span>.responseText);
-  }
-});
-
-xhr.open(<span class="hljs-string">&quot;GET&quot;</span>, <span class="hljs-string">&quot;https://api.whatsmate.net/v1/pdf/job/submit?url=https%3A%2F%2Fexample.com%2Fdocument.pdf&quot;</span>);
-xhr.setRequestHeader(<span class="hljs-string">&quot;Accept&quot;</span>, <span class="hljs-string">&quot;application/json&quot;</span>);
-xhr.setRequestHeader(<span class="hljs-string">&quot;X-WM-CLIENT-ID&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>);
-xhr.setRequestHeader(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>);
-
-xhr.send(data);
-</code></pre>
-<pre class="highlight tab tab-java"><code>HttpResponse response = Unirest.get(<span class="hljs-string">&quot;https://api.whatsmate.net/v1/pdf/job/submit?url=https%3A%2F%2Fexample.com%2Fdocument.pdf&quot;</span>)
-  .header(<span class="hljs-string">&quot;Accept&quot;</span>, <span class="hljs-string">&quot;application/json&quot;</span>)
-  .header(<span class="hljs-string">&quot;X-WM-CLIENT-ID&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
-  .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
-  .asString();
-</code></pre>
 <pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v1/pdf/job/submit?url=https%3A%2F%2Fexample.com%2Fdocument.pdf&quot;</span>,
   CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
   CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
@@ -6950,6 +6922,30 @@ curl_close(<span class="hljs-variable">$curl</span>);
 } <span class="hljs-keyword">else</span> {
   <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
 }
+</code></pre>
+<pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-literal">null</span>;
+
+<span class="hljs-keyword">const</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
+xhr.withCredentials = <span class="hljs-literal">true</span>;
+
+xhr.addEventListener(<span class="hljs-string">&quot;readystatechange&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.readyState === <span class="hljs-built_in">this</span>.DONE) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">this</span>.responseText);
+  }
+});
+
+xhr.open(<span class="hljs-string">&quot;GET&quot;</span>, <span class="hljs-string">&quot;https://api.whatsmate.net/v1/pdf/job/submit?url=https%3A%2F%2Fexample.com%2Fdocument.pdf&quot;</span>);
+xhr.setRequestHeader(<span class="hljs-string">&quot;Accept&quot;</span>, <span class="hljs-string">&quot;application/json&quot;</span>);
+xhr.setRequestHeader(<span class="hljs-string">&quot;X-WM-CLIENT-ID&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>);
+xhr.setRequestHeader(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>);
+
+xhr.send(data);
+</code></pre>
+<pre class="highlight tab tab-java"><code>HttpResponse response = Unirest.get(<span class="hljs-string">&quot;https://api.whatsmate.net/v1/pdf/job/submit?url=https%3A%2F%2Fexample.com%2Fdocument.pdf&quot;</span>)
+  .header(<span class="hljs-string">&quot;Accept&quot;</span>, <span class="hljs-string">&quot;application/json&quot;</span>)
+  .header(<span class="hljs-string">&quot;X-WM-CLIENT-ID&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
+  .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
+  .asString();
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request GET \
   --url <span class="hljs-string">&#x27;https://api.whatsmate.net/v1/pdf/job/submit?url=https%3A%2F%2Fexample.com%2Fdocument.pdf&#x27;</span> \
@@ -7106,30 +7102,6 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
-<pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-literal">null</span>;
-
-<span class="hljs-keyword">const</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
-xhr.withCredentials = <span class="hljs-literal">true</span>;
-
-xhr.addEventListener(<span class="hljs-string">&quot;readystatechange&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-  <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.readyState === <span class="hljs-built_in">this</span>.DONE) {
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">this</span>.responseText);
-  }
-});
-
-xhr.open(<span class="hljs-string">&quot;GET&quot;</span>, <span class="hljs-string">&quot;https://api.whatsmate.net/v1/pdf/job/check/123e4567-e89b-12d3-a456-426614174000&quot;</span>);
-xhr.setRequestHeader(<span class="hljs-string">&quot;Accept&quot;</span>, <span class="hljs-string">&quot;application/json&quot;</span>);
-xhr.setRequestHeader(<span class="hljs-string">&quot;X-WM-CLIENT-ID&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>);
-xhr.setRequestHeader(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>);
-
-xhr.send(data);
-</code></pre>
-<pre class="highlight tab tab-java"><code>HttpResponse response = Unirest.get(<span class="hljs-string">&quot;https://api.whatsmate.net/v1/pdf/job/check/123e4567-e89b-12d3-a456-426614174000&quot;</span>)
-  .header(<span class="hljs-string">&quot;Accept&quot;</span>, <span class="hljs-string">&quot;application/json&quot;</span>)
-  .header(<span class="hljs-string">&quot;X-WM-CLIENT-ID&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
-  .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
-  .asString();
-</code></pre>
 <pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v1/pdf/job/check/123e4567-e89b-12d3-a456-426614174000&quot;</span>,
   CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
   CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
@@ -7154,6 +7126,30 @@ curl_close(<span class="hljs-variable">$curl</span>);
 } <span class="hljs-keyword">else</span> {
   <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
 }
+</code></pre>
+<pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-literal">null</span>;
+
+<span class="hljs-keyword">const</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
+xhr.withCredentials = <span class="hljs-literal">true</span>;
+
+xhr.addEventListener(<span class="hljs-string">&quot;readystatechange&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.readyState === <span class="hljs-built_in">this</span>.DONE) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">this</span>.responseText);
+  }
+});
+
+xhr.open(<span class="hljs-string">&quot;GET&quot;</span>, <span class="hljs-string">&quot;https://api.whatsmate.net/v1/pdf/job/check/123e4567-e89b-12d3-a456-426614174000&quot;</span>);
+xhr.setRequestHeader(<span class="hljs-string">&quot;Accept&quot;</span>, <span class="hljs-string">&quot;application/json&quot;</span>);
+xhr.setRequestHeader(<span class="hljs-string">&quot;X-WM-CLIENT-ID&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>);
+xhr.setRequestHeader(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>);
+
+xhr.send(data);
+</code></pre>
+<pre class="highlight tab tab-java"><code>HttpResponse response = Unirest.get(<span class="hljs-string">&quot;https://api.whatsmate.net/v1/pdf/job/check/123e4567-e89b-12d3-a456-426614174000&quot;</span>)
+  .header(<span class="hljs-string">&quot;Accept&quot;</span>, <span class="hljs-string">&quot;application/json&quot;</span>)
+  .header(<span class="hljs-string">&quot;X-WM-CLIENT-ID&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
+  .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
+  .asString();
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request GET \
   --url https://api.whatsmate.net/v1/pdf/job/check/123e4567-e89b-12d3-a456-426614174000 \
@@ -7304,30 +7300,6 @@ data = res.read()
 
 <span class="hljs-built_in">print</span>(data.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))
 </code></pre>
-<pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-literal">null</span>;
-
-<span class="hljs-keyword">const</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
-xhr.withCredentials = <span class="hljs-literal">true</span>;
-
-xhr.addEventListener(<span class="hljs-string">&quot;readystatechange&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-  <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.readyState === <span class="hljs-built_in">this</span>.DONE) {
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">this</span>.responseText);
-  }
-});
-
-xhr.open(<span class="hljs-string">&quot;GET&quot;</span>, <span class="hljs-string">&quot;https://api.whatsmate.net/v1/pdf/job/retrieve_text/123e4567-e89b-12d3-a456-426614174000&quot;</span>);
-xhr.setRequestHeader(<span class="hljs-string">&quot;Accept&quot;</span>, <span class="hljs-string">&quot;text/plain; charset=utf-8&quot;</span>);
-xhr.setRequestHeader(<span class="hljs-string">&quot;X-WM-CLIENT-ID&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>);
-xhr.setRequestHeader(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>);
-
-xhr.send(data);
-</code></pre>
-<pre class="highlight tab tab-java"><code>HttpResponse response = Unirest.get(<span class="hljs-string">&quot;https://api.whatsmate.net/v1/pdf/job/retrieve_text/123e4567-e89b-12d3-a456-426614174000&quot;</span>)
-  .header(<span class="hljs-string">&quot;Accept&quot;</span>, <span class="hljs-string">&quot;text/plain; charset=utf-8&quot;</span>)
-  .header(<span class="hljs-string">&quot;X-WM-CLIENT-ID&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
-  .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
-  .asString();
-</code></pre>
 <pre class="highlight tab tab-php"><code> <span class="hljs-string">&quot;https://api.whatsmate.net/v1/pdf/job/retrieve_text/123e4567-e89b-12d3-a456-426614174000&quot;</span>,
   CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-literal">true</span>,
   CURLOPT_ENCODING =&gt; <span class="hljs-string">&quot;&quot;</span>,
@@ -7352,6 +7324,30 @@ curl_close(<span class="hljs-variable">$curl</span>);
 } <span class="hljs-keyword">else</span> {
   <span class="hljs-keyword">echo</span> <span class="hljs-variable">$response</span>;
 }
+</code></pre>
+<pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">const</span> data = <span class="hljs-literal">null</span>;
+
+<span class="hljs-keyword">const</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
+xhr.withCredentials = <span class="hljs-literal">true</span>;
+
+xhr.addEventListener(<span class="hljs-string">&quot;readystatechange&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.readyState === <span class="hljs-built_in">this</span>.DONE) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">this</span>.responseText);
+  }
+});
+
+xhr.open(<span class="hljs-string">&quot;GET&quot;</span>, <span class="hljs-string">&quot;https://api.whatsmate.net/v1/pdf/job/retrieve_text/123e4567-e89b-12d3-a456-426614174000&quot;</span>);
+xhr.setRequestHeader(<span class="hljs-string">&quot;Accept&quot;</span>, <span class="hljs-string">&quot;text/plain; charset=utf-8&quot;</span>);
+xhr.setRequestHeader(<span class="hljs-string">&quot;X-WM-CLIENT-ID&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>);
+xhr.setRequestHeader(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>);
+
+xhr.send(data);
+</code></pre>
+<pre class="highlight tab tab-java"><code>HttpResponse response = Unirest.get(<span class="hljs-string">&quot;https://api.whatsmate.net/v1/pdf/job/retrieve_text/123e4567-e89b-12d3-a456-426614174000&quot;</span>)
+  .header(<span class="hljs-string">&quot;Accept&quot;</span>, <span class="hljs-string">&quot;text/plain; charset=utf-8&quot;</span>)
+  .header(<span class="hljs-string">&quot;X-WM-CLIENT-ID&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
+  .header(<span class="hljs-string">&quot;X-WM-CLIENT-SECRET&quot;</span>, <span class="hljs-string">&quot;API_KEY&quot;</span>)
+  .asString();
 </code></pre>
 <pre class="highlight tab tab-shell"><code>curl --request GET \
   --url https://api.whatsmate.net/v1/pdf/job/retrieve_text/123e4567-e89b-12d3-a456-426614174000 \
@@ -8575,15 +8571,15 @@ WhatsmateAuth & WhatsmateSecret
               
             
               
+                <a href="#" data-language-name="php">PHP</a>
+              
+            
+              
                 <a href="#" data-language-name="javascript">JavaScript</a>
               
             
               
                 <a href="#" data-language-name="java">Java</a>
-              
-            
-              
-                <a href="#" data-language-name="php">PHP</a>
               
             
               
@@ -8600,10 +8596,6 @@ WhatsmateAuth & WhatsmateSecret
             
               
                 <a href="#" data-language-name="kotlin">Kotlin</a>
-              
-            
-              
-                <a href="#" data-language-name="dart">Dart</a>
               
             
           </div>
