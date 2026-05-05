@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Looking to integrate Telegram group messaging into your Microsoft Office applications? This guide walks you through sending Telegram group messages using Visual Basic for Applications (VBA) and the WhatsMate Telegram Gateway REST API. Perfect for Excel, Access, Word, or any Microsoft Office automation that needs Telegram group notifications.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -25,11 +25,11 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Premium account to send messages to Telegram groups. The gateway must be added to your Telegram group before it can send messages. [Sign up for a Premium account](https://www.whatsmate.net/telegram-gateway-subscribe.html) to enable group messaging capabilities.
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZgUpMzF_W1A?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first Telegram group message from a VBA application:
 
@@ -57,7 +57,7 @@ Customize these essential parameters in the VBA code:
 #### 4. **Run Your VBA Code**
 Execute the `Main_Routine` subroutine to deliver your Telegram group message.
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This VBA integration is ideal for:
 - **Excel automation** - Send Telegram notifications when spreadsheet data meets certain conditions
@@ -66,7 +66,7 @@ This VBA integration is ideal for:
 - **Business reporting** - Send automated reports to Telegram groups from Office applications
 - **Excel macros** - Extend Excel macros with Telegram notification capabilities
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate Telegram group messaging into your Microsoft Office applications? You'll need a Premium account to access the group messaging API. [Sign up for a Premium account](https://www.whatsmate.net/telegram-gateway-subscribe.html) and start sending group messages within minutes!
 

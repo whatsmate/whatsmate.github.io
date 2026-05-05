@@ -12,7 +12,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Looking to integrate WhatsApp group messaging into your .NET applications using Visual Basic? This guide walks you through sending WhatsApp group messages using VB.NET and the WhatsMate WA Gateway REST API. Perfect for VB.NET developers building Windows applications, services, or enterprise solutions with Visual Studio.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -24,7 +24,7 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first WhatsApp group message from a VB.NET application:
 
@@ -64,7 +64,7 @@ Add the "System.Web.Extensions" reference to your project:
 1. Build your VB.NET application in Visual Studio
 2. Run the application to send your WhatsApp group message
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This VB.NET integration is ideal for:
 - **Windows desktop applications** - Add WhatsApp notifications to WinForms or WPF applications
@@ -72,7 +72,7 @@ This VB.NET integration is ideal for:
 - **Windows services** - Create background services that send WhatsApp group alerts
 - **Console utilities** - Build command-line tools for business automation with WhatsApp integration
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate WhatsApp group messaging into your VB.NET applications? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) and start sending group messages within minutes!
 

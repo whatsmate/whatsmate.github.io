@@ -16,7 +16,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Need to integrate WhatsApp group PDF sharing into legacy Python 2 applications for report distribution or automated documentation delivery? This legacy guide shows you how to deliver PDF files to WhatsApp groups using Python 2 and the WhatsMate WA Gateway REST API. Only use this guide if you're maintaining legacy Python 2 systems. For all new development, use Python 3.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -28,9 +28,9 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-> 📄 **Document Requirements**: The script supports PDF files and other document types (MP4, WAV, etc.). Ensure your file is accessible and not corrupted before sending.
+> **Document Requirements**: The script supports PDF files and other document types (MP4, WAV, etc.). Ensure your file is accessible and not corrupted before sending.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first PDF document to a WhatsApp group from a legacy Python 2 script:
 
@@ -80,7 +80,7 @@ Run the script to deliver your PDF to the WhatsApp group:
 python send-pdf-group.py
 ```
 
-### 🔧 Common Use Cases (Legacy Systems)
+### Common Use Cases (Legacy Systems)
 
 This Python 2 integration is for legacy systems only and is ideal for:
 - **Legacy enterprise applications** - Maintain WhatsApp group PDF sharing in existing Python 2 business systems
@@ -89,7 +89,7 @@ This Python 2 integration is for legacy systems only and is ideal for:
 - **Legacy monitoring tools** - Integrate with older system monitoring applications that generate PDF logs
 - **Historical codebases** - Support maintenance of Python 2 code that cannot be immediately upgraded
 
-### 🚀 Get Started Today (For Legacy Systems Only)
+### Get Started Today (For Legacy Systems Only)
 
 Ready to maintain WhatsApp group PDF sharing in your legacy Python 2 applications? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 

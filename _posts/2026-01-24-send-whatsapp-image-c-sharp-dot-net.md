@@ -15,7 +15,7 @@ Looking to automate WhatsApp image sharing, visual notifications, or media deliv
 > **⚠️ Legacy Notice**: This guide uses Visual Studio 2019 and legacy .NET libraries. For modern development with Visual Studio 2022, updated .NET features, and better performance, please use our **[updated Visual Studio 2022 tutorial](/2022-07-18-send-whatsapp-image-c-sharp-dot-net-vs2022/)** instead.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -28,7 +28,7 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate WA Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first image to a WhatsApp user from a C# application using Visual Studio 2019:
 
@@ -66,7 +66,7 @@ Build and run your C# application in Visual Studio 2019 to deliver your image to
 3. Check the console output for success confirmation
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This legacy automation approach is ideal for:
 - **Legacy Windows applications** - Send images to WhatsApp from older Windows Forms or WPF apps
@@ -76,7 +76,7 @@ This legacy automation approach is ideal for:
 - **Business applications** - Add WhatsApp notifications with images to enterprise .NET solutions
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your image sharing over WhatsApp with C#/.NET and Visual Studio 2019? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/whatsapp-gateway-api.html) and start sending images within minutes!
 
@@ -84,4 +84,4 @@ Ready to automate your image sharing over WhatsApp with C#/.NET and Visual Studi
 
 **Next Steps**: Once you've mastered basic image sending, explore advanced features like sending [documents](https://www.whatsmate.net/whatsapp-document-individual-api.html) or [group messages](https://www.whatsmate.net/whatsapp-group-message-api.html) through the WhatsMate WA Gateway API documentation.
 
-> **💡 Upgrade Recommendation**: For new projects or modern development, we strongly recommend using our **[Visual Studio 2022 tutorial](/2022-07-18-send-whatsapp-image-c-sharp-dot-net-vs2022/)** which uses modern .NET libraries, better performance, and updated development practices.
+> **Upgrade Recommendation**: For new projects or modern development, we strongly recommend using our **[Visual Studio 2022 tutorial](/2022-07-18-send-whatsapp-image-c-sharp-dot-net-vs2022/)** which uses modern .NET libraries, better performance, and updated development practices.

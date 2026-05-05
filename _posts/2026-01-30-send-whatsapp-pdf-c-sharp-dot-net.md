@@ -15,7 +15,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Looking to automate WhatsApp PDF document sharing from legacy C#/.NET applications using Visual Studio 2019? This guide walks you through sending PDF files to WhatsApp users using C# with Visual Studio 2019 and the WhatsMate WA Gateway REST API. Perfect for maintaining legacy .NET applications that require WhatsApp document delivery capabilities.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -28,7 +28,7 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate WA Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first PDF file to a WhatsApp user from a legacy C# application using Visual Studio 2019:
 
@@ -67,7 +67,7 @@ Build and run your C# application in Visual Studio 2019 to deliver your PDF to W
 3. Check the console output for success confirmation
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This legacy automation approach is ideal for:
 - **Maintaining legacy Windows applications** - Send PDF reports to WhatsApp from older Windows Forms or WPF apps
@@ -77,7 +77,7 @@ This legacy automation approach is ideal for:
 - **Document automation for legacy workflows** - Generate and send PDF documents from legacy Office automation systems
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your PDF sharing over WhatsApp with legacy C#/.NET and Visual Studio 2019? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/whatsapp-gateway-api.html) and start sending PDF documents within minutes!
 

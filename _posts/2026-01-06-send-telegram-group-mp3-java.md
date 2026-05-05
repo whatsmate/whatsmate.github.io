@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Need to deliver audio content, voice announcements, or sound notifications to Telegram groups from your Java applications? This guide walks you through sending audio files (MP3 format) to Telegram groups using Java and the WhatsMate Telegram Gateway REST API. Perfect for Java developers, community managers, and automation enthusiasts who want to integrate group audio delivery into their Java-based workflows.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -27,12 +27,12 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Telegram groups must be registered with the WhatsMate Telegram Gateway before they can receive messages. Unregistered groups will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/telegram-group-message-api.html).
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AvfLnTgXygw?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first audio file to a Telegram group from a Java application:
 
@@ -93,7 +93,7 @@ java -cp ".:jars/gson-2.8.0.jar:jars/commons-codec-1.10.jar" TelegramGroupMp3Sen
 ```
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **Group announcements** - Send audio updates or announcements to Telegram groups from Java applications
@@ -103,7 +103,7 @@ This automation approach is ideal for:
 - **Automated voice messages** - Send pre-recorded voice announcements to multiple groups from Java services
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your group audio sharing over Telegram? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending audio files to groups from your Java applications within minutes!
 

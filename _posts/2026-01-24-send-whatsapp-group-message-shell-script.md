@@ -12,7 +12,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Looking to integrate WhatsApp group messaging into your Unix/Linux automation scripts? This guide walks you through sending WhatsApp group messages using shell script and the WhatsMate WA Gateway REST API. Perfect for system administrators, DevOps engineers, or anyone using bash scripting for automation that needs WhatsApp group notifications.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -22,7 +22,7 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first WhatsApp group message from a shell script:
 
@@ -53,7 +53,7 @@ Customize these essential parameters in the shell script:
 1. Make your shell script executable: `chmod 755 send-whatsapp-group-message.sh`
 2. Run the script to send your message: `./send-whatsapp-group-message.sh`
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This shell script integration is ideal for:
 - **Team notifications** - Send automated alerts to project teams or departments
@@ -61,7 +61,7 @@ This shell script integration is ideal for:
 - **Business communications** - Send business updates to team WhatsApp groups
 - **System monitoring** - Get group alerts for server issues or maintenance
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate WhatsApp group messaging into your shell scripts? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) and start sending group messages within minutes!
 

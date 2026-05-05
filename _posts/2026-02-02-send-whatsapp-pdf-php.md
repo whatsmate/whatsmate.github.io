@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Looking to automate PDF delivery, document notifications, or file sharing from your PHP applications? This guide walks you through sending PDF files to WhatsApp users using PHP and the WhatsMate WA Gateway REST API. Perfect for PHP developers, web administrators, and automation enthusiasts who want to integrate document delivery into their PHP-based WhatsApp messaging workflows.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -26,7 +26,7 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate WA Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first PDF document to a WhatsApp user from a PHP script:
 
@@ -57,7 +57,7 @@ Upload the PHP file to your web server where PHP is enabled and configured.
 Access the PHP script through your web browser to deliver your PDF to WhatsApp.
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **Automated report delivery** - Send daily/weekly PDF reports to WhatsApp from PHP web applications
@@ -67,7 +67,7 @@ This automation approach is ideal for:
 - **Integration with PHP document generation** - Combine with PHP libraries that create PDFs for WhatsApp delivery
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your document sharing over WhatsApp with PHP? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/whatsapp-gateway-api.html) and start sending PDF files within minutes!
 

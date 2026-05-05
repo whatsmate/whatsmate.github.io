@@ -15,7 +15,7 @@ Looking to automate PDF delivery, document notifications, or file sharing from y
 > **Note for Visual Studio 2022 users**: If you're using Visual Studio 2022, please read [this updated tutorial](/2022-07-20-send-telegram-pdf-c-sharp-dot-net-vs2022/) instead.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -29,7 +29,7 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate Telegram Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/telegram-gateway-api.html).
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first PDF document to a Telegram user from a C# application:
 
@@ -64,7 +64,7 @@ Ensure your project references `System.Web.Extensions` for JSON serialization:
 Build and run your C# application in Visual Studio to deliver your PDF to Telegram.
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **Automated report delivery** - Send daily/weekly PDF reports to Telegram from C# applications
@@ -74,7 +74,7 @@ This automation approach is ideal for:
 - **Integration with .NET document generation** - Combine with C# libraries that create PDFs for Telegram delivery
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your document sharing over Telegram with C#? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending PDF files within minutes!
 

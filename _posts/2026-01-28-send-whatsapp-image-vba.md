@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Looking to automate WhatsApp image sharing directly from Microsoft Office applications or Windows scripts? This guide walks you through sending images to WhatsApp users using VBA (Visual Basic for Applications) and the WhatsMate WA Gateway REST API. Perfect for Office automation specialists, Excel power users, and Windows administrators who want to integrate WhatsApp image delivery with Microsoft Office, Excel, Access, or standalone VBScript files.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -26,7 +26,7 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate WA Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first image to a WhatsApp user from VBA:
 
@@ -72,7 +72,7 @@ Execute your VBA code to deliver your image to WhatsApp:
 5. Or call `WhatsAppImage_Send` directly with your parameters
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **Excel automation** - Send images via WhatsApp based on spreadsheet data or calculations
@@ -82,7 +82,7 @@ This automation approach is ideal for:
 - **Data processing** - Integrate WhatsApp image sharing with Excel data analysis workflows
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your image sharing over WhatsApp from VBA/Visual Basic? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/whatsapp-gateway-api.html) and start sending images within minutes!
 

@@ -12,7 +12,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Need to integrate WhatsApp group PDF sharing into your Python applications for report distribution, automated documentation delivery, or data pipeline file sharing? This guide shows you how to deliver PDF files to WhatsApp groups using Python 3 and the WhatsMate WA Gateway REST API. Perfect for Python developers building automation scripts, data science workflows, web applications, or any Python project that needs document delivery to group chats.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -24,9 +24,9 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-> 📄 **Document Requirements**: The script supports PDF files and other document types (MP4, WAV, etc.). Ensure your file is accessible and not corrupted before sending.
+> **Document Requirements**: The script supports PDF files and other document types (MP4, WAV, etc.). Ensure your file is accessible and not corrupted before sending.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first PDF document to a WhatsApp group from a Python script:
 
@@ -76,7 +76,7 @@ Run the script to deliver your PDF to the WhatsApp group:
 python3 send-pdf-group.py
 ```
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This Python 3 integration is ideal for:
 - **Data science workflows** - Send PDF reports or analysis results to team WhatsApp groups
@@ -85,7 +85,7 @@ This Python 3 integration is ideal for:
 - **Monitoring systems** - Automatically send system logs or documentation as PDFs to admin groups
 - **Batch document processing** - Integrate PDF delivery into larger Python data processing workflows
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate WhatsApp group PDF sharing with Python 3? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) and start sending PDF documents to groups within minutes!
 

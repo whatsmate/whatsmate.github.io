@@ -13,7 +13,7 @@ Need to translate text programmatically in your modern .NET applications? This g
 > **Note for Visual Studio 2019 users**: If you're using Visual Studio 2019, please refer to [this earlier tutorial](/2016-08-22-translate-text-csharp/) instead.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -22,11 +22,11 @@ Before you begin, ensure you have:
 3. **Language codes** - Know the ISO language codes for source and target languages
 
 
-> ℹ️ **Note**: The trial account allows up to 10 translation API calls for learning purposes. [Subscribe to a Premium plan](https://www.whatsmate.net/translation-subscribe.html) for production use.
+> **Note**: The trial account allows up to 10 translation API calls for learning purposes. [Subscribe to a Premium plan](https://www.whatsmate.net/translation-subscribe.html) for production use.
 
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to perform your first text translation in C# with Visual Studio 2022:
 
@@ -47,14 +47,14 @@ Customize these key parameters in the C# code:
 - **Line 21**: Provide the text you want to translate
 
 
-> 🔍 **Looking for language codes?** See the [complete listing of supported language codes](http://api.whatsmate.net/v1/translation/supported-codes).
+> **Looking for language codes?** See the [complete listing of supported language codes](http://api.whatsmate.net/v1/translation/supported-codes).
 
 
 #### 3. **Build and Run**
 Build and run your application in Visual Studio 2022 to see the translated result.
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This C# integration with Visual Studio 2022 is ideal for:
 - **Modern Windows applications** - Add translation features to WinUI 3 or MAUI apps
@@ -64,7 +64,7 @@ This C# integration with Visual Studio 2022 is ideal for:
 - **ASP.NET Core websites** - Translate content for international visitors
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate text translation into your modern .NET applications? You'll need an account to access the API. [Sign up for a Premium plan](https://www.whatsmate.net/translation-subscribe.html) and start translating within minutes!
 

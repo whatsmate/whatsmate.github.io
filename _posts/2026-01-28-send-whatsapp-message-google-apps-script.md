@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Looking to integrate WhatsApp messaging into your Google Workspace automation? This guide walks you through sending WhatsApp messages using Google Apps Script and the WhatsMate WA Gateway REST API. Perfect for Google Sheets, Docs, and Forms users who want to automate notifications and messaging directly from their Google Workspace environment.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -26,7 +26,7 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate WA Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first WhatsApp message from a Google Apps Script:
 
@@ -52,7 +52,7 @@ Customize these key parameters in the Google Apps Script code:
 Run the `main()` function in your Google Apps Script project to deliver your WhatsApp message.
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This Google Apps Script integration approach is ideal for:
 - **Google Sheets automation** - Send WhatsApp notifications based on spreadsheet data changes
@@ -61,7 +61,7 @@ This Google Apps Script integration approach is ideal for:
 - **Google Workspace automation** - Integrate WhatsApp into your business processes
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate WhatsApp messaging from your Google Workspace? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/whatsapp-gateway-api.html) and start sending messages within minutes!
 

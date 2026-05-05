@@ -12,7 +12,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Looking to integrate WhatsApp group messaging into your Node.js applications? This guide walks you through sending WhatsApp group messages using Node.js and the WhatsMate WA Gateway REST API. Perfect for JavaScript/Node.js developers building web applications, backend services, or any Node.js-based system that needs WhatsApp group notifications.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -23,7 +23,7 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first WhatsApp group message from a Node.js application:
 
@@ -54,7 +54,7 @@ Customize these essential parameters in the Node.js script:
 1. Make your Node.js script executable: `chmod 755 send-whatsapp-group.js`
 2. Run the script to send your message: `./send-whatsapp-group.js`
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This Node.js integration is ideal for:
 - **Real-time applications** - Send WhatsApp notifications from chat apps, collaboration tools, or live dashboards
@@ -62,7 +62,7 @@ This Node.js integration is ideal for:
 - **Automation workflows** - Trigger WhatsApp group messages from CI/CD pipelines, monitoring systems, or scheduled tasks
 - **Web applications** - Send group notifications from Node.js web servers, Express.js apps, or full-stack JavaScript applications
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate WhatsApp group messaging into your Node.js applications? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) and start sending group messages within minutes!
 

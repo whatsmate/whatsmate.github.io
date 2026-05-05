@@ -13,7 +13,7 @@ last_modified_at: 2026-03-16T13:40:00+08:00
 Need to extract text from PDF documents programmatically in your PHP applications or web scripts? This guide walks you through converting PDF files to text using PHP and the WhatsMate PDF-to-Text REST API. Perfect for PHP developers, web developers, and anyone who wants to automate PDF text extraction in their PHP workflows.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -21,10 +21,10 @@ Before you begin, ensure you have:
 2. **PDF URL** - A publicly accessible URL to your PDF document
 
 
-> ℹ️ **Note**: The trial account allows up to 20 PDF-to-Text API calls for learning purposes. Files up to 1 MB can use the synchronous API shown here. [Subscribe to a Premium plan](https://www.whatsmate.net/pdf-api-subscribe.html) for production use and larger files.
+> **Note**: The trial account allows up to 20 PDF-to-Text API calls for learning purposes. Files up to 1 MB can use the synchronous API shown here. [Subscribe to a Premium plan](https://www.whatsmate.net/pdf-api-subscribe.html) for production use and larger files.
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to extract text from a PDF using PHP:
 
@@ -53,7 +53,7 @@ php extract-pdf-text-sync.php
 > ⚠️ **Large PDF files?** If your PDF is larger than 1 MB, you'll need to use the asynchronous API instead. See an [example in PHP](https://github.com/whatsmate/pdf-demos/tree/master/php) for handling larger files.
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **Data extraction pipelines** - Pull text from reports, invoices, or forms
@@ -62,7 +62,7 @@ This automation approach is ideal for:
 - **Integration with workflows** - Add PDF text extraction to PHP web applications
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your PDF text extraction? You'll need an account to access the API. [Sign up for a Premium plan](https://www.whatsmate.net/pdf-api-subscribe.html) and start extracting text within minutes!
 

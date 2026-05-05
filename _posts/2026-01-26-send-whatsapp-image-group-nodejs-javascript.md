@@ -12,7 +12,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Need to integrate WhatsApp group image sharing into your Node.js applications for real-time notifications, automated reporting, or backend services? This guide shows you how to deliver images to WhatsApp groups using Node.js and the WhatsMate WA Gateway REST API. Perfect for JavaScript/Node.js developers building web applications, backend services, or any Node.js-based system that needs visual content delivery to group chats.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -24,7 +24,7 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first image to a WhatsApp group from a Node.js application:
 
@@ -68,7 +68,7 @@ Run the script to deliver your image to the WhatsApp group:
 node send-image-group.js
 ```
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This Node.js integration is ideal for:
 - **Real-time web applications** - Send visual notifications from Express.js, Socket.io, or real-time dashboards to WhatsApp groups
@@ -77,7 +77,7 @@ This Node.js integration is ideal for:
 - **Full-stack JavaScript applications** - Send group images from React, Vue, or Angular applications with Node.js backends
 - **IoT and edge computing** - Automate image sharing from Node.js running on Raspberry Pi or edge devices to WhatsApp groups
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate WhatsApp group image sharing into your Node.js applications? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) and start sending images to groups within minutes!
 

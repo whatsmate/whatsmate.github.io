@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Looking to automate Telegram voice note sharing directly from Google Workspace? This guide walks you through sending voice note files (OPUS format) to Telegram users using Google Apps Script and the WhatsMate Telegram Gateway REST API. Perfect for Google Workspace users, spreadsheet automation enthusiasts, and anyone who wants to integrate Telegram voice messaging with Google Drive, Sheets, or other Google services.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -27,7 +27,7 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate Telegram Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/telegram-gateway-api.html).
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first voice note to a Telegram user from Google Apps Script:
 
@@ -68,12 +68,12 @@ Customize these key parameters in the Google Apps Script code:
 #### 5. **Run Your Google Apps Script**
 1. Save your script project
 2. Select the `demoSendTelegramOpusInDrive` function from the dropdown
-3. Click the "Run" button (▶️)
+3. Click the "Run" button (▶)
 4. Authorize the script when prompted (first time only)
 5. Check the execution log for success confirmation
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **AI/TTS integration** - Generate voice messages using text-to-speech (TTS) APIs and deliver them to Telegram for automated announcements, notifications, or interactive voice responses
@@ -83,7 +83,7 @@ This automation approach is ideal for:
 - **Customer service automation** - Send voice responses or information to clients via Telegram
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your voice note sharing over Telegram from Google Apps Script? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending voice notes within minutes!
 

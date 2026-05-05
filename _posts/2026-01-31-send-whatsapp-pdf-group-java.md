@@ -12,7 +12,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Need to integrate WhatsApp group PDF sharing into your Java applications for report distribution, automated documentation delivery, or file sharing? This guide shows you how to deliver PDF files to WhatsApp groups using Java and the WhatsMate WA Gateway REST API. Perfect for Java developers building enterprise applications, backend services, or automation tools that need document delivery to group chats.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -24,9 +24,9 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-> 📄 **Document Requirements**: The script supports PDF files and other document types (MP4, WAV, etc.). Ensure your file is accessible and not corrupted before sending.
+> **Document Requirements**: The script supports PDF files and other document types (MP4, WAV, etc.). Ensure your file is accessible and not corrupted before sending.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first PDF document to a WhatsApp group from a Java application:
 
@@ -88,7 +88,7 @@ javac -cp "jars/gson-2.8.0.jar:jars/commons-codec-1.10.jar" WaPdfGroupSender.jav
 java -cp ".:jars/gson-2.8.0.jar:jars/commons-codec-1.10.jar" WaPdfGroupSender
 ```
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This Java integration is ideal for:
 - **Enterprise document distribution** - Send reports, manuals, or guidelines to team WhatsApp groups from Java applications
@@ -97,7 +97,7 @@ This Java integration is ideal for:
 - **Java-based documentation systems** - Automatically send system logs or documentation as PDFs to admin groups
 - **Batch document processing** - Integrate PDF delivery into larger Java data processing workflows
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate WhatsApp group PDF sharing into your Java applications? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) and start sending PDF documents to groups within minutes!
 

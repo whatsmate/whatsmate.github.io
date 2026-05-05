@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Looking to automate WhatsApp image sharing, visual notifications, or media delivery from your Python applications? This guide walks you through sending images to WhatsApp users using Python 3 and the WhatsMate WA Gateway REST API. Perfect for Python developers, data scientists, and automation enthusiasts who want to integrate visual content delivery into their Python-based workflows.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -26,7 +26,7 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate WA Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first image to a WhatsApp user from a Python 3 application:
 
@@ -73,7 +73,7 @@ python3 send-image-individual.py
 ```
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **Data science workflows** - Send visualizations and charts via WhatsApp from Jupyter notebooks
@@ -83,7 +83,7 @@ This automation approach is ideal for:
 - **IoT projects** - Deliver camera images from Raspberry Pi or other IoT devices
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your image sharing over WhatsApp with Python 3? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/whatsapp-gateway-api.html) and start sending images within minutes!
 

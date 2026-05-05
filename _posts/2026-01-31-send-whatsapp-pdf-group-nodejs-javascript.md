@@ -12,7 +12,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Need to integrate WhatsApp group PDF sharing into your Node.js applications for report distribution, automated documentation delivery, or backend file sharing? This guide shows you how to deliver PDF files to WhatsApp groups using Node.js and the WhatsMate WA Gateway REST API. Perfect for JavaScript/Node.js developers building web applications, backend services, or any Node.js-based system that needs document delivery to group chats.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -24,9 +24,9 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-> 📄 **Document Requirements**: The script supports PDF files and other document types (MP4, WAV, etc.). Ensure your file is accessible and not corrupted before sending.
+> **Document Requirements**: The script supports PDF files and other document types (MP4, WAV, etc.). Ensure your file is accessible and not corrupted before sending.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first PDF document to a WhatsApp group from a Node.js application:
 
@@ -70,7 +70,7 @@ Run the script to deliver your PDF to the WhatsApp group:
 node send-pdf-group.js
 ```
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This Node.js integration is ideal for:
 - **Real-time web applications** - Send PDF reports or documents from Express.js, Socket.io, or real-time dashboards to WhatsApp groups
@@ -79,7 +79,7 @@ This Node.js integration is ideal for:
 - **Full-stack JavaScript applications** - Send group documents from React, Vue, or Angular applications with Node.js backends
 - **Batch document processing** - Integrate PDF delivery into larger Node.js data processing workflows
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate WhatsApp group PDF sharing into your Node.js applications? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) and start sending PDF documents to groups within minutes!
 

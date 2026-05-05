@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Looking to integrate Telegram group messaging into your Node.js applications? This guide walks you through sending Telegram group messages using Node.js and the WhatsMate Telegram Gateway REST API. Perfect for JavaScript/Node.js developers building web applications, backend services, or any Node.js-based system that needs Telegram group notifications.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -25,11 +25,11 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Premium account to send messages to Telegram groups. The gateway must be added to your Telegram group before it can send messages. [Sign up for a Premium account](https://www.whatsmate.net/telegram-gateway-subscribe.html) to enable group messaging capabilities.
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bFogc8tTU0I?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first Telegram group message from a Node.js application:
 
@@ -59,7 +59,7 @@ Customize these essential parameters in the Node.js code:
 1. Make your Node.js script executable: `chmod 755 group-send-telegram-text.js`
 2. Run the script to send your message: `./group-send-telegram-text.js`
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This Node.js integration is ideal for:
 - **Web applications** - Integrate Telegram notifications into Express.js, Nest.js, or other web frameworks
@@ -68,7 +68,7 @@ This Node.js integration is ideal for:
 - **Scheduled tasks** - Use cron jobs or task schedulers with Telegram group alerts
 - **CLI tools** - Build command-line utilities with Telegram notification capabilities
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate Telegram group messaging into your Node.js applications? You'll need a Premium account to access the group messaging API. [Sign up for a Premium account](https://www.whatsmate.net/telegram-gateway-subscribe.html) and start sending group messages within minutes!
 

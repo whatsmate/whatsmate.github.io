@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Need to deliver audio content, voice announcements, or sound notifications to Telegram groups directly from Microsoft Office applications or Windows scripts? This guide walks you through sending audio files (MP3 format) to Telegram groups using VBA (Visual Basic for Applications) and the WhatsMate Telegram Gateway REST API. Perfect for Office automation specialists, Excel power users, and Windows administrators who want to integrate Telegram group audio delivery with Microsoft Office, Excel, Access, or standalone VBScript files.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -27,12 +27,12 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Telegram groups must be registered with the WhatsMate Telegram Gateway before they can receive messages. Unregistered groups will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/telegram-group-message-api.html).
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FBU9ipSUAPQ?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first audio file to a Telegram group from VBA:
 
@@ -63,7 +63,7 @@ Customize these key parameters in the VBA code:
 3. Run the `Main_Routine` subroutine to deliver your audio to the Telegram group
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **Excel automation** - Send audio notifications from Excel spreadsheets to team collaboration groups
@@ -73,7 +73,7 @@ This automation approach is ideal for:
 - **Office productivity enhancement** - Share audio content or voice announcements with team groups directly from Office applications
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your group audio sharing over Telegram with VBA? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending audio files to groups within minutes!
 

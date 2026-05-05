@@ -14,7 +14,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Looking to integrate Telegram messaging into your Node.js applications? This guide walks you through sending Telegram messages using Node.js and the WhatsMate Telegram Gateway REST API. Perfect for JavaScript developers building real-time notification systems, chatbots, or automated messaging workflows.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -26,12 +26,12 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate Telegram Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/telegram-gateway-api.html).
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DBn7kBuaeW0?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first Telegram message from a Node.js application:
 
@@ -67,7 +67,7 @@ Run the script to deliver your Telegram message:
 ```
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This Node.js integration approach is ideal for:
 - **Real-time applications** - Send notifications from web sockets or event-driven systems
@@ -77,7 +77,7 @@ This Node.js integration approach is ideal for:
 - **Scheduled jobs** - Combine with cron-like schedulers for Node.js
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate Telegram messaging into your Node.js applications? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending messages within minutes!
 

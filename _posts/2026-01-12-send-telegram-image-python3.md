@@ -14,7 +14,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Looking to automate Telegram image sharing, visual notifications, or media delivery from your Python applications? This guide walks you through sending images to Telegram users using Python 3 and the WhatsMate Telegram Gateway REST API. Perfect for Python developers, data scientists, and automation enthusiasts who want to integrate visual content delivery into their Python-based workflows.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -28,12 +28,12 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate Telegram Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/telegram-gateway-api.html).
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xLvrqF3OwrI?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first image to a Telegram user from a Python 3 application:
 
@@ -80,7 +80,7 @@ python3 send-telegram-photo-individual.py
 ```
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **Data science workflows** - Send visualizations and charts via Telegram from Jupyter notebooks
@@ -91,7 +91,7 @@ This automation approach is ideal for:
 - **Scheduled tasks** - Use cron jobs with Python scripts for regular image delivery
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your image sharing over Telegram with Python 3? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending images within minutes!
 

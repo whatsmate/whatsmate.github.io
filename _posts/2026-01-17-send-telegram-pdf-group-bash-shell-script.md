@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Need to send PDF documents to Telegram groups for team collaboration, report distribution, or automated documentation delivery? This guide shows you how to deliver PDF files to Telegram groups using a simple shell script and the WhatsMate Telegram Gateway REST API. Perfect for team leaders, system administrators, and developers who want to automate document delivery to group chats directly from the terminal.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -25,15 +25,15 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: The gateway must be a member of the Telegram group you want to send messages to. The group admin phone number is used to uniquely identify the group.
 
-> 📄 **Document Requirements**: The script supports PDF files and other document types. Ensure your file is accessible and not corrupted before sending.
+> **Document Requirements**: The script supports PDF files and other document types. Ensure your file is accessible and not corrupted before sending.
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5O3ZpZ1CfzI?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first PDF document to a Telegram group from a shell script:
 
@@ -83,7 +83,7 @@ Run the script to deliver your PDF to the Telegram group:
 ```
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **Team document sharing** - Send reports, manuals, or guidelines to team Telegram groups
@@ -93,7 +93,7 @@ This automation approach is ideal for:
 - **Integration with document generation** - Combine with scripts that create PDFs for automated delivery to groups
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate PDF sharing to Telegram groups? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending PDF documents to groups within minutes!
 

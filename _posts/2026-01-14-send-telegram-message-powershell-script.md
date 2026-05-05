@@ -14,7 +14,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Looking to automate Telegram notifications and messages from your Windows environment? This guide walks you through sending Telegram messages using PowerShell and the WhatsMate Telegram Gateway REST API. Perfect for Windows system administrators, IT professionals, and automation specialists managing Windows infrastructure.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -26,12 +26,12 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate Telegram Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/telegram-gateway-api.html).
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HLzIisLkTMw?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first Telegram message from a PowerShell script:
 
@@ -60,7 +60,7 @@ Run the script in PowerShell to deliver your Telegram message:
 ```
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This PowerShell integration approach is ideal for:
 - **Windows server monitoring** - Get alerts when Windows services stop
@@ -70,7 +70,7 @@ This PowerShell integration approach is ideal for:
 - **Hybrid cloud environments** - Integrate Telegram into Windows automation workflows
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate Telegram messaging from your Windows environment? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending messages within minutes!
 

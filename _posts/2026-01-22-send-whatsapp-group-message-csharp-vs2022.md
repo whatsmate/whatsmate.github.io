@@ -14,7 +14,7 @@ Looking to integrate WhatsApp group messaging into your modern .NET applications
 
 > **Note for Visual Studio 2019 users**: If you're using Visual Studio 2019, please refer to [this earlier tutorial](/2017-04-13-send-whatsapp-group-message-csharp/) instead.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -26,7 +26,7 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first WhatsApp group message from a C# application in Visual Studio 2022:
 
@@ -58,7 +58,7 @@ Customize these essential parameters in the C# program:
 2. Paste the code into your main class
 3. Build and run the application to send your WhatsApp group message
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This C# integration is ideal for:
 - **Windows desktop applications** - Add WhatsApp group notifications to WinForms, WPF, or Windows applications
@@ -66,7 +66,7 @@ This C# integration is ideal for:
 - **Enterprise business applications** - Automate WhatsApp communications for CRM, ERP, or business workflow systems
 - **Modern .NET solutions** - Build WhatsApp-enabled applications using the latest .NET 6.0+ features and Visual Studio 2022
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate WhatsApp group messaging into your C# .NET applications? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) and start sending group messages within minutes!
 

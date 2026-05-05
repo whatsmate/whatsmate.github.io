@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Looking to integrate WhatsApp messaging into your Microsoft Office automation? This guide walks you through sending WhatsApp messages using VBA (Visual Basic for Applications) and the WhatsMate WA Gateway REST API. Perfect for Excel, Access, and other Office users who want to automate notifications and messaging directly from their Microsoft Office applications.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -26,12 +26,12 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate WA Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WLg61BEj-FA?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first WhatsApp message from a VBA macro:
 
@@ -56,7 +56,7 @@ Customize these key parameters in the VBA code:
 Run the VBA macro to deliver your WhatsApp message.
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This VBA integration approach is ideal for:
 - **Excel automation** - Send WhatsApp notifications based on spreadsheet calculations or data changes
@@ -65,7 +65,7 @@ This VBA integration approach is ideal for:
 - **Report distribution** - Automatically send reports or alerts via WhatsApp
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate WhatsApp messaging from your Microsoft Office applications? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/whatsapp-gateway-api.html) and start sending messages within minutes!
 

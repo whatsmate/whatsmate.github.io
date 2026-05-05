@@ -12,7 +12,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Looking to integrate WhatsApp group messaging into your Java applications? This guide walks you through sending WhatsApp group messages using Java and the WhatsMate WA Gateway REST API. Perfect for Java developers building enterprise applications, backend services, or any Java-based system that needs WhatsApp group notifications.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -23,7 +23,7 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first WhatsApp group message from a Java application:
 
@@ -54,7 +54,7 @@ Customize these essential parameters in the Java program:
 1. Compile the Java file: `javac WhatsappSender.java`
 2. Execute the class to send your message: `java WhatsappSender`
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This Java integration is ideal for:
 - **Enterprise notifications** - Send automated alerts to business teams or departments
@@ -62,7 +62,7 @@ This Java integration is ideal for:
 - **Scheduled business updates** - Automate daily/weekly business reports to management groups
 - **Backend service integration** - Integrate WhatsApp notifications into existing Java backend systems
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate WhatsApp group messaging into your Java applications? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) and start sending group messages within minutes!
 

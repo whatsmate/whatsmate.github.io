@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Looking to automate Telegram voice note sharing directly from Microsoft Office applications or Windows scripts? This guide walks you through sending voice note files (OPUS format) to Telegram users using VBA (Visual Basic for Applications) and the WhatsMate Telegram Gateway REST API. Perfect for Office automation specialists, Excel power users, and Windows administrators who want to integrate Telegram voice messaging with Microsoft Office, Excel, Access, or standalone VBScript files.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -27,7 +27,7 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate Telegram Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/telegram-gateway-api.html).
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first voice note to a Telegram user from VBA:
 
@@ -66,7 +66,7 @@ Customize these key parameters in the VBA code:
 4. Run the `Main_Routine` subroutine to send your voice note
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **AI/TTS integration** - Generate voice messages using text-to-speech (TTS) APIs and deliver them to Telegram for automated announcements, notifications, or interactive voice responses
@@ -76,7 +76,7 @@ This automation approach is ideal for:
 - **Customer service automation** - Deliver voice responses or information to clients through Telegram from CRM systems
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your voice note sharing over Telegram from VBA? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending voice notes within minutes!
 

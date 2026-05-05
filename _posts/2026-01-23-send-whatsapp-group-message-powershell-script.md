@@ -12,7 +12,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Looking to integrate WhatsApp group messaging into your Windows automation scripts? This guide walks you through sending WhatsApp group messages using PowerShell and the WhatsMate WA Gateway REST API. Perfect for Windows system administrators, DevOps engineers, or anyone using PowerShell for automation that needs WhatsApp group notifications.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -24,7 +24,7 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first WhatsApp group message from a PowerShell script:
 
@@ -55,7 +55,7 @@ Customize these essential parameters in the PowerShell script:
 1. Save your PowerShell script (e.g., `send-whatsapp-group.ps1`)
 2. Run the script to send your WhatsApp group message
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This PowerShell integration is ideal for:
 - **Windows server monitoring** - Send WhatsApp alerts for server issues, disk space, or service failures
@@ -63,7 +63,7 @@ This PowerShell integration is ideal for:
 - **Scheduled task notifications** - Get WhatsApp updates when scheduled PowerShell tasks complete or fail
 - **Infrastructure automation** - Integrate WhatsApp messaging into Windows infrastructure management and deployment scripts
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate WhatsApp group messaging into your PowerShell scripts? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) and start sending group messages within minutes!
 

@@ -14,7 +14,7 @@ Need to integrate WhatsApp group PDF sharing into legacy .NET applications for e
 
 > **⚠️ Legacy Notice**: This guide uses Visual Studio 2019 and legacy .NET libraries. For modern development with Visual Studio 2022, updated .NET features, and better performance, please use our **[updated Visual Studio 2022 tutorial](/2022-07-18-send-whatsapp-pdf-group-c-sharp-dot-net-vs2022/)** instead.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -27,7 +27,7 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first PDF document to a WhatsApp group from a legacy C# application in Visual Studio 2019:
 
@@ -72,7 +72,7 @@ Customize these essential parameters in the C# program:
 2. Run the application (Debug → Start Without Debugging or F5)
 3. The console will display the API response and wait for you to press Enter
 
-### 🔧 Common Use Cases (Legacy Systems)
+### Common Use Cases (Legacy Systems)
 
 This legacy C# integration with Visual Studio 2019 is for maintaining existing systems and is ideal for:
 - **Legacy Windows desktop applications** - Maintain WhatsApp group PDF sharing in existing WinForms or WPF applications
@@ -81,7 +81,7 @@ This legacy C# integration with Visual Studio 2019 is for maintaining existing s
 - **System migration projects** - Maintain PDF functionality during transition from older .NET versions
 - **Historical codebases** - Support maintenance of .NET Framework applications that cannot be immediately upgraded
 
-### 🚀 Get Started Today (For Legacy Systems Only)
+### Get Started Today (For Legacy Systems Only)
 
 Ready to maintain WhatsApp group PDF sharing in your legacy C# .NET applications? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 

@@ -15,7 +15,7 @@ Looking to automate Telegram audio file sharing, voice message delivery, or soun
 > **Note for Visual Studio 2019 users**: If you're using Visual Studio 2019, please read [this Visual Studio 2019 tutorial](/2022-06-21-send-telegram-mp3-c-sharp-dot-net/) instead.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -29,12 +29,12 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate Telegram Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/telegram-gateway-api.html).
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4KhER1_bUCc?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first audio file to a Telegram user from a C# application using Visual Studio 2022:
 
@@ -67,7 +67,7 @@ Customize these key parameters in the C# code:
 Build and run your C# application in Visual Studio 2022 to deliver your audio to Telegram.
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **Cloud-native applications** - Integrate Telegram audio sharing with cloud-based .NET applications and microservices
@@ -77,7 +77,7 @@ This automation approach is ideal for:
 - **Integration with .NET 6+ audio processing** - Combine with modern .NET libraries that generate or modify audio files for Telegram delivery
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your audio sharing over Telegram with modern C#/.NET? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending audio files within minutes!
 

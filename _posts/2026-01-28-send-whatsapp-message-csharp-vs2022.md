@@ -15,7 +15,7 @@ Looking to integrate WhatsApp messaging into your modern .NET applications? This
 > **Note for Visual Studio 2019 users**: If you're using Visual Studio 2019, please refer to [this earlier tutorial](/2016-02-24-send-whatsapp-message-csharp/) instead.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -28,7 +28,7 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate WA Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first WhatsApp message from a C# application in Visual Studio 2022:
 
@@ -53,7 +53,7 @@ Customize these key parameters in the C# code:
 Build and run your application in Visual Studio 2022 to deliver your WhatsApp message.
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This C# integration with Visual Studio 2022 is ideal for:
 - **Modern Windows applications** - Add messaging features to WinUI 3 or MAUI apps
@@ -62,7 +62,7 @@ This C# integration with Visual Studio 2022 is ideal for:
 - **Cross-platform development** - Create solutions that work across Windows, macOS, and Linux
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate WhatsApp messaging into your modern .NET applications? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/whatsapp-gateway-api.html) and start sending messages within minutes!
 

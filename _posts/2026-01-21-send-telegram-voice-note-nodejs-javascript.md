@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Looking to automate voice message delivery, audio recordings, or spoken notifications from your JavaScript applications? This guide walks you through sending voice note files (OPUS format) to Telegram users using Node.js and the WhatsMate Telegram Gateway REST API. Perfect for JavaScript developers, full-stack engineers, and Node.js enthusiasts who want to integrate voice messaging into their JavaScript-based workflows.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -26,7 +26,7 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate Telegram Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/telegram-gateway-api.html).
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first voice note to a Telegram user from a Node.js application:
 
@@ -63,7 +63,7 @@ Run the Node.js script to deliver your voice note to Telegram:
 ```
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **AI/TTS integration** - Generate voice messages using text-to-speech (TTS) APIs and deliver them to Telegram for automated announcements, notifications, or interactive voice responses
@@ -73,7 +73,7 @@ This automation approach is ideal for:
 - **Audio notifications** - Deliver spoken alerts or voice notifications from Node.js systems
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your voice note sharing over Telegram with Node.js? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending voice notes within minutes!
 

@@ -12,7 +12,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Need to integrate WhatsApp group image sharing into your Java applications for team collaboration, automated reporting, or system notifications? This guide shows you how to deliver images to WhatsApp groups using Java and the WhatsMate WA Gateway REST API. Perfect for Java developers building enterprise applications, backend services, or automation tools that need visual content delivery to group chats.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -24,7 +24,7 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first image to a WhatsApp group from a Java application:
 
@@ -86,7 +86,7 @@ javac -cp "jars/gson-2.8.0.jar:jars/commons-codec-1.10.jar" WaImageGroupSender.j
 java -cp ".:jars/gson-2.8.0.jar:jars/commons-codec-1.10.jar" WaImageGroupSender
 ```
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This Java integration is ideal for:
 - **Enterprise application integration** - Add WhatsApp group image sharing to Java-based business systems
@@ -95,7 +95,7 @@ This Java integration is ideal for:
 - **Java-based monitoring tools** - Integrate with system monitoring applications for visual status updates
 - **Batch processing workflows** - Automate image delivery as part of larger Java data processing pipelines
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate WhatsApp group image sharing into your Java applications? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) and start sending images to groups within minutes!
 

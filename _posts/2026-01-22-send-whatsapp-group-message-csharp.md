@@ -14,7 +14,7 @@ Looking to integrate WhatsApp group messaging into your legacy .NET applications
 
 > **Note for Visual Studio 2022 users**: If you're using Visual Studio 2022 with modern .NET 6.0+, please refer to [this updated tutorial for Visual Studio 2022](/2022-07-18-send-whatsapp-group-message-csharp-vs2022/) instead.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -26,7 +26,7 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first WhatsApp group message from a C# application in Visual Studio 2019:
 
@@ -67,7 +67,7 @@ For this legacy .NET Framework implementation, you need to add the System.Web.Ex
 2. Paste the code into your main class
 3. Build and run the application to send your WhatsApp group message
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This C# .NET Framework integration is ideal for:
 - **Legacy Windows applications** - Add WhatsApp group notifications to existing WinForms or WPF applications built on .NET Framework
@@ -75,7 +75,7 @@ This C# .NET Framework integration is ideal for:
 - **Migration projects** - Add modern WhatsApp capabilities to older .NET Framework systems during migration planning
 - **Compatibility requirements** - Maintain WhatsApp integration for applications that must run on older Windows versions or .NET Framework environments
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate WhatsApp group messaging into your legacy C# .NET Framework applications? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) and start sending group messages within minutes!
 

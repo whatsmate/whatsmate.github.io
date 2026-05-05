@@ -14,7 +14,7 @@ Need to integrate WhatsApp group PDF sharing into your modern .NET applications 
 
 > **Note for Visual Studio 2019 users**: If you're using Visual Studio 2019, please refer to [this earlier tutorial](/2018-01-23-send-whatsapp-pdf-group-c-sharp-dot-net/) instead.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -26,7 +26,7 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first PDF document to a WhatsApp group from a C# application in Visual Studio 2022:
 
@@ -68,7 +68,7 @@ Customize these essential parameters in the C# program:
 2. Run the application (Debug → Start Without Debugging or F5)
 3. The console will display the API response and wait for you to press Enter
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This C# integration with Visual Studio 2022 is ideal for:
 - **Team document sharing** - Send reports, manuals, or guidelines to team WhatsApp groups from .NET applications
@@ -77,7 +77,7 @@ This C# integration with Visual Studio 2022 is ideal for:
 - **Modern .NET solutions** - Build WhatsApp-enabled applications using the latest .NET 6.0+ features and Visual Studio 2022
 - **Windows desktop automation** - Add PDF document sharing capabilities to WinForms, WPF, or Windows applications
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate WhatsApp group PDF sharing into your C# .NET applications? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) and start sending PDF documents to groups within minutes!
 

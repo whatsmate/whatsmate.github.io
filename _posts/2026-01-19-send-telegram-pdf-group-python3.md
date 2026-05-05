@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Need to integrate Telegram group PDF sharing into your Python applications for data science, automation, or machine learning workflows? This guide shows you how to deliver PDF files to Telegram groups using Python and the WhatsMate Telegram Gateway REST API. Perfect for Python developers building data pipelines, automation scripts, or AI applications that need document delivery to group chats.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -25,15 +25,15 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: The gateway must be a member of the Telegram group you want to send messages to. The group admin phone number is used to uniquely identify the group.
 
-> 📄 **Python File Handling**: The script uses Python's built-in file operations and base64 encoding, ensuring compatibility across different platforms and Python versions.
+> **Python File Handling**: The script uses Python's built-in file operations and base64 encoding, ensuring compatibility across different platforms and Python versions.
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TYRoOkIP4lA?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first PDF document to a Telegram group from a Python script:
 
@@ -87,7 +87,7 @@ python3 send-telegram-pdf-group.py
 ```
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This Python integration is ideal for:
 - **Data science workflows** - Send analysis reports, visualization PDFs, or research papers to Telegram groups
@@ -97,7 +97,7 @@ This Python integration is ideal for:
 - **IoT and monitoring systems** - Send system documentation or log reports as PDFs to admin groups
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate Telegram group PDF sharing into your Python applications? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending PDF documents to groups from your Python code within minutes!
 

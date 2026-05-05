@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Need to deliver voice messages, audio recordings, or spoken announcements to Telegram groups directly from your JavaScript applications? This guide walks you through sending voice note files (OPUS format) to Telegram groups using Node.js and the WhatsMate Telegram Gateway REST API. Perfect for JavaScript developers, full-stack engineers, and Node.js enthusiasts who want to integrate group voice messaging into their JavaScript-based workflows.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -27,7 +27,7 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Telegram groups must be registered with the WhatsMate Telegram Gateway before they can receive messages. Unregistered groups will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/telegram-group-message-api.html).
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first voice note to a Telegram group from a Node.js application:
 
@@ -58,7 +58,7 @@ node group-send-telegram-opus.js
 ```
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **Web application integration** - Send voice notifications from Node.js web applications to team collaboration groups
@@ -68,7 +68,7 @@ This automation approach is ideal for:
 - **JavaScript community content** - Share recorded voice messages, podcasts, or spoken announcements with JavaScript/Node.js Telegram groups
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your group voice note sharing over Telegram with Node.js? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending voice notes to groups within minutes!
 

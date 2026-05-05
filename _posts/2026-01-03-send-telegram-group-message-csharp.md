@@ -16,7 +16,7 @@ Looking to send messages to Telegram groups from your .NET applications? This gu
 > **Note for Visual Studio 2022 users**: If you're using Visual Studio 2022, please refer to [this updated tutorial](/2022-07-20-send-telegram-group-message-csharp-vs2022/) instead.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -29,12 +29,12 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: You need a Premium account to send messages to Telegram groups. The gateway must be added to your Telegram group before it can send messages. [Sign up for a Premium account](https://www.whatsmate.net/telegram-gateway-subscribe.html) to enable group messaging capabilities.
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fnyGwfP1O64?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first Telegram group message from a C# application:
 
@@ -77,7 +77,7 @@ Add the "System.Web.Extensions" reference to your project:
 Build and run the application in Visual Studio to deliver your Telegram group message.
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This C# group messaging integration is ideal for:
 - **Team coordination** - Automate notifications to work or project groups
@@ -87,7 +87,7 @@ This C# group messaging integration is ideal for:
 - **Windows services** - Build background services with group messaging capabilities
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate Telegram group messaging into your C# applications? You'll need a Premium account to access the group messaging API. [Sign up for a Premium account](https://www.whatsmate.net/telegram-gateway-subscribe.html) and start sending group messages within minutes!
 

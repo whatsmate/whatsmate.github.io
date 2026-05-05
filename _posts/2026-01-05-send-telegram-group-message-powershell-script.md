@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Looking to integrate Telegram group messaging into your Windows automation scripts? This guide walks you through sending Telegram group messages using PowerShell and the WhatsMate Telegram Gateway REST API. Perfect for Windows system administrators, DevOps engineers, or anyone using PowerShell for automation that needs Telegram group notifications.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -25,7 +25,7 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Premium account to send messages to Telegram groups. The gateway must be added to your Telegram group before it can send messages. [Sign up for a Premium account](https://www.whatsmate.net/telegram-gateway-subscribe.html) to enable group messaging capabilities.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first Telegram group message from a PowerShell script:
 
@@ -54,7 +54,7 @@ Customize these essential parameters in the PowerShell code:
 #### 4. **Run Your PowerShell Script**
 Execute the PowerShell script to deliver your Telegram group message.
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This PowerShell integration is ideal for:
 - **Windows server monitoring** - Send Telegram alerts for server issues or performance metrics
@@ -63,7 +63,7 @@ This PowerShell integration is ideal for:
 - **Scheduled tasks** - Use Windows Task Scheduler with PowerShell scripts for regular updates
 - **System administration** - Automate IT operations with Telegram notifications
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate Telegram group messaging into your PowerShell scripts? You'll need a Premium account to access the group messaging API. [Sign up for a Premium account](https://www.whatsmate.net/telegram-gateway-subscribe.html) and start sending group messages within minutes!
 

@@ -12,7 +12,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Need to integrate WhatsApp group PDF sharing into your Microsoft Office applications for report distribution, automated documentation delivery, or Office business workflows? This guide shows you how to deliver PDF files to WhatsApp groups using Visual Basic for Applications (VBA) and the WhatsMate WA Gateway REST API. Perfect for Excel, Access, Word, or any Microsoft Office automation that needs document delivery to group chats.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -24,9 +24,9 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-> 📄 **Document Requirements**: The script supports PDF files and other document types (MP4, WAV, etc.). Ensure your file is accessible and not corrupted before sending.
+> **Document Requirements**: The script supports PDF files and other document types (MP4, WAV, etc.). Ensure your file is accessible and not corrupted before sending.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first PDF document to a WhatsApp group from a VBA application:
 
@@ -54,7 +54,7 @@ Customize these essential parameters in the VBA program:
   - Replace `"Hope you like it."` with an optional caption for your PDF
 - **Lines 18-20**: Replace `YOUR_INSTANCE_ID_HERE`, `YOUR_CLIENT_ID_HERE`, and `YOUR_CLIENT_SECRET_HERE` with your Forever Green credentials
 
-> 💡 **Note**: Ensure the PDF file path is accessible and you have read permissions. The default path `C:\Users\Public\subwaymap.pdf` is a public folder accessible to all users on Windows systems.
+> **Note**: Ensure the PDF file path is accessible and you have read permissions. The default path `C:\Users\Public\subwaymap.pdf` is a public folder accessible to all users on Windows systems.
 
 #### 4. **Set Up the VBA Environment**
 1. Open your Office application (Excel, Access, Word, etc.)
@@ -68,7 +68,7 @@ Customize these essential parameters in the VBA program:
 2. Press F5 or click Run → Run Sub/UserForm
 3. Alternatively, assign the macro to a button in your Office document for easy execution
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This VBA integration is ideal for:
 - **Excel report automation** - Automatically send PDF reports, charts, or dashboard exports to WhatsApp groups
@@ -77,7 +77,7 @@ This VBA integration is ideal for:
 - **Business process automation** - Integrate WhatsApp PDF sharing into existing Office-based business workflows
 - **Scheduled Office tasks** - Use Windows Task Scheduler with Office automation to send regular PDF updates
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate WhatsApp group PDF sharing into your Microsoft Office applications? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) and start sending PDF documents to groups within minutes!
 

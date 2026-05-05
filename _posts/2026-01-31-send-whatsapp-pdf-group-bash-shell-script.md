@@ -12,7 +12,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Need to send PDF documents to WhatsApp groups for team reports, automated documentation delivery, or file distribution? This guide shows you how to deliver PDF files to WhatsApp groups using a simple shell script and the WhatsMate WA Gateway REST API. Perfect for team leaders, system administrators, and developers who want to automate document delivery to group chats directly from the terminal.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -23,9 +23,9 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-> 📄 **Document Requirements**: The script supports PDF files and other document types (MP4, WAV, etc.). Ensure your file is accessible and not corrupted before sending.
+> **Document Requirements**: The script supports PDF files and other document types (MP4, WAV, etc.). Ensure your file is accessible and not corrupted before sending.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first PDF document to a WhatsApp group from a shell script:
 
@@ -52,7 +52,7 @@ Customize these essential parameters in the shell script:
 - **Line 17**: Replace `map.pdf` with the desired filename for the document
 - **Line 18**: Replace `"You will find it handy."` with an optional caption for your PDF
 
-> 💡 **Note**: The script uses the `base64` utility to encode your PDF document. If it's not available on your system, install it with `sudo apt-get install coreutils` (Debian/Ubuntu) or equivalent for your distribution.
+> **Note**: The script uses the `base64` utility to encode your PDF document. If it's not available on your system, install it with `sudo apt-get install coreutils` (Debian/Ubuntu) or equivalent for your distribution.
 
 #### 4. **Install Base64 Utility (If Needed)**
 Ensure the `base64` command is available on your system:
@@ -76,7 +76,7 @@ Run the script to deliver your PDF to the WhatsApp group:
 ./send-pdf-group.sh
 ```
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **Team document sharing** - Send reports, manuals, or guidelines to team WhatsApp groups
@@ -85,7 +85,7 @@ This automation approach is ideal for:
 - **System documentation delivery** - Automatically send system logs or documentation as PDFs to admin groups
 - **Integration with document generation** - Combine with scripts that create PDFs for automated delivery to groups
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate PDF sharing to WhatsApp groups? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) and start sending PDF documents to groups within minutes!
 

@@ -15,7 +15,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Looking to automate PDF delivery, document notifications, or file sharing from legacy Python 2 applications? This guide walks you through sending PDF files to WhatsApp users using Python 2 and the WhatsMate WA Gateway REST API. Perfect for maintaining legacy Python 2 systems that need WhatsApp document delivery capabilities.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -28,7 +28,7 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate WA Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first PDF document to a WhatsApp user from a Python 2 application:
 
@@ -67,7 +67,7 @@ python send-pdf-individual.py
 ```
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This legacy automation approach is ideal for:
 - **Maintaining legacy systems** - Send PDF reports from existing Python 2 applications that cannot be upgraded
@@ -77,7 +77,7 @@ This legacy automation approach is ideal for:
 - **Integration with legacy document generation** - Combine with Python 2 libraries that create PDFs for WhatsApp delivery
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your document sharing over WhatsApp with Python 2? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/whatsapp-gateway-api.html) and start sending PDF files within minutes!
 

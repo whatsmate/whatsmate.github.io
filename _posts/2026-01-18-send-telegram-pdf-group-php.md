@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Need to integrate Telegram group PDF sharing into your PHP websites, CMS platforms, or web applications? This guide shows you how to deliver PDF files to Telegram groups using PHP and the WhatsMate Telegram Gateway REST API. Perfect for PHP developers building websites, e-commerce platforms, or content management systems that need document delivery to group chats.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -26,15 +26,15 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: The gateway must be a member of the Telegram group you want to send messages to. The group admin phone number is used to uniquely identify the group.
 
-> 📄 **Server Requirements**: Ensure your PHP installation has the cURL extension enabled and sufficient memory to handle PDF file reading and base64 encoding.
+> **Server Requirements**: Ensure your PHP installation has the cURL extension enabled and sufficient memory to handle PDF file reading and base64 encoding.
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HL7TPAuRreE?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first PDF document to a Telegram group from a PHP script:
 
@@ -76,7 +76,7 @@ php group-send-telegram-pdf.php
 ```
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This PHP integration is ideal for:
 - **Website integration** - Add Telegram group PDF sharing to PHP-based websites and portals
@@ -86,7 +86,7 @@ This PHP integration is ideal for:
 - **Server-side automation** - Use PHP cron jobs to schedule regular PDF delivery to groups
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate Telegram group PDF sharing into your PHP applications? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending PDF documents to groups from your PHP code within minutes!
 

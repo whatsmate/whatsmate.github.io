@@ -15,7 +15,7 @@ Looking to deliver voice notes, audio recordings, or spoken messages to Telegram
 > **Note for Visual Studio 2022 users**: If you're using Visual Studio 2022, please read [this updated tutorial](/2022-07-20-send-telegram-group-voice-note-c-sharp-dot-net-vs2022/) instead.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -29,7 +29,7 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Telegram groups must be registered with the WhatsMate Telegram Gateway before they can receive messages. Unregistered groups will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/telegram-group-message-api.html).
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first voice note file to a Telegram group from a C# application:
 
@@ -68,7 +68,7 @@ Build and run your C# application in Visual Studio 2019 to deliver your voice no
 3. The console will display the API response when the voice note is sent
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for .NET developers building:
 
@@ -79,7 +79,7 @@ This automation approach is ideal for .NET developers building:
 - **Automation frameworks** - Integrate voice messaging into .NET automation frameworks for system monitoring or alerting
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your group voice note sharing over Telegram with C#? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending voice note files to groups from your C# applications within minutes!
 

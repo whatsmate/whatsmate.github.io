@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Need to integrate Telegram group image sharing into your Java applications for team collaboration, automated reporting, or system notifications? This guide shows you how to deliver images to Telegram groups using Java and the WhatsMate Telegram Gateway REST API. Perfect for Java developers building enterprise applications, backend services, or automation tools that need visual content delivery to group chats.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -26,12 +26,12 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: The gateway must be a member of the Telegram group you want to send messages to. The group admin phone number is used to uniquely identify the group.
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jK1ueteeRPI?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first image to a Telegram group from a Java application:
 
@@ -92,7 +92,7 @@ java -cp ".:jars/gson-2.8.0.jar:jars/commons-codec-1.10.jar" TelegramGroupPhotoS
 ```
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This Java integration is ideal for:
 - **Enterprise application integration** - Add Telegram group image sharing to Java-based business systems
@@ -102,7 +102,7 @@ This Java integration is ideal for:
 - **Batch processing workflows** - Automate image delivery as part of larger Java data processing pipelines
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate Telegram group image sharing into your Java applications? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending images to groups from your Java code within minutes!
 

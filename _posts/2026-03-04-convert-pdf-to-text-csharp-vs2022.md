@@ -13,7 +13,7 @@ Need to extract text from PDF documents programmatically in your modern C#/.NET 
 > **Note for Visual Studio 2019 users**: If you're using Visual Studio 2019, please read [this Visual Studio 2019 tutorial](/2017-06-08-convert-pdf-to-text-csharp/) instead.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -23,10 +23,10 @@ Before you begin, ensure you have:
 4. **Modern .NET libraries** - This version uses `System.Text.Json` for serialization (included in .NET 6+)
 
 
-> ℹ️ **Note**: The trial account allows up to 20 PDF-to-Text API calls for learning purposes. Files up to 1 MB can use the synchronous API shown here. [Subscribe to a Premium plan](https://www.whatsmate.net/pdf-api-subscribe.html) for production use and larger files.
+> **Note**: The trial account allows up to 20 PDF-to-Text API calls for learning purposes. Files up to 1 MB can use the synchronous API shown here. [Subscribe to a Premium plan](https://www.whatsmate.net/pdf-api-subscribe.html) for production use and larger files.
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to extract text from a PDF using C# with Visual Studio 2022:
 
@@ -55,7 +55,7 @@ Build and run your C# application in Visual Studio 2022 to see the extracted tex
 > ⚠️ **Large PDF files?** If your PDF is larger than 1 MB, you'll need to use the asynchronous API instead. See an [example in C#](https://github.com/whatsmate/pdf-demos/tree/master/C_sharp) for handling larger files.
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This modern automation approach is ideal for:
 - **Data extraction pipelines** - Pull text from reports, invoices, or forms
@@ -64,7 +64,7 @@ This modern automation approach is ideal for:
 - **Integration with workflows** - Add PDF text extraction to modern .NET applications
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your PDF text extraction with modern C#/.NET and Visual Studio 2022? You'll need an account to access the API. [Sign up for a Premium plan](https://www.whatsmate.net/pdf-api-subscribe.html) and start extracting text within minutes!
 

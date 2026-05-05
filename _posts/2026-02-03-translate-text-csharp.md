@@ -12,12 +12,12 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Need to translate text programmatically in your .NET applications? This guide walks you through translating text using C# and the WhatsMate Translation REST API with Visual Studio 2019. Perfect for .NET developers maintaining legacy systems or working in environments where Visual Studio 2019 is the standard.
 
-> **💡 Recommendation**: If you're starting a new project or have the flexibility to upgrade, we strongly recommend using **Visual Studio 2022** with modern .NET 6+ for better performance, improved tooling, and long-term support. Check out our [Visual Studio 2022 tutorial](/2026-03-03-translate-text-csharp-vs2022/) for the latest approach.
+> **Recommendation**: If you're starting a new project or have the flexibility to upgrade, we strongly recommend using **Visual Studio 2022** with modern .NET 6+ for better performance, improved tooling, and long-term support. Check out our [Visual Studio 2022 tutorial](/2026-03-03-translate-text-csharp-vs2022/) for the latest approach.
 >
 > **This tutorial is for you if**: You need to support legacy systems, maintain existing .NET Framework applications, or work in environments where Visual Studio 2019 is the standard.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -26,15 +26,15 @@ Before you begin, ensure you have:
 3. **Language codes** - Know the ISO language codes for source and target languages
 
 
-> ℹ️ **Note**: The trial account allows up to 10 translation API calls for learning purposes. [Subscribe to a Premium plan](https://www.whatsmate.net/translation-subscribe.html) for production use.
+> **Note**: The trial account allows up to 10 translation API calls for learning purposes. [Subscribe to a Premium plan](https://www.whatsmate.net/translation-subscribe.html) for production use.
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/18wHrYVH4G0?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to perform your first text translation in C#:
 
@@ -55,7 +55,7 @@ Customize these key parameters in the C# code:
 - **Line 22**: Provide the text you want to translate
 
 
-> 🔍 **Looking for language codes?** See the [complete listing of supported language codes](http://api.whatsmate.net/v1/translation/supported-codes).
+> **Looking for language codes?** See the [complete listing of supported language codes](http://api.whatsmate.net/v1/translation/supported-codes).
 
 
 #### 3. **Add Required Reference**
@@ -72,7 +72,7 @@ Add the `System.Web.Extensions` reference to your project:
 Build and run your application in Visual Studio to see the translated result.
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This C# integration approach is ideal for:
 - **Windows desktop applications** - Add translation features to WinForms or WPF apps
@@ -82,7 +82,7 @@ This C# integration approach is ideal for:
 - **Business intelligence tools** - Translate reports and dashboards
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate text translation into your .NET applications? You'll need an account to access the API. [Sign up for a Premium plan](https://www.whatsmate.net/translation-subscribe.html) and start translating within minutes!
 

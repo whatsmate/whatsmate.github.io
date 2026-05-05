@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Looking to integrate Telegram group messaging into your Java applications? This guide walks you through sending Telegram group messages using Java and the WhatsMate Telegram Gateway REST API. Perfect for Java developers building enterprise applications, backend services, or any Java-based system that needs Telegram group notifications.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -25,11 +25,11 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Premium account to send messages to Telegram groups. The gateway must be added to your Telegram group before it can send messages. [Sign up for a Premium account](https://www.whatsmate.net/telegram-gateway-subscribe.html) to enable group messaging capabilities.
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QttdR3uQ4Ew?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first Telegram group message from a Java application:
 
@@ -59,7 +59,7 @@ Customize these essential parameters in the Java code:
 1. Compile the Java file: `javac TelegramGroupTextSender.java`
 2. Execute the class to send your message: `java TelegramGroupTextSender`
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This Java integration is ideal for:
 - **Enterprise applications** - Integrate Telegram notifications into Java EE or Spring applications
@@ -68,7 +68,7 @@ This Java integration is ideal for:
 - **Desktop applications** - Build Java Swing or JavaFX applications with Telegram integration
 - **Server-side automation** - Create scheduled tasks or event-driven Telegram notifications
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate Telegram group messaging into your Java applications? You'll need a Premium account to access the group messaging API. [Sign up for a Premium account](https://www.whatsmate.net/telegram-gateway-subscribe.html) and start sending group messages within minutes!
 

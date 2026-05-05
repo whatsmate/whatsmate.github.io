@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Looking to integrate Telegram group messaging into your .NET applications using Visual Basic? This guide walks you through sending Telegram group messages using VB.NET and the WhatsMate Telegram Gateway REST API. Perfect for VB.NET developers building Windows applications, services, or enterprise solutions with Visual Studio.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -25,7 +25,7 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Premium account to send messages to Telegram groups. The gateway must be added to your Telegram group before it can send messages. [Sign up for a Premium account](https://www.whatsmate.net/telegram-gateway-subscribe.html) to enable group messaging capabilities.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first Telegram group message from a VB.NET application:
 
@@ -62,7 +62,7 @@ Add the "System.Web.Extensions" reference to your project:
 #### 5. **Build and Run Your Application**
 Build and run the application in Visual Studio to deliver your Telegram group message.
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This VB.NET integration is ideal for:
 - **Windows desktop applications** - Create VB.NET Windows Forms applications with Telegram notifications
@@ -71,7 +71,7 @@ This VB.NET integration is ideal for:
 - **Legacy system integration** - Modernize existing VB.NET applications with Telegram capabilities
 - **Business automation** - Automate business processes with VB.NET and Telegram notifications
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate Telegram group messaging into your VB.NET applications? You'll need a Premium account to access the group messaging API. [Sign up for a Premium account](https://www.whatsmate.net/telegram-gateway-subscribe.html) and start sending group messages within minutes!
 

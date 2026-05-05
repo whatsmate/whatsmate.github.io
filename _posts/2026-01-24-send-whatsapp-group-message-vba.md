@@ -12,7 +12,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Looking to integrate WhatsApp group messaging into your Microsoft Office applications? This guide walks you through sending WhatsApp group messages using Visual Basic for Applications (VBA) and the WhatsMate WA Gateway REST API. Perfect for Excel, Access, Word, or any Microsoft Office automation that needs WhatsApp group notifications.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -24,7 +24,7 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first WhatsApp group message from a VBA application:
 
@@ -56,7 +56,7 @@ Customize these essential parameters in the VBA program:
 2. Paste the code into a module
 3. Run the `Main_Routine` macro to send your WhatsApp group message
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This VBA integration is ideal for:
 - **Excel automation** - Send WhatsApp group notifications based on spreadsheet data or calculations
@@ -64,7 +64,7 @@ This VBA integration is ideal for:
 - **Office document automation** - Automate WhatsApp communications from Word documents or PowerPoint presentations
 - **Business process automation** - Integrate WhatsApp group messaging into existing Office-based business workflows
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate WhatsApp group messaging into your Microsoft Office applications? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) and start sending group messages within minutes!
 

@@ -12,7 +12,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Need to integrate WhatsApp group image sharing into your PHP applications for team collaboration, automated reporting, or website notifications? This guide shows you how to deliver images to WhatsApp groups using PHP and the WhatsMate WA Gateway REST API. Perfect for PHP developers building websites, web applications, or any PHP-based system that needs visual content delivery to group chats.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -24,7 +24,7 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first image to a WhatsApp group from a PHP application:
 
@@ -64,7 +64,7 @@ php send-image-group.php
 **To execute via web browser:**
 Simply navigate to `http://your-domain.com/send-image-group.php`
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This PHP integration is ideal for:
 - **Website contact forms** - Allow users to submit images that get forwarded to WhatsApp groups
@@ -73,7 +73,7 @@ This PHP integration is ideal for:
 - **Web application notifications** - Send visual alerts or reports from PHP web apps to team groups
 - **Automated reporting** - Generate and deliver charts, graphs, or screenshots to WhatsApp groups
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate WhatsApp group image sharing into your PHP applications? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) and start sending images to groups within minutes!
 

@@ -12,7 +12,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Looking to integrate WhatsApp group messaging into your PHP applications? This guide walks you through sending WhatsApp group messages using PHP and the WhatsMate WA Gateway REST API. Perfect for PHP developers building websites, web applications, or any PHP-based system that needs WhatsApp group notifications.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -23,7 +23,7 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first WhatsApp group message from a PHP application:
 
@@ -54,7 +54,7 @@ Customize these essential parameters in the PHP script:
 1. Save the PHP file to your web server (e.g., `send-whatsapp-group.php`)
 2. Visit the PHP page in your browser or execute via command line to send your message
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This PHP integration is ideal for:
 - **Website notifications** - Send automated alerts from contact forms or user actions
@@ -62,7 +62,7 @@ This PHP integration is ideal for:
 - **Content management systems** - Integrate WhatsApp notifications into WordPress, Joomla, or custom CMS
 - **Web application alerts** - Send group notifications from web-based business applications
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate WhatsApp group messaging into your PHP applications? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) and start sending group messages within minutes!
 

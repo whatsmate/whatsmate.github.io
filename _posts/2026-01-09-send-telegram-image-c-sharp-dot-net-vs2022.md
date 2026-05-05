@@ -15,7 +15,7 @@ Looking to automate Telegram image sharing, visual notifications, or media deliv
 > **Note for Visual Studio 2019 users**: If you're using Visual Studio 2019, please read [this Visual Studio 2019 tutorial](/2022-06-17-send-telegram-image-c-sharp-dot-net/) instead.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -29,12 +29,12 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate Telegram Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/telegram-gateway-api.html).
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w9IEE98yPUI?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first image to a Telegram user from a C# application using Visual Studio 2022:
 
@@ -64,7 +64,7 @@ Build and run your C# application in Visual Studio 2022 to deliver your image to
 3. Check the console output for success confirmation
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This modern automation approach is ideal for:
 - **Modern Windows applications** - Send images to Telegram from Windows Forms, WPF, or MAUI apps
@@ -74,7 +74,7 @@ This modern automation approach is ideal for:
 - **Cross-platform .NET apps** - Works with .NET Core on Linux, macOS, and Windows
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your image sharing over Telegram with modern C#/.NET and Visual Studio 2022? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending images within minutes!
 

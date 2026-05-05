@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Looking to deliver voice notes, audio recordings, or spoken messages to Telegram groups directly from Google Workspace? This comprehensive guide walks you through sending voice note files (OPUS format) to Telegram groups using Google Apps Script and the WhatsMate Telegram Gateway REST API. Perfect for Google Workspace users, spreadsheet automation enthusiasts, and anyone who wants to integrate Telegram group voice messaging with Google Drive, Sheets, or other Google services.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -26,7 +26,7 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Telegram groups must be registered with the WhatsMate Telegram Gateway before they can receive messages. Unregistered groups will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/telegram-group-message-api.html).
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first voice note file to a Telegram group from Google Apps Script:
 
@@ -68,12 +68,12 @@ Customize these key parameters in the Google Apps Script code:
 #### 5. **Run Your Google Apps Script**
 1. Save your script project with a descriptive name (e.g., "Telegram Group Voice Note Sender")
 2. Select the `demoSendOpusToTelegramGroup` function from the dropdown menu
-3. Click the "Run" button (▶️)
+3. Click the "Run" button (▶)
 4. Authorize the script when prompted (first time only - grants access to Google Drive and external APIs)
 5. Check the execution log for success confirmation or error messages
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 
@@ -84,7 +84,7 @@ This automation approach is ideal for:
 - **Team collaboration tools** - Share meeting recordings, voice updates, or audio announcements with team groups from Google Workspace
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your group voice note sharing over Telegram from Google Apps Script? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending voice note files to groups within minutes!
 

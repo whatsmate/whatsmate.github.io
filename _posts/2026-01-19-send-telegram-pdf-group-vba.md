@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Need to integrate Telegram group PDF sharing into your Excel macros, Access databases, or Office automation workflows? This guide shows you how to deliver PDF files to Telegram groups using VBA (Visual Basic for Applications) and the WhatsMate Telegram Gateway REST API. Perfect for Office automation specialists, Excel power users, and VBA developers building document delivery solutions for group chats.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -26,15 +26,15 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: The gateway must be a member of the Telegram group you want to send messages to. The group admin phone number is used to uniquely identify the group.
 
-> 📄 **File System Access**: The VBA script reads PDF files from your local file system, so ensure your Office application has appropriate file permissions and the PDF file exists at the specified path.
+> **File System Access**: The VBA script reads PDF files from your local file system, so ensure your Office application has appropriate file permissions and the PDF file exists at the specified path.
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ulV-TXIV5fA?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first PDF document to a Telegram group from a VBA script:
 
@@ -78,12 +78,12 @@ Ensure your PDF file exists at the specified path. If using the sample path:
 #### 5. **Run Your VBA Script**
 1. Save your VBA project
 2. Place your cursor inside the `Main_Routine` function
-3. Press **F5** or click the "Run" button (▶️)
+3. Press **F5** or click the "Run" button (▶)
 4. A message box will display the API response from the Telegram Gateway
 5. Check your Telegram group to confirm the PDF was delivered successfully
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This VBA integration is ideal for:
 - **Excel automation** - Send PDF reports generated from Excel data to Telegram groups
@@ -93,7 +93,7 @@ This VBA integration is ideal for:
 - **Scheduled reporting** - Use Windows Task Scheduler with VBA scripts for regular PDF delivery
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate Telegram group PDF sharing into your VBA applications? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending PDF documents to groups from your VBA code within minutes!
 

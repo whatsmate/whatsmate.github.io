@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Need to translate text programmatically in your Java applications? This guide walks you through translating text using Java and the WhatsMate Translation REST API. Perfect for Java developers, enterprise engineers, and anyone who wants to integrate automatic translations into their Java projects.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -21,15 +21,15 @@ Before you begin, ensure you have:
 2. **Language codes** - Know the ISO language codes for source and target languages
 
 
-> ℹ️ **Note**: The trial account allows up to 10 translation API calls for learning purposes. [Subscribe to a Premium plan](https://www.whatsmate.net/translation-subscribe.html) for production use.
+> **Note**: The trial account allows up to 10 translation API calls for learning purposes. [Subscribe to a Premium plan](https://www.whatsmate.net/translation-subscribe.html) for production use.
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/18wHrYVH4G0?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to perform your first text translation in Java:
 
@@ -50,7 +50,7 @@ Customize these key parameters in the script:
 - **Line 20**: Provide the text you want to translate
 
 
-> 🔍 **Looking for language codes?** See the [complete listing of supported language codes](http://api.whatsmate.net/v1/translation/supported-codes).
+> **Looking for language codes?** See the [complete listing of supported language codes](http://api.whatsmate.net/v1/translation/supported-codes).
 
 
 #### 3. **Compile the Java File**
@@ -67,7 +67,7 @@ java Translator
 ```
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **Enterprise applications** - Translate content for global business users
@@ -77,7 +77,7 @@ This automation approach is ideal for:
 - **Data processing pipelines** - Translate text data in batch operations
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your text translations? You'll need an account to access the API. [Sign up for a Premium plan](https://www.whatsmate.net/translation-subscribe.html) and start translating within minutes!
 

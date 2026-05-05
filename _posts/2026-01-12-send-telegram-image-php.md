@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Looking to automate Telegram image sharing, visual notifications, or media delivery from your PHP applications? This guide walks you through sending images to Telegram users using PHP and the WhatsMate Telegram Gateway REST API. Perfect for PHP developers, web administrators, and automation enthusiasts who want to integrate visual content delivery into their PHP-based workflows.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -27,12 +27,12 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate Telegram Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/telegram-gateway-api.html).
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RcQUOBOxCZ4?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first image to a Telegram user from a PHP script:
 
@@ -66,7 +66,7 @@ https://yourdomain.com/path/to/send-telegram-image.php
 ```
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **Visual system monitoring** - Send server status screenshots or graphs to Telegram from PHP web applications
@@ -76,7 +76,7 @@ This automation approach is ideal for:
 - **Integration with PHP image processing** - Combine with PHP GD library or ImageMagick to generate or modify images for Telegram delivery
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your image sharing over Telegram with PHP? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending images within minutes!
 

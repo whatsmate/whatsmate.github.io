@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Looking to automate PDF delivery, document notifications, or file sharing from your JavaScript applications? This guide walks you through sending PDF files to WhatsApp users using Node.js and the WhatsMate WA Gateway REST API. Perfect for JavaScript developers, full-stack engineers, and Node.js enthusiasts who want to integrate document delivery into their JavaScript-based WhatsApp messaging workflows.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -25,7 +25,7 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate WA Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first PDF document to a WhatsApp user from a Node.js application:
 
@@ -62,7 +62,7 @@ Run the Node.js script to deliver your PDF to WhatsApp:
 ```
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **Automated report delivery** - Send daily/weekly PDF reports to WhatsApp from Node.js applications
@@ -72,7 +72,7 @@ This automation approach is ideal for:
 - **Integration with JavaScript document generation** - Combine with Node.js libraries that create PDFs for WhatsApp delivery
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your document sharing over WhatsApp with Node.js? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/whatsapp-gateway-api.html) and start sending PDF files within minutes!
 

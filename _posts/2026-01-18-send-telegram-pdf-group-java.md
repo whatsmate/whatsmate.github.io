@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Need to integrate Telegram group PDF sharing into your Java applications for enterprise reporting, automated documentation, or team collaboration? This guide shows you how to deliver PDF files to Telegram groups using Java and the WhatsMate Telegram Gateway REST API. Perfect for Java developers building enterprise applications, backend services, or automation tools that need document delivery to group chats.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -25,15 +25,15 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: The gateway must be a member of the Telegram group you want to send messages to. The group admin phone number is used to uniquely identify the group.
 
-> 📄 **Document Support**: While focused on PDF files, this approach works with various document types supported by Telegram's document sharing feature.
+> **Document Support**: While focused on PDF files, this approach works with various document types supported by Telegram's document sharing feature.
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0y87PysweGk?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first PDF document to a Telegram group from a Java application:
 
@@ -95,7 +95,7 @@ java -cp ".:jars/gson-2.8.0.jar:jars/commons-codec-1.10.jar" TelegramGroupPdfSen
 ```
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This Java integration is ideal for:
 - **Enterprise application integration** - Add Telegram group PDF sharing to Java-based business systems
@@ -105,7 +105,7 @@ This Java integration is ideal for:
 - **Legacy system modernization** - Add modern document sharing capabilities to existing Java applications
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate Telegram group PDF sharing into your Java applications? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending PDF documents to groups from your Java code within minutes!
 

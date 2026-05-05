@@ -12,7 +12,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Need to integrate WhatsApp group image sharing into your Microsoft Office applications for automated reporting, business workflows, or Office automation? This guide shows you how to deliver images to WhatsApp groups using Visual Basic for Applications (VBA) and the WhatsMate WA Gateway REST API. Perfect for Excel, Access, Word, or any Microsoft Office automation that needs visual content delivery to group chats.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -24,7 +24,7 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first image to a WhatsApp group from a VBA application:
 
@@ -52,7 +52,7 @@ Customize these essential parameters in the VBA program:
 - **Line 17**: Replace `YOUR_INSTANCE_ID_HERE` with your WhatsApp gateway instance ID
 - **Lines 18-19**: Update `YOUR_CLIENT_ID_HERE` and `YOUR_CLIENT_SECRET_HERE` with your Forever Green Client ID and Secret
 
-> 💡 **Note**: Ensure the image file path is accessible and you have read permissions. The default path `C:\Users\Public\cute-girl.jpg` is a public folder accessible to all users on Windows systems.
+> **Note**: Ensure the image file path is accessible and you have read permissions. The default path `C:\Users\Public\cute-girl.jpg` is a public folder accessible to all users on Windows systems.
 
 #### 4. **Set Up the VBA Environment**
 1. Open your Office application (Excel, Access, Word, etc.)
@@ -66,7 +66,7 @@ Customize these essential parameters in the VBA program:
 2. Press F5 or click Run → Run Sub/UserForm
 3. Alternatively, assign the macro to a button in your Office document for easy execution
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This VBA integration is ideal for:
 - **Excel reporting automation** - Automatically send charts, graphs, or dashboard screenshots to WhatsApp groups
@@ -75,7 +75,7 @@ This VBA integration is ideal for:
 - **Business process automation** - Integrate WhatsApp image sharing into existing Office-based business workflows
 - **Scheduled Office tasks** - Use Windows Task Scheduler with Office automation to send regular image updates
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate WhatsApp group image sharing into your Microsoft Office applications? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) and start sending images to groups within minutes!
 

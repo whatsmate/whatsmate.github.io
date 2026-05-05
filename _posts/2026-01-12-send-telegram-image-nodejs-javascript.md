@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Looking to automate Telegram image sharing, visual notifications, or media delivery from your JavaScript applications? This guide walks you through sending images to Telegram users using Node.js and the WhatsMate Telegram Gateway REST API. Perfect for JavaScript developers, full-stack engineers, and Node.js enthusiasts who want to integrate visual content delivery into their JavaScript-based workflows.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -26,12 +26,12 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate Telegram Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/telegram-gateway-api.html).
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3HADfn6roJw?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first image to a Telegram user from a Node.js application:
 
@@ -71,7 +71,7 @@ node send-telegram-photo.js
 ```
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **Full-stack applications** - Send images to Telegram from Express.js, Nest.js, or other Node.js frameworks
@@ -82,7 +82,7 @@ This automation approach is ideal for:
 - **CLI tools** - Build command-line tools that send images to Telegram
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your image sharing over Telegram with Node.js/JavaScript? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending images within minutes!
 

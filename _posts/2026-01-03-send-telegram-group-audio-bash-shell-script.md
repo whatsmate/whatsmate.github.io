@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Need to deliver audio content, voice announcements, or sound notifications to Telegram groups directly from your terminal? This guide walks you through sending audio files (MP3 format) to Telegram groups using a simple shell script and the WhatsMate Telegram Gateway REST API. Perfect for community managers, team leaders, and automation enthusiasts who want to integrate group audio delivery into their workflows.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -26,12 +26,12 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Telegram groups must be registered with the WhatsMate Telegram Gateway before they can receive messages. Unregistered groups will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/telegram-group-message-api.html).
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-Za4mzBkQTE?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first audio file to a Telegram group from a shell script:
 
@@ -70,7 +70,7 @@ Run the script to deliver your audio to the Telegram group:
 ```
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **Group announcements** - Send audio updates or announcements to Telegram groups
@@ -80,7 +80,7 @@ This automation approach is ideal for:
 - **Group audio alerts** - Integrate with monitoring systems to send audio alerts to team groups
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your group audio sharing over Telegram? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending audio files to groups within minutes!
 

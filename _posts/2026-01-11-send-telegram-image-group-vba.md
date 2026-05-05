@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Need to integrate Telegram group image sharing into your Excel macros, Access databases, or Office automation workflows? This guide shows you how to deliver images to Telegram groups using VBA (Visual Basic for Applications) and the WhatsMate Telegram Gateway REST API. Perfect for Office power users automating business processes, data reporting, or team collaboration that needs visual content delivery to group chats.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -25,15 +25,15 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: The gateway must be a member of the Telegram group you want to send messages to. The group admin phone number is used to uniquely identify the group.
 
-> 🔧 **System Requirements**: The VBA script requires Windows with MSXML2 and ADODB components available (standard on most Windows systems).
+> **System Requirements**: The VBA script requires Windows with MSXML2 and ADODB components available (standard on most Windows systems).
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LeQ9hNvsmv8?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first image to a Telegram group from VBA:
 
@@ -83,7 +83,7 @@ Execute the macro to send your image:
 3. **Check results**: A message box will display the response from the Telegram Gateway
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This VBA integration is ideal for:
 - **Excel automation** - Send charts, graphs, or report screenshots from Excel to Telegram groups
@@ -93,7 +93,7 @@ This VBA integration is ideal for:
 - **Legacy system integration** - Add modern communication capabilities to existing VBA applications
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate Telegram group image sharing into your Office automation? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/telegram-gateway-api.html) and start sending images to groups from your VBA code within minutes!
 

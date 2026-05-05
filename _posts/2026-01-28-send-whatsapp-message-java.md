@@ -13,7 +13,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 Looking to integrate WhatsApp messaging into your Java applications? This guide walks you through sending WhatsApp messages using Java and the WhatsMate WA Gateway REST API. Perfect for Java developers building notification systems, customer engagement tools, or automated messaging solutions.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -25,12 +25,12 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate WA Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
 
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Tpw7pVnpu1A?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first WhatsApp message from a Java application:
 
@@ -66,7 +66,7 @@ java WhatsappSender
 ```
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This Java integration approach is ideal for:
 - **Enterprise applications** - Send notifications from business systems
@@ -75,7 +75,7 @@ This Java integration approach is ideal for:
 - **E-commerce platforms** - Send order confirmations and shipping updates
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to integrate WhatsApp messaging into your Java applications? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/whatsapp-gateway-api.html) and start sending messages within minutes!
 

@@ -12,7 +12,7 @@ last_modified_at: 2026-03-12T11:05:09+08:00
 
 Need to send images to WhatsApp groups for team updates, visual reports, or automated notifications? This guide shows you how to deliver images to WhatsApp groups using a simple shell script and the WhatsMate WA Gateway REST API. Ideal for team leaders, system administrators, and developers who want to automate visual content delivery to group chats.
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -23,7 +23,7 @@ Before you begin, ensure you have:
 
 > ⚠️ **Important**: You need a Forever Green account to send messages to WhatsApp groups. The gateway must be added to your WhatsApp group before it can send messages. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) to enable group messaging capabilities.
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first image to a WhatsApp group from a shell script:
 
@@ -50,7 +50,7 @@ Customize these essential parameters in the shell script:
 - **Line 19**: Replace `../assets/cute-girl.jpg` with the path to your image file
 - **Line 24**: Replace `"Lovely Gal"` with an optional caption for your image
 
-> 💡 **Note**: The script uses the `base64` utility to encode your image. If it's not available on your system, install it with `sudo apt-get install coreutils` (Debian/Ubuntu) or equivalent for your distribution.
+> **Note**: The script uses the `base64` utility to encode your image. If it's not available on your system, install it with `sudo apt-get install coreutils` (Debian/Ubuntu) or equivalent for your distribution.
 
 #### 4. **Make the Script Executable**
 Set execute permissions on your script:
@@ -64,7 +64,7 @@ Run the script to deliver your image to the WhatsApp group:
 ./send-image-group.sh
 ```
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This automation approach is ideal for:
 - **Team visual updates** - Send project screenshots or progress images to team WhatsApp groups
@@ -73,7 +73,7 @@ This automation approach is ideal for:
 - **Visual reporting** - Send charts, graphs, or diagrams to group chats for collaborative review
 - **Integration with monitoring systems** - Combine with scripts that generate system status images for group notifications
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate image sharing to WhatsApp groups? You'll need a Forever Green account to access the group messaging API. [Sign up for a Forever Green account](https://www.whatsmate.net/whatsapp-group-message-api.html) and start sending images to groups within minutes!
 

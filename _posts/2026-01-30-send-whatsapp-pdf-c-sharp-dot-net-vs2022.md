@@ -15,7 +15,7 @@ Looking to automate WhatsApp PDF document sharing, report delivery, or document 
 > **Note for Visual Studio 2019 users**: If you're using Visual Studio 2019, please read [this Visual Studio 2019 tutorial](/2018-01-17-send-whatsapp-pdf-c-sharp-dot-net/) instead.
 
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 
@@ -28,7 +28,7 @@ Before you begin, ensure you have:
 > ⚠️ **Important**: Recipients must register with the WhatsMate WA Gateway before they can receive messages. Unregistered users will not receive any messages from the Gateway. Registration instructions are available on the [official WhatsMate site](https://www.whatsmate.net/whatsapp-gateway-api.html).
 
 
-### 📝 Step-by-Step Implementation
+### Step-by-Step Implementation
 
 Follow these steps to send your first PDF file to a WhatsApp user from a C# application using Visual Studio 2022:
 
@@ -59,7 +59,7 @@ Build and run your C# application in Visual Studio 2022 to deliver your PDF to W
 3. Check the console output for success confirmation
 
 
-### 🔧 Common Use Cases
+### Common Use Cases
 
 This modern automation approach is ideal for:
 - **Modern Windows applications** - Send PDF reports to WhatsApp from Windows Forms, WPF, or MAUI apps
@@ -69,7 +69,7 @@ This modern automation approach is ideal for:
 - **Cross-platform .NET apps** - Works with .NET Core on Linux, macOS, and Windows
 
 
-### 🚀 Get Started Today
+### Get Started Today
 
 Ready to automate your PDF sharing over WhatsApp with modern C#/.NET and Visual Studio 2022? You'll need a trial account to access the API. [Sign up for a 2-week trial](https://www.whatsmate.net/whatsapp-gateway-api.html) and start sending PDF documents within minutes!
 
