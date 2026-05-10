@@ -29,6 +29,10 @@ Before you begin, ensure you have:
 > **Note**: The trial account allows up to 10 translation API calls for learning purposes. [Subscribe to a Premium plan](https://www.whatsmate.net/translation-subscribe.html) for production use.
 
 
+
+> 🎮 **Try it online**: Test the Translation API instantly in our [API Playground](https://api.whatsmate.net/playground.html?tab=translate) — no coding required!
+
+
 ### Step-by-Step Implementation
 
 Follow these steps to perform your first text translation in VB.NET:

@@ -24,6 +24,10 @@ Before you begin, ensure you have:
 > **Note**: The trial account allows up to 10 translation API calls for learning purposes. [Subscribe to a Premium plan](https://www.whatsmate.net/translation-subscribe.html) for production use.
 
 
+
+> 🎮 **Try it online**: Test the Translation API instantly in our [API Playground](https://api.whatsmate.net/playground.html?tab=translate) — no coding required!
+
+
 ### Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qeOQBpYSszA?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>

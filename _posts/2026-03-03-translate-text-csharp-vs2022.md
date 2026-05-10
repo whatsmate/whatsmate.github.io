@@ -26,6 +26,10 @@ Before you begin, ensure you have:
 
 
 
+> 🎮 **Try it online**: Test the Translation API instantly in our [API Playground](https://api.whatsmate.net/playground.html?tab=translate) — no coding required!
+
+
+
 ### Step-by-Step Implementation
 
 Follow these steps to perform your first text translation in C# with Visual Studio 2022:

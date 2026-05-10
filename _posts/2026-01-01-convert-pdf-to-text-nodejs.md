@@ -24,6 +24,10 @@ Before you begin, ensure you have:
 > **Note**: The trial account allows up to 20 PDF-to-Text API calls for learning purposes. Files up to 1 MB can use the synchronous API shown here. [Subscribe to a Premium plan](https://www.whatsmate.net/pdf-api-subscribe.html) for production use and larger files.
 
 
+
+> 🎮 **Try it online**: Test the PDF-to-Text API instantly in our [API Playground](https://api.whatsmate.net/playground.html?tab=pdf) — no coding required!
+
+
 ### Step-by-Step Implementation
 
 Follow these steps to extract text from a PDF using Node.js:
